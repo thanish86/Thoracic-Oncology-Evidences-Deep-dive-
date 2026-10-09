@@ -16,7 +16,8 @@
     "db:seed": "prisma db seed",
     "db:generate": "prisma generate",
     "ingest:pubmed": "tsx scripts/ingest-pubmed.ts",
-    "verify": "npm run content:validate && npm run typecheck && npm run lint && npm run test && npm run build"
+    "verify": "npm run content:validate && npm run typecheck && npm run lint && npm run test && npm run build",
+    "simple:build": "node scripts/build-simple-data.mjs && node scripts/build-simple-single-file.mjs"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

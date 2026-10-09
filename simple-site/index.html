@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Thoracic Evidence Atlas</title>
+  <meta name="description" content="Learn the landmark trials of thoracic oncology: NSCLC, SCLC, thymic tumours and mesothelioma, with every number linked to PubMed.">
+  <!-- The look of the site lives in css/styles.css -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!--
+    HOW THIS SITE WORKS (for beginners)
+    1. index.html  = the skeleton (this file). It is mostly empty on purpose.
+    2. css/styles.css = colours, fonts, spacing (the "look").
+    3. js/data.js  = all trial / biomarker / drug information (generated from PubMed-sourced files).
+    4. js/app.js   = the "brain": reads the data and draws each page inside <main id="app">.
+    Open this file by double-clicking it. No internet or installation is needed
+    (internet is only used when you click a PubMed link).
+  -->
+
+  <!-- Top navigation bar (frosted glass, Apple style) -->
+  <header class="topbar">
+    <nav class="topbar-inner" aria-label="Main">
+      <a class="brand" href="#">Thoracic Evidence Atlas</a>
+      <div class="nav-links">
+        <a href="#nsclc" data-nav="nsclc">NSCLC</a>
+        <a href="#sclc" data-nav="sclc">SCLC</a>
+        <a href="#thymic" data-nav="thymic">Thymic</a>
+        <a href="#mesothelioma" data-nav="mesothelioma">Mesothelioma</a>
+        <a href="#biomarkers" data-nav="biomarkers">Biomarkers</a>
+        <a href="#timeline" data-nav="timeline">Timeline</a>
+        <a href="#flashcards" data-nav="flashcards">Flashcards</a>
+        <a href="#saved" data-nav="saved">Saved</a>
+      </div>
+      <button class="search-btn" id="open-search" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Search overlay (hidden until you click the magnifier or press "/") -->
+  <div class="search-overlay" id="search-overlay" hidden>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+      <input id="search-input" type="search" placeholder="Search a trial, drug or biomarker — e.g. FLAURA, osimertinib, ALK" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+    </div>
+  </div>
+
+  <!-- Every page is drawn inside here by js/app.js -->
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>For learning only — not medical advice. Every number comes from the trial's PubMed abstract and is shown with its exact quote.
+      Values are marked “Awaiting verification” until a clinician has checked them against the full paper.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

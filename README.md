@@ -8,6 +8,11 @@ consultant oncologists, fellows, researchers and tumour boards.
 > values are currently **Awaiting verification** — none has yet been approved by a human reviewer. The database is **not**
 > comprehensive for 2000–2026 (see coverage below).
 
+## Simple version (no coding needed)
+
+[`simple-site/`](simple-site/) is a plain HTML/CSS/JavaScript version focused on thoracic oncology (78 trials).
+Double-click `simple-site/index.html` to open it. No install, server or database is needed. See [simple-site/README.md](simple-site/README.md).
+
 ## What is in this release
 
 | Area | Status |
