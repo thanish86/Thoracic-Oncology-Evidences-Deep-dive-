@@ -1,0 +1,251 @@
+{
+  "slug": "mariposa",
+  "acronym": "MARIPOSA",
+  "officialTitle": "Amivantamab plus Lazertinib in Previously Untreated EGFR-Mutated Advanced NSCLC",
+  "disease": "nsclc",
+  "subtypes": [
+    "EGFR-mutant (exon 19 deletion or L858R)"
+  ],
+  "stages": [
+    "locally-advanced",
+    "metastatic"
+  ],
+  "setting": "First-line advanced",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "bispecific",
+    "tki"
+  ],
+  "biomarkers": [
+    "egfr"
+  ],
+  "drugs": [
+    "amivantamab",
+    "lazertinib",
+    "osimertinib"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Amivantamab-lazertinib open-label; osimertinib and lazertinib arms blinded; PFS by BICR",
+    "sampleSize": 1074,
+    "sampleSizeSourceQuote": "Overall, 1074 patients underwent randomization (429 to amivantamab-lazertinib, 429 to osimertinib, and 216 to lazertinib).",
+    "primaryEndpoints": [
+      "PFS by BICR (amivantamab-lazertinib vs osimertinib)"
+    ],
+    "secondaryEndpoints": [
+      "OS (key secondary)",
+      "ORR",
+      "DoR",
+      "Safety"
+    ],
+    "notes": "2:2:1 randomisation; lazertinib monotherapy arm included to assess contribution of components."
+  },
+  "sponsor": "Janssen Research and Development",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT04487080"
+    }
+  ],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Does first-line amivantamab (EGFR-MET bispecific antibody) plus lazertinib improve outcomes over osimertinib in EGFR-mutant advanced NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Previously untreated locally advanced or metastatic NSCLC with EGFR exon 19 deletion or L858R",
+    "intervention": "Amivantamab plus lazertinib",
+    "comparator": "Osimertinib (lazertinib monotherapy as a contribution-of-components arm)",
+    "outcomes": "Primary: BICR-assessed PFS. Key secondary: OS. Others: ORR, DoR, safety"
+  },
+  "arms": [
+    {
+      "label": "Amivantamab-lazertinib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Amivantamab plus lazertinib",
+      "n": 429
+    },
+    {
+      "label": "Osimertinib",
+      "role": "CONTROL",
+      "regimen": "Osimertinib",
+      "n": 429
+    },
+    {
+      "label": "Lazertinib",
+      "role": "OTHER",
+      "regimen": "Lazertinib monotherapy (contribution of components)",
+      "n": 216
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "38924756",
+      "doi": "10.1056/NEJMoa2403614",
+      "title": "Amivantamab plus Lazertinib in Previously Untreated-Mutated Advanced NSCLC.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "publicationDate": "2024-06-26",
+      "firstAuthor": "Cho BC",
+      "type": "PRIMARY",
+      "label": "Primary PFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "40923797",
+      "doi": "10.1056/NEJMoa2503001",
+      "title": "Overall Survival with Amivantamab-Lazertinib in-Mutated Advanced NSCLC.",
+      "journal": "N Engl J Med",
+      "year": 2025,
+      "publicationDate": "2025-09-07",
+      "firstAuthor": "Yang JC",
+      "type": "FINAL_OS",
+      "label": "Final overall survival analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by blinded independent central review",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Amivantamab-lazertinib",
+      "controlArm": "Osimertinib",
+      "experimentalValue": "median 23.7 months",
+      "controlValue": "median 16.6 months",
+      "effectEstimate": 0.7,
+      "ciLower": 0.58,
+      "ciUpper": 0.85,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "38924756",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median progression-free survival was significantly longer in the amivantamab-lazertinib group than in the osimertinib group (23.7 vs. 16.6 months; hazard ratio for disease progression or death, 0.70; 95% confidence interval [CI], 0.58 to 0.85; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Amivantamab-lazertinib",
+      "controlArm": "Osimertinib",
+      "experimentalValue": "86%",
+      "controlValue": "85%",
+      "source": {
+        "pmid": "38924756",
+        "location": "abstract"
+      },
+      "sourceQuote": "An objective response was observed in 86% of the patients (95% CI, 83 to 89) in the amivantamab-lazertinib group and in 85% of those (95% CI, 81 to 88) in the osimertinib group",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DoR",
+      "analysisLabel": "Primary analysis",
+      "population": "Confirmed responders",
+      "experimentalArm": "Amivantamab-lazertinib",
+      "controlArm": "Osimertinib",
+      "experimentalValue": "median 25.8 months",
+      "controlValue": "median 16.8 months",
+      "source": {
+        "pmid": "38924756",
+        "location": "abstract"
+      },
+      "sourceQuote": "among patients with a confirmed response (336 in the amivantamab-lazertinib group and 314 in the osimertinib group), the median response duration was 25.8 months (95% CI, 20.1 to could not be estimated) and 16.8 months (95% CI, 14.8 to 18.5), respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis (planned interim OS)",
+      "population": "ITT",
+      "experimentalArm": "Amivantamab-lazertinib",
+      "controlArm": "Osimertinib",
+      "effectEstimate": 0.8,
+      "ciLower": 0.61,
+      "ciUpper": 1.05,
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "38924756",
+        "location": "abstract"
+      },
+      "sourceQuote": "In a planned interim overall survival analysis of amivantamab-lazertinib as compared with osimertinib, the hazard ratio for death was 0.80 (95% CI, 0.61 to 1.05).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Amivantamab-lazertinib",
+      "controlArm": "Osimertinib",
+      "experimentalValue": "3-year OS 60%",
+      "controlValue": "3-year OS 51%",
+      "effectEstimate": 0.75,
+      "ciLower": 0.61,
+      "ciUpper": 0.92,
+      "pValue": "0.005",
+      "followUp": "median 37.8 months",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "40923797",
+        "location": "abstract"
+      },
+      "sourceQuote": "Over a median follow-up of 37.8 months, amivantamab-lazertinib led to significantly longer overall survival than osimertinib (hazard ratio for death, 0.75; 95% confidence interval, 0.61 to 0.92; P = 0.005); 3-year overall survival was 60% and 51%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation of all agents due to treatment-related adverse events (primary analysis)",
+      "experimentalValue": "10%",
+      "controlValue": "3%",
+      "source": {
+        "pmid": "38924756",
+        "location": "abstract"
+      },
+      "sourceQuote": "The incidence of discontinuation of all agents due to treatment-related adverse events was 10% with amivantamab-lazertinib and 3% with osimertinib.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Adverse events of grade 3 or higher (final OS analysis)",
+      "experimentalValue": "80%",
+      "controlValue": "52%",
+      "source": {
+        "pmid": "40923797",
+        "location": "abstract"
+      },
+      "sourceQuote": "Adverse events of grade 3 or higher were more common with amivantamab-lazertinib (in 80% of participants) than with osimertinib (in 52%), particularly skin-related events, venous thromboembolism, and infusion-related events",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III with BICR-assessed primary endpoint and blinded osimertinib comparator",
+      "Statistically significant OS benefit at the final analysis"
+    ],
+    "limitations": [
+      "Experimental arm open-label",
+      "Higher grade ≥3 toxicity (skin, venous thromboembolism, infusion-related events) and intravenous administration burden"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports amivantamab plus lazertinib as a first-line chemotherapy-free intensification option for EGFR-mutant advanced NSCLC, with OS benefit over osimertinib at the cost of more toxicity.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Plan for skin and venous thromboembolism toxicity up front when choosing amivantamab-lazertinib.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 38924756 (primary) and PMID 40923797 (final OS). Doses not printed in abstract; omitted."
+  }
+}

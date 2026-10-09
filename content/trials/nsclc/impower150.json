@@ -1,0 +1,197 @@
+{
+  "slug": "impower150",
+  "acronym": "IMpower150",
+  "officialTitle": "Atezolizumab for First-Line Treatment of Metastatic Nonsquamous NSCLC",
+  "disease": "nsclc",
+  "subtypes": [
+    "Non-squamous",
+    "EGFR/ALK wild-type (primary population); EGFR/ALK-altered patients in ITT"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "First-line metastatic",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "antiangiogenic",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "atezolizumab",
+    "bevacizumab",
+    "carboplatin",
+    "paclitaxel"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "primaryEndpoints": [
+      "Investigator-assessed PFS (WT population)",
+      "Investigator-assessed PFS (Teff-high WT population)",
+      "OS (WT population)"
+    ],
+    "secondaryEndpoints": [],
+    "notes": "Three arms: ACP, BCP, ABCP. ABCP vs BCP compared before ACP vs BCP. WT population excluded EGFR/ALK alterations."
+  },
+  "sponsor": "F. Hoffmann-La Roche/Genentech",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02366143"
+    }
+  ],
+  "yearOfPrimaryPublication": 2018,
+  "clinicalQuestion": "Does adding atezolizumab to bevacizumab plus carboplatin-paclitaxel improve PFS and OS in first-line metastatic non-squamous NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Chemotherapy-naive metastatic non-squamous NSCLC (primary analyses in EGFR/ALK wild-type)",
+    "intervention": "Atezolizumab plus bevacizumab plus carboplatin-paclitaxel (ABCP), then atezolizumab-bevacizumab maintenance",
+    "comparator": "Bevacizumab plus carboplatin-paclitaxel (BCP), then bevacizumab maintenance",
+    "outcomes": "Co-primary: investigator-assessed PFS (WT and Teff-high WT) and OS (WT)"
+  },
+  "arms": [
+    {
+      "label": "ABCP",
+      "role": "EXPERIMENTAL",
+      "regimen": "Atezolizumab plus bevacizumab plus carboplatin plus paclitaxel",
+      "n": 356
+    },
+    {
+      "label": "BCP",
+      "role": "CONTROL",
+      "regimen": "Bevacizumab plus carboplatin plus paclitaxel",
+      "n": 336
+    },
+    {
+      "label": "ACP",
+      "role": "OTHER",
+      "regimen": "Atezolizumab plus carboplatin plus paclitaxel"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "29863955",
+      "doi": "10.1056/NEJMoa1716948",
+      "title": "Atezolizumab for First-Line Treatment of Metastatic Nonsquamous NSCLC.",
+      "journal": "N Engl J Med",
+      "year": 2018,
+      "publicationDate": "2018-06-04",
+      "firstAuthor": "Socinski MA",
+      "type": "PRIMARY",
+      "label": "Primary analysis (ABCP vs BCP)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "WT population (EGFR/ALK wild-type)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "ABCP",
+      "controlArm": "BCP",
+      "experimentalValue": "median 8.3 months",
+      "controlValue": "median 6.8 months",
+      "effectEstimate": 0.62,
+      "ciLower": 0.52,
+      "ciUpper": 0.74,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "29863955",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median progression-free survival was longer in the ABCP group than in the BCP group (8.3 months vs. 6.8 months; hazard ratio for disease progression or death, 0.62; 95% confidence interval [CI], 0.52 to 0.74; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "Teff-high WT population",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "ABCP",
+      "controlArm": "BCP",
+      "experimentalValue": "median 11.3 months",
+      "controlValue": "median 6.8 months",
+      "effectEstimate": 0.51,
+      "ciLower": 0.38,
+      "ciUpper": 0.68,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "29863955",
+        "location": "abstract"
+      },
+      "sourceQuote": "the corresponding values in the Teff-high WT population were 11.3 months and 6.8 months (hazard ratio, 0.51 [95% CI, 0.38 to 0.68]; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "WT population (EGFR/ALK wild-type)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "ABCP",
+      "controlArm": "BCP",
+      "experimentalValue": "median 19.2 months",
+      "controlValue": "median 14.7 months",
+      "effectEstimate": 0.78,
+      "ciLower": 0.64,
+      "ciUpper": 0.96,
+      "pValue": "0.02",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "29863955",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median overall survival among the patients in the WT population was longer in the ABCP group than in the BCP group (19.2 months vs. 14.7 months; hazard ratio for death, 0.78; 95% CI, 0.64 to 0.96; P=0.02).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Safety summary",
+      "experimentalValue": "Consistent with individual agents",
+      "source": {
+        "pmid": "29863955",
+        "location": "abstract"
+      },
+      "sourceQuote": "The safety profile of ABCP was consistent with previously reported safety risks of the individual medicines.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III with co-primary PFS and OS endpoints",
+      "Prespecified exploratory subgroups (PD-L1-low/negative, liver metastases, EGFR/ALK-altered)"
+    ],
+    "limitations": [
+      "Open-label",
+      "Investigator-assessed PFS",
+      "EGFR/ALK-altered and liver-metastasis subgroup findings are not powered for definitive conclusions"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established atezolizumab plus bevacizumab plus carboplatin-paclitaxel as a first-line option for metastatic non-squamous NSCLC, with exploratory signals in subgroups such as liver metastases and EGFR/ALK-altered disease.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "ABCP is the regimen often discussed for EGFR/ALK-altered patients after TKI failure — but that evidence is exploratory subgroup data.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 29863955. Total randomised N across three arms not printed in abstract; WT arm sizes (356/336) recorded per arm."
+  }
+}

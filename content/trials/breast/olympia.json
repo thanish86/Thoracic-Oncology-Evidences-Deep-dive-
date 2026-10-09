@@ -1,0 +1,267 @@
+{
+  "slug": "olympia",
+  "acronym": "OlympiA",
+  "officialTitle": "Adjuvant Olaparib for Patients with BRCA1- or BRCA2-Mutated Breast Cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HER2-negative",
+    "Germline BRCA1/2 pathogenic variant",
+    "High risk after (neo)adjuvant chemotherapy"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant (post-neoadjuvant or adjuvant chemotherapy)",
+  "treatmentClasses": [
+    "parp"
+  ],
+  "biomarkers": [
+    "brca",
+    "her2"
+  ],
+  "drugs": [
+    "olaparib"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled",
+    "sampleSize": 1836,
+    "sampleSizeSourceQuote": "A total of 1836 patients underwent randomization.",
+    "primaryEndpoints": [
+      "Invasive disease-free survival"
+    ],
+    "secondaryEndpoints": [
+      "Distant disease-free survival",
+      "OS",
+      "Safety",
+      "Patient-reported quality of life"
+    ],
+    "notes": "1:1 randomisation to 1 year of oral olaparib or placebo after local treatment and neoadjuvant or adjuvant chemotherapy. Endocrine therapy given concurrently for HR+ disease."
+  },
+  "sponsor": "National Cancer Institute / AstraZeneca (Breast International Group, NRG Oncology)",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02032823"
+    }
+  ],
+  "yearOfPrimaryPublication": 2021,
+  "clinicalQuestion": "Does 1 year of adjuvant olaparib improve invasive disease-free survival in high-risk HER2-negative early breast cancer with germline BRCA1/2 pathogenic variants?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-negative early breast cancer with germline BRCA1/2 pathogenic or likely pathogenic variants and high-risk clinicopathological features after local treatment and (neo)adjuvant chemotherapy",
+    "intervention": "Olaparib for 1 year",
+    "comparator": "Placebo",
+    "outcomes": "Primary: IDFS. Secondary: distant DFS, OS, safety, quality of life"
+  },
+  "arms": [
+    {
+      "label": "Olaparib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Oral olaparib for 1 year"
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Matching placebo for 1 year"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "34081848",
+      "doi": "10.1056/NEJMoa2105215",
+      "title": "Adjuvant Olaparib for Patients with BRCA1- or BRCA2-Mutated Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2021,
+      "publicationDate": "2021-06-03",
+      "firstAuthor": "Tutt ANJ",
+      "type": "PRIMARY",
+      "label": "Primary (first interim) analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "36228963",
+      "doi": "10.1016/j.annonc.2022.09.159",
+      "title": "Overall survival in the OlympiA phase III trial of adjuvant olaparib in patients with germline pathogenic variants in BRCA1/2 and high-risk, early breast cancer.",
+      "journal": "Ann Oncol",
+      "year": 2022,
+      "publicationDate": "2022-10-10",
+      "firstAuthor": "Geyer CE",
+      "type": "UPDATE",
+      "label": "Second interim OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "First interim analysis (median follow-up 2.5 years)",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "3-year IDFS 85.9%",
+      "controlValue": "3-year IDFS 77.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLevel": 99.5,
+      "ciLower": 0.41,
+      "ciUpper": 0.82,
+      "pValue": "<0.001",
+      "followUp": "Median 2.5 years",
+      "source": {
+        "pmid": "34081848",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a prespecified event-driven interim analysis with a median follow-up of 2.5 years, the 3-year invasive disease-free survival was 85.9% in the olaparib group and 77.1% in the placebo group (difference, 8.8 percentage points; 95% confidence interval [CI], 4.5 to 13.0; hazard ratio for invasive disease or death, 0.58; 99.5% CI, 0.41 to 0.82; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Distant disease-free survival",
+      "analysisLabel": "First interim analysis (median follow-up 2.5 years)",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "3-year DDFS 87.5%",
+      "controlValue": "3-year DDFS 80.4%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.57,
+      "ciLevel": 99.5,
+      "ciLower": 0.39,
+      "ciUpper": 0.83,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "34081848",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 3-year distant disease-free survival was 87.5% in the olaparib group and 80.4% in the placebo group (difference, 7.1 percentage points; 95% CI, 3.0 to 11.1; hazard ratio for distant disease or death, 0.57; 99.5% CI, 0.39 to 0.83; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "First interim analysis (median follow-up 2.5 years)",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "59 deaths",
+      "controlValue": "86 deaths",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLevel": 99,
+      "ciLower": 0.44,
+      "ciUpper": 1.05,
+      "pValue": "0.02",
+      "source": {
+        "pmid": "34081848",
+        "location": "abstract"
+      },
+      "sourceQuote": "Olaparib was associated with fewer deaths than placebo (59 and 86, respectively) (hazard ratio, 0.68; 99% CI, 0.44 to 1.05; P = 0.02); however, the between-group difference was not significant at an interim-analysis boundary of a P value of less than 0.01.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Second interim OS analysis (median follow-up 3.5 years)",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "Four-year OS 89.8%",
+      "controlValue": "Four-year OS 86.4%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLevel": 98.5,
+      "ciLower": 0.47,
+      "ciUpper": 0.97,
+      "pValue": "0.009",
+      "followUp": "Median 3.5 years",
+      "source": {
+        "pmid": "36228963",
+        "location": "abstract"
+      },
+      "sourceQuote": "With a median follow-up of 3.5 years, the second IA of OS demonstrated significant improvement in the olaparib group relative to the placebo group [hazard ratio 0.68; 98.5% confidence interval (CI) 0.47-0.97; P = 0.009]. Four-year OS was 89.8% in the olaparib group and 86.4% in the placebo group (Δ 3.4%, 95% CI -0.1% to 6.8%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Second interim OS analysis (median follow-up 3.5 years)",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "4-year IDFS 82.7%",
+      "controlValue": "4-year IDFS 75.4%",
+      "source": {
+        "pmid": "36228963",
+        "location": "abstract"
+      },
+      "sourceQuote": "Four-year IDFS for the olaparib group versus placebo group was 82.7% versus 75.4% (Δ 7.3%, 95% CI 3.0% to 11.5%) and 4-year DDFS was 86.5% versus 79.1% (Δ 7.4%, 95% CI 3.6% to 11.3%), respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Distant disease-free survival",
+      "analysisLabel": "Second interim OS analysis (median follow-up 3.5 years)",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Placebo",
+      "experimentalValue": "4-year DDFS 86.5%",
+      "controlValue": "4-year DDFS 79.1%",
+      "source": {
+        "pmid": "36228963",
+        "location": "abstract"
+      },
+      "sourceQuote": "Four-year IDFS for the olaparib group versus placebo group was 82.7% versus 75.4% (Δ 7.3%, 95% CI 3.0% to 11.5%) and 4-year DDFS was 86.5% versus 79.1% (Δ 7.4%, 95% CI 3.6% to 11.3%), respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Overall safety (qualitative)",
+      "source": {
+        "pmid": "34081848",
+        "location": "abstract"
+      },
+      "sourceQuote": "Safety data were consistent with known side effects of olaparib, with no excess serious adverse events or adverse events of special interest.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "AML/MDS at second interim analysis (qualitative)",
+      "source": {
+        "pmid": "36228963",
+        "location": "abstract"
+      },
+      "sourceQuote": "No new safety signals were identified including no new cases of acute myeloid leukemia or myelodysplastic syndrome.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind placebo-controlled phase 3 design",
+      "Biomarker-defined population (germline BRCA1/2)",
+      "OS benefit demonstrated at second interim analysis"
+    ],
+    "limitations": [
+      "Interim analyses; maturity of long-term outcomes still accruing",
+      "Restricted to HER2-negative, high-risk patients"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Establishes 1 year of adjuvant olaparib for high-risk HER2-negative early breast cancer with germline BRCA1/2 pathogenic variants, making germline testing relevant to adjuvant treatment planning.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Germline BRCA testing in high-risk HER2-negative early breast cancer changes adjuvant therapy — order it early enough to inform post-chemotherapy decisions.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 34081848 and 36228963. The PubMed title/abstract text for PMID 34081848 has italicised gene names stripped; the title was restored to the published wording and quotes avoid the affected passages."
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "caspian",
+  "acronym": "CASPIAN",
+  "officialTitle": "Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer (CASPIAN): a randomised, controlled, open-label, phase 3 trial",
+  "disease": "sclc",
+  "subtypes": [],
+  "stages": ["extensive-stage"],
+  "setting": "First-line extensive-stage SCLC",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": ["immunotherapy", "chemotherapy"],
+  "biomarkers": [],
+  "drugs": ["durvalumab", "tremelimumab", "etoposide", "carboplatin", "cisplatin"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label (sponsor-blind)",
+    "sampleSize": 805,
+    "sampleSizeSourceQuote": "Between March 27, 2017, and May 29, 2018, 972 patients were screened and 805 were randomly assigned (268 to durvalumab plus tremelimumab plus platinum-etoposide, 268 to durvalumab plus platinum-etoposide, and 269 to platinum-etoposide).",
+    "primaryEndpoints": ["OS (durvalumab + EP vs EP)", "OS (durvalumab + tremelimumab + EP vs EP)"],
+    "secondaryEndpoints": ["Safety"],
+    "notes": "Three-arm 1:1:1 randomisation. Control arm allowed up to six cycles of platinum-etoposide and optional PCI; immunotherapy arms received up to four cycles of platinum-etoposide with durvalumab, then maintenance durvalumab."
+  },
+  "sponsor": "AstraZeneca",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT03043872" }],
+  "yearOfPrimaryPublication": 2019,
+  "clinicalQuestion": "Does adding durvalumab (with or without tremelimumab) to platinum-etoposide improve overall survival in untreated extensive-stage SCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Adults with untreated extensive-stage SCLC, WHO PS 0-1",
+    "intervention": "Durvalumab plus platinum-etoposide (cisplatin or carboplatin), then maintenance durvalumab; a third arm added tremelimumab",
+    "comparator": "Platinum-etoposide alone (up to six cycles, optional PCI)",
+    "outcomes": "Primary: OS (ITT). Safety"
+  },
+  "arms": [
+    {
+      "label": "Durvalumab + EP",
+      "role": "EXPERIMENTAL",
+      "regimen": "Durvalumab + etoposide + cisplatin or carboplatin, then maintenance durvalumab",
+      "dosing": "Etoposide 80-100 mg/m2 days 1-3 with carboplatin AUC 5-6 or cisplatin 75-80 mg/m2 day 1; durvalumab 1500 mg every 3 weeks for up to four cycles, then durvalumab 1500 mg every 4 weeks",
+      "doseSourceQuote": "Platinum-etoposide consisted of etoposide 80-100 mg/mon days 1-3 of each cycle with investigator's choice of either carboplatin area under the curve 5-6 mg/mL per min or cisplatin 75-80 mg/m(administered on day 1 of each cycle). Patients received up to four cycles of platinum-etoposide plus durvalumab 1500 mg with or without tremelimumab 75 mg every 3 weeks followed by maintenance durvalumab 1500 mg every 4 weeks in the immunotherapy groups",
+      "n": 268
+    },
+    {
+      "label": "Durvalumab + tremelimumab + EP",
+      "role": "EXPERIMENTAL",
+      "regimen": "Durvalumab + tremelimumab + platinum-etoposide, then maintenance durvalumab",
+      "dosing": "As durvalumab + EP with tremelimumab 75 mg every 3 weeks during induction",
+      "doseSourceQuote": "Patients received up to four cycles of platinum-etoposide plus durvalumab 1500 mg with or without tremelimumab 75 mg every 3 weeks followed by maintenance durvalumab 1500 mg every 4 weeks in the immunotherapy groups",
+      "n": 268
+    },
+    {
+      "label": "EP alone",
+      "role": "CONTROL",
+      "regimen": "Platinum-etoposide (up to six cycles) with optional PCI",
+      "n": 269
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "31590988",
+      "doi": "10.1016/S0140-6736(19)32222-6",
+      "title": "Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer (CASPIAN): a randomised, controlled, open-label, phase 3 trial.",
+      "journal": "Lancet",
+      "year": 2019,
+      "publicationDate": "2019-10-04",
+      "firstAuthor": "Paz-Ares L",
+      "type": "PRIMARY",
+      "label": "Planned interim analysis (durvalumab + EP vs EP)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "33285097",
+      "doi": "10.1016/S1470-2045(20)30539-8",
+      "title": "Durvalumab, with or without tremelimumab, plus platinum-etoposide versus platinum-etoposide alone in first-line treatment of extensive-stage small-cell lung cancer (CASPIAN): updated results from a randomised, controlled, open-label, phase 3 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2020,
+      "publicationDate": "2020-12-04",
+      "firstAuthor": "Goldman JW",
+      "type": "UPDATE",
+      "label": "Updated analysis including durvalumab + tremelimumab arm",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "35279527",
+      "doi": "10.1016/j.esmoop.2022.100408",
+      "title": "Durvalumab, with or without tremelimumab, plus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer: 3-year overall survival update from CASPIAN.",
+      "journal": "ESMO Open",
+      "year": 2022,
+      "publicationDate": "2022-03-10",
+      "firstAuthor": "Paz-Ares L",
+      "type": "UPDATE",
+      "label": "3-year OS update",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Planned interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Durvalumab + EP",
+      "controlArm": "EP",
+      "experimentalValue": "median 13.0 months; 18-month OS 34%",
+      "controlValue": "median 10.3 months; 18-month OS 25%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.73,
+      "ciLower": 0.59,
+      "ciUpper": 0.91,
+      "pValue": "0.0047",
+      "source": { "pmid": "31590988", "location": "abstract" },
+      "sourceQuote": "Durvalumab plus platinum-etoposide was associated with a significant improvement in overall survival, with a hazard ratio of 0·73 (95% CI 0·59-0·91; p=0·0047]); median overall survival was 13·0 months (95% CI 11·5-14·8) in the durvalumab plus platinum-etoposide group versus 10·3 months (9·3-11·2) in the platinum-etoposide group, with 34% (26·9-41·0) versus 25% (18·4-31·6) of patients alive at 18 months.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Updated analysis (durvalumab + EP vs EP)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab + EP",
+      "controlArm": "EP",
+      "experimentalValue": "median 12.9 months",
+      "controlValue": "median 10.5 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.75,
+      "ciLower": 0.62,
+      "ciUpper": 0.91,
+      "pValue": "0.0032 (nominal)",
+      "followUp": "Median 25.1 months",
+      "dataCutoff": "2020-01-27",
+      "source": { "pmid": "33285097", "location": "abstract" },
+      "sourceQuote": "Durvalumab plus platinum-etoposide showed sustained improvement in overall survival versus platinum-etoposide (HR 0·75 [95% CI 0·62-0·91]; nominal p=0·0032); median overall survival was 12·9 months (95% CI 11·3-14·7) versus 10·5 months (9·3-11·2).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis (durvalumab + tremelimumab + EP vs EP)",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Durvalumab + tremelimumab + EP",
+      "controlArm": "EP",
+      "experimentalValue": "median 10.4 months",
+      "controlValue": "median 10.5 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.82,
+      "ciLower": 0.68,
+      "ciUpper": 1.0,
+      "pValue": "0.045 (not significant)",
+      "source": { "pmid": "33285097", "location": "abstract" },
+      "sourceQuote": "Durvalumab plus tremelimumab plus platinum-etoposide was not associated with a significant improvement in overall survival versus platinum-etoposide (hazard ratio [HR] 0·82 [95% CI 0·68-1·00]; p=0·045); median overall survival was 10·4 months (95% CI 9·6-12·0) versus 10·5 months (9·3-11·2).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "3-year OS update (durvalumab + EP vs EP)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab + EP",
+      "controlArm": "EP",
+      "experimentalValue": "median 12.9 months; 36-month OS 17.6%",
+      "controlValue": "median 10.5 months; 36-month OS 5.8%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.71,
+      "ciLower": 0.6,
+      "ciUpper": 0.86,
+      "pValue": "0.0003 (nominal)",
+      "followUp": "Median 39.4 months",
+      "dataCutoff": "2021-03-22",
+      "source": { "pmid": "35279527", "location": "abstract" },
+      "sourceQuote": "As of 22 March 2021 (median follow-up 39.4 months, 86% maturity), durvalumab plus EP continued to demonstrate improved OS versus EP: hazard ratio (HR) 0.71 [95% confidence interval (CI) 0.60-0.86; nominal P = 0.0003]; median OS was 12.9 versus 10.5 months, and 36-month OS rate was 17.6% versus 5.8%.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Any-cause grade 3 or 4 adverse events (durvalumab + EP vs EP)",
+      "experimentalValue": "163 of 265 (62%)",
+      "controlValue": "166 of 266 (62%)",
+      "source": { "pmid": "31590988", "location": "abstract" },
+      "sourceQuote": "Any-cause adverse events of grade 3 or 4 occurred in 163 (62%) of 265 treated patients in the durvalumab plus platinum-etoposide group and 166 (62%) of 266 in the platinum-etoposide group; adverse events leading to death occurred in 13 (5%) and 15 (6%) patients.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Adverse events leading to death (durvalumab + EP vs EP)",
+      "experimentalValue": "13 (5%)",
+      "controlValue": "15 (6%)",
+      "source": { "pmid": "31590988", "location": "abstract" },
+      "sourceQuote": "adverse events leading to death occurred in 13 (5%) and 15 (6%) patients.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III trial allowing either cisplatin or carboplatin",
+      "Long-term OS updates show sustained benefit for durvalumab plus EP"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Control arm permitted up to six chemotherapy cycles and PCI, whereas PCI was not given in the immunotherapy arms",
+      "Adding tremelimumab did not significantly improve OS"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established durvalumab plus platinum-etoposide followed by durvalumab maintenance as a first-line standard for extensive-stage SCLC, with flexibility to use cisplatin or carboplatin; dual checkpoint blockade added no significant benefit.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "CASPIAN permitted cisplatin as the platinum partner, which can be relevant when carboplatin is not preferred; tremelimumab should not be added.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 31590988, 33285097 and 35279527."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "slug": "big-1-98",
+  "acronym": "BIG 1-98",
+  "officialTitle": "Breast International Group 1-98: letrozole versus tamoxifen, alone or in sequence, as adjuvant therapy for postmenopausal women with hormone-receptor-positive early breast cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HR+",
+    "Postmenopausal"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant endocrine therapy (postmenopausal)",
+  "treatmentClasses": [
+    "endocrine"
+  ],
+  "biomarkers": [
+    "er",
+    "pr"
+  ],
+  "drugs": [
+    "letrozole",
+    "tamoxifen"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind",
+    "sampleSize": 8010,
+    "sampleSizeSourceQuote": "A total of 8010 women with data that could be assessed were enrolled, 4003 in the letrozole group and 4007 in the tamoxifen group.",
+    "primaryEndpoints": [
+      "DFS"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Distant recurrence",
+      "Safety"
+    ],
+    "notes": "Four-arm design: letrozole, tamoxifen, letrozole→tamoxifen, tamoxifen→letrozole (5 years total). Primary core analysis compared initial letrozole with initial tamoxifen; the 2009 report compared sequences with letrozole monotherapy (6182 women) and updated the monotherapy comparison (4922 women)."
+  },
+  "sponsor": "Breast International Group / IBCSG",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00004205"
+    }
+  ],
+  "yearOfPrimaryPublication": 2005,
+  "clinicalQuestion": "In postmenopausal women with HR+ early breast cancer, is adjuvant letrozole superior to tamoxifen, and does sequencing the two improve on letrozole alone?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Postmenopausal women with hormone-receptor-positive early breast cancer",
+    "intervention": "Letrozole (monotherapy or in sequence with tamoxifen) for 5 years",
+    "comparator": "Tamoxifen for 5 years; letrozole monotherapy (for sequence comparisons)",
+    "outcomes": "Primary: DFS. Secondary: OS, distant recurrence, adverse events"
+  },
+  "arms": [
+    {
+      "label": "Letrozole",
+      "role": "EXPERIMENTAL",
+      "regimen": "Letrozole for 5 years",
+      "n": 4003
+    },
+    {
+      "label": "Tamoxifen",
+      "role": "CONTROL",
+      "regimen": "Tamoxifen for 5 years",
+      "n": 4007
+    },
+    {
+      "label": "Sequential arms",
+      "role": "OTHER",
+      "regimen": "Letrozole followed by tamoxifen, or tamoxifen followed by letrozole (2 years + 3 years)"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "16382061",
+      "doi": "10.1056/NEJMoa052258",
+      "title": "A comparison of letrozole and tamoxifen in postmenopausal women with early breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2005,
+      "publicationDate": "2005-12-29",
+      "type": "PRIMARY",
+      "label": "Primary core analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "19692688",
+      "doi": "10.1056/NEJMoa0810818",
+      "title": "Letrozole therapy alone or in sequence with tamoxifen in women with breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2009,
+      "publicationDate": "2009-08-20",
+      "type": "UPDATE",
+      "label": "Sequential-treatment analysis and updated monotherapy comparison",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Primary core analysis (median follow-up 25.8 months)",
+      "population": "Initial letrozole vs initial tamoxifen",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Letrozole",
+      "controlArm": "Tamoxifen",
+      "experimentalValue": "Five-year DFS 84.0 percent",
+      "controlValue": "Five-year DFS 81.4 percent",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.81,
+      "ciLower": 0.7,
+      "ciUpper": 0.93,
+      "pValue": "0.003",
+      "followUp": "Median 25.8 months",
+      "source": {
+        "pmid": "16382061",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 25.8 months, 351 events had occurred in the letrozole group and 428 events in the tamoxifen group, with five-year disease-free survival estimates of 84.0 percent and 81.4 percent, respectively. As compared with tamoxifen, letrozole significantly reduced the risk of an event ending a period of disease-free survival (hazard ratio, 0.81; 95 percent confidence interval, 0.70 to 0.93; P=0.003), especially the risk of distant recurrence (hazard ratio, 0.73; 95 percent confidence interval, 0.60 to 0.88; P=0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Distant recurrence",
+      "analysisLabel": "Primary core analysis (median follow-up 25.8 months)",
+      "population": "Initial letrozole vs initial tamoxifen",
+      "experimentalArm": "Letrozole",
+      "controlArm": "Tamoxifen",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.73,
+      "ciLower": 0.6,
+      "ciUpper": 0.88,
+      "pValue": "0.001",
+      "source": {
+        "pmid": "16382061",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 25.8 months, 351 events had occurred in the letrozole group and 428 events in the tamoxifen group, with five-year disease-free survival estimates of 84.0 percent and 81.4 percent, respectively. As compared with tamoxifen, letrozole significantly reduced the risk of an event ending a period of disease-free survival (hazard ratio, 0.81; 95 percent confidence interval, 0.70 to 0.93; P=0.003), especially the risk of distant recurrence (hazard ratio, 0.73; 95 percent confidence interval, 0.60 to 0.88; P=0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Sequential-treatment analysis (median follow-up 71 months)",
+      "population": "Tamoxifen→letrozole vs letrozole alone",
+      "experimentalArm": "Tamoxifen followed by letrozole",
+      "controlArm": "Letrozole alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.05,
+      "ciLevel": 99,
+      "ciLower": 0.84,
+      "ciUpper": 1.32,
+      "followUp": "Median 71 months",
+      "source": {
+        "pmid": "19692688",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a median follow-up of 71 months after randomization, disease-free survival was not significantly improved with either sequential treatment as compared with letrozole alone (hazard ratio for tamoxifen followed by letrozole, 1.05; 99% confidence interval [CI], 0.84 to 1.32; hazard ratio for letrozole followed by tamoxifen, 0.96; 99% CI, 0.76 to 1.21).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Sequential-treatment analysis (median follow-up 71 months)",
+      "population": "Letrozole→tamoxifen vs letrozole alone",
+      "experimentalArm": "Letrozole followed by tamoxifen",
+      "controlArm": "Letrozole alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.96,
+      "ciLevel": 99,
+      "ciLower": 0.76,
+      "ciUpper": 1.21,
+      "followUp": "Median 71 months",
+      "source": {
+        "pmid": "19692688",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a median follow-up of 71 months after randomization, disease-free survival was not significantly improved with either sequential treatment as compared with letrozole alone (hazard ratio for tamoxifen followed by letrozole, 1.05; 99% confidence interval [CI], 0.84 to 1.32; hazard ratio for letrozole followed by tamoxifen, 0.96; 99% CI, 0.76 to 1.21).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Updated monotherapy analysis",
+      "population": "Letrozole vs tamoxifen monotherapy arms",
+      "experimentalArm": "Letrozole",
+      "controlArm": "Tamoxifen",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.87,
+      "ciLower": 0.75,
+      "ciUpper": 1.02,
+      "pValue": "0.08",
+      "source": {
+        "pmid": "19692688",
+        "location": "abstract"
+      },
+      "sourceQuote": "The updated analysis of monotherapy showed that there was a nonsignificant difference in overall survival between women assigned to treatment with letrozole and those assigned to treatment with tamoxifen (hazard ratio for letrozole, 0.87; 95% CI, 0.75 to 1.02; P=0.08).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Differential adverse-event profile (qualitative)",
+      "source": {
+        "pmid": "16382061",
+        "location": "abstract"
+      },
+      "sourceQuote": "Thromboembolism, endometrial cancer, and vaginal bleeding were more common in the tamoxifen group. Women given letrozole had a higher incidence of skeletal and cardiac events and of hypercholesterolemia.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large double-blind randomised trial",
+      "Directly addresses both agent choice and sequencing"
+    ],
+    "limitations": [
+      "Early primary analysis with short median follow-up",
+      "Selective crossover from tamoxifen to letrozole after initial results complicates long-term monotherapy comparisons",
+      "Overall survival difference not statistically significant in the 2009 update"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established letrozole as a preferred adjuvant endocrine option over tamoxifen in postmenopausal HR+ early breast cancer, and showed no disease-free survival advantage for routine switching strategies over letrozole monotherapy.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Sequencing tamoxifen then letrozole was not superior to letrozole alone, and early relapses were more frequent when tamoxifen came first — favour upfront AI in higher-risk postmenopausal patients.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 16382061 and 19692688. PubMed lists a corporate first author for both, so firstAuthor is omitted. Arm sizes are those of the primary core analysis."
+  }
+}

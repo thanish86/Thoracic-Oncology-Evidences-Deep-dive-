@@ -1,0 +1,57 @@
+import { ALGORITHM_AS_OF, JURISDICTION_LABEL, type TreatmentAlgorithm } from "./types";
+
+export const sclcExtensive: TreatmentAlgorithm = {
+  slug: "sclc-extensive-stage",
+  title: "Extensive-stage SCLC — first line to relapse",
+  summary:
+    "Platinum–etoposide with a PD-L1 inhibitor and immunotherapy maintenance; selective thoracic RT and brain surveillance strategy; relapse options by chemotherapy-free interval including platinum re-challenge, lurbinectedin and tarlatamab.",
+  disease: "sclc",
+  stage: "Extensive stage",
+  intent: "palliative",
+  jurisdiction: JURISDICTION_LABEL,
+  asOf: ALGORITHM_AS_OF,
+  status: "AWAITING_VERIFICATION",
+  nodes: [
+    { id: "start", kind: "note", label: "Extensive-stage SCLC", detail: "Staging with CT ± PET-CT and brain MRI." },
+    {
+      id: "chemo-io",
+      kind: "treatment",
+      label: "Platinum–etoposide + atezolizumab or durvalumab",
+      detail: "Induction chemo-immunotherapy followed by immunotherapy maintenance. A pembrolizumab-based trial had a mixed outcome.",
+      trialSlugs: ["impower133", "caspian", "keynote-604"],
+    },
+    { id: "maint", kind: "treatment", label: "PD-L1 inhibitor maintenance", detail: "Maintenance immunotherapy after chemotherapy alone (without induction IO) was not beneficial.", trialSlugs: ["checkmate-451"] },
+    {
+      id: "trt",
+      kind: "note",
+      label: "Consider consolidative thoracic RT in selected responders",
+      detail: "Studied in the pre-immunotherapy era among patients responding to chemotherapy with residual thoracic disease.",
+      trialSlugs: ["crest"],
+    },
+    {
+      id: "brain",
+      kind: "decision",
+      label: "Brain strategy: PCI vs MRI surveillance",
+      detail: "Prophylactic cranial irradiation versus regular brain MRI surveillance; trials differed in whether baseline MRI was required.",
+      trialSlugs: ["eortc-pci-es-sclc", "japanese-pci-es-sclc"],
+    },
+    { id: "relapse", kind: "decision", label: "Relapse → chemotherapy-free interval", detail: "Time from last platinum dose to relapse, performance status and prior toxicity guide options." },
+    { id: "rechallenge", kind: "treatment", label: "Longer interval → platinum re-challenge", detail: "Platinum-sensitive relapse; no curated trial supports a specific regimen here." },
+    { id: "tarla", kind: "treatment", label: "Tarlatamab (DLL3 × CD3 bispecific T-cell engager)", trialSlugs: ["dellphi-304", "dellphi-301"] },
+    { id: "lurbi", kind: "treatment", label: "Lurbinectedin", trialSlugs: ["lurbinectedin-basket"] },
+    { id: "later", kind: "note", label: "Further lines: other chemotherapy or clinical trials", detail: "Single-agent checkpoint inhibition in relapsed SCLC is historical (pre-first-line IO).", trialSlugs: ["checkmate-032"] },
+  ],
+  edges: [
+    { source: "start", target: "chemo-io" },
+    { source: "chemo-io", target: "maint" },
+    { source: "maint", target: "trt" },
+    { source: "maint", target: "brain" },
+    { source: "maint", target: "relapse", label: "Progression" },
+    { source: "relapse", target: "rechallenge", label: "Longer interval" },
+    { source: "relapse", target: "tarla", label: "Second line" },
+    { source: "relapse", target: "lurbi", label: "Second line" },
+    { source: "tarla", target: "later" },
+    { source: "lurbi", target: "later" },
+    { source: "rechallenge", target: "later" },
+  ],
+};

@@ -1,0 +1,337 @@
+{
+  "slug": "pacific",
+  "acronym": "PACIFIC",
+  "officialTitle": "Durvalumab after Chemoradiotherapy in Stage III Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "locally-advanced",
+    "unresectable"
+  ],
+  "setting": "Consolidation after definitive chemoradiotherapy",
+  "treatmentClasses": [
+    "immunotherapy",
+    "radiotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "durvalumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Placebo-controlled; PFS by blinded independent central review",
+    "sampleSize": 713,
+    "sampleSizeSourceQuote": "Of 713 patients who underwent randomization, 709 received consolidation therapy (473 received durvalumab and 236 received placebo).",
+    "primaryEndpoints": [
+      "PFS (BICR)",
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "12- and 18-month PFS",
+      "ORR",
+      "DoR",
+      "Time to death or distant metastasis",
+      "Safety"
+    ],
+    "notes": "2:1 randomisation 1 to 42 days after platinum-based concurrent chemoradiotherapy without progression."
+  },
+  "sponsor": "AstraZeneca",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02125461"
+    }
+  ],
+  "yearOfPrimaryPublication": 2017,
+  "clinicalQuestion": "Does consolidation durvalumab after platinum-based concurrent chemoradiotherapy improve PFS and OS in unresectable stage III NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Unresectable stage III NSCLC without progression after two or more cycles of platinum-based concurrent chemoradiotherapy",
+    "intervention": "Durvalumab 10 mg/kg IV every 2 weeks for up to 12 months",
+    "comparator": "Placebo",
+    "outcomes": "Co-primary: PFS (BICR) and OS. Secondary: ORR, time to death or distant metastasis, safety"
+  },
+  "arms": [
+    {
+      "label": "Durvalumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Durvalumab consolidation",
+      "dosing": "10 mg/kg IV every 2 weeks for up to 12 months",
+      "doseSourceQuote": "durvalumab (at a dose of 10 mg per kilogram of body weight intravenously) or placebo every 2 weeks for up to 12 months"
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Placebo"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "28885881",
+      "doi": "10.1056/NEJMoa1709937",
+      "title": "Durvalumab after Chemoradiotherapy in Stage III Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2017,
+      "publicationDate": "2017-09-08",
+      "firstAuthor": "Antonia SJ",
+      "type": "PRIMARY",
+      "label": "Primary PFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "30280658",
+      "doi": "10.1056/NEJMoa1809697",
+      "title": "Overall Survival with Durvalumab after Chemoradiotherapy in Stage III NSCLC.",
+      "journal": "N Engl J Med",
+      "year": 2018,
+      "publicationDate": "2018-09-25",
+      "firstAuthor": "Antonia SJ",
+      "type": "UPDATE",
+      "label": "Overall survival analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "35108059",
+      "doi": "10.1200/JCO.21.01308",
+      "title": "Five-Year Survival Outcomes From the PACIFIC Trial: Durvalumab After Chemoradiotherapy in Stage III Non-Small-Cell Lung Cancer.",
+      "journal": "J Clin Oncol",
+      "year": 2022,
+      "publicationDate": "2022-02-02",
+      "firstAuthor": "Spigel DR",
+      "type": "UPDATE",
+      "label": "5-year survival update",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by blinded independent central review",
+      "analysisLabel": "Primary PFS analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median 16.8 months",
+      "controlValue": "median 5.6 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.52,
+      "ciLower": 0.42,
+      "ciUpper": 0.65,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median progression-free survival from randomization was 16.8 months (95% confidence interval [CI], 13.0 to 18.1) with durvalumab versus 5.6 months (95% CI, 4.6 to 7.8) with placebo (stratified hazard ratio for disease progression or death, 0.52; 95% CI, 0.42 to 0.65; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary PFS analysis",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "28.4%",
+      "controlValue": "16.0%",
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "The response rate was higher with durvalumab than with placebo (28.4% vs. 16.0%; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Time to death or distant metastasis",
+      "analysisLabel": "Primary PFS analysis",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median 23.2 months",
+      "controlValue": "median 14.6 months",
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median time to death or distant metastasis was longer with durvalumab than with placebo (23.2 months vs. 14.6 months; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Overall survival analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLevel": 99.73,
+      "ciLower": 0.47,
+      "ciUpper": 0.997,
+      "pValue": "0.0025",
+      "followUp": "Median 25.2 months",
+      "dataCutoff": "2018-03-22",
+      "source": {
+        "pmid": "30280658",
+        "location": "abstract"
+      },
+      "sourceQuote": "Durvalumab significantly prolonged overall survival, as compared with placebo (stratified hazard ratio for death, 0.68; 99.73% CI, 0.47 to 0.997; P=0.0025).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "24-month OS rate",
+      "analysisLabel": "Overall survival analysis (24-month landmark)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "66.3%",
+      "controlValue": "55.6%",
+      "pValue": "0.005",
+      "source": {
+        "pmid": "30280658",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 24-month overall survival rate was 66.3% (95% confidence interval [CI], 61.7 to 70.4) in the durvalumab group, as compared with 55.6% (95% CI, 48.9 to 61.8) in the placebo group (two-sided P=0.005).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "5-year update (exploratory)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.72,
+      "ciLower": 0.59,
+      "ciUpper": 0.89,
+      "dataCutoff": "2021-01-11",
+      "source": {
+        "pmid": "35108059",
+        "location": "abstract"
+      },
+      "sourceQuote": "updated OS (stratified HR, 0.72; 95% CI, 0.59 to 0.89;",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "5-year OS rate",
+      "analysisLabel": "5-year update (exploratory, 5-year landmark)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "42.9%",
+      "controlValue": "33.4%",
+      "source": {
+        "pmid": "35108059",
+        "location": "abstract"
+      },
+      "sourceQuote": "Estimated 5-year rates (95% CI) for durvalumab and placebo were 42.9% (38.2 to 47.4) versus 33.4% (27.3 to 39.6) for OS",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "5-year update (exploratory)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.55,
+      "ciLower": 0.45,
+      "ciUpper": 0.68,
+      "source": {
+        "pmid": "35108059",
+        "location": "abstract"
+      },
+      "sourceQuote": "PFS (stratified HR, 0.55; 95% CI, 0.45 to 0.68;",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "5-year PFS rate",
+      "analysisLabel": "5-year update (exploratory, 5-year landmark)",
+      "population": "ITT",
+      "experimentalArm": "Durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "33.1%",
+      "controlValue": "19.0%",
+      "source": {
+        "pmid": "35108059",
+        "location": "abstract"
+      },
+      "sourceQuote": "33.1% (28.0 to 38.2) versus 19.0% (13.6 to 25.2) for PFS",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 adverse events (primary analysis)",
+      "experimentalValue": "29.9%",
+      "controlValue": "26.1%",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 3 or 4 adverse events occurred in 29.9% of the patients who received durvalumab and 26.1% of those who received placebo",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Grade 3 or 4 pneumonia (most common grade 3–4 event)",
+      "experimentalValue": "4.4%",
+      "controlValue": "3.8%",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "the most common adverse event of grade 3 or 4 was pneumonia (4.4% and 3.8%, respectively)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation of study drug due to adverse events",
+      "experimentalValue": "15.4%",
+      "controlValue": "9.8%",
+      "source": {
+        "pmid": "28885881",
+        "location": "abstract"
+      },
+      "sourceQuote": "A total of 15.4% of patients in the durvalumab group and 9.8% of those in the placebo group discontinued the study drug because of adverse events.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Placebo-controlled randomised phase III with PFS and OS as co-primary endpoints",
+      "Durable benefit at 5-year follow-up"
+    ],
+    "limitations": [
+      "Randomisation after chemoradiotherapy excludes patients who progressed or could not complete concurrent treatment",
+      "Enrolled regardless of PD-L1 status, with subgroup questions unresolved by the abstract",
+      "5-year analyses are exploratory"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established consolidation durvalumab after concurrent platinum-based chemoradiotherapy as the standard for unresectable stage III NSCLC without progression, with sustained survival benefit at five years.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "PACIFIC eligibility starts after chemoradiotherapy — patients must be progression-free and recovered enough to begin durvalumab within the protocol window; EGFR-mutant disease is now addressed separately by LAURA.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstracts of PMIDs 28885881 (primary PFS), 30280658 (OS) and 35108059 (5-year update). Updated medians in the 5-year abstract are garbled in PubMed text and were not transcribed."
+  }
+}

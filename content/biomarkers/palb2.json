@@ -1,0 +1,36 @@
+{
+  "slug": "palb2",
+  "name": "PALB2",
+  "gene": "PALB2",
+  "diseases": [
+    "breast"
+  ],
+  "category": "dna-repair",
+  "summary": "Germline PALB2 pathogenic variants are a high-penetrance breast cancer susceptibility factor and confer homologous recombination deficiency with emerging evidence of PARP inhibitor sensitivity.",
+  "biology": "PALB2 (partner and localiser of BRCA2) bridges BRCA1 and BRCA2 at sites of DNA damage, enabling BRCA2-mediated RAD51 loading and homologous recombination. Biallelic loss in tumours produces a BRCA-like phenotype.",
+  "alterations": [
+    "Germline pathogenic or likely pathogenic PALB2 variants",
+    "Somatic PALB2 mutations (rarer)"
+  ],
+  "testing": {
+    "methods": [
+      "Germline multigene panel testing",
+      "Tumour NGS"
+    ],
+    "specimen": "Peripheral blood or saliva for germline testing; tumour tissue for somatic testing",
+    "notes": "Genetic counselling and cascade testing are recommended."
+  },
+  "predictiveRelevance": "Phase II data have shown activity of olaparib in metastatic breast cancer with germline PALB2 pathogenic variants; it is not a uniformly labelled indication and use depends on jurisdiction and guideline endorsement.",
+  "resistance": [
+    "Reversion mutations restoring PALB2 function (analogous to BRCA reversions)"
+  ],
+  "drugs": [
+    "olaparib"
+  ],
+  "pathway": "dna-damage-repair",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

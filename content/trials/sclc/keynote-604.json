@@ -1,0 +1,193 @@
+{
+  "slug": "keynote-604",
+  "acronym": "KEYNOTE-604",
+  "officialTitle": "Pembrolizumab or Placebo Plus Etoposide and Platinum as First-Line Therapy for Extensive-Stage Small-Cell Lung Cancer: Randomized, Double-Blind, Phase III KEYNOTE-604 Study",
+  "disease": "sclc",
+  "subtypes": [],
+  "stages": [
+    "extensive-stage"
+  ],
+  "setting": "First-line extensive-stage SCLC",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "pembrolizumab",
+    "etoposide",
+    "cisplatin",
+    "carboplatin"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled; PFS by blinded central review",
+    "sampleSize": 453,
+    "sampleSizeSourceQuote": "Of the 453 participants, 228 were randomly assigned to pembrolizumab plus EP and 225 to placebo plus EP.",
+    "primaryEndpoints": [
+      "PFS (BICR)",
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "ORR",
+      "DoR"
+    ],
+    "notes": "Prespecified one-sided efficacy boundaries were .0048 for PFS and .0128 for OS; OS did not cross its boundary."
+  },
+  "sponsor": "Merck Sharp & Dohme",
+  "registryIds": [],
+  "yearOfPrimaryPublication": 2020,
+  "clinicalQuestion": "Does adding pembrolizumab to etoposide-platinum improve PFS and OS in untreated extensive-stage SCLC?",
+  "result": "MIXED",
+  "landmark": false,
+  "pico": {
+    "population": "Previously untreated extensive-stage SCLC",
+    "intervention": "Pembrolizumab 200 mg every 3 weeks plus four cycles of etoposide-platinum",
+    "comparator": "Saline placebo plus four cycles of etoposide-platinum",
+    "outcomes": "Co-primary: PFS (blinded central review) and OS. Secondary: ORR, DoR"
+  },
+  "arms": [
+    {
+      "label": "Pembrolizumab + EP",
+      "role": "EXPERIMENTAL",
+      "regimen": "Pembrolizumab + etoposide + platinum",
+      "dosing": "Pembrolizumab 200 mg every 3 weeks for up to 35 cycles plus 4 cycles of EP",
+      "doseSourceQuote": "Eligible patients were randomly assigned 1:1 to pembrolizumab 200 mg once every 3 weeks or saline placebo for up to 35 cycles plus 4 cycles of EP.",
+      "n": 228
+    },
+    {
+      "label": "Placebo + EP",
+      "role": "CONTROL",
+      "regimen": "Placebo + etoposide + platinum",
+      "n": 225
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "32468956",
+      "doi": "10.1200/JCO.20.00793",
+      "title": "Pembrolizumab or Placebo Plus Etoposide and Platinum as First-Line Therapy for Extensive-Stage Small-Cell Lung Cancer: Randomized, Double-Blind, Phase III KEYNOTE-604 Study.",
+      "journal": "J Clin Oncol",
+      "year": 2020,
+      "publicationDate": "2020-05-29",
+      "firstAuthor": "Rudin CM",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by blinded central review; twelve-month PFS estimates shown",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab + EP",
+      "controlArm": "Placebo + EP",
+      "experimentalValue": "13.6%",
+      "controlValue": "3.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.75,
+      "ciLower": 0.61,
+      "ciUpper": 0.91,
+      "pValue": ".0023",
+      "source": {
+        "pmid": "32468956",
+        "location": "abstract"
+      },
+      "sourceQuote": "Pembrolizumab plus EP significantly improved PFS (hazard ratio [HR], 0.75; 95% CI, 0.61 to 0.91;= .0023). Twelve-month PFS estimates were 13.6% with pembrolizumab plus EP and 3.1% with placebo plus EP.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab + EP",
+      "controlArm": "Placebo + EP",
+      "experimentalValue": "22.5%",
+      "controlValue": "11.2%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.8,
+      "ciLower": 0.64,
+      "ciUpper": 0.98,
+      "pValue": ".0164 (did not meet significance threshold)",
+      "source": {
+        "pmid": "32468956",
+        "location": "abstract"
+      },
+      "sourceQuote": "Although pembrolizumab plus EP prolonged OS, the significance threshold was not met (HR, 0.80; 95% CI, 0.64 to 0.98;= .0164). Twenty-four-month OS estimates were 22.5% and 11.2%, respectively.",
+      "status": "AWAITING_VERIFICATION",
+      "endpointLabel": "Overall survival; twenty-four-month OS estimates shown"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Pembrolizumab + EP",
+      "controlArm": "Placebo + EP",
+      "experimentalValue": "70.6%",
+      "controlValue": "61.8%",
+      "source": {
+        "pmid": "32468956",
+        "location": "abstract"
+      },
+      "sourceQuote": "ORR was 70.6% in the pembrolizumab plus EP group and 61.8% in the placebo plus EP group; the estimated proportion of responders remaining in response at 12 months was 19.3% and 3.3%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Any-cause grade 3-4 adverse events",
+      "experimentalValue": "76.7%",
+      "controlValue": "74.9%",
+      "source": {
+        "pmid": "32468956",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the pembrolizumab plus EP and placebo plus EP groups, respectively, any-cause adverse events were grade 3-4 in 76.7% and 74.9%, grade 5 in 6.3% and 5.4%, and led to discontinuation of any drug in 14.8% and 6.3%.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Adverse events leading to discontinuation of any drug",
+      "experimentalValue": "14.8%",
+      "controlValue": "6.3%",
+      "source": {
+        "pmid": "32468956",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the pembrolizumab plus EP and placebo plus EP groups, respectively, any-cause adverse events were grade 3-4 in 76.7% and 74.9%, grade 5 in 6.3% and 5.4%, and led to discontinuation of any drug in 14.8% and 6.3%.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind, placebo-controlled randomised phase III design",
+      "PFS assessed by blinded central review"
+    ],
+    "limitations": [
+      "OS did not cross the prespecified significance boundary despite a numerical improvement",
+      "Modest absolute PFS gain"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Pembrolizumab with etoposide-platinum improved PFS but OS did not reach statistical significance, so the evidence for first-line chemo-immunotherapy in extensive-stage SCLC rests mainly on IMpower133 and CASPIAN.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "A numerically similar OS hazard ratio to the positive trials but a missed statistical boundary: class effect is plausible, but regulatory and guideline positioning differs.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 32468956. No registry ID is printed in the abstract. A later KEYNOTE-604 publication (PMID 37954964) was identified by search but not ingested."
+  }
+}

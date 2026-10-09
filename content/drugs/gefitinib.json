@@ -1,0 +1,36 @@
+{
+  "slug": "gefitinib",
+  "name": "Gefitinib",
+  "brandNames": [
+    "Iressa"
+  ],
+  "drugClass": "First-generation EGFR tyrosine kinase inhibitor",
+  "targets": [
+    "EGFR"
+  ],
+  "mechanism": "Reversible ATP-competitive inhibitor of the EGFR tyrosine kinase, with preferential activity against exon 19 deletion and L858R mutants.",
+  "route": "oral",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Acneiform rash and dry skin",
+    "Diarrhoea",
+    "Hepatotoxicity (transaminase elevation)",
+    "Interstitial lung disease/pneumonitis",
+    "Paronychia",
+    "Keratitis/ocular surface irritation"
+  ],
+  "monitoring": [
+    "Periodic liver function tests",
+    "Evaluation of new respiratory symptoms for ILD"
+  ],
+  "interactions": "Absorption is reduced by drugs that raise gastric pH (proton pump inhibitors, H2 antagonists). CYP3A4 inducers reduce and inhibitors increase exposure. Monitor INR with warfarin.",
+  "resistance": "Acquired T790M gatekeeper mutation is the dominant mechanism; also MET amplification, HER2 amplification and histological transformation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

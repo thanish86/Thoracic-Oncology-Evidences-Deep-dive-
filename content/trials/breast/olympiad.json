@@ -1,0 +1,144 @@
+{
+  "slug": "olympiad",
+  "acronym": "OlympiAD",
+  "officialTitle": "Olaparib for Metastatic Breast Cancer in Patients with a Germline BRCA Mutation",
+  "disease": "breast",
+  "subtypes": ["HER2-", "Germline BRCA-mutated"],
+  "stages": ["metastatic"],
+  "setting": "Metastatic, no more than two previous chemotherapy regimens for metastatic disease",
+  "lineOfTherapy": "1L-3L",
+  "treatmentClasses": ["parp"],
+  "biomarkers": ["brca", "her2"],
+  "drugs": ["olaparib", "capecitabine", "eribulin", "vinorelbine"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by blinded independent central review",
+    "sampleSize": 302,
+    "sampleSizeSourceQuote": "Of the 302 patients who underwent randomization, 205 were assigned to receive olaparib and 97 were assigned to receive standard therapy.",
+    "primaryEndpoints": ["PFS (BICR)"],
+    "secondaryEndpoints": ["Response rate", "Safety"],
+    "notes": "2:1 randomisation. Comparator: single-agent chemotherapy of physician's choice (capecitabine, eribulin, or vinorelbine)."
+  },
+  "sponsor": "AstraZeneca",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT02000622" }],
+  "yearOfPrimaryPublication": 2017,
+  "clinicalQuestion": "Is olaparib monotherapy superior to physician's choice chemotherapy in germline BRCA-mutated, HER2-negative metastatic breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Germline BRCA mutation, HER2-negative metastatic breast cancer, ≤2 previous chemotherapy regimens for metastatic disease",
+    "intervention": "Olaparib tablets 300 mg twice daily",
+    "comparator": "Single-agent chemotherapy of physician's choice (capecitabine, eribulin, or vinorelbine)",
+    "outcomes": "Primary: PFS by BICR. Secondary: response rate, safety"
+  },
+  "arms": [
+    {
+      "label": "Olaparib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Olaparib tablets",
+      "dosing": "300 mg twice daily",
+      "doseSourceQuote": "Patients were randomly assigned, in a 2:1 ratio, to receive olaparib tablets (300 mg twice daily) or standard therapy with single-agent chemotherapy of the physician's choice (capecitabine, eribulin, or vinorelbine in 21-day cycles).",
+      "n": 205
+    },
+    {
+      "label": "Physician's choice chemotherapy",
+      "role": "CONTROL",
+      "regimen": "Capecitabine, eribulin, or vinorelbine (physician's choice), 21-day cycles",
+      "n": 97
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "28578601",
+      "doi": "10.1056/NEJMoa1706450",
+      "title": "Olaparib for Metastatic Breast Cancer in Patients with a Germline BRCA Mutation.",
+      "journal": "N Engl J Med",
+      "year": 2017,
+      "publicationDate": "2017-06-04",
+      "firstAuthor": "Robson M",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Olaparib",
+      "controlArm": "Physician's choice chemotherapy",
+      "experimentalValue": "median 7.0 months",
+      "controlValue": "median 4.2 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLower": 0.43,
+      "ciUpper": 0.8,
+      "pValue": "<0.001",
+      "source": { "pmid": "28578601", "location": "abstract" },
+      "sourceQuote": "Median progression-free survival was significantly longer in the olaparib group than in the standard-therapy group (7.0 months vs. 4.2 months; hazard ratio for disease progression or death, 0.58; 95% confidence interval, 0.43 to 0.80; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Olaparib",
+      "controlArm": "Physician's choice chemotherapy",
+      "experimentalValue": "59.9%",
+      "controlValue": "28.8%",
+      "source": { "pmid": "28578601", "location": "abstract" },
+      "sourceQuote": "The response rate was 59.9% in the olaparib group and 28.8% in the standard-therapy group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or higher adverse events",
+      "experimentalValue": "36.6%",
+      "controlValue": "50.5%",
+      "source": { "pmid": "28578601", "location": "abstract" },
+      "sourceQuote": "The rate of grade 3 or higher adverse events was 36.6% in the olaparib group and 50.5% in the standard-therapy group, and the rate of treatment discontinuation due to toxic effects was 4.9% and 7.7%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Treatment discontinuation due to toxic effects",
+      "experimentalValue": "4.9%",
+      "controlValue": "7.7%",
+      "source": { "pmid": "28578601", "location": "abstract" },
+      "sourceQuote": "The rate of grade 3 or higher adverse events was 36.6% in the olaparib group and 50.5% in the standard-therapy group, and the rate of treatment discontinuation due to toxic effects was 4.9% and 7.7%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "First randomised phase III trial of a PARP inhibitor in germline BRCA-mutated metastatic breast cancer",
+      "PFS by blinded independent central review"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Comparator excluded platinum chemotherapy",
+      "OS not reported in the primary publication"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established olaparib as an option for germline BRCA-mutated, HER2-negative metastatic breast cancer, making germline BRCA testing relevant to treatment selection in metastatic disease.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Germline BRCA testing in HER2-negative metastatic breast cancer unlocks an oral, chemotherapy-free option with fewer grade ≥3 events than chemotherapy.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 28578601. Final OS analysis not ingested."
+  }
+}

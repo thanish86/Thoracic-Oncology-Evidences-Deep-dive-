@@ -1,0 +1,46 @@
+{
+  "slug": "pd-l1",
+  "name": "PD-L1 expression",
+  "gene": "CD274",
+  "diseases": [
+    "nsclc",
+    "breast",
+    "sclc",
+    "mesothelioma"
+  ],
+  "category": "immune",
+  "summary": "PD-L1 protein expression by immunohistochemistry is the principal companion and complementary biomarker for PD-1/PD-L1 blockade in NSCLC and triple-negative breast cancer, but it is an imperfect, continuous and dynamic predictor.",
+  "biology": "PD-L1 (CD274) is expressed on tumour and immune cells, often adaptively induced by interferon-gamma from infiltrating T cells. Binding to PD-1 on activated T cells delivers an inhibitory signal that limits effector function within the tumour microenvironment. Constitutive expression can also arise from oncogenic signalling or CD274 amplification (9p24.1).",
+  "alterations": [
+    "Protein overexpression on tumour cells and/or immune cells",
+    "CD274 (9p24.1) amplification (rare)"
+  ],
+  "testing": {
+    "methods": [
+      "Immunohistochemistry with assay-specific scoring: 22C3 and 28-8 (tumour proportion score), SP263 (tumour cells), SP142 (tumour cells and immune cells)",
+      "Combined positive score (CPS) with 22C3 in triple-negative breast cancer"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (histology preferred; cytology acceptable when validated)",
+    "notes": "Assays and scoring systems are not fully interchangeable; the companion assay and scoring algorithm tied to each drug and indication should be used. Expression is spatially and temporally heterogeneous and may change after prior therapy."
+  },
+  "predictiveRelevance": "NSCLC: PD-L1 tumour proportion score informs choice between immunotherapy monotherapy and chemo-immunotherapy in the absence of actionable drivers, and is relevant to adjuvant and perioperative immunotherapy decisions. TNBC: CPS by 22C3 selects patients for pembrolizumab plus chemotherapy in advanced disease; in early TNBC, neoadjuvant pembrolizumab benefit is observed irrespective of PD-L1. SCLC and mesothelioma: PD-L1 is not used to select patients for immunotherapy. PD-L1 negativity does not exclude benefit, and high expression does not guarantee response.",
+  "resistance": [
+    "Primary resistance associated with STK11/KEAP1 co-mutation and oncogene-driven NSCLC (EGFR, ALK)",
+    "Acquired resistance via loss of antigen presentation (B2M, HLA loss), JAK1/2 loss-of-function, and immunosuppressive microenvironment changes"
+  ],
+  "drugs": [
+    "pembrolizumab",
+    "nivolumab",
+    "atezolizumab",
+    "durvalumab",
+    "cemiplimab",
+    "ipilimumab",
+    "tremelimumab"
+  ],
+  "pathway": "pd1-pdl1",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

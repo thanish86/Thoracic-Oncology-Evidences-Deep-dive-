@@ -1,0 +1,259 @@
+{
+  "slug": "crown",
+  "acronym": "CROWN",
+  "officialTitle": "First-Line Lorlatinib or Crizotinib in Advanced ALK-Positive Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "ALK-positive"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "First-line advanced",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "tki"
+  ],
+  "biomarkers": [
+    "alk"
+  ],
+  "drugs": [
+    "lorlatinib",
+    "crizotinib"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "PFS by blinded independent central review",
+    "sampleSize": 296,
+    "sampleSizeSourceQuote": "We conducted a global, randomized, phase 3 trial comparing lorlatinib with crizotinib in 296 patients with advanced-positive NSCLC who had received no previous systemic treatment for metastatic disease.",
+    "primaryEndpoints": [
+      "PFS (BICR)"
+    ],
+    "secondaryEndpoints": [
+      "ORR",
+      "Intracranial response"
+    ],
+    "notes": "Primary publication was a planned interim analysis."
+  },
+  "sponsor": "Pfizer",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03052608"
+    }
+  ],
+  "yearOfPrimaryPublication": 2020,
+  "clinicalQuestion": "Is the third-generation ALK inhibitor lorlatinib superior to crizotinib as first-line therapy for advanced ALK-positive NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Advanced ALK-positive NSCLC without prior systemic therapy for metastatic disease",
+    "intervention": "Lorlatinib",
+    "comparator": "Crizotinib",
+    "outcomes": "Primary: BICR PFS. Secondary: ORR, intracranial response"
+  },
+  "arms": [
+    {
+      "label": "Lorlatinib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Lorlatinib",
+      "dosing": "100 mg once daily",
+      "doseSourceQuote": "lorlatinib 100 mg once daily (n = 149)",
+      "n": 149
+    },
+    {
+      "label": "Crizotinib",
+      "role": "CONTROL",
+      "regimen": "Crizotinib",
+      "dosing": "250 mg twice daily",
+      "doseSourceQuote": "crizotinib 250 mg twice daily (n = 147)",
+      "n": 147
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "33207094",
+      "doi": "10.1056/NEJMoa2027187",
+      "title": "First-Line Lorlatinib or Crizotinib in Advanced-Positive Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2020,
+      "publicationDate": "2020-11-19",
+      "firstAuthor": "Shaw AT",
+      "type": "PRIMARY",
+      "label": "Planned interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "38819031",
+      "doi": "10.1200/JCO.24.00581",
+      "title": "Lorlatinib Versus Crizotinib in Patients With Advanced-Positive Non-Small Cell Lung Cancer: 5-Year Outcomes From the Phase III CROWN Study.",
+      "journal": "J Clin Oncol",
+      "year": 2024,
+      "publicationDate": "2024-05-31",
+      "firstAuthor": "Solomon BJ",
+      "type": "UPDATE",
+      "label": "5-year update (post hoc)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by blinded independent central review",
+      "analysisLabel": "Planned interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Lorlatinib",
+      "controlArm": "Crizotinib",
+      "experimentalValue": "12-month PFS 78%",
+      "controlValue": "12-month PFS 39%",
+      "effectEstimate": 0.28,
+      "ciLower": 0.19,
+      "ciUpper": 0.41,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "The percentage of patients who were alive without disease progression at 12 months was 78% (95% confidence interval [CI], 70 to 84) in the lorlatinib group and 39% (95% CI, 30 to 48) in the crizotinib group (hazard ratio for disease progression or death, 0.28; 95% CI, 0.19 to 0.41; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Planned interim analysis",
+      "population": "ITT",
+      "experimentalArm": "Lorlatinib",
+      "controlArm": "Crizotinib",
+      "experimentalValue": "76%",
+      "controlValue": "58%",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "An objective response occurred in 76% (95% CI, 68 to 83) of the patients in the lorlatinib group and 58% (95% CI, 49 to 66) of those in the crizotinib group",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "CNS_ORR",
+      "analysisLabel": "Planned interim analysis",
+      "population": "Measurable brain metastases",
+      "experimentalArm": "Lorlatinib",
+      "controlArm": "Crizotinib",
+      "experimentalValue": "82% (intracranial CR 71%)",
+      "controlValue": "23%",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "among those with measurable brain metastases, 82% (95% CI, 57 to 96) and 23% (95% CI, 5 to 54), respectively, had an intracranial response, and 71% of the patients who received lorlatinib had an intracranial complete response.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "5-year update (post hoc)",
+      "population": "ITT",
+      "experimentalArm": "Lorlatinib",
+      "controlArm": "Crizotinib",
+      "experimentalValue": "median not reached; 5-year PFS 60%",
+      "controlValue": "median 9.1 months; 5-year PFS 8%",
+      "effectEstimate": 0.19,
+      "ciLower": 0.13,
+      "ciUpper": 0.27,
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "38819031",
+        "location": "abstract"
+      },
+      "sourceQuote": "With a median follow-up for PFS of 60.2 and 55.1 months, respectively, median PFS was not reached (NR [95% CI, 64.3 to NR]) with lorlatinib and 9.1 months (95% CI, 7.4 to 10.9) with crizotinib (hazard ratio [HR], 0.19 [95% CI, 0.13 to 0.27]); 5-year PFS was 60% (95% CI, 51 to 68) and 8% (95% CI, 3 to 14), respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Time to intracranial progression",
+      "analysisLabel": "5-year update (post hoc)",
+      "population": "ITT",
+      "experimentalArm": "Lorlatinib",
+      "controlArm": "Crizotinib",
+      "experimentalValue": "median not reached",
+      "controlValue": "median 16.4 months",
+      "effectEstimate": 0.06,
+      "ciLower": 0.03,
+      "ciUpper": 0.12,
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "38819031",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median time to intracranial progression was NR (95% CI, NR to NR) with lorlatinib and 16.4 months (95% CI, 12.7 to 21.9) with crizotinib (HR, 0.06 [95% CI, 0.03 to 0.12]).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 adverse events (mainly altered lipid levels)",
+      "experimentalValue": "72%",
+      "controlValue": "56%",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "Lorlatinib was associated with more grade 3 or 4 adverse events (mainly altered lipid levels) than crizotinib (in 72% vs. 56%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation due to adverse events",
+      "experimentalValue": "7%",
+      "controlValue": "9%",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "Discontinuation of treatment because of adverse events occurred in 7% and 9% of the patients, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Most common adverse events with lorlatinib",
+      "experimentalValue": "Hyperlipidaemia, oedema, weight gain, peripheral neuropathy, cognitive effects",
+      "source": {
+        "pmid": "33207094",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common adverse events with lorlatinib were hyperlipidemia, edema, increased weight, peripheral neuropathy, and cognitive effects.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "BICR-assessed primary endpoint",
+      "Marked and durable intracranial efficacy",
+      "Long-term (5-year) follow-up available"
+    ],
+    "limitations": [
+      "5-year analysis is post hoc and investigator-assessed",
+      "OS data not reported in these abstracts",
+      "Distinct CNS/metabolic toxicity profile"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports lorlatinib as a first-line ALK TKI with durable systemic and intracranial control, requiring proactive management of lipid and CNS adverse effects.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Counsel on mood/cognitive effects and monitor lipids when starting lorlatinib.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 33207094 (interim) and PMID 38819031 (5-year update). Doses from the 5-year update abstract."
+  }
+}

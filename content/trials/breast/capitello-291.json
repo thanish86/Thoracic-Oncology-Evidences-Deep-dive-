@@ -1,0 +1,149 @@
+{
+  "slug": "capitello-291",
+  "acronym": "CAPItello-291",
+  "officialTitle": "Capivasertib in Hormone Receptor-Positive Advanced Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HR+/HER2-", "AKT pathway-altered"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "Advanced disease relapsed or progressed during or after aromatase inhibitor, with or without prior CDK4/6 inhibitor",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": ["pi3k-akt", "endocrine"],
+  "biomarkers": ["pik3ca", "akt1", "pten", "er", "pr", "her2"],
+  "drugs": ["capivasertib", "fulvestrant"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind",
+    "sampleSize": 708,
+    "sampleSizeSourceQuote": "Overall, 708 patients underwent randomization; 289 patients (40.8%) had AKT pathway alterations, and 489 (69.1%) had received a CDK4/6 inhibitor previously for advanced breast cancer.",
+    "primaryEndpoints": ["Investigator-assessed PFS (overall population)", "Investigator-assessed PFS (AKT pathway-altered population)"],
+    "secondaryEndpoints": ["Safety"],
+    "notes": "1:1 randomisation. Enrolled pre-, peri- and postmenopausal women and men. AKT pathway alteration denotes PIK3CA, AKT1 or PTEN alterations (gene symbols stripped in PubMed abstract text)."
+  },
+  "sponsor": "AstraZeneca and the National Cancer Institute",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT04305496" }],
+  "yearOfPrimaryPublication": 2023,
+  "clinicalQuestion": "Does adding the AKT inhibitor capivasertib to fulvestrant improve PFS in HR-positive, HER2-negative advanced breast cancer after aromatase inhibitor therapy, overall and in AKT pathway-altered tumours?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HR-positive, HER2-negative advanced breast cancer with relapse or progression during/after an aromatase inhibitor, with or without prior CDK4/6 inhibitor",
+    "intervention": "Capivasertib plus fulvestrant",
+    "comparator": "Placebo plus fulvestrant",
+    "outcomes": "Dual primary: investigator-assessed PFS in overall and AKT pathway-altered populations. Safety"
+  },
+  "arms": [
+    { "label": "Capivasertib + fulvestrant", "role": "EXPERIMENTAL", "regimen": "Capivasertib plus fulvestrant" },
+    { "label": "Placebo + fulvestrant", "role": "CONTROL", "regimen": "Placebo plus fulvestrant" }
+  ],
+  "publications": [
+    {
+      "pmid": "37256976",
+      "doi": "10.1056/NEJMoa2214131",
+      "title": "Capivasertib in Hormone Receptor-Positive Advanced Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2023,
+      "publicationDate": "2023-06-01",
+      "firstAuthor": "Turner NC",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "Overall population",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Capivasertib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 7.2 months",
+      "controlValue": "median 3.6 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.6,
+      "ciLower": 0.51,
+      "ciUpper": 0.71,
+      "pValue": "<0.001",
+      "source": { "pmid": "37256976", "location": "abstract" },
+      "sourceQuote": "In the overall population, the median progression-free survival was 7.2 months in the capivasertib-fulvestrant group, as compared with 3.6 months in the placebo-fulvestrant group (hazard ratio for progression or death, 0.60; 95% confidence interval [CI], 0.51 to 0.71; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "AKT pathway-altered population",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Capivasertib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 7.3 months",
+      "controlValue": "median 3.1 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.5,
+      "ciLower": 0.38,
+      "ciUpper": 0.65,
+      "pValue": "<0.001",
+      "source": { "pmid": "37256976", "location": "abstract" },
+      "sourceQuote": "In the AKT pathway-altered population, the median progression-free survival was 7.3 months in the capivasertib-fulvestrant group, as compared with 3.1 months in the placebo-fulvestrant group (hazard ratio, 0.50; 95% CI, 0.38 to 0.65; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or higher rash",
+      "experimentalValue": "12.1%",
+      "controlValue": "0.3%",
+      "source": { "pmid": "37256976", "location": "abstract" },
+      "sourceQuote": "The most frequent adverse events of grade 3 or higher in patients receiving capivasertib-fulvestrant were rash (in 12.1% of patients, vs. in 0.3% of those receiving placebo-fulvestrant) and diarrhea (in 9.3% vs. 0.3%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or higher diarrhoea",
+      "experimentalValue": "9.3%",
+      "controlValue": "0.3%",
+      "source": { "pmid": "37256976", "location": "abstract" },
+      "sourceQuote": "The most frequent adverse events of grade 3 or higher in patients receiving capivasertib-fulvestrant were rash (in 12.1% of patients, vs. in 0.3% of those receiving placebo-fulvestrant) and diarrhea (in 9.3% vs. 0.3%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Adverse events leading to discontinuation",
+      "experimentalValue": "13.0%",
+      "controlValue": "2.3%",
+      "source": { "pmid": "37256976", "location": "abstract" },
+      "sourceQuote": "Adverse events leading to discontinuation were reported in 13.0% of the patients receiving capivasertib and in 2.3% of those receiving placebo.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind randomised phase III design",
+      "Majority of patients had prior CDK4/6 inhibitor, reflecting contemporary practice",
+      "Dual primary endpoints in overall and biomarker-defined populations"
+    ],
+    "limitations": [
+      "Primary endpoint investigator-assessed",
+      "Benefit in non-altered tumours not separately reported in the abstract",
+      "OS not reported in the primary publication"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports capivasertib plus fulvestrant after aromatase inhibitor therapy (with or without prior CDK4/6 inhibitor) in HR-positive, HER2-negative advanced breast cancer, with PFS benefit in both the overall and AKT pathway-altered populations.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Test for PIK3CA/AKT1/PTEN alterations at progression on endocrine therapy; rash and diarrhoea are the main grade 3 toxicities to anticipate with capivasertib.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 37256976. The PubMed abstract text strips italic gene symbols in '(,, or)'; PIK3CA/AKT1/PTEN attribution should be confirmed against the full text."
+  }
+}

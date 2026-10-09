@@ -1,0 +1,40 @@
+{
+  "slug": "abemaciclib",
+  "name": "Abemaciclib",
+  "brandNames": [
+    "Verzenio",
+    "Verzenios"
+  ],
+  "drugClass": "CDK4/6 inhibitor",
+  "targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "mechanism": "CDK4/6 inhibitor with relatively greater potency for CDK4, allowing continuous dosing; used with endocrine therapy in advanced and high-risk early breast cancer.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Diarrhoea (often early)",
+    "Neutropenia",
+    "Fatigue",
+    "Venous thromboembolism",
+    "Hepatotoxicity",
+    "Interstitial lung disease/pneumonitis",
+    "Serum creatinine increase from tubular transporter inhibition"
+  ],
+  "monitoring": [
+    "Proactive antidiarrhoeal therapy and hydration",
+    "Blood counts and liver function tests",
+    "Assessment for VTE symptoms"
+  ],
+  "interactions": "Avoid strong CYP3A inducers; strong CYP3A inhibitors increase exposure and require avoidance or dose modification per label. Ketoconazole should be avoided.",
+  "resistance": "RB1 loss, cyclin E-CDK2 activation, PI3K pathway activation and ESR1 mutations.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

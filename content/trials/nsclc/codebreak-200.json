@@ -1,0 +1,165 @@
+{
+  "slug": "codebreak-200",
+  "acronym": "CodeBreaK 200",
+  "officialTitle": "Sotorasib versus docetaxel for previously treated non-small-cell lung cancer with KRAS G12C mutation: a randomised, open-label, phase 3 trial",
+  "disease": "nsclc",
+  "subtypes": [
+    "KRAS G12C",
+    "Previously treated with platinum chemotherapy and PD-(L)1 inhibitor"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "Previously treated advanced",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "tki",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "kras"
+  ],
+  "drugs": [
+    "sotorasib",
+    "docetaxel"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by blinded independent central review",
+    "sampleSize": 345,
+    "sampleSizeSourceQuote": "Between June 4, 2020, and April 26, 2021, 345 patients were randomly assigned to receive sotorasib (n=171 [50%]) or docetaxel (n=174 [50%]).",
+    "primaryEndpoints": [
+      "PFS (BICR)"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Stratified by prior lines, ethnicity and history of CNS metastases."
+  },
+  "sponsor": "Amgen",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT04303780"
+    }
+  ],
+  "yearOfPrimaryPublication": 2023,
+  "clinicalQuestion": "In previously treated KRAS G12C-mutant advanced NSCLC, does sotorasib improve PFS over docetaxel?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "KRAS G12C-mutant advanced NSCLC progressing after platinum chemotherapy and a PD-1/PD-L1 inhibitor",
+    "intervention": "Sotorasib",
+    "comparator": "Docetaxel",
+    "outcomes": "Primary: BICR PFS. Safety"
+  },
+  "arms": [
+    {
+      "label": "Sotorasib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Sotorasib",
+      "dosing": "960 mg orally once daily",
+      "doseSourceQuote": "oral sotorasib (960 mg once daily)",
+      "n": 171
+    },
+    {
+      "label": "Docetaxel",
+      "role": "CONTROL",
+      "regimen": "Docetaxel",
+      "dosing": "75 mg/m² intravenously every 3 weeks",
+      "doseSourceQuote": "intravenous docetaxel (75 mg/monce every 3 weeks)",
+      "n": 174
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "36764316",
+      "doi": "10.1016/S0140-6736(23)00221-0",
+      "title": "Sotorasib versus docetaxel for previously treated non-small-cell lung cancer with KRASmutation: a randomised, open-label, phase 3 trial.",
+      "journal": "Lancet",
+      "year": 2023,
+      "publicationDate": "2023-02-07",
+      "firstAuthor": "de Langen AJ",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by blinded independent central review",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Sotorasib",
+      "controlArm": "Docetaxel",
+      "experimentalValue": "median 5.6 months",
+      "controlValue": "median 4.5 months",
+      "effectEstimate": 0.66,
+      "ciLower": 0.51,
+      "ciUpper": 0.86,
+      "pValue": "0.0017",
+      "followUp": "median 17.7 months",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "36764316",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 17·7 months (IQR 16·4-20·1), the study met its primary endpoint of a statistically significant increase in the progression-free survival for sotorasib, compared with docetaxel (median progression-free survival 5·6 months [95% CI 4·3-7·8] vs 4·5 months [3·0-5·7]; hazard ratio 0·66 [0·51-0·86]; p=0·0017).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade ≥3 treatment-related adverse events; serious treatment-related adverse events",
+      "experimentalValue": "Grade ≥3 33%; serious 11%",
+      "controlValue": "Grade ≥3 40%; serious 23%",
+      "source": {
+        "pmid": "36764316",
+        "location": "abstract"
+      },
+      "sourceQuote": "Sotorasib was well tolerated, with fewer grade 3 or worse (n=56 [33%] vs n=61 [40%]) and serious treatment-related adverse events compared with docetaxel (n=18 [11%] vs n=34 [23%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Most common grade ≥3 treatment-related adverse events with sotorasib",
+      "experimentalValue": "Diarrhoea 12%; ALT increase 8%; AST increase 5%",
+      "source": {
+        "pmid": "36764316",
+        "location": "abstract"
+      },
+      "sourceQuote": "For sotorasib, the most common treatment-related adverse events of grade 3 or worse were diarrhoea (n= 20 [12%]), alanine aminotransferase increase (n=13 [8%]), and aspartate aminotransferase increase (n=9 [5%]).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "First randomised phase III of a KRAS G12C inhibitor",
+      "BICR-assessed primary endpoint"
+    ],
+    "limitations": [
+      "Open-label",
+      "Modest absolute PFS difference",
+      "OS not reported in the abstract"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Confirmed a PFS advantage and more favourable tolerability for sotorasib over docetaxel in pretreated KRAS G12C-mutant NSCLC.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Watch for diarrhoea and transaminase elevations on sotorasib, particularly soon after prior immunotherapy.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 36764316. Abstract text strips the 'G12C' superscript; mutation identity taken from trial context."
+  }
+}

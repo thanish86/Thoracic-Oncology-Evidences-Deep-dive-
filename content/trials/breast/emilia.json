@@ -1,0 +1,148 @@
+{
+  "slug": "emilia",
+  "acronym": "EMILIA",
+  "officialTitle": "Trastuzumab emtansine for HER2-positive advanced breast cancer",
+  "disease": "breast",
+  "subtypes": ["HER2+"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "Previously treated advanced/metastatic (after trastuzumab and a taxane)",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": ["adc", "her2-directed"],
+  "biomarkers": ["her2"],
+  "drugs": ["trastuzumab-emtansine", "lapatinib", "capecitabine"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "PFS assessed by independent review",
+    "sampleSize": 991,
+    "sampleSizeSourceQuote": "Among 991 randomly assigned patients",
+    "primaryEndpoints": ["PFS (independent review)", "OS", "Safety"],
+    "secondaryEndpoints": ["Investigator-assessed PFS", "ORR", "Time to symptom progression"],
+    "notes": "Two interim analyses of overall survival were conducted."
+  },
+  "sponsor": "F. Hoffmann-La Roche/Genentech",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT00829166" }],
+  "yearOfPrimaryPublication": 2012,
+  "clinicalQuestion": "Is the HER2-directed antibody-drug conjugate T-DM1 superior to lapatinib plus capecitabine in HER2-positive advanced breast cancer previously treated with trastuzumab and a taxane?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-positive advanced breast cancer previously treated with trastuzumab and a taxane",
+    "intervention": "Trastuzumab emtansine (T-DM1)",
+    "comparator": "Lapatinib plus capecitabine",
+    "outcomes": "Primary: PFS by independent review, OS, safety. Secondary: investigator-assessed PFS, ORR, time to symptom progression"
+  },
+  "arms": [
+    { "label": "T-DM1", "role": "EXPERIMENTAL", "regimen": "Trastuzumab emtansine" },
+    { "label": "Lapatinib + capecitabine", "role": "CONTROL", "regimen": "Lapatinib plus capecitabine" }
+  ],
+  "publications": [
+    {
+      "pmid": "23020162",
+      "doi": "10.1056/NEJMoa1209124",
+      "title": "Trastuzumab emtansine for HER2-positive advanced breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2012,
+      "publicationDate": "2012-10-01",
+      "firstAuthor": "Verma S",
+      "type": "PRIMARY",
+      "label": "Primary analysis (second interim OS)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by independent review",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "T-DM1",
+      "controlArm": "Lapatinib + capecitabine",
+      "experimentalValue": "median 9.6 months",
+      "controlValue": "median 6.4 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.65,
+      "ciLower": 0.55,
+      "ciUpper": 0.77,
+      "pValue": "<0.001",
+      "source": { "pmid": "23020162", "location": "abstract" },
+      "sourceQuote": "median progression-free survival as assessed by independent review was 9.6 months with T-DM1 versus 6.4 months with lapatinib plus capecitabine (hazard ratio for progression or death from any cause, 0.65; 95% confidence interval [CI], 0.55 to 0.77; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Second interim OS analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "T-DM1",
+      "controlArm": "Lapatinib + capecitabine",
+      "experimentalValue": "median 30.9 months",
+      "controlValue": "median 25.1 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLower": 0.55,
+      "ciUpper": 0.85,
+      "pValue": "<0.001",
+      "source": { "pmid": "23020162", "location": "abstract" },
+      "sourceQuote": "median overall survival at the second interim analysis crossed the stopping boundary for efficacy (30.9 months vs. 25.1 months; hazard ratio for death from any cause, 0.68; 95% CI, 0.55 to 0.85; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "T-DM1",
+      "controlArm": "Lapatinib + capecitabine",
+      "experimentalValue": "43.6%",
+      "controlValue": "30.8%",
+      "pValue": "<0.001",
+      "source": { "pmid": "23020162", "location": "abstract" },
+      "sourceQuote": "The objective response rate was higher with T-DM1 (43.6%, vs. 30.8% with lapatinib plus capecitabine; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 adverse events",
+      "experimentalValue": "41%",
+      "controlValue": "57%",
+      "source": { "pmid": "23020162", "location": "abstract" },
+      "sourceQuote": "Rates of grade 3 or 4 adverse events were higher with lapatinib plus capecitabine than with T-DM1 (57% vs. 41%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Thrombocytopenia and increased aminotransferases more frequent with T-DM1; diarrhoea, nausea, vomiting and palmar-plantar erythrodysesthesia more frequent with lapatinib plus capecitabine",
+      "source": { "pmid": "23020162", "location": "abstract" },
+      "sourceQuote": "The incidences of thrombocytopenia and increased serum aminotransferase levels were higher with T-DM1, whereas the incidences of diarrhea, nausea, vomiting, and palmar-plantar erythrodysesthesia were higher with lapatinib plus capecitabine.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III trial with PFS by independent review",
+      "OS was a co-primary endpoint and crossed the efficacy boundary at interim analysis"
+    ],
+    "limitations": [
+      "Open-label comparison (not described as blinded in the abstract)",
+      "Comparator has since been superseded by newer HER2-directed agents"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established T-DM1 as a standard option after trastuzumab and a taxane for HER2-positive advanced breast cancer, later used as the comparator for trastuzumab deruxtecan in DESTINY-Breast03.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "T-DM1 toxicity is different from lapatinib-capecitabine: check platelets and liver enzymes rather than expecting diarrhoea and hand-foot syndrome.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 23020162. Final OS analysis not yet ingested."
+  }
+}

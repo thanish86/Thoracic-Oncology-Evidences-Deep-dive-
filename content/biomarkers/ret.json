@@ -1,0 +1,44 @@
+{
+  "slug": "ret",
+  "name": "RET rearrangement",
+  "gene": "RET",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "RET fusions occur in a small subset of NSCLC, predominantly adenocarcinomas in never-smokers, and are highly sensitive to selective RET inhibitors.",
+  "biology": "RET is a receptor tyrosine kinase normally involved in neural crest development. Fusions with partners such as KIF5B and CCDC6 juxtapose the RET kinase domain with dimerisation domains, causing constitutive ligand-independent activation of MAPK and PI3K-AKT pathways. Older multikinase inhibitors with RET activity were limited by off-target VEGFR toxicity, prompting development of selective agents.",
+  "alterations": [
+    "KIF5B-RET (most common partner in NSCLC)",
+    "CCDC6-RET, NCOA4-RET and other partners",
+    "Acquired RET fusions as resistance to EGFR TKIs",
+    "Acquired solvent-front (G810X) and other kinase-domain mutations after selective RET inhibitors"
+  ],
+  "testing": {
+    "methods": [
+      "RNA-based NGS (preferred)",
+      "Hybrid-capture DNA NGS",
+      "Fluorescence in situ hybridisation (break-apart)",
+      "Plasma ctDNA NGS"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "RET IHC is not reliable for fusion detection. FISH may not identify the partner and can miss some rearrangements."
+  },
+  "predictiveRelevance": "RET fusions predict benefit from selpercatinib and pralsetinib; selective RET inhibition is preferred over chemo-immunotherapy where available. Response to single-agent immunotherapy is generally limited.",
+  "resistance": [
+    "On-target RET solvent-front mutations (G810R/S/C) and hinge-region mutations",
+    "Bypass: MET amplification, KRAS amplification or mutation",
+    "Histological transformation (rare)"
+  ],
+  "drugs": [
+    "selpercatinib",
+    "pralsetinib"
+  ],
+  "pathway": "mapk",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Brain metastases are common; selpercatinib and pralsetinib have demonstrated intracranial activity."
+}

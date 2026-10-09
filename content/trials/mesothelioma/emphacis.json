@@ -1,0 +1,171 @@
+{
+  "slug": "emphacis",
+  "acronym": "EMPHACIS",
+  "officialTitle": "Phase III study of pemetrexed in combination with cisplatin versus cisplatin alone in patients with malignant pleural mesothelioma",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural"
+  ],
+  "stages": [
+    "unresectable"
+  ],
+  "setting": "First-line unresectable malignant pleural mesothelioma",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "pemetrexed",
+    "cisplatin"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "sampleSize": 456,
+    "sampleSizeSourceQuote": "A total of 456 patients were assigned: 226 received pemetrexed and cisplatin, 222 received cisplatin alone, and eight never received therapy.",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "TTP",
+      "ORR",
+      "Toxicity"
+    ],
+    "notes": "Chemotherapy-naive patients not eligible for curative surgery. Folic acid and vitamin B12 supplementation was added after 117 patients had enrolled to reduce toxicity."
+  },
+  "registryIds": [],
+  "yearOfPrimaryPublication": 2003,
+  "clinicalQuestion": "Does pemetrexed plus cisplatin improve survival over cisplatin alone in chemotherapy-naive malignant pleural mesothelioma?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Chemotherapy-naive malignant pleural mesothelioma not eligible for curative surgery",
+    "intervention": "Pemetrexed 500 mg/m2 plus cisplatin 75 mg/m2 every 21 days",
+    "comparator": "Cisplatin 75 mg/m2 every 21 days",
+    "outcomes": "Primary: OS. Secondary: time to progression, response rate, toxicity"
+  },
+  "arms": [
+    {
+      "label": "Pemetrexed + cisplatin",
+      "role": "EXPERIMENTAL",
+      "regimen": "Pemetrexed + cisplatin (with folic acid and vitamin B12 after protocol amendment)",
+      "dosing": "Pemetrexed 500 mg/m2 and cisplatin 75 mg/m2 IV day 1 every 21 days",
+      "doseSourceQuote": "Chemotherapy-naive patients who were not eligible for curative surgery were randomly assigned to receive pemetrexed 500 mg/m2 and cisplatin 75 mg/m2 on day 1, or cisplatin 75 mg/m2 on day 1. Both regimens were given intravenously every 21 days.",
+      "n": 226
+    },
+    {
+      "label": "Cisplatin",
+      "role": "CONTROL",
+      "regimen": "Cisplatin monotherapy",
+      "dosing": "Cisplatin 75 mg/m2 IV day 1 every 21 days",
+      "doseSourceQuote": "or cisplatin 75 mg/m2 on day 1. Both regimens were given intravenously every 21 days.",
+      "n": 222
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "12860938",
+      "doi": "10.1200/JCO.2003.11.136",
+      "title": "Phase III study of pemetrexed in combination with cisplatin versus cisplatin alone in patients with malignant pleural mesothelioma.",
+      "journal": "J Clin Oncol",
+      "year": 2003,
+      "publicationDate": "2003-07-15",
+      "firstAuthor": "Vogelzang NJ",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "All randomly assigned",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pemetrexed + cisplatin",
+      "controlArm": "Cisplatin",
+      "experimentalValue": "median 12.1 months",
+      "controlValue": "median 9.3 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.77,
+      "pValue": ".020",
+      "source": {
+        "pmid": "12860938",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median survival time in the pemetrexed/cisplatin arm was 12.1 months versus 9.3 months in the control arm (P =.020, two-sided log-rank test). The hazard ratio for death of patients in the pemetrexed/cisplatin arm versus those in the control arm was 0.77.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "TTP",
+      "analysisLabel": "Primary analysis",
+      "experimentalArm": "Pemetrexed + cisplatin",
+      "controlArm": "Cisplatin",
+      "experimentalValue": "median 5.7 months",
+      "controlValue": "median 3.9 months",
+      "pValue": ".001",
+      "source": {
+        "pmid": "12860938",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median time to progression was significantly longer in the pemetrexed/cisplatin arm: 5.7 months versus 3.9 months (P =.001).",
+      "status": "AWAITING_VERIFICATION",
+      "effectMeasure": "NONE"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "experimentalArm": "Pemetrexed + cisplatin",
+      "controlArm": "Cisplatin",
+      "experimentalValue": "41.3%",
+      "controlValue": "16.7%",
+      "pValue": "<.0001",
+      "source": {
+        "pmid": "12860938",
+        "location": "abstract"
+      },
+      "sourceQuote": "Response rates were 41.3% in the pemetrexed/cisplatin arm versus 16.7% in the control arm (P <.0001).",
+      "status": "AWAITING_VERIFICATION",
+      "effectMeasure": "NONE"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Vitamin supplementation (folic acid and B12) added after protocol amendment significantly reduced toxicity of pemetrexed/cisplatin (no rates in abstract)",
+      "source": {
+        "pmid": "12860938",
+        "location": "abstract"
+      },
+      "sourceQuote": "After 117 patients had enrolled, folic acid and vitamin B12 were added to reduce toxicity, resulting in a significant reduction in toxicities in the pemetrexed/cisplatin arm.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III trial",
+      "Consistent benefit across OS, time to progression and response"
+    ],
+    "limitations": [
+      "Control arm of cisplatin alone is no longer a relevant comparator",
+      "Vitamin supplementation introduced mid-trial",
+      "Hazard ratio reported without confidence interval in the abstract"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established pemetrexed plus cisplatin with folic acid and vitamin B12 supplementation as the chemotherapy backbone for unresectable pleural mesothelioma.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Vitamin supplementation is integral to pemetrexed: it was introduced in this trial because it reduced toxicity without compromising survival.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 12860938. No CI for the OS hazard ratio and no registry ID printed in the abstract."
+  }
+}

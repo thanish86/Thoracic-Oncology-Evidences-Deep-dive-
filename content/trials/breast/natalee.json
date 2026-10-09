@@ -1,0 +1,240 @@
+{
+  "slug": "natalee",
+  "acronym": "NATALEE",
+  "officialTitle": "Ribociclib plus Endocrine Therapy in Early Breast Cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HR+/HER2-",
+    "Anatomical stage II-III (including selected N0)"
+  ],
+  "stages": [
+    "early",
+    "locally-advanced"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "cdk46",
+    "endocrine"
+  ],
+  "biomarkers": [
+    "er",
+    "pr",
+    "her2"
+  ],
+  "drugs": [
+    "ribociclib",
+    "letrozole",
+    "anastrozole",
+    "goserelin"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "primaryEndpoints": [
+      "Invasive disease-free survival"
+    ],
+    "secondaryEndpoints": [
+      "Distant disease-free survival",
+      "Recurrence-free survival",
+      "OS",
+      "Safety"
+    ],
+    "notes": "Ribociclib 400 mg starting dose for 3 years plus NSAI; premenopausal women and men also received goserelin. Arm sizes per the final iDFS analysis (PMID 39442617)."
+  },
+  "sponsor": "Novartis",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03701334"
+    }
+  ],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Does adding 3 years of ribociclib to a nonsteroidal aromatase inhibitor improve invasive disease-free survival in a broad stage II-III HR+/HER2- early breast cancer population?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Patients with HR+/HER2- early breast cancer, anatomical stage II or III (including N0 with additional risk factors)",
+    "intervention": "Ribociclib for 3 years plus NSAI (± goserelin)",
+    "comparator": "NSAI alone (± goserelin)",
+    "outcomes": "Primary: iDFS. Secondary: distant DFS, RFS, OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Ribociclib + NSAI",
+      "role": "EXPERIMENTAL",
+      "regimen": "Ribociclib plus letrozole or anastrozole (± goserelin)",
+      "dosing": "Ribociclib 400 mg/day, 3 weeks on/1 week off, for 3 years; letrozole 2.5 mg/day or anastrozole 1 mg/day for ≥5 years",
+      "doseSourceQuote": "we randomly assigned patients with HR-positive, HER2-negative early breast cancer in a 1:1 ratio to receive ribociclib (at a dose of 400 mg per day for 3 weeks, followed by 1 week off, for 3 years) plus a nonsteroidal aromatase inhibitor (NSAI; letrozole at a dose of 2.5 mg per day or anastrozole at a dose of 1 mg per day for ≥5 years) or an NSAI alone.",
+      "n": 2549
+    },
+    {
+      "label": "NSAI alone",
+      "role": "CONTROL",
+      "regimen": "Letrozole or anastrozole (± goserelin)",
+      "n": 2552
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "38507751",
+      "doi": "10.1056/NEJMoa2305488",
+      "title": "Ribociclib plus Endocrine Therapy in Early Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "publicationDate": "2024-03-21",
+      "firstAuthor": "Slamon D",
+      "type": "PRIMARY",
+      "label": "Prespecified interim iDFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "39442617",
+      "doi": "10.1016/j.annonc.2024.10.015",
+      "title": "A phase III trial of adjuvant ribociclib plus endocrine therapy versus endocrine therapy alone in patients with HR-positive/HER2-negative early breast cancer: final invasive disease-free survival results from the NATALEE trial.",
+      "journal": "Ann Oncol",
+      "year": 2024,
+      "publicationDate": "2024-10-21",
+      "firstAuthor": "Hortobagyi GN",
+      "type": "UPDATE",
+      "label": "Final iDFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "41320342",
+      "doi": "10.1016/j.esmoop.2025.105858",
+      "title": "Adjuvant ribociclib plus nonsteroidal aromatase inhibitor therapy in patients with HR-positive/HER2-negative early breast cancer: 5-year follow-up of NATALEE efficacy outcomes and updated overall survival.",
+      "journal": "ESMO Open",
+      "year": 2025,
+      "publicationDate": "2025-10-17",
+      "firstAuthor": "Crown J",
+      "type": "UPDATE",
+      "label": "5-year follow-up with updated OS",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "iDFS",
+      "analysisLabel": "Prespecified interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Ribociclib + NSAI",
+      "controlArm": "NSAI alone",
+      "experimentalValue": "3-year iDFS 90.4%",
+      "controlValue": "3-year iDFS 87.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.75,
+      "ciLower": 0.62,
+      "ciUpper": 0.91,
+      "pValue": "0.003",
+      "dataCutoff": "2023-01-11",
+      "source": {
+        "pmid": "38507751",
+        "location": "abstract"
+      },
+      "sourceQuote": "At 3 years, invasive disease-free survival was 90.4% with ribociclib plus an NSAI and 87.1% with an NSAI alone (hazard ratio for invasive disease, recurrence, or death, 0.75; 95% confidence interval, 0.62 to 0.91; P = 0.003).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "iDFS",
+      "analysisLabel": "Final iDFS analysis (median follow-up 33.3 months)",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Ribociclib + NSAI",
+      "controlArm": "NSAI alone",
+      "experimentalValue": "3-year iDFS 90.7%",
+      "controlValue": "3-year iDFS 87.6%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.749,
+      "ciLower": 0.628,
+      "ciUpper": 0.892,
+      "pValue": "0.0012",
+      "followUp": "Median 33.3 months",
+      "dataCutoff": "2023-07-21",
+      "source": {
+        "pmid": "39442617",
+        "location": "abstract"
+      },
+      "sourceQuote": "Ribociclib plus NSAI demonstrated significant iDFS benefit over NSAI alone [hazard ratio 0.749, 95% confidence interval (CI) 0.628-0.892; P = 0.0012]. The 3-year iDFS rates were 90.7% (95% CI 89.3% to 91.8%) versus 87.6% (95% CI 86.1% to 88.9%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "iDFS",
+      "analysisLabel": "5-year follow-up (median 55.4 months)",
+      "population": "ITT",
+      "experimentalArm": "Ribociclib + NSAI",
+      "controlArm": "NSAI alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.716,
+      "ciLower": 0.618,
+      "ciUpper": 0.829,
+      "pValue": "nominal one-sided <0.0001",
+      "followUp": "Median 55.4 months",
+      "source": {
+        "pmid": "41320342",
+        "location": "abstract"
+      },
+      "sourceQuote": "With a median iDFS follow-up of 55.4 months, ribociclib + NSAI demonstrated persistent iDFS benefit versus NSAI alone [hazard ratio 0.716, 95% confidence interval (CI) 0.618-0.829, nominal one-sided log-rank P < 0.0001].",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "5-year follow-up (median 55.4 months)",
+      "population": "ITT",
+      "experimentalArm": "Ribociclib + NSAI",
+      "controlArm": "NSAI alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.8,
+      "ciLower": 0.637,
+      "ciUpper": 1.003,
+      "pValue": "nominal one-sided 0.026",
+      "source": {
+        "pmid": "41320342",
+        "location": "abstract"
+      },
+      "sourceQuote": "As OS continues to mature, numerical improvement in favor of ribociclib was observed (hazard ratio 0.800, 95% CI 0.637-1.003, nominal one-sided log-rank P = 0.026).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Overall safety (qualitative)",
+      "source": {
+        "pmid": "38507751",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 3-year regimen of ribociclib at a 400-mg starting dose plus an NSAI was not associated with any new safety signals.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large phase 3 trial including a broader population (stage II-III, selected node-negative) than prior adjuvant CDK4/6 trials",
+      "Benefit persisted with extended follow-up after ribociclib completion"
+    ],
+    "limitations": [
+      "Open-label",
+      "OS immature with no statistically significant difference reported",
+      "Primary report was an interim analysis"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adding 3 years of ribociclib to an aromatase inhibitor for stage II-III HR+/HER2- early breast cancer meeting NATALEE eligibility, including selected node-negative patients with additional risk features.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "NATALEE extends adjuvant CDK4/6 inhibition to some node-negative stage II disease — check the trial's risk definitions rather than nodal status alone.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 38507751, 39442617 and 41320342. No total sample size sentence appears in the abstracts; arm sizes taken from PMID 39442617."
+  }
+}

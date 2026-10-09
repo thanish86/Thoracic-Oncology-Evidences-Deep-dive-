@@ -1,0 +1,47 @@
+{
+  "slug": "alk",
+  "name": "ALK rearrangement",
+  "gene": "ALK",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "ALK gene rearrangements create constitutively active fusion kinases in a minority of NSCLC, typically adenocarcinomas in younger never/light smokers, and predict marked sensitivity to ALK tyrosine kinase inhibitors.",
+  "biology": "Chromosomal rearrangement (most commonly an inversion on chromosome 2p) fuses the ALK kinase domain to a partner, most often EML4, whose coiled-coil domain mediates ligand-independent dimerisation and constitutive kinase activity driving MAPK, PI3K-AKT and JAK-STAT signalling. Distinct EML4-ALK variants (e.g. variant 1 and variant 3) differ in protein stability and have been associated with differing TKI sensitivity and resistance mutation patterns; TP53 co-mutation is associated with poorer outcomes.",
+  "alterations": [
+    "EML4-ALK fusion (multiple breakpoint variants, including v1, v2, v3a/b)",
+    "Non-EML4 partners (e.g. KIF5B, TFG, KLC1)",
+    "Acquired ALK kinase-domain resistance mutations (G1202R, L1196M, G1269A, I1171X, F1174X)",
+    "Compound ALK mutations after sequential TKIs"
+  ],
+  "testing": {
+    "methods": [
+      "Immunohistochemistry (e.g. D5F3 or 5A4 clones) as a validated screening or standalone assay",
+      "Fluorescence in situ hybridisation (break-apart probe)",
+      "RNA-based or DNA-based NGS (RNA-based or hybrid-capture preferred for fusion detection)",
+      "Plasma ctDNA NGS"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "IHC is rapid and sensitive; FISH may miss some complex rearrangements and NGS may miss some fusions if intronic breakpoints are not covered, so discordant results warrant orthogonal testing. Plasma testing has lower sensitivity for fusions than for point mutations."
+  },
+  "predictiveRelevance": "ALK rearrangement predicts benefit from ALK TKIs; next-generation agents (alectinib, brigatinib, lorlatinib) are preferred first-line options over crizotinib and chemotherapy. Single-agent immune checkpoint inhibition has limited activity. ALK status is relevant to adjuvant TKI therapy after resection. Characterising resistance mechanisms at progression helps select subsequent ALK TKIs.",
+  "resistance": [
+    "On-target ALK kinase-domain mutations; G1202R solvent-front mutation is the dominant on-target mechanism after second-generation TKIs and is addressed by lorlatinib",
+    "Compound ALK mutations after sequential second-generation TKIs and lorlatinib, which may confer cross-resistance",
+    "Bypass activation: MET amplification, EGFR activation, KIT, MAPK pathway alterations",
+    "Lineage plasticity and histological transformation (small-cell or squamous)"
+  ],
+  "drugs": [
+    "alectinib",
+    "brigatinib",
+    "lorlatinib",
+    "crizotinib"
+  ],
+  "pathway": "alk-fusion",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "ALK-positive NSCLC has a high propensity for brain metastases. Crizotinib has limited CNS penetration, whereas alectinib, brigatinib and lorlatinib have substantial intracranial activity; lorlatinib in particular has shown strong protection against CNS progression."
+}

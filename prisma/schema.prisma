@@ -1,0 +1,760 @@
+// ONCOATLAS — relational evidence model.
+// Design principles (see DATABASE_SCHEMA.md):
+//  * Every numeric clinical value (TrialOutcomeAnalysis, TrialSafety) links to a
+//    SourceDocument and carries its analysis context (label, cutoff, population).
+//  * Analyses are append-only: updated results are new rows, never overwrites.
+//  * Verification state lives on the record AND in VerificationRecord history.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum EvidenceStatus {
+  VERIFIED
+  PRELIMINARY
+  AWAITING_VERIFICATION
+  UPDATED_ANALYSIS
+  HISTORICAL
+  CORRECTED_RETRACTED
+}
+
+enum TrialResult {
+  POSITIVE
+  NEGATIVE
+  NON_INFERIOR
+  MIXED
+  PENDING
+  DESCRIPTIVE
+}
+
+enum TrialPhase {
+  I
+  I_II
+  II
+  II_III
+  III
+  IV
+  META
+  OBS
+}
+
+enum ArmRole {
+  EXPERIMENTAL
+  CONTROL
+  SINGLE_ARM
+  OTHER
+}
+
+enum EffectMeasure {
+  HR
+  OR
+  RR
+  DIFF
+  NONE
+}
+
+enum PublicationType {
+  PRIMARY
+  UPDATE
+  FINAL_OS
+  SUBGROUP
+  SAFETY
+  QOL
+  PROTOCOL
+  META_ANALYSIS
+  OTHER
+}
+
+enum SourceKind {
+  JOURNAL_ARTICLE
+  CONFERENCE_ABSTRACT
+  REGISTRY_RECORD
+  REGULATORY_LABEL
+  REGULATORY_REVIEW
+  GUIDELINE
+  PROTOCOL
+  OTHER
+}
+
+enum SafetyCategory {
+  GRADE3PLUS
+  SERIOUS
+  IMMUNE
+  DISCONTINUATION
+  DEATHS
+  SPECIFIC
+  GENERAL
+}
+
+enum Jurisdiction {
+  FDA
+  EMA
+  MHRA
+  PMDA
+  CDSCO
+  OTHER
+}
+
+enum TimelineEventType {
+  LANDMARK_TRIAL
+  NEGATIVE_TRIAL
+  PRACTICE_CHANGE
+  MOLECULAR_BREAKTHROUGH
+  RADIATION_MILESTONE
+  SURGERY_MILESTONE
+  GUIDELINE_UPDATE
+  DRUG_APPROVAL
+}
+
+enum IngestionStage {
+  DISCOVERED
+  REGISTRY_MATCHED
+  METADATA_RETRIEVED
+  SOURCE_RETRIEVED
+  EXTRACTED
+  IN_REVIEW
+  APPROVED
+  PUBLISHED
+  REJECTED
+}
+
+enum VerificationAction {
+  SUBMITTED
+  APPROVED
+  REJECTED
+  CHANGES_REQUESTED
+  REVALIDATED
+  CORRECTED
+}
+
+enum UserRole {
+  READER
+  EDITOR
+  REVIEWER
+  ADMIN
+}
+
+enum QuizFormat {
+  SINGLE_BEST_ANSWER
+  TYPE_K
+  VIGNETTE
+  TRIAL_INTERPRETATION
+  BIOMARKER
+  STAGING
+  IMAGE
+}
+
+// ───────────────────────── Disease taxonomy ─────────────────────────
+
+model CancerType {
+  id           String                  @id @default(cuid())
+  slug         String                  @unique
+  name         String
+  shortName    String
+  description  String
+  organSystem  String // "thoracic", "breast" — extensible to GI, GU, etc.
+  sortOrder    Int                     @default(0)
+  subtypes     CancerSubtype[]
+  histologies  Histology[]
+  stageSystems StageSystem[]
+  trials       ClinicalTrial[]
+  biomarkers   BiomarkerOnCancer[]
+  timeline     EvidenceTimelineEvent[]
+  algorithms   ClinicalAlgorithm[]
+  guidelines   Guideline[]
+  createdAt    DateTime                @default(now())
+  updatedAt    DateTime                @updatedAt
+}
+
+model CancerSubtype {
+  id           String     @id @default(cuid())
+  slug         String
+  name         String
+  description  String?
+  cancerTypeId String
+  cancerType   CancerType @relation(fields: [cancerTypeId], references: [id], onDelete: Cascade)
+
+  @@unique([cancerTypeId, slug])
+}
+
+model Histology {
+  id             String     @id @default(cuid())
+  name           String
+  whoCode        String?
+  classification String? // e.g. "WHO Thoracic Tumours, 5th ed."
+  description    String?
+  cancerTypeId   String
+  cancerType     CancerType @relation(fields: [cancerTypeId], references: [id], onDelete: Cascade)
+}
+
+model StageSystem {
+  id           String         @id @default(cuid())
+  name         String // "TNM", "Masaoka–Koga"
+  cancerTypeId String
+  cancerType   CancerType     @relation(fields: [cancerTypeId], references: [id], onDelete: Cascade)
+  versions     StageVersion[]
+}
+
+model StageVersion {
+  id            String      @id @default(cuid())
+  label         String // "AJCC 8th", "IASLC 9th"
+  effectiveFrom DateTime?
+  notes         String?
+  stageSystemId String
+  stageSystem   StageSystem @relation(fields: [stageSystemId], references: [id], onDelete: Cascade)
+}
+
+// ───────────────────────── Molecular & pharmacology ─────────────────
+
+model MolecularPathway {
+  id          String      @id @default(cuid())
+  slug        String      @unique
+  name        String
+  description String?
+  biomarkers  Biomarker[]
+}
+
+model Biomarker {
+  id                  String              @id @default(cuid())
+  slug                String              @unique
+  name                String
+  gene                String?
+  category            String
+  summary             String
+  biology             String
+  alterations         String[]
+  testingMethods      String[]
+  testingSpecimen     String?
+  testingNotes        String?
+  predictiveRelevance String
+  resistance          String[]
+  cnsConsiderations   String?
+  status              EvidenceStatus      @default(AWAITING_VERIFICATION)
+  pathwayId           String?
+  pathway             MolecularPathway?   @relation(fields: [pathwayId], references: [id])
+  cancers             BiomarkerOnCancer[]
+  drugs               BiomarkerOnDrug[]
+  trials              TrialBiomarker[]
+  curatedBy           String
+  reviewedBy          String?
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime            @updatedAt
+}
+
+model BiomarkerOnCancer {
+  biomarkerId  String
+  cancerTypeId String
+  biomarker    Biomarker  @relation(fields: [biomarkerId], references: [id], onDelete: Cascade)
+  cancerType   CancerType @relation(fields: [cancerTypeId], references: [id], onDelete: Cascade)
+
+  @@id([biomarkerId, cancerTypeId])
+}
+
+model Drug {
+  id            String                 @id @default(cuid())
+  slug          String                 @unique
+  name          String
+  brandNames    String[]
+  drugClass     String
+  targets       String[]
+  mechanism     String
+  route         String
+  keyToxicities String[]
+  monitoring    String[]
+  interactions  String?
+  resistance    String?
+  diseases      String[]
+  status        EvidenceStatus         @default(AWAITING_VERIFICATION)
+  curatedBy     String
+  reviewedBy    String?
+  indications   RegulatoryIndication[]
+  biomarkers    BiomarkerOnDrug[]
+  regimens      RegimenDrug[]
+  trials        TrialDrug[]
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+}
+
+model BiomarkerOnDrug {
+  biomarkerId String
+  drugId      String
+  biomarker   Biomarker @relation(fields: [biomarkerId], references: [id], onDelete: Cascade)
+  drug        Drug      @relation(fields: [drugId], references: [id], onDelete: Cascade)
+
+  @@id([biomarkerId, drugId])
+}
+
+model DrugRegimen {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  name        String // e.g. "Carboplatin–pemetrexed–pembrolizumab"
+  description String?
+  drugs       RegimenDrug[]
+}
+
+model RegimenDrug {
+  regimenId        String
+  drugId           String
+  regimen          DrugRegimen @relation(fields: [regimenId], references: [id], onDelete: Cascade)
+  drug             Drug        @relation(fields: [drugId], references: [id], onDelete: Cascade)
+  // Dosing within a regimen must be sourced
+  dosing           String?
+  sourceDocumentId String?
+
+  @@id([regimenId, drugId])
+}
+
+/// One drug may have many indications across jurisdictions.
+model RegulatoryIndication {
+  id               String               @id @default(cuid())
+  drugId           String
+  drug             Drug                 @relation(fields: [drugId], references: [id], onDelete: Cascade)
+  jurisdiction     Jurisdiction
+  indicationText   String
+  labelledDosing   String?
+  sourceDocumentId String
+  sourceDocument   SourceDocument       @relation(fields: [sourceDocumentId], references: [id])
+  status           EvidenceStatus       @default(AWAITING_VERIFICATION)
+  decisions        RegulatoryDecision[]
+}
+
+model RegulatoryDecision {
+  id               String               @id @default(cuid())
+  indicationId     String
+  indication       RegulatoryIndication @relation(fields: [indicationId], references: [id], onDelete: Cascade)
+  decision         String // "Approved", "Accelerated approval", "Withdrawn", ...
+  decisionDate     DateTime
+  sourceDocumentId String
+  sourceDocument   SourceDocument       @relation(fields: [sourceDocumentId], references: [id])
+}
+
+// ───────────────────────── Clinical trials ───────────────────────────
+
+model ClinicalTrial {
+  id                       String                  @id @default(cuid())
+  slug                     String                  @unique
+  acronym                  String
+  officialTitle            String
+  cancerTypeId             String
+  cancerType               CancerType              @relation(fields: [cancerTypeId], references: [id])
+  subtypes                 String[]
+  stages                   String[]
+  setting                  String
+  lineOfTherapy            String?
+  treatmentClasses         String[]
+  phase                    TrialPhase
+  sponsor                  String?
+  registryIds              Json // [{registry, id}]
+  yearOfPrimaryPublication Int
+  clinicalQuestion         String
+  result                   TrialResult
+  landmark                 Boolean                 @default(false)
+  picoPopulation           String
+  picoIntervention         String
+  picoComparator           String
+  picoOutcomes             String
+  strengths                String[]
+  limitations              String[]
+  clinicalImplications     String?
+  tumourBoardPearl         String?
+  evidenceStatus           EvidenceStatus          @default(AWAITING_VERIFICATION)
+  curatedBy                String
+  curatedAt                DateTime
+  reviewedBy               String?
+  reviewedAt               DateTime?
+  curationNotes            String?
+  design                   TrialDesign?
+  arms                     TrialArm[]
+  eligibility              TrialEligibility[]
+  endpoints                TrialEndpoint[]
+  publications             TrialPublication[]
+  subgroups                TrialSubgroup[]
+  safety                   TrialSafety[]
+  biomarkers               TrialBiomarker[]
+  drugs                    TrialDrug[]
+  claims                   EvidenceClaim[]
+  timelineEvents           EvidenceTimelineEvent[]
+  createdAt                DateTime                @default(now())
+  updatedAt                DateTime                @updatedAt
+
+  @@index([cancerTypeId])
+  @@index([yearOfPrimaryPublication])
+  @@index([evidenceStatus])
+}
+
+model TrialBiomarker {
+  trialId       String
+  biomarkerSlug String
+  trial         ClinicalTrial @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  biomarker     Biomarker?    @relation(fields: [biomarkerId], references: [id])
+  biomarkerId   String?
+
+  @@id([trialId, biomarkerSlug])
+}
+
+model TrialDrug {
+  trialId  String
+  drugSlug String
+  trial    ClinicalTrial @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  drug     Drug?         @relation(fields: [drugId], references: [id])
+  drugId   String?
+
+  @@id([trialId, drugSlug])
+}
+
+model TrialDesign {
+  id                    String        @id @default(cuid())
+  trialId               String        @unique
+  trial                 ClinicalTrial @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  randomised            Boolean
+  blinding              String?
+  sampleSize            Int?
+  sampleSizeSourceQuote String?
+  stratification        String?
+  statisticalPower      String?
+  alpha                 String?
+  interimAnalyses       String?
+  crossover             String?
+  notes                 String?
+}
+
+model TrialArm {
+  id              String        @id @default(cuid())
+  trialId         String
+  trial           ClinicalTrial @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  label           String
+  role            ArmRole
+  regimen         String
+  dosing          String?
+  doseSourceQuote String?
+  n               Int?
+  sortOrder       Int           @default(0)
+}
+
+model TrialEligibility {
+  id               String        @id @default(cuid())
+  trialId          String
+  trial            ClinicalTrial @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  kind             String // "inclusion" | "exclusion"
+  criterion        String
+  sourceDocumentId String?
+}
+
+model TrialEndpoint {
+  id        String         @id @default(cuid())
+  trialId   String
+  trial     ClinicalTrial  @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  code      String // OS, PFS, ...
+  label     String
+  isPrimary Boolean        @default(false)
+  hierarchy Int            @default(0)
+  outcomes  TrialOutcome[]
+
+  @@unique([trialId, code, label])
+}
+
+/// A logical outcome (endpoint × population) that may be reported many times.
+model TrialOutcome {
+  id         String                 @id @default(cuid())
+  endpointId String
+  endpoint   TrialEndpoint          @relation(fields: [endpointId], references: [id], onDelete: Cascade)
+  population String                 @default("ITT")
+  analyses   TrialOutcomeAnalysis[]
+
+  @@unique([endpointId, population])
+}
+
+/// One reported analysis of an outcome. Append-only: never overwrite.
+model TrialOutcomeAnalysis {
+  id                String         @id @default(cuid())
+  outcomeId         String
+  outcome           TrialOutcome   @relation(fields: [outcomeId], references: [id], onDelete: Cascade)
+  analysisLabel     String
+  experimentalArm   String?
+  controlArm        String?
+  experimentalValue String?
+  controlValue      String?
+  effectMeasure     EffectMeasure  @default(NONE)
+  effectEstimate    Float?
+  ciLevel           Float          @default(95)
+  ciLower           Float?
+  ciUpper           Float?
+  pValue            String?
+  followUp          String?
+  dataCutoff        String?
+  sourceDocumentId  String
+  sourceDocument    SourceDocument @relation(fields: [sourceDocumentId], references: [id])
+  sourceLocation    String
+  sourceQuote       String
+  status            EvidenceStatus @default(AWAITING_VERIFICATION)
+  supersededById    String?
+  createdAt         DateTime       @default(now())
+
+  @@index([outcomeId])
+}
+
+model TrialSubgroup {
+  id               String         @id @default(cuid())
+  trialId          String
+  trial            ClinicalTrial  @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  variable         String // "PD-L1", "Sex", ...
+  level            String
+  prespecified     Boolean
+  effectMeasure    EffectMeasure  @default(HR)
+  effectEstimate   Float?
+  ciLower          Float?
+  ciUpper          Float?
+  interactionP     String?
+  sourceDocumentId String
+  sourceDocument   SourceDocument @relation(fields: [sourceDocumentId], references: [id])
+  sourceQuote      String
+  status           EvidenceStatus @default(AWAITING_VERIFICATION)
+}
+
+model TrialSafety {
+  id                String         @id @default(cuid())
+  trialId           String
+  trial             ClinicalTrial  @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  category          SafetyCategory
+  description       String
+  experimentalValue String?
+  controlValue      String?
+  sourceDocumentId  String
+  sourceDocument    SourceDocument @relation(fields: [sourceDocumentId], references: [id])
+  sourceLocation    String
+  sourceQuote       String
+  status            EvidenceStatus @default(AWAITING_VERIFICATION)
+}
+
+/// One trial may have multiple publications.
+model TrialPublication {
+  id               String          @id @default(cuid())
+  trialId          String
+  trial            ClinicalTrial   @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  sourceDocumentId String
+  sourceDocument   SourceDocument  @relation(fields: [sourceDocumentId], references: [id])
+  type             PublicationType
+  label            String?
+
+  @@unique([trialId, sourceDocumentId])
+}
+
+// ───────────────────────── Provenance ───────────────────────────────
+
+model SourceDocument {
+  id              String                    @id @default(cuid())
+  kind            SourceKind
+  title           String
+  journal         String?
+  year            Int?
+  publicationDate String?
+  firstAuthor     String?
+  pmid            String?                   @unique
+  doi             String?                   @unique
+  registryId      String?
+  url             String?
+  retrievedVia    String // PubMed, Crossref, ClinicalTrials.gov, ...
+  retrievedAt     DateTime
+  dataCutoff      String?
+  licenceNote     String?
+  status          EvidenceStatus            @default(AWAITING_VERIFICATION)
+  publications    TrialPublication[]
+  analyses        TrialOutcomeAnalysis[]
+  safety          TrialSafety[]
+  subgroups       TrialSubgroup[]
+  claims          EvidenceClaim[]
+  indications     RegulatoryIndication[]
+  decisions       RegulatoryDecision[]
+  recommendations GuidelineRecommendation[]
+  createdAt       DateTime                  @default(now())
+}
+
+/// Atomic, citable claim used across pages (e.g. a timeline statement).
+model EvidenceClaim {
+  id               String               @id @default(cuid())
+  statement        String
+  trialId          String?
+  trial            ClinicalTrial?       @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  sourceDocumentId String
+  sourceDocument   SourceDocument       @relation(fields: [sourceDocumentId], references: [id])
+  sourceQuote      String
+  status           EvidenceStatus       @default(AWAITING_VERIFICATION)
+  verifications    VerificationRecord[]
+  createdAt        DateTime             @default(now())
+}
+
+/// Human review trail. Status changes to VERIFIED require one of these.
+model VerificationRecord {
+  id         String             @id @default(cuid())
+  entityType String // "ClinicalTrial" | "TrialOutcomeAnalysis" | "EvidenceClaim" | ...
+  entityId   String
+  action     VerificationAction
+  fromStatus EvidenceStatus?
+  toStatus   EvidenceStatus?
+  comment    String?
+  reviewerId String?
+  reviewer   User?              @relation(fields: [reviewerId], references: [id])
+  claimId    String?
+  claim      EvidenceClaim?     @relation(fields: [claimId], references: [id])
+  createdAt  DateTime           @default(now())
+
+  @@index([entityType, entityId])
+}
+
+/// Literature ingestion pipeline queue item.
+model IngestionJob {
+  id         String         @id @default(cuid())
+  query      String
+  source     String // "pubmed" | "clinicaltrials" | "crossref"
+  externalId String?
+  stage      IngestionStage @default(DISCOVERED)
+  payload    Json?
+  error      String?
+  attempts   Int            @default(0)
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+
+  @@unique([source, externalId])
+  @@index([stage])
+}
+
+// ───────────────────────── Guidelines & timeline ────────────────────
+
+/// One guideline may change over time: each version is a row.
+model Guideline {
+  id              String                    @id @default(cuid())
+  body            String // ESMO, NCCN, ASCO
+  title           String
+  version         String
+  publishedOn     DateTime?
+  url             String?
+  cancerTypeId    String
+  cancerType      CancerType                @relation(fields: [cancerTypeId], references: [id])
+  recommendations GuidelineRecommendation[]
+}
+
+model GuidelineRecommendation {
+  id               String         @id @default(cuid())
+  guidelineId      String
+  guideline        Guideline      @relation(fields: [guidelineId], references: [id], onDelete: Cascade)
+  text             String
+  levelOfEvidence  String?
+  grade            String?
+  sourceDocumentId String
+  sourceDocument   SourceDocument @relation(fields: [sourceDocumentId], references: [id])
+  status           EvidenceStatus @default(AWAITING_VERIFICATION)
+}
+
+model EvidenceTimelineEvent {
+  id               String            @id @default(cuid())
+  date             DateTime
+  year             Int
+  title            String
+  summary          String
+  type             TimelineEventType
+  cancerTypeId     String
+  cancerType       CancerType        @relation(fields: [cancerTypeId], references: [id])
+  trialId          String?
+  trial            ClinicalTrial?    @relation(fields: [trialId], references: [id], onDelete: Cascade)
+  jurisdiction     Jurisdiction?
+  biomarkers       String[]
+  treatmentClasses String[]
+  stages           String[]
+  status           EvidenceStatus    @default(AWAITING_VERIFICATION)
+
+  @@index([year])
+}
+
+model ClinicalAlgorithm {
+  id           String         @id @default(cuid())
+  slug         String         @unique
+  title        String
+  cancerTypeId String
+  cancerType   CancerType     @relation(fields: [cancerTypeId], references: [id])
+  jurisdiction String // "Educational — not jurisdiction-specific", "ESMO", ...
+  asOf         DateTime
+  graph        Json // React Flow nodes/edges with trial slugs
+  status       EvidenceStatus @default(AWAITING_VERIFICATION)
+}
+
+model QuizQuestion {
+  id          String         @id @default(cuid())
+  slug        String         @unique
+  format      QuizFormat
+  topic       String
+  stem        String
+  options     Json
+  answer      Json
+  explanation String
+  trialSlugs  String[]
+  status      EvidenceStatus @default(AWAITING_VERIFICATION)
+}
+
+// ───────────────────────── Workspace (no patient data) ──────────────
+
+model User {
+  id            String               @id @default(cuid())
+  email         String               @unique
+  name          String?
+  role          UserRole             @default(READER)
+  bookmarks     Bookmark[]
+  notebooks     Notebook[]
+  annotations   Annotation[]
+  verifications VerificationRecord[]
+  auditLogs     AuditLog[]
+  createdAt     DateTime             @default(now())
+}
+
+model Bookmark {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  entityType String // trial | biomarker | drug
+  entitySlug String
+  collection String?
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, entityType, entitySlug])
+}
+
+model Notebook {
+  id          String       @id @default(cuid())
+  userId      String
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String
+  kind        String       @default("notes") // notes | journal-club | brief | research-question
+  body        String       @default("")
+  annotations Annotation[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Annotation {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notebookId String?
+  notebook   Notebook? @relation(fields: [notebookId], references: [id], onDelete: SetNull)
+  entityType String
+  entitySlug String
+  body       String
+  createdAt  DateTime  @default(now())
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id])
+  action     String
+  entityType String
+  entityId   String
+  diff       Json?
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId])
+}

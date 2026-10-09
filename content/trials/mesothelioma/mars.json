@@ -1,0 +1,172 @@
+{
+  "slug": "mars",
+  "acronym": "MARS",
+  "officialTitle": "Extra-pleural pneumonectomy versus no extra-pleural pneumonectomy for patients with malignant pleural mesothelioma: clinical outcomes of the Mesothelioma and Radical Surgery (MARS) randomised feasibility study",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural"
+  ],
+  "stages": [
+    "resectable"
+  ],
+  "setting": "Trimodality therapy for operable pleural mesothelioma",
+  "lineOfTherapy": "Multimodality",
+  "treatmentClasses": [
+    "surgery",
+    "chemotherapy",
+    "radiotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [],
+  "phase": "II",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label (not masked)",
+    "sampleSize": 50,
+    "sampleSizeSourceQuote": "Between Oct 1, 2005, and Nov 3, 2008, 112 patients were registered and 50 were subsequently randomly assigned: 24 to EPP and 26 to no EPP.",
+    "primaryEndpoints": [
+      "Feasibility of randomisation"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Perioperative mortality",
+      "QOL"
+    ],
+    "notes": "Randomised feasibility study at 12 UK hospitals. All patients had induction platinum-based chemotherapy before randomisation to extrapleural pneumonectomy followed by hemithorax irradiation versus no EPP. Not powered for survival; recorded as phase II for feasibility design (phase not stated in abstract)."
+  },
+  "sponsor": "Cancer Research UK",
+  "registryIds": [
+    {
+      "registry": "ISRCTN",
+      "id": "ISRCTN95583524"
+    }
+  ],
+  "yearOfPrimaryPublication": 2011,
+  "clinicalQuestion": "Is it feasible to randomise patients to extrapleural pneumonectomy within trimodality therapy, and what are the clinical outcomes compared with no EPP?",
+  "result": "NEGATIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Pathologically confirmed pleural mesothelioma fit for trimodality therapy after induction platinum-based chemotherapy",
+    "intervention": "Extrapleural pneumonectomy followed by postoperative hemithorax irradiation",
+    "comparator": "No extrapleural pneumonectomy",
+    "outcomes": "Feasibility, perioperative mortality, overall survival, quality of life"
+  },
+  "arms": [
+    {
+      "label": "EPP",
+      "role": "EXPERIMENTAL",
+      "regimen": "Induction platinum chemotherapy, then extrapleural pneumonectomy and hemithorax radiotherapy",
+      "n": 24
+    },
+    {
+      "label": "No EPP",
+      "role": "CONTROL",
+      "regimen": "Induction platinum chemotherapy, no extrapleural pneumonectomy",
+      "n": 26
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "21723781",
+      "doi": "10.1016/S1470-2045(11)70149-8",
+      "title": "Extra-pleural pneumonectomy versus no extra-pleural pneumonectomy for patients with malignant pleural mesothelioma: clinical outcomes of the Mesothelioma and Radical Surgery (MARS) randomised feasibility study.",
+      "journal": "Lancet Oncol",
+      "year": 2011,
+      "publicationDate": "2011-06-30",
+      "firstAuthor": "Treasure T",
+      "type": "PRIMARY",
+      "label": "Principal clinical outcomes report",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Principal analysis (unadjusted)",
+      "population": "ITT",
+      "experimentalArm": "EPP",
+      "controlArm": "No EPP",
+      "experimentalValue": "median 14.4 months",
+      "controlValue": "median 19.5 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.9,
+      "ciLower": 0.92,
+      "ciUpper": 3.93,
+      "pValue": "0.082",
+      "source": {
+        "pmid": "21723781",
+        "location": "abstract"
+      },
+      "sourceQuote": "The hazard ratio [HR] for overall survival between the EPP and no EPP groups was 1·90 (95% CI 0·92-3·93; exact p=0·082), and after adjustment for sex, histological subtype, stage, and age at randomisation the HR was 2·75 (1·21-6·26; p=0·016). Median survival was 14·4 months (5·3-18·7) for the EPP group and 19·5 months (13·4 to time not yet reached) for the no EPP group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Principal analysis (adjusted)",
+      "population": "ITT, adjusted for sex, histological subtype, stage and age",
+      "experimentalArm": "EPP",
+      "controlArm": "No EPP",
+      "effectMeasure": "HR",
+      "effectEstimate": 2.75,
+      "ciLower": 1.21,
+      "ciUpper": 6.26,
+      "pValue": "0.016",
+      "source": {
+        "pmid": "21723781",
+        "location": "abstract"
+      },
+      "sourceQuote": "after adjustment for sex, histological subtype, stage, and age at randomisation the HR was 2·75 (1·21-6·26; p=0·016).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events (count)",
+      "experimentalValue": "ten",
+      "controlValue": "two",
+      "source": {
+        "pmid": "21723781",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were ten serious adverse events reported in the EPP group and two in the no EPP group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Perioperative deaths in the EPP group",
+      "source": {
+        "pmid": "21723781",
+        "location": "abstract"
+      },
+      "sourceQuote": "Two patients in the EPP group died within 30 days and a further patient died without leaving hospital.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Only randomised evaluation of extrapleural pneumonectomy",
+      "Intention-to-treat analysis"
+    ],
+    "limitations": [
+      "Feasibility study with small sample; not powered for survival",
+      "Many registered patients did not proceed to randomisation",
+      "EPP not completed in a substantial proportion of those allocated"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "The authors concluded that extrapleural pneumonectomy within trimodality therapy offered no benefit and possibly harmed patients, and that a larger trial was not feasible; this contributed to a move away from EPP.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Randomised data, although small, do not support extrapleural pneumonectomy; morbidity and perioperative mortality were substantial.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 21723781. Feasibility results are detailed in another report not ingested."
+  }
+}

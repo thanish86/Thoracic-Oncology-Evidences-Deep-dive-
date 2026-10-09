@@ -1,0 +1,201 @@
+{
+  "slug": "krystal-1",
+  "acronym": "KRYSTAL-1",
+  "officialTitle": "Adagrasib in Non-Small-Cell Lung Cancer Harboring a KRAS G12C Mutation",
+  "disease": "nsclc",
+  "subtypes": [
+    "KRAS G12C",
+    "Previously treated"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "Previously treated advanced",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "tki"
+  ],
+  "biomarkers": [
+    "kras"
+  ],
+  "drugs": [
+    "adagrasib"
+  ],
+  "phase": "I/II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label; response by blinded independent central review",
+    "sampleSize": 116,
+    "sampleSizeSourceQuote": "As of October 15, 2021, a total of 116 patients with-mutated NSCLC had been treated (median follow-up, 12.9 months)",
+    "primaryEndpoints": [
+      "ORR (BICR)"
+    ],
+    "secondaryEndpoints": [
+      "DoR",
+      "PFS",
+      "OS",
+      "Safety"
+    ],
+    "notes": "Registrational phase 2 cohort of the phase 1-2 KRYSTAL-1 study."
+  },
+  "sponsor": "Mirati Therapeutics",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03785249"
+    }
+  ],
+  "yearOfPrimaryPublication": 2022,
+  "clinicalQuestion": "What is the activity of adagrasib in KRAS G12C-mutant NSCLC previously treated with chemotherapy and anti-PD-(L)1 therapy?",
+  "result": "DESCRIPTIVE",
+  "landmark": false,
+  "pico": {
+    "population": "KRAS G12C-mutant NSCLC previously treated with platinum chemotherapy and anti-PD-1/PD-L1 therapy",
+    "intervention": "Adagrasib",
+    "comparator": "None (single-arm)",
+    "outcomes": "Primary: BICR ORR. Secondary: DoR, PFS, OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Adagrasib",
+      "role": "SINGLE_ARM",
+      "regimen": "Adagrasib",
+      "dosing": "600 mg orally twice daily",
+      "doseSourceQuote": "we evaluated adagrasib (600 mg orally twice daily)",
+      "n": 116
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "35658005",
+      "doi": "10.1056/NEJMoa2204619",
+      "title": "Adagrasib in Non-Small-Cell Lung Cancer Harboring aMutation.",
+      "journal": "N Engl J Med",
+      "year": 2022,
+      "publicationDate": "2022-06-03",
+      "firstAuthor": "Jänne PA",
+      "type": "PRIMARY",
+      "label": "Registrational phase 2 cohort",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Phase 2 cohort primary analysis",
+      "population": "Measurable disease (n=112)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Adagrasib",
+      "experimentalValue": "42.9% (48 of 112)",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "Of 112 patients with measurable disease at baseline, 48 (42.9%) had a confirmed objective response.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DoR",
+      "analysisLabel": "Phase 2 cohort primary analysis",
+      "population": "Responders",
+      "experimentalArm": "Adagrasib",
+      "experimentalValue": "median 8.5 months",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median duration of response was 8.5 months (95% confidence interval [CI], 6.2 to 13.8), and the median progression-free survival was 6.5 months (95% CI, 4.7 to 8.4).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Phase 2 cohort primary analysis",
+      "population": "All treated",
+      "experimentalArm": "Adagrasib",
+      "experimentalValue": "median 6.5 months",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median duration of response was 8.5 months (95% confidence interval [CI], 6.2 to 13.8), and the median progression-free survival was 6.5 months (95% CI, 4.7 to 8.4).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Phase 2 cohort (January 2022 cutoff)",
+      "population": "All treated",
+      "experimentalArm": "Adagrasib",
+      "experimentalValue": "median 12.6 months",
+      "followUp": "median 15.6 months",
+      "dataCutoff": "2022-01-15",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "As of January 15, 2022 (median follow-up, 15.6 months), the median overall survival was 12.6 months (95% CI, 9.2 to 19.2).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "CNS_ORR",
+      "analysisLabel": "Phase 2 cohort primary analysis",
+      "population": "Previously treated, stable CNS metastases (n=33)",
+      "experimentalArm": "Adagrasib",
+      "experimentalValue": "33.3%",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "Among 33 patients with previously treated, stable central nervous system metastases, the intracranial confirmed objective response rate was 33.3% (95% CI, 18.0 to 51.8).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Treatment-related adverse events grade 3 or higher",
+      "experimentalValue": "44.8% (any grade 97.4%)",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "Treatment-related adverse events occurred in 97.4% of the patients - grade 1 or 2 in 52.6% and grade 3 or higher in 44.8% (including two grade 5 events)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation due to treatment-related adverse events",
+      "experimentalValue": "6.9%",
+      "source": {
+        "pmid": "35658005",
+        "location": "abstract"
+      },
+      "sourceQuote": "and resulted in drug discontinuation in 6.9% of patients.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "BICR-assessed primary endpoint",
+      "Prospective intracranial activity assessment"
+    ],
+    "limitations": [
+      "Single-arm, non-randomised",
+      "Relatively short follow-up"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established adagrasib as an active option in pretreated KRAS G12C-mutant NSCLC, including activity in stable treated brain metastases.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Adagrasib showed intracranial responses in treated, stable brain metastases — relevant when choosing among KRAS G12C inhibitors.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 35658005. Abstract text strips the 'G12C' label."
+  }
+}

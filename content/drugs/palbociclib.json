@@ -1,0 +1,37 @@
+{
+  "slug": "palbociclib",
+  "name": "Palbociclib",
+  "brandNames": [
+    "Ibrance"
+  ],
+  "drugClass": "CDK4/6 inhibitor",
+  "targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "mechanism": "Selective inhibitor of cyclin D-CDK4/6 that prevents RB phosphorylation, inducing G1 arrest in ER-positive breast cancer cells, used with endocrine therapy.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Neutropenia (usually uncomplicated and reversible)",
+    "Leukopenia and anaemia",
+    "Fatigue",
+    "Stomatitis",
+    "Alopecia",
+    "Interstitial lung disease/pneumonitis (rare)"
+  ],
+  "monitoring": [
+    "Blood counts before each cycle and early in treatment",
+    "Respiratory symptoms"
+  ],
+  "interactions": "Avoid strong CYP3A inhibitors and inducers.",
+  "resistance": "RB1 loss, CCNE1 amplification/cyclin E-CDK2 activation, CDK6 amplification, FAT1 loss, PI3K-AKT activation and ESR1 mutations.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

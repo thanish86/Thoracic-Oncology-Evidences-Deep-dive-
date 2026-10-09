@@ -1,0 +1,203 @@
+{
+  "slug": "create-x",
+  "acronym": "CREATE-X",
+  "officialTitle": "Adjuvant Capecitabine for Breast Cancer after Preoperative Chemotherapy",
+  "disease": "breast",
+  "subtypes": [
+    "HER2-negative",
+    "Residual invasive disease after neoadjuvant chemotherapy",
+    "Triple-negative (subgroup)"
+  ],
+  "stages": [
+    "early",
+    "locally-advanced"
+  ],
+  "setting": "Post-neoadjuvant adjuvant therapy",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "capecitabine"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 910,
+    "sampleSizeSourceQuote": "We randomly assigned 910 patients with HER2-negative residual invasive breast cancer after neoadjuvant chemotherapy (containing anthracycline, taxane, or both) to receive standard postsurgical treatment either with capecitabine or without (control).",
+    "primaryEndpoints": [
+      "DFS"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Safety"
+    ],
+    "notes": "Terminated early after the prespecified interim analysis met the primary endpoint."
+  },
+  "sponsor": "Advanced Clinical Research Organization / Japan Breast Cancer Research Group",
+  "registryIds": [
+    {
+      "registry": "UMIN",
+      "id": "UMIN000000843"
+    }
+  ],
+  "yearOfPrimaryPublication": 2017,
+  "clinicalQuestion": "In HER2-negative breast cancer with residual invasive disease after neoadjuvant chemotherapy, does adjuvant capecitabine improve disease-free and overall survival?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-negative breast cancer with residual invasive carcinoma after anthracycline- and/or taxane-containing neoadjuvant chemotherapy",
+    "intervention": "Standard postsurgical treatment plus capecitabine",
+    "comparator": "Standard postsurgical treatment without capecitabine",
+    "outcomes": "Primary: DFS. Secondary: OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Capecitabine",
+      "role": "EXPERIMENTAL",
+      "regimen": "Standard postsurgical treatment plus capecitabine"
+    },
+    {
+      "label": "Control",
+      "role": "CONTROL",
+      "regimen": "Standard postsurgical treatment"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "28564564",
+      "doi": "10.1056/NEJMoa1612645",
+      "title": "Adjuvant Capecitabine for Breast Cancer after Preoperative Chemotherapy.",
+      "journal": "N Engl J Med",
+      "year": 2017,
+      "publicationDate": "2017-06-01",
+      "firstAuthor": "Masuda N",
+      "type": "PRIMARY",
+      "label": "Final analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Final analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Capecitabine",
+      "controlArm": "Control",
+      "experimentalValue": "5-year DFS 74.1%",
+      "controlValue": "5-year DFS 67.6%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.7,
+      "ciLower": 0.53,
+      "ciUpper": 0.92,
+      "pValue": "0.01",
+      "source": {
+        "pmid": "28564564",
+        "location": "abstract"
+      },
+      "sourceQuote": "The final analysis showed that disease-free survival was longer in the capecitabine group than in the control group (74.1% vs. 67.6% of the patients were alive and free from recurrence or second cancer at 5 years; hazard ratio for recurrence, second cancer, or death, 0.70; 95% confidence interval [CI], 0.53 to 0.92; P=0.01).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final analysis",
+      "population": "ITT",
+      "experimentalArm": "Capecitabine",
+      "controlArm": "Control",
+      "experimentalValue": "5-year OS 89.2%",
+      "controlValue": "5-year OS 83.6%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.59,
+      "ciLower": 0.39,
+      "ciUpper": 0.9,
+      "pValue": "0.01",
+      "source": {
+        "pmid": "28564564",
+        "location": "abstract"
+      },
+      "sourceQuote": "Overall survival was longer in the capecitabine group than in the control group (89.2% vs. 83.6% of the patients were alive at 5 years; hazard ratio for death, 0.59; 95% CI, 0.39 to 0.90; P=0.01).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Final analysis",
+      "population": "Triple-negative subgroup",
+      "experimentalArm": "Capecitabine",
+      "controlArm": "Control",
+      "experimentalValue": "DFS 69.8%",
+      "controlValue": "DFS 56.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLower": 0.39,
+      "ciUpper": 0.87,
+      "source": {
+        "pmid": "28564564",
+        "location": "abstract"
+      },
+      "sourceQuote": "Among patients with triple-negative disease, the rate of disease-free survival was 69.8% in the capecitabine group versus 56.1% in the control group (hazard ratio for recurrence, second cancer, or death, 0.58; 95% CI, 0.39 to 0.87), and the overall survival rate was 78.8% versus 70.3% (hazard ratio for death, 0.52; 95% CI, 0.30 to 0.90).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final analysis",
+      "population": "Triple-negative subgroup",
+      "experimentalArm": "Capecitabine",
+      "controlArm": "Control",
+      "experimentalValue": "OS 78.8%",
+      "controlValue": "OS 70.3%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.52,
+      "ciLower": 0.3,
+      "ciUpper": 0.9,
+      "source": {
+        "pmid": "28564564",
+        "location": "abstract"
+      },
+      "sourceQuote": "Among patients with triple-negative disease, the rate of disease-free survival was 69.8% in the capecitabine group versus 56.1% in the control group (hazard ratio for recurrence, second cancer, or death, 0.58; 95% CI, 0.39 to 0.87), and the overall survival rate was 78.8% versus 70.3% (hazard ratio for death, 0.52; 95% CI, 0.30 to 0.90).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Hand-foot syndrome (capecitabine group)",
+      "experimentalValue": "73.4%",
+      "source": {
+        "pmid": "28564564",
+        "location": "abstract"
+      },
+      "sourceQuote": "The hand-foot syndrome, the most common adverse reaction to capecitabine, occurred in 73.4% of the patients in the capecitabine group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase 3 trial with both DFS and OS benefit",
+      "Response-adapted design targeting residual disease"
+    ],
+    "limitations": [
+      "Open-label; conducted in Japan and Korea, which may affect generalisability",
+      "Early termination at interim analysis",
+      "Triple-negative benefit derived from a subgroup analysis; HR+ patients received concurrent endocrine therapy"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adjuvant capecitabine for HER2-negative breast cancer with residual invasive disease after neoadjuvant chemotherapy, with the greatest apparent benefit in the triple-negative subgroup.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Residual disease after neoadjuvant chemotherapy in TNBC is a trigger for escalation — capecitabine (CREATE-X) is one option, alongside olaparib for germline BRCA carriers (OlympiA).",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 28564564."
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "profile-1001-ros1",
+  "acronym": "PROFILE 1001 (ROS1 cohort)",
+  "officialTitle": "Crizotinib in ROS1-rearranged non-small-cell lung cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "ROS1-rearranged"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "Advanced (expansion cohort of phase 1 study)",
+  "treatmentClasses": [
+    "tki"
+  ],
+  "biomarkers": [
+    "ros1"
+  ],
+  "drugs": [
+    "crizotinib"
+  ],
+  "phase": "I",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label, single-arm expansion cohort",
+    "sampleSize": 50,
+    "sampleSizeSourceQuote": "We enrolled 50 patients with advanced NSCLC who tested positive for ROS1 rearrangement in an expansion cohort of the phase 1 study of crizotinib.",
+    "primaryEndpoints": [
+      "Safety, pharmacokinetics and response"
+    ],
+    "secondaryEndpoints": []
+  },
+  "sponsor": "Pfizer",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00585195"
+    }
+  ],
+  "yearOfPrimaryPublication": 2014,
+  "clinicalQuestion": "Does crizotinib have antitumour activity in advanced ROS1-rearranged NSCLC?",
+  "result": "DESCRIPTIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Advanced NSCLC with ROS1 rearrangement",
+    "intervention": "Crizotinib",
+    "comparator": "None (single-arm)",
+    "outcomes": "ORR, DoR, PFS, safety"
+  },
+  "arms": [
+    {
+      "label": "Crizotinib",
+      "role": "SINGLE_ARM",
+      "regimen": "Crizotinib",
+      "dosing": "250 mg orally twice daily",
+      "doseSourceQuote": "Patients were treated with crizotinib at the standard oral dose of 250 mg twice daily",
+      "n": 50
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "25264305",
+      "doi": "10.1056/NEJMoa1406766",
+      "title": "Crizotinib in ROS1-rearranged non-small-cell lung cancer.",
+      "journal": "N Engl J Med",
+      "year": 2014,
+      "publicationDate": "2014-09-27",
+      "firstAuthor": "Shaw AT",
+      "type": "PRIMARY",
+      "label": "ROS1 expansion cohort",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary report",
+      "population": "ROS1-rearranged (n=50)",
+      "experimentalArm": "Crizotinib",
+      "experimentalValue": "72% (95% CI 58 to 84)",
+      "source": {
+        "pmid": "25264305",
+        "location": "abstract"
+      },
+      "sourceQuote": "The objective response rate was 72% (95% confidence interval [CI], 58 to 84), with 3 complete responses and 33 partial responses.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DoR",
+      "analysisLabel": "Primary report",
+      "population": "Responders",
+      "experimentalArm": "Crizotinib",
+      "experimentalValue": "median 17.6 months",
+      "source": {
+        "pmid": "25264305",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median duration of response was 17.6 months (95% CI, 14.5 to not reached).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary report",
+      "population": "ROS1-rearranged (n=50)",
+      "experimentalArm": "Crizotinib",
+      "experimentalValue": "median 19.2 months",
+      "source": {
+        "pmid": "25264305",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median progression-free survival was 19.2 months (95% CI, 14.4 to not reached), with 25 patients (50%) still in follow-up for progression.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Safety profile",
+      "experimentalValue": "Similar to ALK-rearranged NSCLC experience",
+      "source": {
+        "pmid": "25264305",
+        "location": "abstract"
+      },
+      "sourceQuote": "The safety profile of crizotinib was similar to that seen in patients with ALK-rearranged NSCLC.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Molecularly defined cohort with fusion-partner characterisation"
+    ],
+    "limitations": [
+      "Single-arm, non-randomised phase 1 expansion cohort",
+      "Small sample size"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Defined ROS1 rearrangement as an actionable driver in NSCLC with high responsiveness to crizotinib, supporting routine ROS1 testing.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "ROS1 shares kinase-domain homology with ALK — crizotinib was active across fusion partners.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 25264305."
+  }
+}

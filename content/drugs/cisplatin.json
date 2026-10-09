@@ -1,0 +1,41 @@
+{
+  "slug": "cisplatin",
+  "name": "Cisplatin",
+  "brandNames": [],
+  "drugClass": "Platinum alkylating-like agent",
+  "targets": [
+    "DNA"
+  ],
+  "mechanism": "Forms intrastrand and interstrand DNA crosslinks after aquation, blocking replication and transcription and triggering apoptosis.",
+  "route": "intravenous",
+  "diseases": [
+    "nsclc",
+    "sclc",
+    "mesothelioma",
+    "thymic"
+  ],
+  "keyToxicities": [
+    "Nephrotoxicity",
+    "Ototoxicity and tinnitus",
+    "Peripheral sensory neuropathy",
+    "Highly emetogenic nausea and vomiting (acute and delayed)",
+    "Hypomagnesaemia and other electrolyte losses",
+    "Myelosuppression",
+    "Thromboembolic events"
+  ],
+  "monitoring": [
+    "Renal function and electrolytes (magnesium, potassium) before each cycle",
+    "Pre- and post-hydration",
+    "Audiometry where clinically indicated",
+    "Neuropathy assessment",
+    "Multi-agent antiemetic prophylaxis"
+  ],
+  "interactions": "Avoid other nephrotoxic (aminoglycosides, NSAIDs) and ototoxic drugs.",
+  "resistance": "Enhanced nucleotide excision repair (e.g. ERCC1), reduced uptake, increased glutathione/metallothionein inactivation and apoptotic defects.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

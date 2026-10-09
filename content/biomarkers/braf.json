@@ -1,0 +1,45 @@
+{
+  "slug": "braf",
+  "name": "BRAF mutation",
+  "gene": "BRAF",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "BRAF mutations occur in a small subset of NSCLC; BRAF V600E is a validated target for combined BRAF and MEK inhibition, whereas non-V600 mutations are mechanistically heterogeneous and lack a standard targeted option.",
+  "biology": "BRAF is a RAF-family serine/threonine kinase in the MAPK cascade downstream of RAS. Class I mutations (V600) signal as RAS-independent monomers and are sensitive to current BRAF inhibitors. Class II mutations signal as RAS-independent dimers, and class III mutations are kinase-impaired and amplify signalling through RAS-dependent CRAF heterodimers; these classes are not effectively inhibited by first-generation monomer-selective BRAF inhibitors. Unlike other drivers, BRAF mutations occur in both smokers and never-smokers.",
+  "alterations": [
+    "Class I: BRAF V600E",
+    "Class II: e.g. K601E, L597, G469A/V, fusions",
+    "Class III: e.g. D594G, G466V",
+    "BRAF fusions (rare)",
+    "Acquired BRAF fusions or V600E as resistance to EGFR TKIs"
+  ],
+  "testing": {
+    "methods": [
+      "DNA-based NGS (tissue)",
+      "Plasma ctDNA NGS",
+      "PCR-based assays (V600-specific)",
+      "BRAF V600E mutation-specific immunohistochemistry (VE1), research or screening use"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "Broad NGS is preferred to capture non-V600 variants and co-alterations."
+  },
+  "predictiveRelevance": "BRAF V600E predicts benefit from dabrafenib plus trametinib (and other BRAF/MEK combinations); the role of these agents in non-V600 mutations is not established. Immune checkpoint inhibitors retain activity in BRAF-mutant NSCLC, particularly in smokers, and sequencing between targeted therapy and immunotherapy is individualised.",
+  "resistance": [
+    "MAPK reactivation: NRAS/KRAS mutations, MEK1/2 mutations, BRAF amplification or splice variants",
+    "PI3K pathway activation (PIK3CA, PTEN loss)",
+    "Bypass receptor tyrosine kinase activation"
+  ],
+  "drugs": [
+    "dabrafenib",
+    "trametinib"
+  ],
+  "pathway": "mapk",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Intracranial activity of BRAF/MEK combinations has been reported, but CNS-specific data in NSCLC are limited compared with melanoma."
+}

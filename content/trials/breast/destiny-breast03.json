@@ -1,0 +1,221 @@
+{
+  "slug": "destiny-breast03",
+  "acronym": "DESTINY-Breast03",
+  "officialTitle": "Trastuzumab Deruxtecan versus Trastuzumab Emtansine for Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HER2+"],
+  "stages": ["metastatic"],
+  "setting": "Previously treated metastatic (after trastuzumab and a taxane)",
+  "lineOfTherapy": "2L",
+  "treatmentClasses": ["adc", "her2-directed"],
+  "biomarkers": ["her2"],
+  "drugs": ["trastuzumab-deruxtecan", "trastuzumab-emtansine"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by blinded independent central review",
+    "sampleSize": 524,
+    "sampleSizeSourceQuote": "Among 524 randomly assigned patients",
+    "primaryEndpoints": ["PFS (BICR)"],
+    "secondaryEndpoints": ["OS", "ORR", "Safety"],
+    "notes": "1:1 randomisation stratified by hormone receptor status, previous pertuzumab and history of visceral disease (per updated Lancet report)."
+  },
+  "sponsor": "Daiichi Sankyo and AstraZeneca",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT03529110" }],
+  "yearOfPrimaryPublication": 2022,
+  "clinicalQuestion": "Is trastuzumab deruxtecan superior to trastuzumab emtansine in HER2-positive metastatic breast cancer previously treated with trastuzumab and a taxane?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-positive unresectable or metastatic breast cancer previously treated with trastuzumab and a taxane",
+    "intervention": "Trastuzumab deruxtecan",
+    "comparator": "Trastuzumab emtansine",
+    "outcomes": "Primary: PFS by blinded independent central review. Secondary: OS, objective response, safety"
+  },
+  "arms": [
+    {
+      "label": "Trastuzumab deruxtecan",
+      "role": "EXPERIMENTAL",
+      "regimen": "Trastuzumab deruxtecan",
+      "dosing": "5.4 mg/kg IV every 3 weeks",
+      "doseSourceQuote": "Patients were randomly assigned (1:1) to receive trastuzumab deruxtecan 5·4 mg/kg or trastuzumab emtansine 3·6 mg/kg, both administered by intravenous infusion every 3 weeks.",
+      "n": 261
+    },
+    {
+      "label": "Trastuzumab emtansine",
+      "role": "CONTROL",
+      "regimen": "Trastuzumab emtansine",
+      "dosing": "3.6 mg/kg IV every 3 weeks",
+      "doseSourceQuote": "Patients were randomly assigned (1:1) to receive trastuzumab deruxtecan 5·4 mg/kg or trastuzumab emtansine 3·6 mg/kg, both administered by intravenous infusion every 3 weeks.",
+      "n": 263
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "35320644",
+      "doi": "10.1056/NEJMoa2115022",
+      "title": "Trastuzumab Deruxtecan versus Trastuzumab Emtansine for Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2022,
+      "publicationDate": "2022-03-24",
+      "firstAuthor": "Cortés J",
+      "type": "PRIMARY",
+      "label": "Primary PFS interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "36495879",
+      "doi": "10.1016/S0140-6736(22)02420-5",
+      "title": "Trastuzumab deruxtecan versus trastuzumab emtansine in patients with HER2-positive metastatic breast cancer: updated results from DESTINY-Breast03, a randomised, open-label, phase 3 trial.",
+      "journal": "Lancet",
+      "year": 2022,
+      "publicationDate": "2022-12-07",
+      "firstAuthor": "Hurvitz SA",
+      "type": "UPDATE",
+      "label": "Second OS interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR (12-month PFS rate)",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Trastuzumab deruxtecan",
+      "controlArm": "Trastuzumab emtansine",
+      "experimentalValue": "12-month PFS 75.8%",
+      "controlValue": "12-month PFS 34.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.28,
+      "ciLower": 0.22,
+      "ciUpper": 0.37,
+      "pValue": "<0.001",
+      "source": { "pmid": "35320644", "location": "abstract" },
+      "sourceQuote": "the percentage of those who were alive without disease progression at 12 months was 75.8% (95% confidence interval [CI], 69.8 to 80.7) with trastuzumab deruxtecan and 34.1% (95% CI, 27.7 to 40.5) with trastuzumab emtansine (hazard ratio for progression or death from any cause, 0.28; 95% CI, 0.22 to 0.37; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "12-month OS rate",
+      "analysisLabel": "Primary analysis (first OS interim)",
+      "population": "ITT",
+      "experimentalArm": "Trastuzumab deruxtecan",
+      "controlArm": "Trastuzumab emtansine",
+      "experimentalValue": "12-month OS 94.1%",
+      "controlValue": "12-month OS 85.9%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.55,
+      "ciLower": 0.36,
+      "ciUpper": 0.86,
+      "source": { "pmid": "35320644", "location": "abstract" },
+      "sourceQuote": "The percentage of patients who were alive at 12 months was 94.1% (95% CI, 90.3 to 96.4) with trastuzumab deruxtecan and 85.9% (95% CI, 80.9 to 89.7) with trastuzumab emtansine (hazard ratio for death, 0.55; 95% CI, 0.36 to 0.86; prespecified significance boundary not reached).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Trastuzumab deruxtecan",
+      "controlArm": "Trastuzumab emtansine",
+      "experimentalValue": "79.7%",
+      "controlValue": "34.2%",
+      "source": { "pmid": "35320644", "location": "abstract" },
+      "sourceQuote": "An overall response (a complete or partial response) occurred in 79.7% (95% CI, 74.3 to 84.4) of the patients who received trastuzumab deruxtecan and in 34.2% (95% CI, 28.5 to 40.3) of those who received trastuzumab emtansine.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR",
+      "analysisLabel": "Updated analysis (second OS interim)",
+      "population": "Full analysis set",
+      "experimentalArm": "Trastuzumab deruxtecan",
+      "controlArm": "Trastuzumab emtansine",
+      "experimentalValue": "median 28.8 months",
+      "controlValue": "median 6.8 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.33,
+      "ciLower": 0.26,
+      "ciUpper": 0.43,
+      "pValue": "nominal p<0.0001",
+      "followUp": "median 28.4 vs 26.5 months",
+      "source": { "pmid": "36495879", "location": "abstract" },
+      "sourceQuote": "Median duration of study follow-up was 28·4 months (IQR 22·1-32·9) with trastuzumab deruxtecan and 26·5 months (14·5-31·3) with trastuzumab emtansine. Median progression-free survival by blinded independent central review was 28·8 months (95% CI 22·4-37·9) with trastuzumab deruxtecan and 6·8 months (5·6-8·2) with trastuzumab emtansine (hazard ratio [HR] 0·33 [95% CI 0·26-0·43]; nominal p<0·0001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Updated analysis (second OS interim)",
+      "population": "Full analysis set",
+      "experimentalArm": "Trastuzumab deruxtecan",
+      "controlArm": "Trastuzumab emtansine",
+      "experimentalValue": "median not reached; 72 (28%) events",
+      "controlValue": "median not reached; 97 (37%) events",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.64,
+      "ciLower": 0.47,
+      "ciUpper": 0.87,
+      "pValue": "0.0037",
+      "source": { "pmid": "36495879", "location": "abstract" },
+      "sourceQuote": "Median overall survival was not reached (95% CI 40·5 months-not estimable), with 72 (28%) overall survival events, in the trastuzumab deruxtecan group and was not reached (34·0 months-not estimable), with 97 (37%) overall survival events, in the trastuzumab emtansine group (HR 0·64; 95% CI 0·47-0·87]; p=0·0037).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Drug-related adverse events of grade 3 or 4 (primary analysis)",
+      "experimentalValue": "45.1%",
+      "controlValue": "39.8%",
+      "source": { "pmid": "35320644", "location": "abstract" },
+      "sourceQuote": "the incidence of drug-related adverse events of grade 3 or 4 was 45.1% and 39.8%, respectively",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Adjudicated drug-related interstitial lung disease or pneumonitis (primary analysis); none grade 4 or 5",
+      "experimentalValue": "10.5%",
+      "controlValue": "1.9%",
+      "source": { "pmid": "35320644", "location": "abstract" },
+      "sourceQuote": "Adjudicated drug-related interstitial lung disease or pneumonitis occurred in 10.5% of the patients in the trastuzumab deruxtecan group and in 1.9% of those in the trastuzumab emtansine group; none of these events were of grade 4 or 5.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Adjudicated drug-related interstitial lung disease or pneumonitis (updated analysis); no grade 4 or 5 events",
+      "experimentalValue": "39 (15%)",
+      "controlValue": "eight (3%)",
+      "source": { "pmid": "36495879", "location": "abstract" },
+      "sourceQuote": "Adjudicated drug-related interstitial lung disease or pneumonitis occurred in 39 (15%) patients treated with trastuzumab deruxtecan and eight (3%) patients treated with trastuzumab emtansine, with no grade 4 or 5 events in either group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III head-to-head comparison against an active ADC standard",
+      "Primary endpoint by blinded independent central review",
+      "OS benefit confirmed at the second interim analysis"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Interstitial lung disease/pneumonitis is a clinically important class risk requiring monitoring"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports trastuzumab deruxtecan over trastuzumab emtansine after trastuzumab and a taxane in HER2-positive metastatic breast cancer, with improved PFS and OS at the updated analysis.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Large PFS gain over T-DM1, but counsel on and actively monitor for ILD/pneumonitis throughout T-DXd therapy.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 35320644 (primary) and PMID 36495879 (updated, second OS interim). Arm sizes and doses from PMID 36495879."
+  }
+}

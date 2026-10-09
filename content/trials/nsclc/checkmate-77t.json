@@ -1,0 +1,184 @@
+{
+  "slug": "checkmate-77t",
+  "acronym": "CheckMate 77T",
+  "officialTitle": "Perioperative Nivolumab in Resectable Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Perioperative (neoadjuvant + adjuvant)",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "nivolumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind",
+    "primaryEndpoints": [
+      "EFS (BICR)"
+    ],
+    "secondaryEndpoints": [
+      "pCR (BICR)",
+      "MPR (BICR)",
+      "OS",
+      "Safety"
+    ]
+  },
+  "sponsor": "Bristol Myers Squibb",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT04025879"
+    }
+  ],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Does perioperative nivolumab (neoadjuvant with chemotherapy plus one year adjuvant) improve EFS over neoadjuvant chemotherapy in resectable stage IIA–IIIB NSCLC?",
+  "result": "POSITIVE",
+  "landmark": false,
+  "pico": {
+    "population": "Adults with resectable stage IIA to IIIB NSCLC",
+    "intervention": "Neoadjuvant nivolumab plus chemotherapy every 3 weeks for 4 cycles, surgery, then adjuvant nivolumab every 4 weeks for 1 year (as sourced in arm dosing)",
+    "comparator": "Neoadjuvant chemotherapy plus placebo, surgery, then adjuvant placebo",
+    "outcomes": "Primary: EFS. Secondary: pCR, MPR, OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Perioperative nivolumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Neoadjuvant nivolumab plus chemotherapy, surgery, adjuvant nivolumab",
+      "dosing": "Neoadjuvant nivolumab plus chemotherapy every 3 weeks for 4 cycles; adjuvant nivolumab every 4 weeks for 1 year",
+      "doseSourceQuote": "neoadjuvant nivolumab plus chemotherapy or neoadjuvant chemotherapy plus placebo every 3 weeks for 4 cycles, followed by surgery and adjuvant nivolumab or placebo every 4 weeks for 1 year"
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Neoadjuvant chemotherapy plus placebo, surgery, adjuvant placebo"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "38749033",
+      "doi": "10.1056/NEJMoa2311926",
+      "title": "Perioperative Nivolumab in Resectable Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "publicationDate": "2024-05-16",
+      "firstAuthor": "Cascone T",
+      "type": "PRIMARY",
+      "label": "Prespecified interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "EFS",
+      "endpointLabel": "EFS by blinded independent review",
+      "analysisLabel": "Prespecified interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Perioperative nivolumab",
+      "controlArm": "Chemotherapy plus placebo",
+      "experimentalValue": "18-month EFS 70.2%",
+      "controlValue": "18-month EFS 50.0%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLevel": 97.36,
+      "ciLower": 0.42,
+      "ciUpper": 0.81,
+      "pValue": "<0.001",
+      "followUp": "Median 25.4 months",
+      "source": {
+        "pmid": "38749033",
+        "location": "abstract"
+      },
+      "sourceQuote": "At this prespecified interim analysis (median follow-up, 25.4 months), the percentage of patients with 18-month event-free survival was 70.2% in the nivolumab group and 50.0% in the chemotherapy group (hazard ratio for disease progression or recurrence, abandoned surgery, or death, 0.58; 97.36% confidence interval [CI], 0.42 to 0.81; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "pCR",
+      "analysisLabel": "Prespecified interim analysis",
+      "population": "ITT",
+      "experimentalArm": "Perioperative nivolumab",
+      "controlArm": "Chemotherapy plus placebo",
+      "experimentalValue": "25.3%",
+      "controlValue": "4.7%",
+      "effectMeasure": "OR",
+      "effectEstimate": 6.64,
+      "ciLower": 3.4,
+      "ciUpper": 12.97,
+      "source": {
+        "pmid": "38749033",
+        "location": "abstract"
+      },
+      "sourceQuote": "A pathological complete response occurred in 25.3% of the patients in the nivolumab group and in 4.7% of those in the chemotherapy group (odds ratio, 6.64; 95% CI, 3.40 to 12.97)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "MPR",
+      "analysisLabel": "Prespecified interim analysis",
+      "population": "ITT",
+      "experimentalArm": "Perioperative nivolumab",
+      "controlArm": "Chemotherapy plus placebo",
+      "experimentalValue": "35.4%",
+      "controlValue": "12.1%",
+      "effectMeasure": "OR",
+      "effectEstimate": 4.01,
+      "ciLower": 2.48,
+      "ciUpper": 6.49,
+      "source": {
+        "pmid": "38749033",
+        "location": "abstract"
+      },
+      "sourceQuote": "a major pathological response occurred in 35.4% and 12.1%, respectively (odds ratio, 4.01; 95% CI, 2.48 to 6.49)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 treatment-related adverse events",
+      "experimentalValue": "32.5%",
+      "controlValue": "25.2%",
+      "source": {
+        "pmid": "38749033",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 3 or 4 treatment-related adverse events occurred in 32.5% of the patients in the nivolumab group and in 25.2% of those in the chemotherapy group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind randomised phase III",
+      "EFS and pathological endpoints by blinded independent review"
+    ],
+    "limitations": [
+      "Interim analysis; OS immature",
+      "Cannot isolate contribution of the adjuvant phase versus neoadjuvant-only nivolumab (CheckMate 816)",
+      "Sample size not reported in the abstract"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports perioperative nivolumab as an option for resectable stage IIA–IIIB NSCLC; whether adjuvant nivolumab adds benefit beyond neoadjuvant chemo-immunotherapy alone remains unresolved by randomised data.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "CheckMate 77T adds a year of adjuvant nivolumab to the CheckMate 816 approach — the open question is who needs the adjuvant phase.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 38749033. Sample size not printed in the abstract and therefore omitted."
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "ialt",
+  "acronym": "IALT",
+  "officialTitle": "International Adjuvant Lung Cancer Trial: cisplatin-based adjuvant chemotherapy in completely resected NSCLC",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "cisplatin",
+    "etoposide",
+    "vinorelbine",
+    "vinblastine",
+    "vindesine"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "sampleSize": 1867,
+    "sampleSizeSourceQuote": "A total of 1867 patients underwent randomization",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "DFS"
+    ],
+    "notes": "Each centre pre-specified eligible pathological stages, cisplatin dose, partner drug and postoperative radiotherapy policy."
+  },
+  "yearOfPrimaryPublication": 2004,
+  "clinicalQuestion": "Does cisplatin-based adjuvant chemotherapy improve survival after complete resection of NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Completely resected NSCLC, pathological stage I to III",
+    "intervention": "Three or four cycles of cisplatin-based doublet chemotherapy (partner drug chosen per centre)",
+    "comparator": "Observation",
+    "outcomes": "Primary: OS. Secondary: DFS"
+  },
+  "arms": [
+    {
+      "label": "Cisplatin-based chemotherapy",
+      "role": "EXPERIMENTAL",
+      "regimen": "Cisplatin plus etoposide, vinorelbine, vinblastine or vindesine (centre choice), three or four cycles",
+      "n": 932
+    },
+    {
+      "label": "Observation",
+      "role": "CONTROL",
+      "regimen": "Observation"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "14736927",
+      "doi": "10.1056/NEJMoa031644",
+      "title": "Cisplatin-based adjuvant chemotherapy in patients with completely resected non-small-cell lung cancer.",
+      "journal": "N Engl J Med",
+      "year": 2004,
+      "publicationDate": "2004-01-22",
+      "firstAuthor": "Arriagada R",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Cisplatin-based chemotherapy",
+      "controlArm": "Observation",
+      "experimentalValue": "44.5% at five years",
+      "controlValue": "40.4% at five years",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.86,
+      "ciLower": 0.76,
+      "ciUpper": 0.98,
+      "pValue": "<0.03",
+      "followUp": "Median 56 months",
+      "source": {
+        "pmid": "14736927",
+        "location": "abstract"
+      },
+      "sourceQuote": "Patients assigned to chemotherapy had a significantly higher survival rate than those assigned to observation (44.5 percent vs. 40.4 percent at five years [469 deaths vs. 504]; hazard ratio for death, 0.86; 95 percent confidence interval, 0.76 to 0.98; P<0.03).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Cisplatin-based chemotherapy",
+      "controlArm": "Observation",
+      "experimentalValue": "39.4% at five years",
+      "controlValue": "34.3% at five years",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.83,
+      "ciLower": 0.74,
+      "ciUpper": 0.94,
+      "pValue": "<0.003",
+      "source": {
+        "pmid": "14736927",
+        "location": "abstract"
+      },
+      "sourceQuote": "Patients assigned to chemotherapy also had a significantly higher disease-free survival rate than those assigned to observation (39.4 percent vs. 34.3 percent at five years [518 events vs. 577]; hazard ratio, 0.83; 95 percent confidence interval, 0.74 to 0.94; P<0.003).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "DEATHS",
+      "description": "Deaths from chemotherapy-induced toxic effects",
+      "experimentalValue": "0.8%",
+      "source": {
+        "pmid": "14736927",
+        "location": "abstract"
+      },
+      "sourceQuote": "Seven patients (0.8 percent) died of chemotherapy-induced toxic effects.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised trial with OS as primary endpoint",
+      "Pragmatic design reflecting varied practice"
+    ],
+    "limitations": [
+      "Heterogeneous partner drugs, cisplatin doses and radiotherapy policies across centres",
+      "Absolute survival gain modest",
+      "Open-label observation control"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established cisplatin-based adjuvant chemotherapy as a survival-improving option after complete resection of NSCLC, a foundation later reinforced by the LACE pooled analysis.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "IALT was the first large modern trial to show an OS benefit for adjuvant cisplatin doublets; the benefit is real but modest, so fitness for cisplatin matters.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 14736927. Longer-term follow-up not ingested."
+  }
+}

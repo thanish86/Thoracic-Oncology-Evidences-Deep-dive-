@@ -1,0 +1,203 @@
+{
+  "slug": "katherine",
+  "acronym": "KATHERINE",
+  "officialTitle": "Trastuzumab Emtansine for Residual Invasive HER2-Positive Breast Cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HER2+",
+    "Residual invasive disease after neoadjuvant therapy"
+  ],
+  "stages": [
+    "early",
+    "locally-advanced"
+  ],
+  "setting": "Post-neoadjuvant adjuvant therapy",
+  "treatmentClasses": [
+    "adc",
+    "her2-directed"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "trastuzumab-emtansine",
+    "trastuzumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 1486,
+    "sampleSizeSourceQuote": "At the interim analysis, among 1486 randomly assigned patients (743 in the T-DM1 group and 743 in the trastuzumab group), invasive disease or death had occurred in 91 patients in the T-DM1 group (12.2%) and 165 patients in the trastuzumab group (22.2%).",
+    "primaryEndpoints": [
+      "Invasive disease-free survival"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Distant recurrence",
+      "Safety"
+    ],
+    "notes": "Adjuvant T-DM1 or trastuzumab for 14 cycles after neoadjuvant taxane-containing chemotherapy plus trastuzumab with residual invasive disease at surgery."
+  },
+  "sponsor": "F. Hoffmann-La Roche/Genentech",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT01772472"
+    }
+  ],
+  "yearOfPrimaryPublication": 2018,
+  "clinicalQuestion": "In HER2-positive early breast cancer with residual invasive disease after neoadjuvant therapy, does switching adjuvant trastuzumab to T-DM1 improve outcomes?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-positive early breast cancer with residual invasive disease in breast or axilla after neoadjuvant taxane-based chemotherapy plus trastuzumab",
+    "intervention": "Adjuvant trastuzumab emtansine (T-DM1) for 14 cycles",
+    "comparator": "Adjuvant trastuzumab for 14 cycles",
+    "outcomes": "Primary: IDFS. Secondary: OS, distant recurrence, safety"
+  },
+  "arms": [
+    {
+      "label": "T-DM1",
+      "role": "EXPERIMENTAL",
+      "regimen": "Trastuzumab emtansine for 14 cycles",
+      "n": 743
+    },
+    {
+      "label": "Trastuzumab",
+      "role": "CONTROL",
+      "regimen": "Trastuzumab for 14 cycles",
+      "n": 743
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "30516102",
+      "doi": "10.1056/NEJMoa1814017",
+      "title": "Trastuzumab Emtansine for Residual Invasive HER2-Positive Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2018,
+      "publicationDate": "2018-12-05",
+      "firstAuthor": "von Minckwitz G",
+      "type": "PRIMARY",
+      "label": "Interim (primary) IDFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "39813643",
+      "doi": "10.1056/NEJMoa2406070",
+      "title": "Survival with Trastuzumab Emtansine in Residual HER2-Positive Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2025,
+      "publicationDate": "2025-01-16",
+      "firstAuthor": "Geyer CE",
+      "type": "FINAL_OS",
+      "label": "Final IDFS and second interim OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Interim (primary) analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "T-DM1",
+      "controlArm": "Trastuzumab",
+      "experimentalValue": "3-year IDFS 88.3%",
+      "controlValue": "3-year IDFS 77.0%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.5,
+      "ciLower": 0.39,
+      "ciUpper": 0.64,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "30516102",
+        "location": "abstract"
+      },
+      "sourceQuote": "The estimated percentage of patients who were free of invasive disease at 3 years was 88.3% in the T-DM1 group and 77.0% in the trastuzumab group. Invasive disease-free survival was significantly higher in the T-DM1 group than in the trastuzumab group (hazard ratio for invasive disease or death, 0.50; 95% confidence interval, 0.39 to 0.64; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Final IDFS analysis (median follow-up 8.4 years)",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "T-DM1",
+      "controlArm": "Trastuzumab",
+      "experimentalValue": "Seven-year IDFS 80.8%",
+      "controlValue": "Seven-year IDFS 67.1%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.54,
+      "ciLower": 0.44,
+      "ciUpper": 0.66,
+      "followUp": "Median 8.4 years",
+      "source": {
+        "pmid": "39813643",
+        "location": "abstract"
+      },
+      "sourceQuote": "With a median follow-up of 8.4 years, T-DM1 sustained the improvement in invasive disease-free survival over trastuzumab (unstratified hazard ratio for invasive disease or death, 0.54; 95% confidence interval [CI], 0.44 to 0.66). Seven-year invasive disease-free survival was 80.8% with T-DM1 and 67.1% with trastuzumab (difference, 13.7 percentage points).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Second interim OS analysis (median follow-up 8.4 years)",
+      "population": "ITT",
+      "experimentalArm": "T-DM1",
+      "controlArm": "Trastuzumab",
+      "experimentalValue": "Seven-year OS 89.1%",
+      "controlValue": "Seven-year OS 84.4%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.66,
+      "ciLower": 0.51,
+      "ciUpper": 0.87,
+      "pValue": "0.003",
+      "source": {
+        "pmid": "39813643",
+        "location": "abstract"
+      },
+      "sourceQuote": "T-DM1 also led to a significantly lower risk of death than trastuzumab (unstratified hazard ratio, 0.66; 95% CI, 0.51 to 0.87; P = 0.003). Seven-year overall survival was 89.1% with T-DM1 and 84.4% with trastuzumab (difference, 4.7 percentage points).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or higher adverse events",
+      "experimentalValue": "26.1%",
+      "controlValue": "15.7%",
+      "source": {
+        "pmid": "39813643",
+        "location": "abstract"
+      },
+      "sourceQuote": "Adverse events of grade 3 or higher were noted in 26.1% of the patients in the T-DM1 group and 15.7% of those in the trastuzumab group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase 3 trial with long-term follow-up and OS benefit",
+      "Response-adapted design that uses pathological response to escalate therapy"
+    ],
+    "limitations": [
+      "Open-label",
+      "Most patients did not receive dual HER2 blockade (pertuzumab) neoadjuvantly, which may limit generalisability to current regimens"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established adjuvant T-DM1 as the standard for HER2-positive early breast cancer with residual invasive disease after neoadjuvant HER2-directed therapy, with an overall survival benefit at long-term follow-up.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Neoadjuvant therapy is the gateway for KATHERINE — residual invasive disease at surgery triggers the switch from trastuzumab to T-DM1.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 30516102 and 39813643."
+  }
+}

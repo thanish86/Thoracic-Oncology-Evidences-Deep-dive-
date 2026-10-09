@@ -1,0 +1,37 @@
+{
+  "slug": "capivasertib",
+  "name": "Capivasertib",
+  "brandNames": [
+    "Truqap"
+  ],
+  "drugClass": "AKT inhibitor",
+  "targets": [
+    "AKT1",
+    "AKT2",
+    "AKT3"
+  ],
+  "mechanism": "ATP-competitive pan-AKT inhibitor that blocks phosphorylation of downstream substrates; used intermittently with fulvestrant in tumours with PIK3CA, AKT1 or PTEN alterations.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Diarrhoea",
+    "Hyperglycaemia",
+    "Rash, including severe cutaneous reactions",
+    "Stomatitis",
+    "Nausea and fatigue"
+  ],
+  "monitoring": [
+    "Fasting glucose and HbA1c at baseline and during treatment",
+    "Skin assessment",
+    "Diarrhoea management"
+  ],
+  "interactions": "Avoid strong CYP3A inhibitors and inducers.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

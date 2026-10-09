@@ -1,0 +1,171 @@
+{
+  "slug": "aegean",
+  "acronym": "AEGEAN",
+  "officialTitle": "Perioperative Durvalumab for Resectable Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "EGFR/ALK-altered excluded from efficacy analysis"
+  ],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Perioperative (neoadjuvant + adjuvant)",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "durvalumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Placebo-controlled",
+    "sampleSize": 802,
+    "sampleSizeSourceQuote": "A total of 802 patients were randomly assigned to receive durvalumab (400 patients) or placebo (402 patients).",
+    "primaryEndpoints": [
+      "EFS",
+      "pCR"
+    ],
+    "secondaryEndpoints": [],
+    "notes": "Stratified by stage and PD-L1 expression; patients with documented EGFR or ALK alterations excluded from the modified ITT efficacy population."
+  },
+  "sponsor": "AstraZeneca",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03800134"
+    }
+  ],
+  "yearOfPrimaryPublication": 2023,
+  "clinicalQuestion": "Does perioperative durvalumab with neoadjuvant platinum chemotherapy improve EFS and pCR in resectable stage II–IIIB (N2) NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Resectable NSCLC stage II to IIIB (N2)",
+    "intervention": "Neoadjuvant platinum-based chemotherapy plus durvalumab, surgery, then adjuvant durvalumab",
+    "comparator": "Neoadjuvant platinum-based chemotherapy plus placebo, surgery, then adjuvant placebo",
+    "outcomes": "Primary: EFS and pCR"
+  },
+  "arms": [
+    {
+      "label": "Perioperative durvalumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Neoadjuvant durvalumab plus platinum-based chemotherapy, surgery, adjuvant durvalumab",
+      "dosing": "Durvalumab IV every 3 weeks for 4 cycles with platinum chemotherapy before surgery; adjuvant durvalumab IV every 4 weeks for 12 cycles",
+      "doseSourceQuote": "to receive platinum-based chemotherapy plus durvalumab or placebo administered intravenously every 3 weeks for 4 cycles before surgery, followed by adjuvant durvalumab or placebo intravenously every 4 weeks for 12 cycles",
+      "n": 400
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Neoadjuvant placebo plus platinum-based chemotherapy, surgery, adjuvant placebo",
+      "n": 402
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "37870974",
+      "doi": "10.1056/NEJMoa2304875",
+      "title": "Perioperative Durvalumab for Resectable Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2023,
+      "publicationDate": "2023-10-23",
+      "firstAuthor": "Heymach JV",
+      "type": "PRIMARY",
+      "label": "First interim EFS analysis / final pCR analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "EFS",
+      "analysisLabel": "First interim analysis",
+      "population": "Modified ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Perioperative durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "12-month EFS 73.4%",
+      "controlValue": "12-month EFS 64.5%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLower": 0.53,
+      "ciUpper": 0.88,
+      "pValue": "0.004",
+      "source": {
+        "pmid": "37870974",
+        "location": "abstract"
+      },
+      "sourceQuote": "the stratified hazard ratio for disease progression, recurrence, or death was 0.68 (95% confidence interval [CI], 0.53 to 0.88; P = 0.004) at the first interim analysis. At the 12-month landmark analysis, event-free survival was observed in 73.4% of the patients who received durvalumab (95% CI, 67.9 to 78.1), as compared with 64.5% of the patients who received placebo (95% CI, 58.8 to 69.6).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "pCR",
+      "endpointLabel": "Pathological complete response (central)",
+      "analysisLabel": "Final pCR analysis",
+      "population": "Modified ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Perioperative durvalumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "17.2%",
+      "controlValue": "4.3%",
+      "effectMeasure": "DIFF",
+      "effectEstimate": 13.0,
+      "ciLower": 8.7,
+      "ciUpper": 17.6,
+      "pValue": "<0.001 (interim)",
+      "source": {
+        "pmid": "37870974",
+        "location": "abstract"
+      },
+      "sourceQuote": "The incidence of pathological complete response was significantly greater with durvalumab than with placebo (17.2% vs. 4.3% at the final analysis; difference, 13.0 percentage points; 95% CI, 8.7 to 17.6; P<0.001 at interim analysis of data from 402 patients).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Adverse events of maximum grade 3 or 4",
+      "experimentalValue": "42.4%",
+      "controlValue": "43.2%",
+      "source": {
+        "pmid": "37870974",
+        "location": "abstract"
+      },
+      "sourceQuote": "Adverse events of maximum grade 3 or 4 occurred in 42.4% of patients with durvalumab and in 43.2% with placebo.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Placebo-controlled randomised phase III",
+      "Benefit observed regardless of stage and PD-L1 expression",
+      "EGFR/ALK-altered patients excluded from efficacy analysis"
+    ],
+    "limitations": [
+      "OS immature at this analysis",
+      "Design cannot isolate the adjuvant-phase contribution",
+      "Patients with documented EGFR/ALK alterations were randomised but excluded from the modified ITT efficacy analysis"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports perioperative durvalumab with neoadjuvant platinum chemotherapy as an option for resectable stage II–IIIB (N2) NSCLC without EGFR/ALK alterations; driver testing before neoadjuvant therapy is required.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Get EGFR and ALK results before starting neoadjuvant chemo-immunotherapy — AEGEAN excluded driver-positive patients from its efficacy population.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 37870974. Gene symbols stripped in PubMed abstract text ('documentedoralterations'); interpreted as EGFR or ALK per trial context and recorded only qualitatively. Later OS publications not ingested."
+  }
+}

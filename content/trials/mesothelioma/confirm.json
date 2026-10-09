@@ -1,0 +1,185 @@
+{
+  "slug": "confirm",
+  "acronym": "CONFIRM",
+  "officialTitle": "Nivolumab versus placebo in patients with relapsed malignant mesothelioma (CONFIRM): a multicentre, double-blind, randomised, phase 3 trial",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural",
+    "peritoneal",
+    "epithelioid",
+    "non-epithelioid"
+  ],
+  "stages": [
+    "recurrent"
+  ],
+  "setting": "Relapsed mesothelioma after platinum-based chemotherapy",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "immunotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "nivolumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled",
+    "sampleSize": 332,
+    "sampleSizeSourceQuote": "Between May 10, 2017, and March 30, 2020, 332 patients were recruited, of whom 221 (67%) were randomly assigned to the nivolumab group and 111 (33%) were assigned to the placebo group).",
+    "primaryEndpoints": [
+      "Investigator-assessed PFS",
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "2:1 randomisation at 24 UK hospitals; stratified by epithelioid vs non-epithelioid histology. Pleural or peritoneal mesothelioma eligible."
+  },
+  "sponsor": "Stand Up To Cancer-Cancer Research UK and Bristol Myers Squibb",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03063450"
+    }
+  ],
+  "yearOfPrimaryPublication": 2021,
+  "clinicalQuestion": "Does nivolumab improve survival over placebo in mesothelioma that has progressed after first-line platinum-based chemotherapy?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Pleural or peritoneal mesothelioma with progression after first-line platinum-based chemotherapy, ECOG PS 0-1",
+    "intervention": "Nivolumab 240 mg every 2 weeks for up to 12 months",
+    "comparator": "Placebo",
+    "outcomes": "Co-primary: investigator-assessed PFS and OS. Safety"
+  },
+  "arms": [
+    {
+      "label": "Nivolumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Nivolumab",
+      "dosing": "240 mg flat dose IV every 2 weeks until progression or a maximum of 12 months",
+      "doseSourceQuote": "were randomly assigned (2:1) to receive nivolumab at a flat dose of 240 mg every 2 weeks over 30 min intravenously or placebo until disease progression or a maximum of 12 months.",
+      "n": 221
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Placebo",
+      "n": 111
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "34656227",
+      "doi": "10.1016/S1470-2045(21)00471-X",
+      "title": "Nivolumab versus placebo in patients with relapsed malignant mesothelioma (CONFIRM): a multicentre, double-blind, randomised, phase 3 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2021,
+      "publicationDate": "2021-10-14",
+      "firstAuthor": "Fennell DA",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "All randomised (treatment policy estimand)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median 3.0 months",
+      "controlValue": "median 1.8 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.67,
+      "ciLower": 0.53,
+      "ciUpper": 0.85,
+      "pValue": "0.0012",
+      "followUp": "Median 11.6 months",
+      "source": {
+        "pmid": "34656227",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median progression-free survival was 3·0 months (95% CI 2·8-4·1) in the nivolumab group versus 1·8 months (1·4-2·6) in the placebo group (adjusted hazard ratio [HR] 0·67 [95% CI 0·53-0·85; p=0·0012).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "All randomised (treatment policy estimand)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median 10.2 months",
+      "controlValue": "median 6.9 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.69,
+      "ciLower": 0.52,
+      "ciUpper": 0.91,
+      "pValue": "0.0090",
+      "source": {
+        "pmid": "34656227",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median overall survival was 10·2 months (95% CI 8·5-12·1) in the nivolumab group versus 6·9 months (5·0-8·0) in the placebo group (adjusted HR 0·69 [95% CI 0·52-0·91]; p=0·0090).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events",
+      "experimentalValue": "90 (41%)",
+      "controlValue": "49 (44%)",
+      "source": {
+        "pmid": "34656227",
+        "location": "abstract"
+      },
+      "sourceQuote": "Serious adverse events occurred in 90 (41%) patients in the nivolumab group and 49 (44%) patients in the placebo group. There were no treatment-related deaths in either group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or worse treatment-related diarrhoea",
+      "experimentalValue": "six of 221 (3%)",
+      "controlValue": "two of 111 (2%)",
+      "source": {
+        "pmid": "34656227",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most frequently reported grade 3 or worse treatment-related adverse events were diarrhoea (six [3%] of 221 in the nivolumab group vs two [2%] of 111 in the placebo group) and infusion-related reaction (six [3%] vs none).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind, placebo-controlled randomised phase III design",
+      "Both co-primary endpoints met",
+      "Included peritoneal as well as pleural mesothelioma"
+    ],
+    "limitations": [
+      "Placebo comparator rather than active chemotherapy",
+      "UK-only trial",
+      "Patients were immunotherapy-naive; relevance after first-line immunotherapy is uncertain"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Nivolumab improved PFS and OS over placebo in relapsed mesothelioma after platinum chemotherapy, supporting PD-1 blockade for immunotherapy-naive patients at relapse.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Most relevant for patients who did not receive first-line immunotherapy; patients already treated with nivolumab-ipilimumab were not studied.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 34656227."
+  }
+}

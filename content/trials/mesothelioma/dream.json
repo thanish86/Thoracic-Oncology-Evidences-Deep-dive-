@@ -1,0 +1,149 @@
+{
+  "slug": "dream",
+  "acronym": "DREAM",
+  "officialTitle": "Durvalumab with first-line chemotherapy in previously untreated malignant pleural mesothelioma (DREAM): a multicentre, single-arm, phase 2 trial with a safety run-in",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural"
+  ],
+  "stages": [
+    "unresectable"
+  ],
+  "setting": "First-line unresectable pleural mesothelioma",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "durvalumab",
+    "cisplatin",
+    "pemetrexed",
+    "carboplatin"
+  ],
+  "phase": "II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label",
+    "sampleSize": 55,
+    "sampleSizeSourceQuote": "Between Dec 28, 2016, and Sept 27, 2017, 55 participants were enrolled.",
+    "primaryEndpoints": [
+      "PFS at 6 months (mRECIST)"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Single-arm phase 2 trial with safety run-in, nine hospitals in Australia; all histological subtypes eligible. Non-comparative evidence; led to the randomised phase 3 DREAM3R trial (protocol only identified in PubMed)."
+  },
+  "sponsor": "AstraZeneca",
+  "registryIds": [
+    {
+      "registry": "Other",
+      "id": "ACTRN12616001170415"
+    }
+  ],
+  "yearOfPrimaryPublication": 2020,
+  "clinicalQuestion": "Is durvalumab given with and after first-line cisplatin-pemetrexed active and safe in advanced pleural mesothelioma?",
+  "result": "DESCRIPTIVE",
+  "landmark": false,
+  "pico": {
+    "population": "Previously untreated pleural mesothelioma unsuitable for surgery, ECOG PS 0-1",
+    "intervention": "Durvalumab with cisplatin-pemetrexed for up to six cycles, then durvalumab for up to 12 months",
+    "comparator": "None (single arm)",
+    "outcomes": "Primary: PFS at 6 months (mRECIST). Safety"
+  },
+  "arms": [
+    {
+      "label": "Durvalumab + cisplatin-pemetrexed",
+      "role": "SINGLE_ARM",
+      "regimen": "Durvalumab + cisplatin (or carboplatin) + pemetrexed, then durvalumab",
+      "dosing": "Cisplatin 75 mg/m2, pemetrexed 500 mg/m2 and durvalumab 1125 mg IV day 1 every 3 weeks for up to six cycles; carboplatin AUC 5 permitted; durvalumab continued up to 12 months",
+      "doseSourceQuote": "All participants received cisplatin 75 mg/m, pemetrexed 500 mg/m, and durvalumab 1125 mg intravenously on day 1 of a 3-weekly schedule for a maximum of six cycles. Change from cisplatin to carboplatin with an area under the curve of 5 was permitted. Durvalumab was continued for a maximum of 12 months.",
+      "n": 54
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "32888453",
+      "doi": "10.1016/S1470-2045(20)30462-9",
+      "title": "Durvalumab with first-line chemotherapy in previously untreated malignant pleural mesothelioma (DREAM): a multicentre, single-arm, phase 2 trial with a safety run-in.",
+      "journal": "Lancet Oncol",
+      "year": 2020,
+      "publicationDate": "2020-09",
+      "firstAuthor": "Nowak AK",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Alive and progression-free at 6 months (mRECIST)",
+      "analysisLabel": "Primary analysis",
+      "population": "Eligible patients (ITT)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Durvalumab + cisplatin-pemetrexed",
+      "experimentalValue": "31 of 54 (57%)",
+      "followUp": "Median 28.2 months",
+      "source": {
+        "pmid": "32888453",
+        "location": "abstract"
+      },
+      "sourceQuote": "54 patients were eligible and were followed up for a median of 28·2 months (IQR 26·5-30·2). 31 (57%; 95% CI 44-70) of 54 patients were alive and progression-free at 6 months.",
+      "status": "AWAITING_VERIFICATION",
+      "effectMeasure": "NONE"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 neutropenia",
+      "experimentalValue": "seven (13%)",
+      "source": {
+        "pmid": "32888453",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common grade 3-4 adverse events were neutropenia (seven [13%] patients), nausea (six [11%]), and anaemia (four [7%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events (events in participants)",
+      "experimentalValue": "60 events in 29 participants",
+      "source": {
+        "pmid": "32888453",
+        "location": "abstract"
+      },
+      "sourceQuote": "A total of 60 serious adverse events occurred in 29 participants, five of which were considered possibly related to durvalumab. Five patients died during the study treatment; none of these five deaths were attributed to study treatment.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Prospective multicentre trial with safety run-in",
+      "All histological subtypes eligible"
+    ],
+    "limitations": [
+      "Single-arm phase II evidence; no comparator",
+      "Primary endpoint (6-month PFS) is a surrogate",
+      "Conducted only in Australia"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Single-arm phase II data showing promising activity and acceptable safety of durvalumab with cisplatin-pemetrexed, justifying randomised phase 3 evaluation; not practice-changing on its own.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Hypothesis-generating single-arm evidence: confirmation requires the randomised phase 3 DREAM3R results.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 32888453. Registry is the Australia New Zealand Clinical Trials Registry as printed. DREAM3R: only the protocol (PMID 35078853) was found in PubMed; no results ingested."
+  }
+}

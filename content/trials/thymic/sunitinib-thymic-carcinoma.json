@@ -1,0 +1,182 @@
+{
+  "slug": "sunitinib-thymic-carcinoma",
+  "acronym": "Sunitinib phase II (Thomas)",
+  "officialTitle": "Sunitinib in patients with chemotherapy-refractory thymoma and thymic carcinoma: an open-label phase 2 trial",
+  "disease": "thymic",
+  "subtypes": [
+    "thymic carcinoma",
+    "thymoma"
+  ],
+  "stages": [
+    "recurrent"
+  ],
+  "setting": "Thymic epithelial tumours progressing after platinum-based chemotherapy",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "tki",
+    "antiangiogenic"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "sunitinib"
+  ],
+  "phase": "II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label; investigator-assessed response",
+    "sampleSize": 41,
+    "sampleSizeSourceQuote": "41 patients were enrolled, 25 with thymic carcinoma and 16 with thymoma.",
+    "primaryEndpoints": [
+      "Best tumour response (investigator-assessed), by histology cohort"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Single-arm open-label phase 2 trial with separate thymic carcinoma and thymoma cohorts. Non-comparative evidence."
+  },
+  "sponsor": "National Cancer Institute (Cancer Therapy Evaluation Program)",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT01621568"
+    }
+  ],
+  "yearOfPrimaryPublication": 2015,
+  "clinicalQuestion": "Is sunitinib active in thymic epithelial tumours refractory to platinum-based chemotherapy?",
+  "result": "DESCRIPTIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Thymic carcinoma or thymoma progressing after at least one platinum-containing regimen, ECOG PS 2 or lower",
+    "intervention": "Sunitinib 50 mg daily, 4 weeks on / 2 weeks off",
+    "comparator": "None (single arm, two histology cohorts)",
+    "outcomes": "Primary: investigator-assessed best response. Safety"
+  },
+  "arms": [
+    {
+      "label": "Thymic carcinoma cohort",
+      "role": "SINGLE_ARM",
+      "regimen": "Sunitinib",
+      "dosing": "50 mg orally once daily, 4 weeks on followed by 2 weeks off (6-week cycles)",
+      "doseSourceQuote": "Patients received 50 mg of sunitinib orally once a day, in 6-week cycles (ie, 4 weeks of treatment followed by 2 weeks without treatment), until tumour progression or unacceptable toxic effects arose.",
+      "n": 25
+    },
+    {
+      "label": "Thymoma cohort",
+      "role": "SINGLE_ARM",
+      "regimen": "Sunitinib",
+      "dosing": "50 mg orally once daily, 4 weeks on followed by 2 weeks off (6-week cycles)",
+      "doseSourceQuote": "Patients received 50 mg of sunitinib orally once a day, in 6-week cycles (ie, 4 weeks of treatment followed by 2 weeks without treatment), until tumour progression or unacceptable toxic effects arose.",
+      "n": 16
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "25592632",
+      "doi": "10.1016/S1470-2045(14)71181-7",
+      "title": "Sunitinib in patients with chemotherapy-refractory thymoma and thymic carcinoma: an open-label phase 2 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2015,
+      "publicationDate": "2015-01-13",
+      "firstAuthor": "Thomas A",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "endpointLabel": "Partial response, investigator-assessed",
+      "analysisLabel": "Primary analysis (thymic carcinoma cohort)",
+      "population": "Assessable thymic carcinoma patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Thymic carcinoma cohort",
+      "experimentalValue": "six of 23 (26%)",
+      "effectMeasure": "NONE",
+      "followUp": "Median 17 months",
+      "source": {
+        "pmid": "25592632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Of 23 assessable patients with thymic carcinoma, six (26%, 90% CI 12.1-45.3, 95% CI 10.2-48.4) had partial responses, 15 (65%, 95% CI 42.7-83.6) achieved stable disease, and two (9%, 1.1-28.0) had progressive disease.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "endpointLabel": "Partial response, investigator-assessed",
+      "analysisLabel": "Primary analysis (thymoma cohort)",
+      "population": "Thymoma patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Thymoma cohort",
+      "experimentalValue": "one of 16 (6%)",
+      "effectMeasure": "NONE",
+      "source": {
+        "pmid": "25592632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Of 16 patients with thymoma, one (6%, 95% CI 0.2-30.2) had a partial response, 12 (75%, 47.6-92.7) had stable disease, and three (19%, 4.1-45.7) had progressive disease.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 treatment-related lymphocytopenia, fatigue and oral mucositis (each)",
+      "experimentalValue": "eight of 40 (20%) each",
+      "source": {
+        "pmid": "25592632",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common grade 3 and 4 treatment-related adverse events were lymphocytopenia (eight [20%] of 40 patients), fatigue (eight [20%]), and oral mucositis (eight [20%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Decrease in left-ventricular ejection fraction (grade 3 in three patients)",
+      "experimentalValue": "five patients (13%)",
+      "source": {
+        "pmid": "25592632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Five (13%) patients had decreases in left-ventricular ejection fraction, of which three (8%) were grade 3 events.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Deaths during treatment, one cardiac arrest possibly treatment-related",
+      "experimentalValue": "three patients (8%)",
+      "source": {
+        "pmid": "25592632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Three (8%) patients died during treatment, including one individual who died of cardiac arrest that was possibly treatment-related.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Prospective trial with prespecified histology-specific cohorts",
+      "Addresses a population with no established standard after platinum failure"
+    ],
+    "limitations": [
+      "Single-arm phase II evidence with small cohorts; no comparator",
+      "Investigator-assessed response",
+      "Cardiac toxicity signal (reduced ejection fraction) requires monitoring"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Single-arm phase II data showing activity of sunitinib in platinum-refractory thymic carcinoma, with minimal activity in thymoma; cardiac function monitoring is warranted.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Antiangiogenic TKIs appear more active in thymic carcinoma than thymoma; check baseline ejection fraction before sunitinib.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 25592632."
+  }
+}

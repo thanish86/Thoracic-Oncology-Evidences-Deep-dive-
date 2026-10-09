@@ -1,0 +1,42 @@
+{
+  "slug": "afatinib",
+  "name": "Afatinib",
+  "brandNames": [
+    "Gilotrif",
+    "Giotrif"
+  ],
+  "drugClass": "Second-generation irreversible ErbB-family tyrosine kinase inhibitor",
+  "targets": [
+    "EGFR",
+    "HER2",
+    "HER4"
+  ],
+  "mechanism": "Covalent, irreversible pan-ErbB inhibitor blocking signalling from EGFR, HER2 and HER4 homo- and heterodimers. Has activity against several uncommon EGFR mutations (G719X, L861Q, S768I).",
+  "route": "oral",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Diarrhoea (often early and prominent)",
+    "Acneiform rash",
+    "Stomatitis",
+    "Paronychia",
+    "Interstitial lung disease/pneumonitis",
+    "Hepatotoxicity",
+    "Keratitis",
+    "Reduced left ventricular ejection fraction"
+  ],
+  "monitoring": [
+    "Proactive antidiarrhoeal management and hydration",
+    "Liver function tests",
+    "Evaluation of new respiratory symptoms"
+  ],
+  "interactions": "P-glycoprotein inhibitors increase and inducers decrease exposure.",
+  "resistance": "Acquired T790M mutation is the principal mechanism; bypass signalling and histological transformation also occur.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

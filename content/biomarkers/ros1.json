@@ -1,0 +1,46 @@
+{
+  "slug": "ros1",
+  "name": "ROS1 rearrangement",
+  "gene": "ROS1",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "ROS1 fusions define a rare oncogene-driven subset of NSCLC with a clinical phenotype similar to ALK-positive disease, sensitive to several multitargeted and ROS1-directed TKIs.",
+  "biology": "ROS1 is a receptor tyrosine kinase with homology to ALK in its kinase domain. Rearrangements fuse the ROS1 kinase domain to partners such as CD74, SLC34A2, EZR, SDC4 and TPM3, driving constitutive activation of SHP2, MAPK, PI3K-AKT and JAK-STAT signalling. The structural homology with ALK explains activity of several ALK inhibitors.",
+  "alterations": [
+    "CD74-ROS1 and other fusion partners (SLC34A2, EZR, SDC4, TPM3, GOPC)",
+    "Acquired G2032R solvent-front mutation",
+    "Other acquired kinase-domain mutations (D2033N, L2026M gatekeeper, S1986F/Y)"
+  ],
+  "testing": {
+    "methods": [
+      "RNA-based NGS or hybrid-capture DNA NGS",
+      "Fluorescence in situ hybridisation (break-apart)",
+      "Immunohistochemistry (D4D6 clone) as screening only, requiring confirmation",
+      "Plasma ctDNA NGS"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "ROS1 IHC is sensitive but less specific and positive cases should be confirmed with a molecular method. FISH may miss some partner configurations (e.g. FIG-ROS1 interstitial deletion)."
+  },
+  "predictiveRelevance": "ROS1 fusions predict benefit from crizotinib, entrectinib and repotrectinib; lorlatinib has activity after prior crizotinib. CNS-penetrant agents are preferred when brain metastases are present. Repotrectinib is designed to retain activity against the G2032R solvent-front mutation.",
+  "resistance": [
+    "G2032R solvent-front mutation (most common on-target mechanism after crizotinib)",
+    "Other on-target mutations: D2033N, L2026M, L1951R",
+    "Bypass: MET amplification, KRAS/NRAS mutations, EGFR activation",
+    "Histological transformation"
+  ],
+  "drugs": [
+    "crizotinib",
+    "entrectinib",
+    "repotrectinib",
+    "lorlatinib"
+  ],
+  "pathway": "alk-fusion",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Brain metastases are frequent. Crizotinib penetrates the CNS poorly and the CNS is a common site of progression on crizotinib; entrectinib, repotrectinib and lorlatinib have meaningful intracranial activity."
+}

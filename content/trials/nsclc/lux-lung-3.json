@@ -1,0 +1,166 @@
+{
+  "slug": "lux-lung-3",
+  "acronym": "LUX-Lung 3",
+  "officialTitle": "Phase III study of afatinib or cisplatin plus pemetrexed in patients with metastatic lung adenocarcinoma with EGFR mutations",
+  "disease": "nsclc",
+  "subtypes": [
+    "Adenocarcinoma",
+    "EGFR-mutant"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "First-line advanced",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "tki",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "egfr"
+  ],
+  "drugs": [
+    "afatinib",
+    "cisplatin",
+    "pemetrexed"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by independent review",
+    "sampleSize": 345,
+    "sampleSizeSourceQuote": "A total of 1,269 patients were screened, and 345 were randomly assigned to treatment.",
+    "primaryEndpoints": [
+      "PFS (independent review)"
+    ],
+    "secondaryEndpoints": [
+      "Tumour response",
+      "OS",
+      "Adverse events",
+      "Patient-reported outcomes"
+    ],
+    "notes": "2:1 randomisation, stratified by mutation type (exon 19 deletion, L858R, other) and race."
+  },
+  "registryIds": [],
+  "yearOfPrimaryPublication": 2013,
+  "clinicalQuestion": "Does the irreversible ErbB family blocker afatinib improve PFS over cisplatin-pemetrexed in EGFR-mutant advanced lung adenocarcinoma?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Stage IIIB/IV lung adenocarcinoma with EGFR mutations",
+    "intervention": "Afatinib",
+    "comparator": "Cisplatin plus pemetrexed, up to six cycles",
+    "outcomes": "Primary: PFS by independent review. Secondary: response, OS, adverse events, PROs"
+  },
+  "arms": [
+    {
+      "label": "Afatinib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Afatinib",
+      "dosing": "40 mg per day",
+      "doseSourceQuote": "two-to-one random assignment to 40 mg afatinib per day"
+    },
+    {
+      "label": "Cisplatin-pemetrexed",
+      "role": "CONTROL",
+      "regimen": "Cisplatin plus pemetrexed, up to six cycles every 21 days"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "23816960",
+      "doi": "10.1200/JCO.2012.44.2806",
+      "title": "Phase III study of afatinib or cisplatin plus pemetrexed in patients with metastatic lung adenocarcinoma with EGFR mutations.",
+      "journal": "J Clin Oncol",
+      "year": 2013,
+      "publicationDate": "2013-07-01",
+      "firstAuthor": "Sequist LV",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by independent review",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Afatinib",
+      "controlArm": "Cisplatin-pemetrexed",
+      "experimentalValue": "median 11.1 months",
+      "controlValue": "median 6.9 months",
+      "effectEstimate": 0.58,
+      "ciLower": 0.43,
+      "ciUpper": 0.78,
+      "pValue": ".001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "23816960",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median PFS was 11.1 months for afatinib and 6.9 months for chemotherapy (hazard ratio [HR], 0.58; 95% CI, 0.43 to 0.78; P = .001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis — common mutation subgroup",
+      "population": "Exon 19 deletion or L858R (n=308)",
+      "experimentalArm": "Afatinib",
+      "controlArm": "Cisplatin-pemetrexed",
+      "experimentalValue": "median 13.6 months",
+      "controlValue": "median 6.9 months",
+      "effectEstimate": 0.47,
+      "ciLower": 0.34,
+      "ciUpper": 0.65,
+      "pValue": ".001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "23816960",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median PFS among those with exon 19 deletions and L858R EGFR mutations (n = 308) was 13.6 months for afatinib and 6.9 months for chemotherapy (HR, 0.47; 95% CI, 0.34 to 0.65; P = .001).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GENERAL",
+      "description": "Most common treatment-related adverse events",
+      "experimentalValue": "Diarrhoea, rash/acne, stomatitis",
+      "controlValue": "Nausea, fatigue, decreased appetite",
+      "source": {
+        "pmid": "23816960",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common treatment-related adverse events were diarrhea, rash/acne, and stomatitis for afatinib and nausea, fatigue, and decreased appetite for chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "PFS assessed by independent review",
+      "Stratified by mutation type, enabling common-mutation analysis"
+    ],
+    "limitations": [
+      "Open-label",
+      "Comparator was chemotherapy rather than a first-generation EGFR TKI"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supported afatinib as a first-line option for EGFR-mutant advanced adenocarcinoma, with the greatest PFS benefit in common (exon 19 deletion/L858R) mutations.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Second-generation irreversible ErbB blockade buys PFS at the cost of more diarrhoea, rash and stomatitis — dose management matters.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 23816960. Pooled LUX-Lung 3/6 OS analyses not ingested."
+  }
+}

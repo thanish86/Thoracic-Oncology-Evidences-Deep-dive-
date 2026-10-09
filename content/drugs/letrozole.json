@@ -1,0 +1,36 @@
+{
+  "slug": "letrozole",
+  "name": "Letrozole",
+  "brandNames": [
+    "Femara"
+  ],
+  "drugClass": "Non-steroidal aromatase inhibitor",
+  "targets": [
+    "Aromatase (CYP19A1)"
+  ],
+  "mechanism": "Reversible, competitive inhibitor of aromatase, suppressing peripheral conversion of androgens to oestrogens; effective in postmenopausal women or premenopausal women receiving ovarian function suppression.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Arthralgia and myalgia",
+    "Bone loss and fracture risk",
+    "Hot flushes",
+    "Hypercholesterolaemia",
+    "Vaginal dryness",
+    "Fatigue"
+  ],
+  "monitoring": [
+    "Bone mineral density at baseline and periodically, with calcium/vitamin D and bone-modifying agents as indicated",
+    "Lipid profile"
+  ],
+  "interactions": "Should not be combined with tamoxifen or oestrogen-containing therapies.",
+  "resistance": "Acquired ESR1 ligand-binding domain mutations, PI3K pathway activation and growth factor signalling.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

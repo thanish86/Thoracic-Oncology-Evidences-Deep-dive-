@@ -1,0 +1,156 @@
+{
+  "slug": "pembrolizumab-thymic-carcinoma",
+  "acronym": "Pembrolizumab phase II (Giaccone)",
+  "officialTitle": "Pembrolizumab in patients with thymic carcinoma: a single-arm, single-centre, phase 2 study",
+  "disease": "thymic",
+  "subtypes": [
+    "thymic carcinoma"
+  ],
+  "stages": [
+    "recurrent"
+  ],
+  "setting": "Recurrent thymic carcinoma after at least one line of chemotherapy",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "immunotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "pembrolizumab"
+  ],
+  "phase": "II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label",
+    "sampleSize": 41,
+    "sampleSizeSourceQuote": "41 patients were enrolled from March 12, 2015, to Dec 16, 2016, of whom 40 were eligible and evaluable and one was excluded because of elevated liver enzymes at screening.",
+    "primaryEndpoints": [
+      "ORR (RECIST 1.1)"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Single-arm, single-centre phase 2 study; patients with a history of autoimmune disease were excluded. Non-comparative evidence."
+  },
+  "sponsor": "Merck & Co",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02364076"
+    }
+  ],
+  "yearOfPrimaryPublication": 2018,
+  "clinicalQuestion": "What is the activity and safety of PD-1 blockade with pembrolizumab in recurrent thymic carcinoma?",
+  "result": "DESCRIPTIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Recurrent thymic carcinoma progressing after at least one line of chemotherapy, ECOG PS 0-2, no autoimmune disease history",
+    "intervention": "Pembrolizumab 200 mg every 3 weeks for up to 2 years",
+    "comparator": "None (single arm)",
+    "outcomes": "Primary: objective response (RECIST 1.1). Safety"
+  },
+  "arms": [
+    {
+      "label": "Pembrolizumab",
+      "role": "SINGLE_ARM",
+      "regimen": "Pembrolizumab monotherapy",
+      "dosing": "200 mg every 3 weeks for up to 2 years",
+      "doseSourceQuote": "Patients received 200 mg of pembrolizumab every 3 weeks for up to 2 years.",
+      "n": 40
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "29395863",
+      "doi": "10.1016/S1470-2045(18)30062-7",
+      "title": "Pembrolizumab in patients with thymic carcinoma: a single-arm, single-centre, phase 2 study.",
+      "journal": "Lancet Oncol",
+      "year": 2018,
+      "publicationDate": "2018-01-26",
+      "firstAuthor": "Giaccone G",
+      "type": "PRIMARY",
+      "label": "Final analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Final analysis",
+      "population": "Eligible and evaluable patients (per protocol)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab",
+      "experimentalValue": "22.5% (one CR, eight PR)",
+      "effectMeasure": "NONE",
+      "followUp": "Median 20 months",
+      "source": {
+        "pmid": "29395863",
+        "location": "abstract"
+      },
+      "sourceQuote": "The proportion of patients who achieved a response was 22·5% (95% CI 10·8-38·5); one (3%) patient achieved a complete response, eight (20%) patients achieved partial responses, and 21 (53%) patients achieved stable disease.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "IMMUNE",
+      "description": "Severe autoimmune toxicity, including myocarditis in two patients (5%)",
+      "experimentalValue": "six patients (15%)",
+      "source": {
+        "pmid": "29395863",
+        "location": "abstract"
+      },
+      "sourceQuote": "Six (15%) patients developed severe autoimmune toxicity, including two (5%) patients with myocarditis.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 increased AST and ALT (each)",
+      "experimentalValue": "five patients (13%) each",
+      "source": {
+        "pmid": "29395863",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common grade 3 or 4 adverse events were increased aspartate aminotransferase and alanine aminotransferase (five [13%] patients each).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "No deaths due to toxicity",
+      "source": {
+        "pmid": "29395863",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were 17 deaths at the time of analysis, but no deaths due to toxicity.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Prospective trial in a rare tumour with no established second-line standard",
+      "Final analysis with reasonable follow-up"
+    ],
+    "limitations": [
+      "Single-arm, single-centre phase II evidence; no comparator",
+      "Small sample with wide confidence interval",
+      "High rate of severe immune-related toxicity, including myocarditis"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Single-arm phase II data showing activity of pembrolizumab in recurrent thymic carcinoma, but severe autoimmune events, including myocarditis, were more frequent than in other tumour types, so careful selection and monitoring are essential.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Exclude thymoma and pre-existing autoimmunity before PD-1 blockade, and monitor troponin and liver tests closely: myocarditis was a notable toxicity in this thymic carcinoma trial.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 29395863. PD-L1 listed because the abstract cites PD-L1 expression as the rationale; the abstract does not report outcome by PD-L1 status."
+  }
+}

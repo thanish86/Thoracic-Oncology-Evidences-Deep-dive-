@@ -1,0 +1,42 @@
+{
+  "slug": "amivantamab",
+  "name": "Amivantamab",
+  "brandNames": [
+    "Rybrevant"
+  ],
+  "drugClass": "EGFR-MET bispecific monoclonal antibody",
+  "targets": [
+    "EGFR",
+    "MET"
+  ],
+  "mechanism": "Fully human low-fucose IgG1 bispecific antibody that binds the extracellular domains of EGFR and MET, blocking ligand binding and promoting receptor internalisation and degradation. Its Fc domain engages NK cells and macrophages (antibody-dependent cellular cytotoxicity and trogocytosis). Because it acts extracellularly, it is active irrespective of kinase-domain conformation, including in EGFR exon 20 insertions and after TKI resistance.",
+  "route": "intravenous",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Infusion-related reactions (most frequent with the first infusion)",
+    "Rash/acneiform dermatitis",
+    "Paronychia",
+    "Stomatitis",
+    "Hypoalbuminaemia and peripheral oedema",
+    "Venous thromboembolism, notably in combination with lazertinib",
+    "Interstitial lung disease/pneumonitis",
+    "Ocular toxicity"
+  ],
+  "monitoring": [
+    "Premedication and split first dose to mitigate infusion reactions",
+    "Prophylactic anticoagulation when combined with lazertinib, as per label",
+    "Prophylactic dermatological care",
+    "Albumin and evaluation of oedema",
+    "Evaluation of respiratory symptoms"
+  ],
+  "interactions": "A subcutaneous formulation has been developed to reduce infusion reactions.",
+  "resistance": "Mechanisms after amivantamab-based therapy are less well characterised; MET and EGFR alterations and other bypass pathways have been described.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

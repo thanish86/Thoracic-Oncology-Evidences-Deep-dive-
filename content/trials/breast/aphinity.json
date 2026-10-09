@@ -1,0 +1,269 @@
+{
+  "slug": "aphinity",
+  "acronym": "APHINITY",
+  "officialTitle": "Adjuvant Pertuzumab and Trastuzumab in Early HER2-Positive Breast Cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HER2+",
+    "Node-positive or high-risk node-negative"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "her2-directed",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "pertuzumab",
+    "trastuzumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled",
+    "sampleSize": 4805,
+    "sampleSizeSourceQuote": "After surgery and central HER2-positive confirmation, 4,805 patients with node-positive or high-risk node-negative BC were randomly assigned (1:1) to either 1-year pertuzumab or placebo added to standard adjuvant chemotherapy and 1-year trastuzumab.",
+    "primaryEndpoints": [
+      "Invasive disease-free survival"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Cardiac safety",
+      "Safety"
+    ]
+  },
+  "sponsor": "F. Hoffmann-La Roche/Genentech",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT01358877"
+    }
+  ],
+  "yearOfPrimaryPublication": 2017,
+  "clinicalQuestion": "Does adding pertuzumab to adjuvant trastuzumab and chemotherapy improve invasive disease-free survival in operable HER2-positive breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Node-positive or high-risk node-negative operable HER2-positive breast cancer",
+    "intervention": "Pertuzumab for 1 year plus trastuzumab and standard adjuvant chemotherapy",
+    "comparator": "Placebo plus trastuzumab and standard adjuvant chemotherapy",
+    "outcomes": "Primary: IDFS. Secondary: OS, cardiac and general safety"
+  },
+  "arms": [
+    {
+      "label": "Pertuzumab + trastuzumab + chemotherapy",
+      "role": "EXPERIMENTAL",
+      "regimen": "Pertuzumab, trastuzumab and standard adjuvant chemotherapy",
+      "n": 2400
+    },
+    {
+      "label": "Placebo + trastuzumab + chemotherapy",
+      "role": "CONTROL",
+      "regimen": "Placebo, trastuzumab and standard adjuvant chemotherapy",
+      "n": 2405
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "28581356",
+      "doi": "10.1056/NEJMoa1703643",
+      "title": "Adjuvant Pertuzumab and Trastuzumab in Early HER2-Positive Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2017,
+      "publicationDate": "2017-06-05",
+      "firstAuthor": "von Minckwitz G",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "33539215",
+      "doi": "10.1200/JCO.20.01204",
+      "title": "Adjuvant Pertuzumab and Trastuzumab in Early HER2-Positive Breast Cancer in the APHINITY Trial: 6 Years' Follow-Up.",
+      "journal": "J Clin Oncol",
+      "year": 2021,
+      "publicationDate": "2021-02-04",
+      "firstAuthor": "Piccart M",
+      "type": "UPDATE",
+      "label": "6-year follow-up (second interim OS analysis)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "3-year IDFS 94.1% (171 events, 7.1%)",
+      "controlValue": "3-year IDFS 93.2% (210 events, 8.7%)",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.81,
+      "ciLower": 0.66,
+      "ciUpper": 1.0,
+      "pValue": "0.045",
+      "source": {
+        "pmid": "28581356",
+        "location": "abstract"
+      },
+      "sourceQuote": "Disease recurrence occurred in 171 patients (7.1%) in the pertuzumab group and 210 patients (8.7%) in the placebo group (hazard ratio, 0.81; 95% confidence interval [CI], 0.66 to 1.00; P=0.045). The estimates of the 3-year rates of invasive-disease-free survival were 94.1% in the pertuzumab group and 93.2% in the placebo group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Primary analysis",
+      "population": "Node-positive cohort",
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "3-year IDFS 92.0%",
+      "controlValue": "3-year IDFS 90.2%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.77,
+      "ciLower": 0.62,
+      "ciUpper": 0.96,
+      "pValue": "0.02",
+      "source": {
+        "pmid": "28581356",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the cohort of patients with node-positive disease, the 3-year rate of invasive-disease-free survival was 92.0% in the pertuzumab group, as compared with 90.2% in the placebo group (hazard ratio for an invasive-disease event, 0.77; 95% CI, 0.62 to 0.96; P=0.02).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Primary analysis",
+      "population": "Node-negative cohort",
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "3-year IDFS 97.5%",
+      "controlValue": "3-year IDFS 98.4%",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.13,
+      "ciLower": 0.68,
+      "ciUpper": 1.86,
+      "pValue": "0.64",
+      "source": {
+        "pmid": "28581356",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the cohort of patients with node-negative disease, the 3-year rate of invasive-disease-free survival was 97.5% in the pertuzumab group and 98.4% in the placebo group (hazard ratio for an invasive-disease event, 1.13; 95% CI, 0.68 to 1.86; P=0.64).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "6-year follow-up (descriptive)",
+      "population": "ITT",
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "6-year IDFS 91%",
+      "controlValue": "6-year IDFS 88%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.76,
+      "ciLower": 0.64,
+      "ciUpper": 0.91,
+      "followUp": "Median 74 months",
+      "source": {
+        "pmid": "33539215",
+        "location": "abstract"
+      },
+      "sourceQuote": "IDFS analysis based on 508 events (intent-to-treat population) showed a hazard ratio of 0.76 (95% CI, 0.64 to 0.91) and 6-year IDFS of 91% and 88% for pertuzumab and placebo groups, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "6-year follow-up (descriptive)",
+      "population": "Node-positive cohort",
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "6-year IDFS 88%",
+      "controlValue": "6-year IDFS 83%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.72,
+      "ciLower": 0.59,
+      "ciUpper": 0.87,
+      "source": {
+        "pmid": "33539215",
+        "location": "abstract"
+      },
+      "sourceQuote": "The node-positive cohort continues to derive clear IDFS benefit from pertuzumab (hazard ratio 0.72 [95% CI, 0.59 to 0.87]), 6-year IDFS being 88% and 83%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Second interim OS analysis (6-year follow-up)",
+      "population": "ITT",
+      "experimentalArm": "Pertuzumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "Six-year OS 95% (125 deaths, 5.2%)",
+      "controlValue": "Six-year OS 94% (147 deaths, 6.1%)",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.85,
+      "source": {
+        "pmid": "33539215",
+        "location": "abstract"
+      },
+      "sourceQuote": "This interim OS analysis comparing pertuzumab versus placebo did not reach the= .0012 level required for statistical significance (= .17, hazard ratio 0.85). Six-year OS were 95% versus 94% with 125 deaths (5.2%) versus 147 (6.1%), respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or higher diarrhoea",
+      "experimentalValue": "9.8%",
+      "controlValue": "3.7%",
+      "source": {
+        "pmid": "28581356",
+        "location": "abstract"
+      },
+      "sourceQuote": "Diarrhea of grade 3 or higher occurred almost exclusively during chemotherapy and was more frequent with pertuzumab than with placebo (9.8% vs. 3.7%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Primary cardiac events",
+      "experimentalValue": "< 1%",
+      "controlValue": "< 1%",
+      "source": {
+        "pmid": "33539215",
+        "location": "abstract"
+      },
+      "sourceQuote": "Primary cardiac events remain < 1% in both the treatment groups.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large double-blind placebo-controlled trial",
+      "Long-term follow-up with prespecified OS analyses"
+    ],
+    "limitations": [
+      "Small absolute IDFS benefit in the overall population",
+      "No benefit seen in the node-negative cohort",
+      "OS not statistically significant at the reported interim analysis"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adding pertuzumab to adjuvant trastuzumab and chemotherapy for higher-risk HER2-positive early breast cancer, particularly node-positive disease, where the IDFS benefit is concentrated.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "The benefit of adjuvant pertuzumab is driven by node-positive disease; in node-negative patients no IDFS benefit was seen.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 28581356 and 33539215. P values in PMID 33539215 are partially garbled in PubMed text (the letter P stripped) and were omitted from structured fields."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "egfr",
+  "name": "EGFR (epidermal growth factor receptor)",
+  "gene": "EGFR",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "Activating EGFR kinase-domain mutations define an oncogene-addicted subset of non-squamous NSCLC, enriched in never/light smokers and in patients of East Asian ancestry, and predict benefit from EGFR tyrosine kinase inhibitors.",
+  "biology": "EGFR is an ErbB-family receptor tyrosine kinase. Activating mutations in exons 18-21 destabilise the inactive kinase conformation, producing ligand-independent signalling through RAS-MAPK, PI3K-AKT and JAK-STAT pathways. Classical sensitising mutations (exon 19 deletions and exon 21 L858R) increase sensitivity to ATP-competitive inhibitors relative to wild-type EGFR, creating the therapeutic window exploited by EGFR TKIs. Exon 20 insertions generally alter the drug-binding pocket and confer primary insensitivity to most first- to third-generation EGFR TKIs.",
+  "alterations": [
+    "Exon 19 in-frame deletions (classical sensitising)",
+    "Exon 21 L858R point mutation (classical sensitising)",
+    "Uncommon mutations: G719X (exon 18), L861Q (exon 21), S768I (exon 20) and compound mutations",
+    "Exon 20 insertions (generally TKI-insensitive; distinct targeted options)",
+    "Acquired T790M gatekeeper mutation (resistance to first/second-generation TKIs)",
+    "Acquired C797S/C797G (resistance to covalent third-generation TKIs)",
+    "EGFR amplification and kinase-domain duplication (less common)"
+  ],
+  "testing": {
+    "methods": [
+      "Next-generation sequencing (DNA-based, tissue)",
+      "Plasma ctDNA NGS or PCR-based assays",
+      "Real-time PCR allele-specific assays"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "Broad NGS panels are preferred over single-gene PCR because many hotspot PCR assays miss exon 20 insertions and uncommon variants. A negative plasma result does not exclude a mutation and should prompt tissue testing. Testing is recommended in non-squamous NSCLC and in squamous NSCLC with atypical clinical features, and before adjuvant therapy in resected early-stage disease."
+  },
+  "predictiveRelevance": "Classical sensitising mutations predict benefit from EGFR TKIs (osimertinib being the preferred first-line backbone in most guidelines, alone or in combination strategies) and identify patients who derive limited benefit from single-agent PD-(L)1 blockade. Uncommon mutations show variable TKI sensitivity, with afatinib and osimertinib having the most supportive data. Exon 20 insertions are targeted with amivantamab-based therapy. EGFR status also guides adjuvant TKI use after resection and consolidation strategies after chemoradiotherapy in stage III disease.",
+  "resistance": [
+    "On-target: T790M after first/second-generation TKIs; C797S (in cis or trans with T790M) and other tertiary mutations (L718Q, G724S) after osimertinib",
+    "Bypass signalling: MET amplification (most common bypass after osimertinib), HER2 amplification, KRAS/NRAS/BRAF mutations, PIK3CA mutations",
+    "Acquired oncogenic fusions (RET, ALK, BRAF, FGFR3)",
+    "Histological transformation to small-cell carcinoma (often with RB1 and TP53 loss) or squamous carcinoma",
+    "Re-biopsy (tissue and/or plasma) at progression is recommended to identify actionable mechanisms"
+  ],
+  "drugs": [
+    "osimertinib",
+    "gefitinib",
+    "erlotinib",
+    "afatinib",
+    "amivantamab",
+    "lazertinib",
+    "datopotamab-deruxtecan"
+  ],
+  "pathway": "egfr-pathway",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Brain metastases are common in EGFR-mutant NSCLC. Osimertinib and lazertinib have good CNS penetration and intracranial activity, which has made them preferred over first-generation agents for patients with or at risk of CNS disease. Leptomeningeal disease is a recognised pattern of progression."
+}

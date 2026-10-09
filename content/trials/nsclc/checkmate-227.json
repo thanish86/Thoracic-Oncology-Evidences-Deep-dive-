@@ -1,0 +1,197 @@
+{
+  "slug": "checkmate-227",
+  "acronym": "CheckMate 227",
+  "officialTitle": "Nivolumab plus Ipilimumab in Advanced Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "PD-L1 ≥1% and <1% cohorts"
+  ],
+  "stages": [
+    "metastatic",
+    "recurrent"
+  ],
+  "setting": "First-line metastatic",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "nivolumab",
+    "ipilimumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "primaryEndpoints": [
+      "OS with nivolumab plus ipilimumab vs chemotherapy (PD-L1 ≥1%)"
+    ],
+    "secondaryEndpoints": [
+      "OS in PD-L1 <1%",
+      "DoR",
+      "Safety"
+    ],
+    "notes": "PD-L1 ≥1%: 1:1:1 to nivolumab-ipilimumab, nivolumab, or chemotherapy. PD-L1 <1%: 1:1:1 to nivolumab-ipilimumab, nivolumab-chemotherapy, or chemotherapy. Only the OS primary endpoint reported in this publication is curated."
+  },
+  "sponsor": "Bristol-Myers Squibb and Ono Pharmaceutical",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02477826"
+    }
+  ],
+  "yearOfPrimaryPublication": 2019,
+  "clinicalQuestion": "Does first-line dual checkpoint blockade with nivolumab plus ipilimumab improve overall survival over chemotherapy in advanced NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Stage IV or recurrent NSCLC, no previous chemotherapy, stratified into PD-L1 ≥1% and <1% cohorts",
+    "intervention": "Nivolumab plus ipilimumab",
+    "comparator": "Platinum-doublet chemotherapy (additional arms: nivolumab alone; nivolumab plus chemotherapy)",
+    "outcomes": "Primary (this report): OS with nivolumab plus ipilimumab vs chemotherapy in PD-L1 ≥1%"
+  },
+  "arms": [
+    {
+      "label": "Nivolumab + ipilimumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Nivolumab plus ipilimumab"
+    },
+    {
+      "label": "Chemotherapy",
+      "role": "CONTROL",
+      "regimen": "Platinum-doublet chemotherapy"
+    },
+    {
+      "label": "Nivolumab",
+      "role": "OTHER",
+      "regimen": "Nivolumab monotherapy (PD-L1 ≥1% cohort)"
+    },
+    {
+      "label": "Nivolumab + chemotherapy",
+      "role": "OTHER",
+      "regimen": "Nivolumab plus chemotherapy (PD-L1 <1% cohort)"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "31562796",
+      "doi": "10.1056/NEJMoa1910231",
+      "title": "Nivolumab plus Ipilimumab in Advanced Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2019,
+      "publicationDate": "2019-09-28",
+      "firstAuthor": "Hellmann MD",
+      "type": "PRIMARY",
+      "label": "Part 1 OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Part 1 primary OS analysis",
+      "population": "PD-L1 ≥1%",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab + ipilimumab",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 17.1 months; 2-year OS 40.0%",
+      "controlValue": "median 14.9 months; 2-year OS 32.8%",
+      "pValue": "0.007",
+      "source": {
+        "pmid": "31562796",
+        "location": "abstract"
+      },
+      "sourceQuote": "Among the patients with a PD-L1 expression level of 1% or more, the median duration of overall survival was 17.1 months (95% confidence interval [CI], 15.0 to 20.1) with nivolumab plus ipilimumab and 14.9 months (95% CI, 12.7 to 16.7) with chemotherapy (P = 0.007), with 2-year overall survival rates of 40.0% and 32.8%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Part 1 OS analysis — PD-L1 <1%",
+      "population": "PD-L1 <1%",
+      "experimentalArm": "Nivolumab + ipilimumab",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 17.2 months",
+      "controlValue": "median 12.2 months",
+      "source": {
+        "pmid": "31562796",
+        "location": "abstract"
+      },
+      "sourceQuote": "The overall survival benefit was also observed in patients with a PD-L1 expression level of less than 1%, with a median duration of 17.2 months (95% CI, 12.8 to 22.0) with nivolumab plus ipilimumab and 12.2 months (95% CI, 9.2 to 14.3) with chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Part 1 OS analysis — all patients",
+      "population": "All randomised patients",
+      "experimentalArm": "Nivolumab + ipilimumab",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 17.1 months",
+      "controlValue": "median 13.9 months",
+      "source": {
+        "pmid": "31562796",
+        "location": "abstract"
+      },
+      "sourceQuote": "Among all the patients in the trial, the median duration of overall survival was 17.1 months (95% CI, 15.2 to 19.9) with nivolumab plus ipilimumab and 13.9 months (95% CI, 12.2 to 15.1) with chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DoR",
+      "analysisLabel": "Part 1 OS analysis",
+      "population": "Responders, PD-L1 ≥1%",
+      "experimentalArm": "Nivolumab + ipilimumab",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 23.2 months",
+      "controlValue": "median 6.2 months",
+      "source": {
+        "pmid": "31562796",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median duration of response was 23.2 months with nivolumab plus ipilimumab and 6.2 months with chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 treatment-related adverse events (overall population)",
+      "experimentalValue": "32.8%",
+      "controlValue": "36.0%",
+      "source": {
+        "pmid": "31562796",
+        "location": "abstract"
+      },
+      "sourceQuote": "The percentage of patients with grade 3 or 4 treatment-related adverse events in the overall population was 32.8% with nivolumab plus ipilimumab and 36.0% with chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III with PD-L1-stratified cohorts",
+      "Durable responses with chemotherapy-free regimen"
+    ],
+    "limitations": [
+      "Open-label",
+      "Complex multi-arm, multi-cohort design",
+      "HR not printed in abstract"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established nivolumab plus ipilimumab as a chemotherapy-free first-line option for advanced NSCLC without targetable drivers, including PD-L1-negative tumours.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Dual checkpoint blockade is one option where PD-L1 is <1%, a group in which PD-1 monotherapy is not used.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 31562796. Earlier TMB-based PFS report and later long-term updates not ingested. Doses not printed in abstract."
+  }
+}

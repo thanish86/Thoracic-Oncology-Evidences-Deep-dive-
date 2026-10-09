@@ -1,0 +1,40 @@
+{
+  "slug": "ipilimumab",
+  "name": "Ipilimumab",
+  "brandNames": [
+    "Yervoy"
+  ],
+  "drugClass": "CTLA-4 immune checkpoint inhibitor",
+  "targets": [
+    "CTLA-4"
+  ],
+  "mechanism": "Fully human IgG1 monoclonal antibody that blocks CTLA-4, enhancing T-cell priming and activation in lymphoid tissue and depleting intratumoural regulatory T cells. Used with nivolumab in NSCLC and mesothelioma.",
+  "route": "intravenous",
+  "diseases": [
+    "nsclc",
+    "mesothelioma"
+  ],
+  "keyToxicities": [
+    "Colitis and diarrhoea (more frequent than with PD-1 blockade)",
+    "Hypophysitis",
+    "Hepatitis",
+    "Dermatitis",
+    "Other endocrinopathies",
+    "Pneumonitis",
+    "Nephritis",
+    "Neurological and ocular immune-related events"
+  ],
+  "monitoring": [
+    "Baseline and periodic thyroid function, liver function, renal function and glucose",
+    "Clinical assessment for new respiratory, gastrointestinal, cutaneous, neurological or cardiac symptoms; low threshold for imaging and specialist input",
+    "Cortisol and pituitary axis assessment when symptoms suggest hypophysitis or adrenal insufficiency",
+    "Troponin and ECG if myocarditis is suspected"
+  ],
+  "resistance": "Combination CTLA-4/PD-1 blockade may benefit some tumours with low PD-L1 expression; mechanisms of resistance overlap with PD-1 blockade.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "mindact",
+  "acronym": "MINDACT",
+  "officialTitle": "70-Gene Signature as an Aid to Treatment Decisions in Early-Stage Breast Cancer",
+  "disease": "breast",
+  "subtypes": [
+    "Early-stage breast cancer",
+    "High clinical risk / low genomic risk (primary test population)"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant (genomic risk-guided chemotherapy de-escalation)",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 6693,
+    "sampleSizeSourceQuote": "In this randomized, phase 3 study, we enrolled 6693 women with early-stage breast cancer and determined their genomic risk (using the 70-gene signature) and their clinical risk (using a modified version of Adjuvant! Online).",
+    "primaryEndpoints": [
+      "5-year distant metastasis-free survival in high clinical/low genomic risk patients not receiving chemotherapy (lower 95% CI boundary vs. 92%)"
+    ],
+    "secondaryEndpoints": [],
+    "notes": "Patients with discordant clinical and genomic risk were randomised to use either genomic or clinical risk to decide on chemotherapy."
+  },
+  "sponsor": "EORTC / Breast International Group",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00433589"
+    },
+    {
+      "registry": "EudraCT",
+      "id": "2005-002625-31"
+    }
+  ],
+  "yearOfPrimaryPublication": 2016,
+  "clinicalQuestion": "Can the 70-gene signature identify women at high clinical risk who can safely forgo adjuvant chemotherapy?",
+  "result": "NON_INFERIOR",
+  "landmark": true,
+  "pico": {
+    "population": "Women with early-stage breast cancer, with clinical risk (modified Adjuvant! Online) and genomic risk (70-gene signature) assessed",
+    "intervention": "Chemotherapy decision based on genomic risk (no chemotherapy if genomic low risk)",
+    "comparator": "Chemotherapy decision based on clinical risk",
+    "outcomes": "Primary: 5-year survival without distant metastasis among high clinical/low genomic risk patients not receiving chemotherapy"
+  },
+  "arms": [
+    {
+      "label": "Genomic-risk guided (no chemotherapy)",
+      "role": "EXPERIMENTAL",
+      "regimen": "No adjuvant chemotherapy in discordant high clinical/low genomic risk patients"
+    },
+    {
+      "label": "Clinical-risk guided (chemotherapy)",
+      "role": "CONTROL",
+      "regimen": "Adjuvant chemotherapy in discordant high clinical/low genomic risk patients"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "27557300",
+      "doi": "10.1056/NEJMoa1602253",
+      "title": "70-Gene Signature as an Aid to Treatment Decisions in Early-Stage Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2016,
+      "publicationDate": "2016-08-25",
+      "firstAuthor": "Cardoso F",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "5-year survival without distant metastasis",
+      "analysisLabel": "Primary analysis",
+      "population": "High clinical risk / low genomic risk, no chemotherapy",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "No chemotherapy",
+      "experimentalValue": "94.7% (95% CI 92.5 to 96.2)",
+      "source": {
+        "pmid": "27557300",
+        "location": "abstract"
+      },
+      "sourceQuote": "A total of 1550 patients (23.2%) were deemed to be at high clinical risk and low genomic risk. At 5 years, the rate of survival without distant metastasis in this group was 94.7% (95% confidence interval, 92.5 to 96.2) among those not receiving chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Absolute difference in 5-year survival without distant metastasis (no chemotherapy vs. chemotherapy)",
+      "analysisLabel": "Primary analysis",
+      "population": "High clinical risk / low genomic risk",
+      "experimentalArm": "No chemotherapy",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "1.5 percentage points lower without chemotherapy",
+      "source": {
+        "pmid": "27557300",
+        "location": "abstract"
+      },
+      "sourceQuote": "The absolute difference in this survival rate between these patients and those who received chemotherapy was 1.5 percentage points, with the rate being lower without chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [],
+  "appraisal": {
+    "strengths": [
+      "Large prospective randomised trial of a genomic test's clinical utility",
+      "Prespecified boundary for the primary test population"
+    ],
+    "limitations": [
+      "Primary endpoint assessed in a single-arm sense (lower CI boundary) rather than powered for a randomised superiority comparison",
+      "Mixed biological subtypes; benefit estimates in subgroups less precise",
+      "Clinical risk defined with a modified Adjuvant! Online tool"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Provides evidence that the 70-gene signature can identify a subset of clinically high-risk patients in whom chemotherapy adds a small absolute benefit in distant metastasis-free survival, supporting shared decision-making about omission.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "MINDACT answers 'is it safe enough to skip?' rather than 'is there zero benefit?' — the abstract reports a small absolute difference favouring chemotherapy in the high clinical/low genomic risk group.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 27557300. Long-term updates not yet ingested."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "jbr-10",
+  "acronym": "JBR.10",
+  "officialTitle": "Vinorelbine plus Cisplatin vs. Observation in Resected Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "early",
+    "resectable"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "vinorelbine",
+    "cisplatin"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "sampleSize": 482,
+    "sampleSizeSourceQuote": "A total of 482 patients underwent randomization to vinorelbine plus cisplatin (242 patients) or observation (240)",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Recurrence-free survival",
+      "Toxicity and safety"
+    ]
+  },
+  "yearOfPrimaryPublication": 2005,
+  "clinicalQuestion": "Does adjuvant vinorelbine plus cisplatin prolong survival after complete resection of stage IB or II NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Completely resected stage IB or II NSCLC with good performance status",
+    "intervention": "Adjuvant vinorelbine plus cisplatin",
+    "comparator": "Observation",
+    "outcomes": "Primary: OS. Secondary: recurrence-free survival, toxicity"
+  },
+  "arms": [
+    {
+      "label": "Vinorelbine plus cisplatin",
+      "role": "EXPERIMENTAL",
+      "regimen": "Vinorelbine plus cisplatin",
+      "n": 242
+    },
+    {
+      "label": "Observation",
+      "role": "CONTROL",
+      "regimen": "Observation",
+      "n": 240
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "15972865",
+      "doi": "10.1056/NEJMoa043623",
+      "title": "Vinorelbine plus cisplatin vs. observation in resected non-small-cell lung cancer.",
+      "journal": "N Engl J Med",
+      "year": 2005,
+      "publicationDate": "2005-06-23",
+      "firstAuthor": "Winton T",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Vinorelbine plus cisplatin",
+      "controlArm": "Observation",
+      "experimentalValue": "median 94 months",
+      "controlValue": "median 73 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.69,
+      "pValue": "0.04",
+      "source": {
+        "pmid": "15972865",
+        "location": "abstract"
+      },
+      "sourceQuote": "Overall survival was significantly prolonged in the chemotherapy group as compared with the observation group (94 vs. 73 months; hazard ratio for death, 0.69; P=0.04)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "RFS",
+      "endpointLabel": "Relapse-free survival",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Vinorelbine plus cisplatin",
+      "controlArm": "Observation",
+      "experimentalValue": "median not reached",
+      "controlValue": "median 46.7 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.6,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "15972865",
+        "location": "abstract"
+      },
+      "sourceQuote": "as was relapse-free survival (not reached vs. 46.7 months; hazard ratio for recurrence, 0.60; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "5-year overall survival rate",
+      "analysisLabel": "Primary analysis (5-year landmark)",
+      "population": "ITT",
+      "experimentalArm": "Vinorelbine plus cisplatin",
+      "controlArm": "Observation",
+      "experimentalValue": "69%",
+      "controlValue": "54%",
+      "pValue": "0.03",
+      "source": {
+        "pmid": "15972865",
+        "location": "abstract"
+      },
+      "sourceQuote": "Five-year survival rates were 69 percent and 54 percent, respectively (P=0.03).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Neutropenia (any grade) and grade 3 febrile neutropenia with chemotherapy",
+      "experimentalValue": "88% neutropenia; 7% grade 3 febrile neutropenia",
+      "source": {
+        "pmid": "15972865",
+        "location": "abstract"
+      },
+      "sourceQuote": "Chemotherapy caused neutropenia in 88 percent of patients (including grade 3 febrile neutropenia in 7 percent)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Deaths from toxic effects of chemotherapy",
+      "experimentalValue": "0.8%",
+      "source": {
+        "pmid": "15972865",
+        "location": "abstract"
+      },
+      "sourceQuote": "death from toxic effects in two patients (0.8 percent)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised with OS as primary endpoint",
+      "Defined single regimen"
+    ],
+    "limitations": [
+      "Restricted to stage IB–II",
+      "Open-label observation control",
+      "Substantial chemotherapy toxicity"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supported adjuvant vinorelbine–cisplatin as a standard regimen after resection of stage II NSCLC; the benefit in stage IB was later questioned in pooled analyses.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "JBR.10 is the reference trial for vinorelbine–cisplatin in resected stage IB–II disease; neutropenia is the dominant toxicity.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 15972865. 95% CIs not reported in the abstract and therefore omitted."
+  }
+}

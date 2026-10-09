@@ -1,0 +1,145 @@
+{
+  "slug": "apt",
+  "acronym": "APT",
+  "officialTitle": "Adjuvant paclitaxel and trastuzumab for node-negative, HER2-positive breast cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HER2+",
+    "Node-negative",
+    "Tumour ≤3 cm"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant (de-escalated chemotherapy)",
+  "treatmentClasses": [
+    "her2-directed",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "paclitaxel",
+    "trastuzumab"
+  ],
+  "phase": "II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label, single-group",
+    "sampleSize": 406,
+    "sampleSizeSourceQuote": "We performed an uncontrolled, single-group, multicenter, investigator-initiated study of adjuvant paclitaxel and trastuzumab in 406 patients with tumors measuring up to 3 cm in greatest dimension.",
+    "primaryEndpoints": [
+      "Survival free from invasive disease"
+    ],
+    "secondaryEndpoints": [
+      "Safety (neuropathy, cardiac)"
+    ],
+    "notes": "Weekly paclitaxel and trastuzumab for 12 weeks followed by 9 months of trastuzumab monotherapy. Phase classification per trial design (single-arm phase 2)."
+  },
+  "sponsor": "Genentech (investigator-initiated)",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00542451"
+    }
+  ],
+  "yearOfPrimaryPublication": 2015,
+  "clinicalQuestion": "Is a de-escalated regimen of weekly paclitaxel plus trastuzumab associated with a low recurrence risk in small, node-negative HER2-positive breast cancer?",
+  "result": "DESCRIPTIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Small (≤3 cm), node-negative HER2-positive breast cancer",
+    "intervention": "Weekly paclitaxel plus trastuzumab for 12 weeks, then trastuzumab to complete 1 year",
+    "comparator": "None (single-group study)",
+    "outcomes": "Primary: invasive disease-free survival. Secondary: toxicity"
+  },
+  "arms": [
+    {
+      "label": "Paclitaxel + trastuzumab",
+      "role": "SINGLE_ARM",
+      "regimen": "Weekly paclitaxel and trastuzumab for 12 weeks, then trastuzumab monotherapy for 9 months",
+      "n": 406
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "25564897",
+      "doi": "10.1056/NEJMoa1406281",
+      "title": "Adjuvant paclitaxel and trastuzumab for node-negative, HER2-positive breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2015,
+      "publicationDate": "2015-01-08",
+      "firstAuthor": "Tolaney SM",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Primary analysis (median follow-up 4.0 years)",
+      "population": "All enrolled",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Paclitaxel + trastuzumab",
+      "experimentalValue": "3-year IDFS 98.7% (95% CI 97.6 to 99.8)",
+      "followUp": "Median 4.0 years",
+      "source": {
+        "pmid": "25564897",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median follow-up period was 4.0 years. The 3-year rate of survival free from invasive disease was 98.7% (95% confidence interval [CI], 97.6 to 99.8).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 neuropathy",
+      "experimentalValue": "13 patients (3.2%)",
+      "source": {
+        "pmid": "25564897",
+        "location": "abstract"
+      },
+      "sourceQuote": "A total of 13 patients (3.2%; 95% CI, 1.7 to 5.4) reported at least one episode of grade 3 neuropathy, and 2 had symptomatic congestive heart failure (0.5%; 95% CI, 0.1 to 1.8)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Symptomatic congestive heart failure",
+      "experimentalValue": "2 patients (0.5%)",
+      "source": {
+        "pmid": "25564897",
+        "location": "abstract"
+      },
+      "sourceQuote": "A total of 13 patients (3.2%; 95% CI, 1.7 to 5.4) reported at least one episode of grade 3 neuropathy, and 2 had symptomatic congestive heart failure (0.5%; 95% CI, 0.1 to 1.8)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Addresses a population largely excluded from pivotal adjuvant trastuzumab trials",
+      "Very low event rate with a simple, less toxic regimen"
+    ],
+    "limitations": [
+      "Single-group, non-randomised design without a comparator",
+      "Few events limit precision for higher-risk subsets"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports weekly paclitaxel plus trastuzumab as a de-escalated adjuvant option for small, node-negative HER2-positive breast cancer.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "For predominantly stage I HER2-positive disease, APT offers an anthracycline-free, single-taxane approach — the evidence is single-arm, so reserve it for genuinely low-risk tumours.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 25564897. Longer-term APT updates not yet ingested."
+  }
+}

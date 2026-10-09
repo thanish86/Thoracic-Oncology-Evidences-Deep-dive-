@@ -1,0 +1,36 @@
+{
+  "slug": "erlotinib",
+  "name": "Erlotinib",
+  "brandNames": [
+    "Tarceva"
+  ],
+  "drugClass": "First-generation EGFR tyrosine kinase inhibitor",
+  "targets": [
+    "EGFR"
+  ],
+  "mechanism": "Reversible ATP-competitive EGFR tyrosine kinase inhibitor with greater potency against sensitising EGFR mutants than wild-type receptor.",
+  "route": "oral",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Acneiform rash",
+    "Diarrhoea",
+    "Hepatotoxicity",
+    "Interstitial lung disease/pneumonitis",
+    "Ocular disorders including keratitis",
+    "Gastrointestinal perforation (rare)"
+  ],
+  "monitoring": [
+    "Periodic liver function tests",
+    "Evaluation of new respiratory symptoms for ILD"
+  ],
+  "interactions": "Cigarette smoking induces CYP1A2 and lowers exposure. Acid-reducing agents reduce absorption. CYP3A4 inducers and inhibitors alter exposure. Monitor INR with warfarin.",
+  "resistance": "Acquired T790M mutation, MET amplification, HER2 amplification and histological transformation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

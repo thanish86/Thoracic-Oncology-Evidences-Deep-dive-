@@ -1,0 +1,41 @@
+{
+  "slug": "nivolumab",
+  "name": "Nivolumab",
+  "brandNames": [
+    "Opdivo"
+  ],
+  "drugClass": "PD-1 immune checkpoint inhibitor",
+  "targets": [
+    "PD-1"
+  ],
+  "mechanism": "Fully human IgG4 monoclonal antibody against PD-1 that prevents PD-L1/PD-L2 engagement, used alone, with ipilimumab or with chemotherapy, including in the perioperative setting.",
+  "route": "intravenous",
+  "diseases": [
+    "nsclc",
+    "mesothelioma"
+  ],
+  "keyToxicities": [
+    "Pneumonitis",
+    "Colitis and diarrhoea",
+    "Hepatitis",
+    "Endocrinopathies (thyroiditis/hypothyroidism, hyperthyroidism, hypophysitis, adrenal insufficiency, autoimmune type 1 diabetes)",
+    "Nephritis",
+    "Immune-mediated dermatitis, including rare severe cutaneous reactions",
+    "Myocarditis, myositis and myasthenia-like syndromes (rare, potentially fatal)",
+    "Infusion-related reactions"
+  ],
+  "monitoring": [
+    "Baseline and periodic thyroid function, liver function, renal function and glucose",
+    "Clinical assessment for new respiratory, gastrointestinal, cutaneous, neurological or cardiac symptoms; low threshold for imaging and specialist input",
+    "Cortisol and pituitary axis assessment when symptoms suggest hypophysitis or adrenal insufficiency",
+    "Troponin and ECG if myocarditis is suspected"
+  ],
+  "interactions": "A subcutaneous formulation has been developed.",
+  "resistance": "Primary resistance is associated with low tumour immunogenicity, STK11/KEAP1 co-mutations and oncogene-driven NSCLC; acquired resistance involves loss of antigen presentation (B2M/HLA loss), JAK1/2 loss-of-function and immunosuppressive microenvironment changes.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "brca",
+  "name": "BRCA1 and BRCA2",
+  "gene": "BRCA1/BRCA2",
+  "diseases": [
+    "breast"
+  ],
+  "category": "dna-repair",
+  "summary": "Germline pathogenic variants in BRCA1 or BRCA2 confer hereditary breast and ovarian cancer risk and render tumours homologous recombination-deficient, predicting sensitivity to PARP inhibitors and platinum agents.",
+  "biology": "BRCA1 and BRCA2 are essential for homologous recombination repair of DNA double-strand breaks; BRCA2 loads RAD51 onto resected DNA. Tumours with biallelic loss rely on error-prone repair pathways. PARP inhibition traps PARP on DNA and prevents single-strand break repair, generating replication-associated double-strand breaks that cannot be repaired, producing synthetic lethality. BRCA1-associated cancers are frequently triple-negative, whereas BRCA2-associated cancers are more often hormone receptor-positive.",
+  "alterations": [
+    "Germline pathogenic or likely pathogenic BRCA1 variants",
+    "Germline pathogenic or likely pathogenic BRCA2 variants",
+    "Somatic (tumour-only) BRCA1/2 mutations",
+    "BRCA1 promoter hypermethylation (epigenetic silencing)"
+  ],
+  "testing": {
+    "methods": [
+      "Germline genetic testing on blood or saliva (sequencing plus copy-number/large rearrangement analysis)",
+      "Tumour NGS (detects germline and somatic variants; germline confirmation required)",
+      "Genomic scar/homologous recombination deficiency assays (investigational in breast cancer)"
+    ],
+    "specimen": "Peripheral blood or saliva for germline testing; tumour tissue for somatic testing",
+    "notes": "Testing should be accompanied by genetic counselling and cascade testing for relatives. Eligibility criteria for germline testing have broadened to support treatment decisions."
+  },
+  "predictiveRelevance": "Germline BRCA1/2 pathogenic variants predict benefit from olaparib and talazoparib in HER2-negative metastatic disease, and from adjuvant olaparib in high-risk early HER2-negative disease. They are associated with platinum sensitivity in triple-negative disease. Evidence for PARP inhibitors in somatic BRCA mutations is emerging from phase II data.",
+  "resistance": [
+    "BRCA1/2 reversion mutations restoring the reading frame",
+    "Loss of 53BP1, shieldin complex or REV7 restoring end resection in BRCA1-deficient cells",
+    "Replication fork protection mechanisms",
+    "Increased drug efflux (P-glycoprotein)",
+    "PARP1 mutations reducing PARP trapping"
+  ],
+  "drugs": [
+    "olaparib",
+    "talazoparib",
+    "carboplatin",
+    "cisplatin"
+  ],
+  "pathway": "dna-damage-repair",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Patients with BRCA-associated triple-negative disease are at risk of brain metastases; talazoparib and olaparib have limited prospective CNS data."
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "fulvestrant",
+  "name": "Fulvestrant",
+  "brandNames": [
+    "Faslodex"
+  ],
+  "drugClass": "Selective oestrogen receptor degrader (SERD)",
+  "targets": [
+    "Oestrogen receptor alpha"
+  ],
+  "mechanism": "Steroidal pure ER antagonist that impairs receptor dimerisation and nuclear localisation and accelerates ER degradation. Backbone partner for CDK4/6, PI3K-alpha and AKT inhibitors.",
+  "route": "intramuscular",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Injection-site reactions",
+    "Hot flushes",
+    "Transaminase elevation",
+    "Arthralgia",
+    "Sciatic nerve-related symptoms from gluteal injection"
+  ],
+  "monitoring": [
+    "Caution with injections in patients with thrombocytopenia or on anticoagulants",
+    "Liver function tests"
+  ],
+  "resistance": "Certain ESR1 mutations (e.g. Y537S) reduce sensitivity; limited bioavailability with intramuscular delivery may contribute to incomplete ER degradation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

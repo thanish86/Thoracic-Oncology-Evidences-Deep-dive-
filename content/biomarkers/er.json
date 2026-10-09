@@ -1,0 +1,49 @@
+{
+  "slug": "er",
+  "name": "Oestrogen receptor (ER)",
+  "gene": "ESR1",
+  "diseases": [
+    "breast"
+  ],
+  "category": "receptor",
+  "summary": "Oestrogen receptor alpha expression defines hormone receptor-positive breast cancer, the most common subtype, and is the principal predictive biomarker for endocrine therapy.",
+  "biology": "ERalpha is a ligand-activated nuclear transcription factor. Oestradiol binding induces dimerisation, chromatin binding at oestrogen response elements with pioneer factors (FOXA1, GATA3) and coactivators, and transcription of proliferative genes including cyclin D1, which drives CDK4/6-mediated RB phosphorylation and G1-S transition. Endocrine therapies act by lowering oestrogen (aromatase inhibitors, ovarian function suppression), competing for the receptor (SERMs) or degrading it (SERDs).",
+  "alterations": [
+    "ER-positive (nuclear expression above the guideline positivity threshold)",
+    "ER-low positive (low-level expression; biologically heterogeneous, often behaving like triple-negative disease)",
+    "ER-negative",
+    "Acquired ESR1 ligand-binding domain mutations (see ESR1)"
+  ],
+  "testing": {
+    "methods": [
+      "Immunohistochemistry for nuclear ER with ASCO/CAP-recommended scoring (percentage and intensity; Allred or H-score)"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue with controlled pre-analytical handling (cold ischaemia and fixation times)",
+    "notes": "ER should be assessed on all primary invasive cancers and, where feasible, on recurrences; receptor status may change between primary and metastatic disease."
+  },
+  "predictiveRelevance": "ER positivity predicts benefit from endocrine therapy in all settings, and with CDK4/6 inhibitors, PI3K/AKT pathway inhibitors and oral SERDs in advanced disease and in selected high-risk early disease. ER-low tumours derive uncertain endocrine benefit and are often managed similarly to triple-negative disease.",
+  "resistance": [
+    "Acquired ESR1 mutations (especially after aromatase inhibitors)",
+    "PI3K-AKT-mTOR pathway activation (PIK3CA, AKT1, PTEN)",
+    "Cell-cycle escape after CDK4/6 inhibition: RB1 loss, CCNE1 amplification, CDK6 amplification",
+    "Growth factor receptor signalling (HER2 mutation, FGFR1 amplification)",
+    "Loss of ER dependence and lineage change"
+  ],
+  "drugs": [
+    "tamoxifen",
+    "letrozole",
+    "anastrozole",
+    "exemestane",
+    "fulvestrant",
+    "elacestrant",
+    "palbociclib",
+    "ribociclib",
+    "abemaciclib"
+  ],
+  "pathway": "estrogen-receptor",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

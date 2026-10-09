@@ -1,0 +1,35 @@
+{
+  "slug": "tucatinib",
+  "name": "Tucatinib",
+  "brandNames": [
+    "Tukysa"
+  ],
+  "drugClass": "HER2-selective tyrosine kinase inhibitor",
+  "targets": [
+    "HER2"
+  ],
+  "mechanism": "Reversible, highly HER2-selective ATP-competitive inhibitor with minimal EGFR inhibition (resulting in less rash and diarrhoea than pan-HER TKIs). Used with trastuzumab and capecitabine and has intracranial activity in HER2-positive brain metastases.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Diarrhoea",
+    "Hepatotoxicity",
+    "Palmar-plantar erythrodysaesthesia (from capecitabine combination)",
+    "Stomatitis",
+    "Serum creatinine increase without true GFR change (inhibition of tubular transporters MATE1/MATE2-K)"
+  ],
+  "monitoring": [
+    "Liver function tests",
+    "Renal function interpreted with awareness of transporter-mediated creatinine rise",
+    "Diarrhoea management"
+  ],
+  "interactions": "Tucatinib is a CYP2C8 substrate (avoid strong CYP2C8 inhibitors and moderate/strong inducers) and a strong CYP3A inhibitor; it may increase exposure of P-gp substrates.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

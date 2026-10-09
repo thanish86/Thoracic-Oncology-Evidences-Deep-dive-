@@ -1,0 +1,38 @@
+{
+  "slug": "ribociclib",
+  "name": "Ribociclib",
+  "brandNames": [
+    "Kisqali"
+  ],
+  "drugClass": "CDK4/6 inhibitor",
+  "targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "mechanism": "Selective CDK4/6 inhibitor inducing G1 arrest via RB hypophosphorylation; used with endocrine therapy in advanced and selected early breast cancer.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Neutropenia",
+    "QTc prolongation",
+    "Hepatotoxicity (transaminase elevation)",
+    "Interstitial lung disease/pneumonitis",
+    "Severe cutaneous reactions (rare)",
+    "Nausea"
+  ],
+  "monitoring": [
+    "ECG at baseline and early in treatment, and electrolytes",
+    "Liver function tests regularly during the early months",
+    "Blood counts"
+  ],
+  "interactions": "Avoid QT-prolonging drugs and tamoxifen co-administration (increased QT risk). Ribociclib is a CYP3A4 inhibitor; avoid strong CYP3A inducers/inhibitors.",
+  "resistance": "As for other CDK4/6 inhibitors: RB1 loss, cyclin E-CDK2 activation, PI3K pathway activation and ESR1 mutations.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

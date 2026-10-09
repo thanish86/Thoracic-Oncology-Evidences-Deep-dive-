@@ -1,0 +1,151 @@
+{
+  "slug": "inavo120",
+  "acronym": "INAVO120",
+  "officialTitle": "Inavolisib-Based Therapy in PIK3CA-Mutated Advanced Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HR+/HER2-", "PIK3CA-mutated", "Endocrine-resistant (relapse during or within 12 months of adjuvant endocrine therapy)"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "First-line advanced, early relapse on/after adjuvant endocrine therapy",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": ["pi3k-akt", "cdk46", "endocrine"],
+  "biomarkers": ["pik3ca", "er", "pr", "her2"],
+  "drugs": ["inavolisib", "palbociclib", "fulvestrant"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind",
+    "primaryEndpoints": ["Investigator-assessed PFS"],
+    "secondaryEndpoints": ["ORR", "Safety"],
+    "notes": "161 patients assigned to inavolisib and 164 to placebo."
+  },
+  "sponsor": "F. Hoffmann-La Roche",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT04191499" }],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Does adding inavolisib to palbociclib-fulvestrant improve PFS as first-line therapy for PIK3CA-mutated, HR-positive/HER2-negative advanced breast cancer with early relapse after adjuvant endocrine therapy?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "PIK3CA-mutated, HR-positive, HER2-negative locally advanced or metastatic breast cancer relapsing during or within 12 months after completing adjuvant endocrine therapy",
+    "intervention": "Inavolisib 9 mg once daily plus palbociclib-fulvestrant",
+    "comparator": "Placebo plus palbociclib-fulvestrant",
+    "outcomes": "Primary: investigator-assessed PFS. Secondary: objective response, safety"
+  },
+  "arms": [
+    {
+      "label": "Inavolisib + palbociclib + fulvestrant",
+      "role": "EXPERIMENTAL",
+      "regimen": "Inavolisib plus palbociclib-fulvestrant",
+      "dosing": "Inavolisib 9 mg orally once daily",
+      "doseSourceQuote": "we compared first-line inavolisib (at an oral dose of 9 mg once daily) plus palbociclib-fulvestrant (inavolisib group) with placebo plus palbociclib-fulvestrant (placebo group)",
+      "n": 161
+    },
+    {
+      "label": "Placebo + palbociclib + fulvestrant",
+      "role": "CONTROL",
+      "regimen": "Placebo plus palbociclib-fulvestrant",
+      "n": 164
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "39476340",
+      "doi": "10.1056/NEJMoa2404625",
+      "title": "Inavolisib-Based Therapy in PIK3CA-Mutated Advanced Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "publicationDate": "2024-10-31",
+      "firstAuthor": "Turner NC",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Inavolisib + palbociclib-fulvestrant",
+      "controlArm": "Placebo + palbociclib-fulvestrant",
+      "experimentalValue": "median 15.0 months",
+      "controlValue": "median 7.3 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.43,
+      "ciLower": 0.32,
+      "ciUpper": 0.59,
+      "pValue": "<0.001",
+      "followUp": "median 21.3 vs 21.5 months",
+      "source": { "pmid": "39476340", "location": "abstract" },
+      "sourceQuote": "A total of 161 patients were assigned to the inavolisib group and 164 to the placebo group; the median follow-up was 21.3 months and 21.5 months, respectively. The median progression-free survival was 15.0 months (95% confidence interval [CI], 11.3 to 20.5) in the inavolisib group and 7.3 months (95% CI, 5.6 to 9.3) in the placebo group (hazard ratio for disease progression or death, 0.43; 95% CI, 0.32 to 0.59; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Inavolisib + palbociclib-fulvestrant",
+      "controlArm": "Placebo + palbociclib-fulvestrant",
+      "experimentalValue": "58.4%",
+      "controlValue": "25.0%",
+      "source": { "pmid": "39476340", "location": "abstract" },
+      "sourceQuote": "An objective response occurred in 58.4% of the patients in the inavolisib group and in 25.0% of those in the placebo group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 neutropenia",
+      "experimentalValue": "80.2%",
+      "controlValue": "78.4%",
+      "source": { "pmid": "39476340", "location": "abstract" },
+      "sourceQuote": "The incidence of grade 3 or 4 neutropenia was 80.2% in the inavolisib group and 78.4% in the placebo group",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 hyperglycaemia",
+      "experimentalValue": "5.6%",
+      "controlValue": "0%",
+      "source": { "pmid": "39476340", "location": "abstract" },
+      "sourceQuote": "grade 3 or 4 hyperglycemia, 5.6% and 0%, respectively",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation of any trial agent because of adverse events",
+      "experimentalValue": "6.8%",
+      "controlValue": "0.6%",
+      "source": { "pmid": "39476340", "location": "abstract" },
+      "sourceQuote": "Discontinuation of any trial agent because of adverse events occurred in 6.8% of the patients in the inavolisib group and in 0.6% of those in the placebo group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind randomised phase III trial in a biomarker-selected, endocrine-resistant population",
+      "Triplet tested against an active CDK4/6 inhibitor-based control"
+    ],
+    "limitations": [
+      "Restricted to early relapse after adjuvant endocrine therapy; not generalisable to endocrine-sensitive first-line disease",
+      "Primary endpoint investigator-assessed; OS not mature in the primary publication"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adding inavolisib to palbociclib-fulvestrant for first-line treatment of PIK3CA-mutated, HR-positive/HER2-negative advanced breast cancer with early relapse after adjuvant endocrine therapy, making PIK3CA testing relevant at first metastatic relapse.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Early relapse (on or within 12 months of adjuvant endocrine therapy) plus a PIK3CA mutation is the INAVO120 population — test PIK3CA at first relapse.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 39476340. PubMed text strips the italic gene symbol PIK3CA from title and abstract; restored in the title field only. Total sample size not printed as a single figure, so design.sampleSize omitted."
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "slug": "tropics-02",
+  "acronym": "TROPiCS-02",
+  "officialTitle": "Sacituzumab Govitecan in Hormone Receptor-Positive/Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HR+/HER2-"],
+  "stages": ["metastatic"],
+  "setting": "Endocrine-resistant, chemotherapy-pretreated metastatic",
+  "lineOfTherapy": "Later-line",
+  "treatmentClasses": ["adc"],
+  "biomarkers": ["er", "pr"],
+  "drugs": ["sacituzumab-govitecan", "eribulin", "vinorelbine", "capecitabine", "gemcitabine"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by blinded independent central review",
+    "sampleSize": 543,
+    "sampleSizeSourceQuote": "At the data cutoff date of July 1, 2022, 543 of 776 screened patients were randomly assigned between May 30, 2019, and April 5, 2021, with 272 patients in the sacituzumab govitecan group and 271 patients in the chemotherapy group.",
+    "primaryEndpoints": ["PFS (BICR)"],
+    "secondaryEndpoints": ["OS", "ORR", "Patient-reported outcomes"],
+    "notes": "Eligible patients had received at least one previous endocrine therapy, a taxane, and a CDK4/6 inhibitor in any setting and two to four previous chemotherapy regimens for metastatic disease (per final OS report)."
+  },
+  "sponsor": "Gilead Sciences",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT03901339" }],
+  "yearOfPrimaryPublication": 2022,
+  "clinicalQuestion": "Does sacituzumab govitecan improve outcomes over physician's choice chemotherapy in heavily pretreated, endocrine-resistant HR-positive/HER2-negative metastatic breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Endocrine-resistant, chemotherapy-pretreated HR-positive/HER2-negative locally recurrent inoperable or metastatic breast cancer, prior CDK4/6 inhibitor",
+    "intervention": "Sacituzumab govitecan",
+    "comparator": "Physician's choice chemotherapy (eribulin, vinorelbine, capecitabine, or gemcitabine)",
+    "outcomes": "Primary: PFS by BICR. Secondary: OS, ORR, patient-reported outcomes"
+  },
+  "arms": [
+    { "label": "Sacituzumab govitecan", "role": "EXPERIMENTAL", "regimen": "Sacituzumab govitecan", "n": 272 },
+    { "label": "Physician's choice chemotherapy", "role": "CONTROL", "regimen": "Eribulin, vinorelbine, capecitabine, or gemcitabine (physician's choice)", "n": 271 }
+  ],
+  "publications": [
+    {
+      "pmid": "36027558",
+      "doi": "10.1200/JCO.22.01002",
+      "title": "Sacituzumab Govitecan in Hormone Receptor-Positive/Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer.",
+      "journal": "J Clin Oncol",
+      "year": 2022,
+      "publicationDate": "2022-08-26",
+      "firstAuthor": "Rugo HS",
+      "type": "PRIMARY",
+      "label": "Primary PFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "37633306",
+      "doi": "10.1016/S0140-6736(23)01245-X",
+      "title": "Overall survival with sacituzumab govitecan in hormone receptor-positive and human epidermal growth factor receptor 2-negative metastatic breast cancer (TROPiCS-02): a randomised, open-label, multicentre, phase 3 trial.",
+      "journal": "Lancet",
+      "year": 2023,
+      "publicationDate": "2023-08-23",
+      "firstAuthor": "Rugo HS",
+      "type": "FINAL_OS",
+      "label": "Protocol-specified final OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Sacituzumab govitecan",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 5.5 months",
+      "controlValue": "median 4.0 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.66,
+      "ciLower": 0.53,
+      "ciUpper": 0.83,
+      "source": { "pmid": "36027558", "location": "abstract" },
+      "sourceQuote": "Primary end point was met with a 34% reduction in risk of progression or death (hazard ratio, 0.66 [95% CI, 0.53 to 0.83;= .0003]). The median PFS was 5.5 months (95% CI, 4.2 to 7.0) with SG and 4.0 months (95% CI, 3.1 to 4.4) with chemotherapy",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Sacituzumab govitecan",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 14.4 months",
+      "controlValue": "median 11.2 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.79,
+      "ciLower": 0.65,
+      "ciUpper": 0.96,
+      "pValue": "0.020",
+      "followUp": "median 12.5 months",
+      "source": { "pmid": "37633306", "location": "abstract" },
+      "sourceQuote": "With a 12·5-month (IQR 6·4-18·8) median follow-up, 390 deaths occurred among 543 patients. Overall survival was significantly improved with sacituzumab govitecan versus chemotherapy (median 14·4 months [95% CI 13·0-15·7] vs 11·2 months [10·1-12·7]; hazard ratio [HR] 0·79, 95% CI 0·65-0·96; p=0·020)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Final OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Sacituzumab govitecan",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "57 (21%)",
+      "controlValue": "38 (14%)",
+      "effectMeasure": "OR",
+      "effectEstimate": 1.63,
+      "ciLower": 1.03,
+      "ciUpper": 2.56,
+      "pValue": "0.035",
+      "source": { "pmid": "37633306", "location": "abstract" },
+      "sourceQuote": "ORR was significantly improved with sacituzumab govitecan compared with chemotherapy (57 [21%] patients vs 38 [14%]; odds ratio 1·63 [95% CI 1·03-2·56]; p=0·035)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "QOL",
+      "endpointLabel": "Time to deterioration of global health status/QoL",
+      "analysisLabel": "Final OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Sacituzumab govitecan",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "median 4.3 months",
+      "controlValue": "median 3.0 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.75,
+      "ciLower": 0.61,
+      "ciUpper": 0.92,
+      "pValue": "0.0059",
+      "source": { "pmid": "37633306", "location": "abstract" },
+      "sourceQuote": "as was time to deterioration of global health status and quality of life (median 4·3 months vs 3·0 months; HR 0·75 [0·61-0·92]; p=0·0059)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Key grade ≥3 treatment-related neutropenia (primary analysis)",
+      "experimentalValue": "51%",
+      "controlValue": "38%",
+      "source": { "pmid": "36027558", "location": "abstract" },
+      "sourceQuote": "Key grade ≥ 3 treatment-related adverse events (SGchemotherapy) were neutropenia (51%38%) and diarrhea (9%1%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Key grade ≥3 treatment-related diarrhoea (primary analysis)",
+      "experimentalValue": "9%",
+      "controlValue": "1%",
+      "source": { "pmid": "36027558", "location": "abstract" },
+      "sourceQuote": "Key grade ≥ 3 treatment-related adverse events (SGchemotherapy) were neutropenia (51%38%) and diarrhea (9%1%).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "One fatal adverse event (septic shock caused by neutropenic colitis) related to sacituzumab govitecan",
+      "source": { "pmid": "37633306", "location": "abstract" },
+      "sourceQuote": "One fatal adverse event (septic shock caused by neutropenic colitis) was determined to be related to sacituzumab govitecan treatment.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III design with PFS by blinded independent central review",
+      "OS benefit in the protocol-specified final analysis, consistent across Trop-2 expression subgroups",
+      "Population reflects contemporary practice with near-universal prior CDK4/6 inhibitor exposure"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Modest absolute PFS gain in a heavily pretreated population",
+      "PubMed abstract of the primary report has formatting loss around P values and separators; verify against full text"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports sacituzumab govitecan as a later-line option for endocrine-resistant, chemotherapy-pretreated HR-positive/HER2-negative metastatic breast cancer, with an OS benefit not restricted by Trop-2 expression level.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "No Trop-2 test is needed to select patients: the survival benefit was consistent across Trop-2 expression subgroups.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 36027558 (primary PFS) and PMID 37633306 (final OS). The PFS P value is garbled in the PubMed abstract text ('= .0003') and was not transcribed into pValue; arm-separator text in the primary abstract safety sentence is also garbled ('51%38%')."
+  }
+}

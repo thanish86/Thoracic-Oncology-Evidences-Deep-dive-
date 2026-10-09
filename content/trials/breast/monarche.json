@@ -1,0 +1,306 @@
+{
+  "slug": "monarche",
+  "acronym": "monarchE",
+  "officialTitle": "Abemaciclib Combined With Endocrine Therapy for the Adjuvant Treatment of HR+, HER2-, Node-Positive, High-Risk, Early Breast Cancer (monarchE)",
+  "disease": "breast",
+  "subtypes": [
+    "HR+/HER2-",
+    "Node-positive, high risk"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "cdk46",
+    "endocrine"
+  ],
+  "biomarkers": [
+    "er",
+    "pr",
+    "her2",
+    "ki-67"
+  ],
+  "drugs": [
+    "abemaciclib"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 5637,
+    "sampleSizeSourceQuote": "At a preplanned efficacy interim analysis, among 5,637 randomly assigned patients, 323 IDFS events were observed in the intent-to-treat population.",
+    "primaryEndpoints": [
+      "Invasive disease-free survival"
+    ],
+    "secondaryEndpoints": [
+      "Distant relapse-free survival",
+      "OS",
+      "Safety"
+    ],
+    "notes": "Cohort 1: ≥4 positive nodes, or 1-3 nodes with grade 3 or tumour ≥5 cm. Cohort 2: 1-3 nodes with Ki-67 ≥20%. Abemaciclib for 2 years with standard endocrine therapy."
+  },
+  "sponsor": "Eli Lilly",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03155997"
+    }
+  ],
+  "yearOfPrimaryPublication": 2020,
+  "clinicalQuestion": "Does adding 2 years of abemaciclib to adjuvant endocrine therapy improve invasive disease-free survival in high-risk, node-positive HR+/HER2- early breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HR+/HER2-, node-positive early breast cancer at high risk of recurrence after surgery (± chemotherapy and radiotherapy)",
+    "intervention": "Abemaciclib for 2 years plus standard endocrine therapy",
+    "comparator": "Standard endocrine therapy alone",
+    "outcomes": "Primary: IDFS. Secondary: DRFS, OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Abemaciclib + ET",
+      "role": "EXPERIMENTAL",
+      "regimen": "Abemaciclib plus standard adjuvant endocrine therapy",
+      "dosing": "150 mg twice daily for 2 years",
+      "doseSourceQuote": "randomly assigned (1:1) to standard-of-care adjuvant endocrine therapy (ET) with or without abemaciclib (150 mg twice daily for 2 years)",
+      "n": 2808
+    },
+    {
+      "label": "ET alone",
+      "role": "CONTROL",
+      "regimen": "Standard adjuvant endocrine therapy",
+      "n": 2829
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "32954927",
+      "doi": "10.1200/JCO.20.02514",
+      "title": "Abemaciclib Combined With Endocrine Therapy for the Adjuvant Treatment of HR+, HER2-, Node-Positive, High-Risk, Early Breast Cancer (monarchE).",
+      "journal": "J Clin Oncol",
+      "year": 2020,
+      "publicationDate": "2020-09-20",
+      "firstAuthor": "Johnston SRD",
+      "type": "PRIMARY",
+      "label": "Preplanned efficacy interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "36493792",
+      "doi": "10.1016/S1470-2045(22)00694-5",
+      "title": "Abemaciclib plus endocrine therapy for hormone receptor-positive, HER2-negative, node-positive, high-risk early breast cancer (monarchE): results from a preplanned interim analysis of a randomised, open-label, phase 3 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2022,
+      "publicationDate": "2022-12-06",
+      "firstAuthor": "Johnston SRD",
+      "type": "UPDATE",
+      "label": "Preplanned OS interim analysis (median follow-up 42 months)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "38194616",
+      "doi": "10.1200/JCO.23.01994",
+      "title": "Adjuvant Abemaciclib Plus Endocrine Therapy for Hormone Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative, High-Risk Early Breast Cancer: Results From a Preplanned monarchE Overall Survival Interim Analysis, Including 5-Year Efficacy Outcomes.",
+      "journal": "J Clin Oncol",
+      "year": 2024,
+      "publicationDate": "2024-01-09",
+      "firstAuthor": "Rastogi P",
+      "type": "UPDATE",
+      "label": "OS interim analysis including 5-year efficacy outcomes",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "Preplanned efficacy interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "experimentalValue": "2-year IDFS 92.2%",
+      "controlValue": "2-year IDFS 88.7%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.75,
+      "ciLower": 0.6,
+      "ciUpper": 0.93,
+      "source": {
+        "pmid": "32954927",
+        "location": "abstract"
+      },
+      "sourceQuote": "Abemaciclib plus ET demonstrated superior IDFS versus ET alone (= .01; hazard ratio, 0.75; 95% CI, 0.60 to 0.93), with 2-year IDFS rates of 92.2% versus 88.7%, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "OS interim analysis (median follow-up 42 months)",
+      "population": "ITT",
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "experimentalValue": "4-year IDFS 85.8%",
+      "controlValue": "4-year IDFS 79.4%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.664,
+      "ciLower": 0.578,
+      "ciUpper": 0.762,
+      "pValue": "nominal <0.0001",
+      "followUp": "Median 42 months",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a median follow-up of 42 months (IQR 37-47), median invasive disease-free survival was not reached in either group and the invasive disease-free survival benefit previously reported was sustained: HR 0·664 (95% CI 0·578-0·762, nominal p<0·0001). At 4 years, the absolute difference in invasive disease-free survival between the groups was 6·4% (85·8% [95% CI 84·2-87·3] in the abemaciclib plus endocrine therapy group vs 79·4% [77·5-81·1] in the endocrine therapy alone group).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "OS interim analysis (median follow-up 42 months)",
+      "population": "ITT",
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "experimentalValue": "157 deaths (5.6%)",
+      "controlValue": "173 deaths (6.1%)",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.929,
+      "ciLower": 0.748,
+      "ciUpper": 1.153,
+      "pValue": "0.50",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "157 (5·6%) of 2808 patients in the abemaciclib plus endocrine therapy group died compared with 173 (6·1%) of 2829 patients in the endocrine therapy alone group (HR 0·929, 95% CI 0·748-1·153; p=0·50).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "analysisLabel": "OS interim analysis with 5-year efficacy (median follow-up 54 months)",
+      "population": "ITT",
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.68,
+      "ciLower": 0.599,
+      "ciUpper": 0.772,
+      "followUp": "Median 54 months",
+      "source": {
+        "pmid": "38194616",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the intent-to-treat population, with a median follow-up of 54 months, the benefit of abemaciclib was sustained with hazard ratios of 0.680 (95% CI, 0.599 to 0.772) for IDFS and 0.675 (95% CI, 0.588 to 0.774) for DRFS.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DRFS",
+      "endpointLabel": "Distant relapse-free survival",
+      "analysisLabel": "OS interim analysis with 5-year efficacy (median follow-up 54 months)",
+      "population": "ITT",
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.675,
+      "ciLower": 0.588,
+      "ciUpper": 0.774,
+      "source": {
+        "pmid": "38194616",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the intent-to-treat population, with a median follow-up of 54 months, the benefit of abemaciclib was sustained with hazard ratios of 0.680 (95% CI, 0.599 to 0.772) for IDFS and 0.675 (95% CI, 0.588 to 0.774) for DRFS.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "IDFS",
+      "endpointLabel": "5-year absolute IDFS improvement",
+      "analysisLabel": "OS interim analysis with 5-year efficacy (median follow-up 54 months)",
+      "population": "ITT",
+      "experimentalArm": "Abemaciclib + ET",
+      "controlArm": "ET alone",
+      "experimentalValue": "Absolute 5-year IDFS improvement 7.6% (DRFS 6.7%)",
+      "source": {
+        "pmid": "38194616",
+        "location": "abstract"
+      },
+      "sourceQuote": "This persistence of abemaciclib benefit translated to continuous separation of the curves with a deepening in 5-year absolute improvement in IDFS and DRFS rates of 7.6% and 6.7%, respectively",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 neutropenia",
+      "experimentalValue": "19.6%",
+      "controlValue": "0.9%",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common grade 3-4 adverse events were neutropenia (in 548 [19·6%] of 2791 patients receiving abemaciclib plus endocrine therapy vs 24 [0·9%] of 2800 patients in the endocrine therapy alone group), leukopenia (318 [11·4%] vs 11 [0·4%]), and diarrhoea (218 [7·8%] vs six [0·2%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 diarrhoea",
+      "experimentalValue": "7.8%",
+      "controlValue": "0.2%",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common grade 3-4 adverse events were neutropenia (in 548 [19·6%] of 2791 patients receiving abemaciclib plus endocrine therapy vs 24 [0·9%] of 2800 patients in the endocrine therapy alone group), leukopenia (318 [11·4%] vs 11 [0·4%]), and diarrhoea (218 [7·8%] vs six [0·2%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events",
+      "experimentalValue": "15.5%",
+      "controlValue": "9.1%",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "Serious adverse events occurred in 433 (15·5%) of 2791 patients receiving abemaciclib plus endocrine therapy versus 256 (9·1%) of 2800 receiving endocrine therapy.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related deaths",
+      "experimentalValue": "two (diarrhoea and pneumonitis)",
+      "controlValue": "none",
+      "source": {
+        "pmid": "36493792",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were two treatment-related deaths in the abemaciclib plus endocrine therapy group (diarrhoea and pneumonitis) and none in the endocrine therapy alone group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase 3 trial in a clearly defined high-risk population",
+      "Benefit sustained and widening beyond the 2-year treatment period"
+    ],
+    "limitations": [
+      "Open-label",
+      "OS not statistically significant at the reported interim analyses",
+      "Diarrhoea and neutropenia require proactive management"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adding 2 years of adjuvant abemaciclib to endocrine therapy for HR+/HER2-, node-positive early breast cancer meeting monarchE high-risk criteria.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "The absolute IDFS gain grew after treatment stopped (a carryover effect) — eligibility hinges on nodal burden plus grade, size or Ki-67 as defined in the trial.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 32954927, 36493792 and 38194616. The primary-analysis P value is garbled in the PubMed abstract text and was therefore omitted. The OS-death counts in PMID 38194616 are garbled in PubMed and were not used."
+  }
+}

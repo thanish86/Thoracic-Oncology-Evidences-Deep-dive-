@@ -1,0 +1,45 @@
+{
+  "slug": "ntrk",
+  "name": "NTRK gene fusions",
+  "gene": "NTRK1/NTRK2/NTRK3",
+  "diseases": [
+    "nsclc",
+    "breast"
+  ],
+  "category": "driver",
+  "summary": "NTRK1/2/3 fusions are rare in common cancers such as NSCLC and non-secretory breast cancer but are near-defining in secretory breast carcinoma; they predict striking tissue-agnostic responses to TRK inhibitors.",
+  "biology": "NTRK1, NTRK2 and NTRK3 encode the tropomyosin receptor kinases TRKA, TRKB and TRKC. In-frame fusions retaining the kinase domain with a dimerising partner cause constitutive TRK activation of MAPK, PI3K and PLC-gamma pathways. Secretory carcinoma of the breast characteristically harbours ETV6-NTRK3.",
+  "alterations": [
+    "NTRK1 fusions (e.g. TPM3-NTRK1, LMNA-NTRK1)",
+    "NTRK3 fusions (ETV6-NTRK3 in secretory breast carcinoma)",
+    "NTRK2 fusions (rare)",
+    "Acquired solvent-front (TRKA G595R, TRKC G623R), gatekeeper (TRKA F589L) and xDFG mutations after TRK inhibitors"
+  ],
+  "testing": {
+    "methods": [
+      "RNA-based NGS (preferred)",
+      "Hybrid-capture DNA NGS",
+      "Pan-TRK immunohistochemistry as screening (requires molecular confirmation)",
+      "Fluorescence in situ hybridisation (e.g. ETV6 break-apart)"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue",
+    "notes": "Pan-TRK IHC is less sensitive for NTRK3 fusions and may be positive due to physiological expression in some tissues. Large NTRK introns can reduce detection by DNA-only panels."
+  },
+  "predictiveRelevance": "NTRK fusions predict benefit from first-generation TRK inhibitors (larotrectinib, entrectinib) across tumour types; repotrectinib is a next-generation inhibitor with activity against solvent-front resistance mutations.",
+  "resistance": [
+    "On-target solvent-front, gatekeeper and xDFG kinase-domain mutations",
+    "Off-target MAPK reactivation (KRAS, BRAF mutations, MET amplification)"
+  ],
+  "drugs": [
+    "larotrectinib",
+    "entrectinib",
+    "repotrectinib"
+  ],
+  "pathway": "mapk",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Entrectinib and larotrectinib have reported intracranial activity; entrectinib was designed to cross the blood-brain barrier."
+}

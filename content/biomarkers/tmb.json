@@ -1,0 +1,40 @@
+{
+  "slug": "tmb",
+  "name": "Tumour mutational burden (TMB)",
+  "diseases": [
+    "nsclc",
+    "sclc",
+    "breast"
+  ],
+  "category": "immune",
+  "summary": "Tumour mutational burden quantifies somatic coding mutations per megabase and serves as an imperfect surrogate for neoantigen load; high TMB has been associated with benefit from immune checkpoint inhibitors, but assay harmonisation and thresholds remain challenging.",
+  "biology": "Tumours with many somatic mutations, such as smoking-associated NSCLC and SCLC, generate more potential neoantigens that may be presented on MHC and recognised by T cells. TMB is independent of PD-L1 expression. Mismatch-repair deficiency and POLE mutations produce very high TMB.",
+  "alterations": [
+    "High TMB (assay- and threshold-dependent)",
+    "Hypermutation from mismatch-repair deficiency or POLE/POLD1 mutation"
+  ],
+  "testing": {
+    "methods": [
+      "Whole-exome sequencing (reference standard)",
+      "Targeted NGS panel-based estimation (tissue)",
+      "Blood-based TMB from ctDNA"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue or plasma ctDNA",
+    "notes": "Panel-derived TMB depends on panel size, bioinformatic pipeline, germline filtering and tumour purity; values from different assays are not directly interchangeable."
+  },
+  "predictiveRelevance": "High TMB supports tissue-agnostic use of pembrolizumab in some jurisdictions and correlated with benefit from nivolumab plus ipilimumab in NSCLC exploratory analyses; however, TMB is not routinely used to select first-line immunotherapy in NSCLC and has limited predictive value in SCLC and breast cancer outside hypermutated tumours.",
+  "resistance": [
+    "Low TMB and low neoantigen clonality associated with reduced immunotherapy benefit"
+  ],
+  "drugs": [
+    "pembrolizumab",
+    "nivolumab",
+    "ipilimumab"
+  ],
+  "pathway": "pd1-pdl1",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

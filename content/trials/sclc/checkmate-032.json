@@ -1,0 +1,244 @@
+{
+  "slug": "checkmate-032",
+  "acronym": "CheckMate 032 (SCLC cohort)",
+  "officialTitle": "Nivolumab alone and nivolumab plus ipilimumab in recurrent small-cell lung cancer (CheckMate 032): a multicentre, open-label, phase 1/2 trial",
+  "disease": "sclc",
+  "subtypes": [],
+  "stages": [
+    "recurrent"
+  ],
+  "setting": "Recurrent SCLC after platinum-based chemotherapy",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": [
+    "immunotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "nivolumab",
+    "ipilimumab"
+  ],
+  "phase": "I/II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label",
+    "sampleSize": 216,
+    "sampleSizeSourceQuote": "Between Nov 18, 2013, and July 28, 2015, 216 patients were enrolled and treated (98 with nivolumab 3 mg/kg, three with nivolumab 1 mg/kg plus ipilimumab 1 mg/kg, 61 with nivolumab 1 mg/kg plus ipilimumab 3 mg/kg, and 54 with nivolumab 3 mg/kg plus ipilimumab 1 mg/kg).",
+    "primaryEndpoints": [
+      "ORR (investigator-assessed)"
+    ],
+    "secondaryEndpoints": [
+      "Safety",
+      "OS"
+    ],
+    "notes": "Initial non-randomised cohorts (interim analysis, 2016). A later randomised expansion cohort (3:2 nivolumab vs nivolumab plus ipilimumab; ORR by BICR) was reported in 2019 and is recorded as a separate publication. Evidence is phase 1/2 and largely non-comparative."
+  },
+  "sponsor": "Bristol-Myers Squibb",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT01928394"
+    }
+  ],
+  "yearOfPrimaryPublication": 2016,
+  "clinicalQuestion": "What is the activity and safety of nivolumab with or without ipilimumab in SCLC progressing after platinum-based chemotherapy?",
+  "result": "DESCRIPTIVE",
+  "landmark": false,
+  "pico": {
+    "population": "Limited- or extensive-stage SCLC progressing after at least one platinum-containing regimen",
+    "intervention": "Nivolumab monotherapy or nivolumab plus ipilimumab",
+    "comparator": "None in initial cohorts; nivolumab monotherapy in the randomised expansion cohort",
+    "outcomes": "Primary: objective response. Safety, OS"
+  },
+  "arms": [
+    {
+      "label": "Nivolumab 3 mg/kg",
+      "role": "OTHER",
+      "regimen": "Nivolumab monotherapy",
+      "dosing": "Nivolumab 3 mg/kg intravenously every 2 weeks",
+      "doseSourceQuote": "Patients received nivolumab (3 mg/kg bodyweight intravenously) every 2 weeks (given until disease progression or unacceptable toxicity)",
+      "n": 98
+    },
+    {
+      "label": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg",
+      "role": "OTHER",
+      "regimen": "Nivolumab plus ipilimumab, then nivolumab",
+      "dosing": "Nivolumab 1 mg/kg plus ipilimumab 3 mg/kg every 3 weeks for four cycles, then nivolumab 3 mg/kg every 2 weeks",
+      "doseSourceQuote": "or nivolumab plus ipilimumab (1 mg/kg plus 1 mg/kg, 1 mg/kg plus 3 mg/kg, or 3 mg/kg plus 1 mg/kg, intravenously) every 3 weeks for four cycles, followed by nivolumab 3 mg/kg every 2 weeks.",
+      "n": 61
+    },
+    {
+      "label": "Nivolumab 3 mg/kg + ipilimumab 1 mg/kg",
+      "role": "OTHER",
+      "regimen": "Nivolumab plus ipilimumab, then nivolumab",
+      "dosing": "Nivolumab 3 mg/kg plus ipilimumab 1 mg/kg every 3 weeks for four cycles, then nivolumab 3 mg/kg every 2 weeks",
+      "doseSourceQuote": "or nivolumab plus ipilimumab (1 mg/kg plus 1 mg/kg, 1 mg/kg plus 3 mg/kg, or 3 mg/kg plus 1 mg/kg, intravenously) every 3 weeks for four cycles, followed by nivolumab 3 mg/kg every 2 weeks.",
+      "n": 54
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "27269741",
+      "doi": "10.1016/S1470-2045(16)30098-5",
+      "title": "Nivolumab alone and nivolumab plus ipilimumab in recurrent small-cell lung cancer (CheckMate 032): a multicentre, open-label, phase 1/2 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2016,
+      "publicationDate": "2016-06-04",
+      "firstAuthor": "Antonia SJ",
+      "type": "PRIMARY",
+      "label": "Interim analysis, non-randomised cohorts",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "31629915",
+      "doi": "10.1016/j.jtho.2019.10.004",
+      "title": "Nivolumab Monotherapy and Nivolumab Plus Ipilimumab in Recurrent Small Cell Lung Cancer: Results From the CheckMate 032 Randomized Cohort.",
+      "journal": "J Thorac Oncol",
+      "year": 2019,
+      "publicationDate": "2019-10-17",
+      "firstAuthor": "Ready NE",
+      "type": "UPDATE",
+      "label": "Randomised cohort results",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Interim analysis, non-randomised cohorts (nivolumab 3 mg/kg)",
+      "population": "Treated patients, nivolumab 3 mg/kg cohort",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab 3 mg/kg",
+      "experimentalValue": "10 of 98 (10%)",
+      "effectMeasure": "NONE",
+      "source": {
+        "pmid": "27269741",
+        "location": "abstract"
+      },
+      "sourceQuote": "An objective response was achieved in ten (10%) of 98 patients receiving nivolumab 3 mg/kg, one (33%) of three patients receiving nivolumab 1 mg/kg plus ipilimumab 1 mg/kg, 14 (23%) of 61 receiving nivolumab 1 mg/kg plus ipilimumab 3 mg/kg, and ten (19%) of 54 receiving nivolumab 3 mg/kg plus ipilimumab 1 mg/kg.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Interim analysis, non-randomised cohorts (nivolumab 1 + ipilimumab 3)",
+      "population": "Treated patients, nivolumab 1 mg/kg plus ipilimumab 3 mg/kg cohort",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg",
+      "experimentalValue": "14 of 61 (23%)",
+      "effectMeasure": "NONE",
+      "source": {
+        "pmid": "27269741",
+        "location": "abstract"
+      },
+      "sourceQuote": "An objective response was achieved in ten (10%) of 98 patients receiving nivolumab 3 mg/kg, one (33%) of three patients receiving nivolumab 1 mg/kg plus ipilimumab 1 mg/kg, 14 (23%) of 61 receiving nivolumab 1 mg/kg plus ipilimumab 3 mg/kg, and ten (19%) of 54 receiving nivolumab 3 mg/kg plus ipilimumab 1 mg/kg.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "endpointLabel": "ORR by blinded independent central review",
+      "analysisLabel": "Randomised cohort",
+      "population": "Randomised cohort (nivolumab n=147; nivolumab + ipilimumab n=96)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg",
+      "controlArm": "Nivolumab 3 mg/kg",
+      "experimentalValue": "21.9%",
+      "controlValue": "11.6%",
+      "effectMeasure": "OR",
+      "effectEstimate": 2.12,
+      "ciLower": 1.06,
+      "ciUpper": 4.26,
+      "pValue": "0.03",
+      "source": {
+        "pmid": "31629915",
+        "location": "abstract"
+      },
+      "sourceQuote": "ORR increased with nivolumab plus ipilimumab (21.9% versus 11.6% with nivolumab; odds ratio: 2.12; 95% confidence interval: 1.06-4.26; p = 0.03).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Randomised cohort (long-term OS)",
+      "population": "Randomised cohort",
+      "experimentalArm": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg",
+      "controlArm": "Nivolumab 3 mg/kg",
+      "experimentalValue": "median 4.7 months",
+      "controlValue": "median 5.7 months",
+      "effectMeasure": "NONE",
+      "source": {
+        "pmid": "31629915",
+        "location": "abstract"
+      },
+      "sourceQuote": "median (95% confidence interval) OS was 5.7 (3.8-7.6) versus 4.7 months (3.1-8.3). Twenty-four-month OS rates were 17.9% (nivolumab) and 16.9% (nivolumab plus ipilimumab).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Randomised cohort (24-month OS rate)",
+      "population": "Randomised cohort",
+      "experimentalArm": "Nivolumab 1 mg/kg + ipilimumab 3 mg/kg",
+      "controlArm": "Nivolumab 3 mg/kg",
+      "experimentalValue": "16.9%",
+      "controlValue": "17.9%",
+      "effectMeasure": "NONE",
+      "source": {
+        "pmid": "31629915",
+        "location": "abstract"
+      },
+      "sourceQuote": "Twenty-four-month OS rates were 17.9% (nivolumab) and 16.9% (nivolumab plus ipilimumab).",
+      "status": "AWAITING_VERIFICATION",
+      "endpointLabel": "Twenty-four-month OS rate"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 treatment-related adverse events, randomised cohort",
+      "experimentalValue": "37.5%",
+      "controlValue": "12.9%",
+      "source": {
+        "pmid": "31629915",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 3 to 4 treatment-related adverse event rates were 12.9% (nivolumab) versus 37.5% (nivolumab plus ipilimumab), and treatment-related deaths were n =1 versus n = 3, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related deaths, randomised cohort",
+      "experimentalValue": "3",
+      "controlValue": "1",
+      "source": {
+        "pmid": "31629915",
+        "location": "abstract"
+      },
+      "sourceQuote": "treatment-related deaths were n =1 versus n = 3, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large multicohort experience with long-term OS follow-up",
+      "Randomised expansion cohort with central response review"
+    ],
+    "limitations": [
+      "Phase 1/2 design; initial cohorts non-randomised and descriptive",
+      "Higher response with the combination did not translate into longer OS in the randomised cohort",
+      "Substantially more toxicity with combination therapy"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Showed durable responses in a minority of patients with relapsed SCLC treated with nivolumab with or without ipilimumab; the combination increased response and toxicity without an OS advantage.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "In relapsed SCLC, adding ipilimumab to nivolumab raised response rates but not survival, and increased toxicity.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 27269741 (interim, non-randomised cohorts) and PMID 31629915 (randomised cohort). The nivolumab 1 mg/kg plus ipilimumab 1 mg/kg cohort (n=3) is not recorded as a separate arm."
+  }
+}

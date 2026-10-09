@@ -1,0 +1,188 @@
+{
+  "slug": "convert",
+  "acronym": "CONVERT",
+  "officialTitle": "Concurrent once-daily versus twice-daily chemoradiotherapy in patients with limited-stage small-cell lung cancer (CONVERT): an open-label, phase 3, randomised, superiority trial",
+  "disease": "sclc",
+  "subtypes": [],
+  "stages": [
+    "limited-stage"
+  ],
+  "setting": "Limited-stage SCLC, concurrent chemoradiotherapy",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "radiotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "cisplatin",
+    "etoposide"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 547,
+    "sampleSizeSourceQuote": "Between April 7, 2008, and Nov 29, 2013, 547 patients were enrolled and randomly assigned to receive twice-daily concurrent chemoradiotherapy (274 patients) or once-daily concurrent chemoradiotherapy (273 patients).",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Toxicity"
+    ],
+    "notes": "Designed to show superiority of once-daily 66 Gy over twice-daily 45 Gy; not powered for equivalence. Radiotherapy started on day 22 after commencing cisplatin-etoposide."
+  },
+  "sponsor": "Cancer Research UK and cooperative groups (academic)",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00433563"
+    }
+  ],
+  "yearOfPrimaryPublication": 2017,
+  "clinicalQuestion": "In limited-stage SCLC, is high-dose once-daily concurrent chemoradiotherapy superior to standard twice-daily accelerated chemoradiotherapy?",
+  "result": "NEGATIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Adults with limited-stage SCLC, ECOG PS 0-2, adequate pulmonary function",
+    "intervention": "Once-daily thoracic radiotherapy (66 Gy in 33 fractions) concurrent with cisplatin-etoposide",
+    "comparator": "Twice-daily thoracic radiotherapy (45 Gy in 30 fractions) concurrent with cisplatin-etoposide",
+    "outcomes": "Primary: overall survival (modified ITT). Toxicity"
+  },
+  "arms": [
+    {
+      "label": "Twice-daily RT",
+      "role": "CONTROL",
+      "regimen": "Cisplatin-etoposide with concurrent twice-daily thoracic radiotherapy",
+      "dosing": "45 Gy in 30 twice-daily fractions of 1.5 Gy over 19 days",
+      "doseSourceQuote": "Patients were randomly assigned to receive either 45 Gy radiotherapy in 30 twice-daily fractions of 1·5 Gy over 19 days, or 66 Gy in 33 once-daily fractions of 2 Gy over 45 days, starting on day 22 after commencing cisplatin-etoposide chemotherapy (given as four to six cycles every 3 weeks in both groups).",
+      "n": 274
+    },
+    {
+      "label": "Once-daily RT",
+      "role": "EXPERIMENTAL",
+      "regimen": "Cisplatin-etoposide with concurrent once-daily thoracic radiotherapy",
+      "dosing": "66 Gy in 33 once-daily fractions of 2 Gy over 45 days",
+      "doseSourceQuote": "Patients were randomly assigned to receive either 45 Gy radiotherapy in 30 twice-daily fractions of 1·5 Gy over 19 days, or 66 Gy in 33 once-daily fractions of 2 Gy over 45 days, starting on day 22 after commencing cisplatin-etoposide chemotherapy (given as four to six cycles every 3 weeks in both groups).",
+      "n": 273
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "28642008",
+      "doi": "10.1016/S1470-2045(17)30318-2",
+      "title": "Concurrent once-daily versus twice-daily chemoradiotherapy in patients with limited-stage small-cell lung cancer (CONVERT): an open-label, phase 3, randomised, superiority trial.",
+      "journal": "Lancet Oncol",
+      "year": 2017,
+      "publicationDate": "2017-06-20",
+      "firstAuthor": "Faivre-Finn C",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "Modified ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Once-daily RT",
+      "controlArm": "Twice-daily RT",
+      "experimentalValue": "median 25 months",
+      "controlValue": "median 30 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.18,
+      "ciLower": 0.95,
+      "ciUpper": 1.45,
+      "pValue": "0.14",
+      "followUp": "Median 45 months",
+      "source": {
+        "pmid": "28642008",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a median follow-up of 45 months (IQR 35-58), median overall survival was 30 months (95% CI 24-34) in the twice-daily group versus 25 months (21-31) in the once-daily group (hazard ratio for death in the once daily group 1·18 [95% CI 0·95-1·45]; p=0·14).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "2-year overall survival",
+      "analysisLabel": "Primary analysis (2-year landmark)",
+      "population": "Modified ITT",
+      "experimentalArm": "Once-daily RT",
+      "controlArm": "Twice-daily RT",
+      "experimentalValue": "51%",
+      "controlValue": "56%",
+      "source": {
+        "pmid": "28642008",
+        "location": "abstract"
+      },
+      "sourceQuote": "2-year overall survival was 56% (95% CI 50-62) in the twice-daily group and 51% (45-57) in the once-daily group (absolute difference between the treatment groups 5·3% [95% CI -3·2% to 13·7%]).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Grade 4 neutropenia",
+      "experimentalValue": "101 (38%)",
+      "controlValue": "129 (49%)",
+      "source": {
+        "pmid": "28642008",
+        "location": "abstract"
+      },
+      "sourceQuote": "there was significantly more grade 4 neutropenia with twice-daily radiotherapy (129 [49%] vs 101 [38%]; p=0·05)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Grade 3-4 oesophagitis",
+      "experimentalValue": "47 of 246 (19%)",
+      "controlValue": "47 of 254 (19%)",
+      "source": {
+        "pmid": "28642008",
+        "location": "abstract"
+      },
+      "sourceQuote": "In patients assessed for radiotherapy toxicity, was no difference in grade 3-4 oesophagitis between the groups (47 [19%] of 254 patients in the twice-daily group vs 47 [19%] of 246 in the once-daily group; p=0·85)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related deaths",
+      "experimentalValue": "eight patients",
+      "controlValue": "three patients",
+      "source": {
+        "pmid": "28642008",
+        "location": "abstract"
+      },
+      "sourceQuote": "11 patients died from treatment-related causes (three in the twice-daily group and eight in the once-daily group).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large international randomised phase III trial with modern conformal radiotherapy",
+      "Mandatory radiotherapy quality assurance in a multinational setting"
+    ],
+    "limitations": [
+      "Designed for superiority of once-daily treatment; not powered to show equivalence",
+      "Open-label",
+      "Radiotherapy started with the second chemotherapy cycle rather than the first"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Once-daily high-dose radiotherapy did not outperform twice-daily treatment; the authors concluded twice-daily radiotherapy should remain the standard, while toxicity was similar and lower than expected in both arms.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Twice-daily remains the reference schedule; when logistics preclude it, once-daily high-dose regimens are a commonly used alternative with comparable observed outcomes but without formal proof of equivalence.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 28642008."
+  }
+}

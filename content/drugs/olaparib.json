@@ -1,0 +1,39 @@
+{
+  "slug": "olaparib",
+  "name": "Olaparib",
+  "brandNames": [
+    "Lynparza"
+  ],
+  "drugClass": "PARP inhibitor",
+  "targets": [
+    "PARP1",
+    "PARP2"
+  ],
+  "mechanism": "Inhibits PARP catalytic activity and traps PARP on DNA, causing replication-associated double-strand breaks that are lethal in homologous recombination-deficient (e.g. BRCA1/2-mutant) cells (synthetic lethality).",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Anaemia",
+    "Nausea and vomiting",
+    "Fatigue",
+    "Neutropenia and thrombocytopenia",
+    "Myelodysplastic syndrome/acute myeloid leukaemia (rare)",
+    "Pneumonitis (rare)",
+    "Venous thromboembolism"
+  ],
+  "monitoring": [
+    "Blood counts at baseline and monthly early in treatment",
+    "Evaluate prolonged cytopenias for MDS/AML",
+    "Renal function (dose adjustment in impairment)"
+  ],
+  "interactions": "Avoid strong and moderate CYP3A inhibitors and inducers.",
+  "resistance": "BRCA1/2 or PALB2 reversion mutations, loss of 53BP1/shieldin, replication fork protection, drug efflux and PARP1 mutations.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

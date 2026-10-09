@@ -1,0 +1,193 @@
+{
+  "slug": "lace",
+  "acronym": "LACE",
+  "officialTitle": "Lung adjuvant cisplatin evaluation: a pooled analysis by the LACE Collaborative Group",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "cisplatin",
+    "vinorelbine",
+    "etoposide"
+  ],
+  "phase": "META",
+  "design": {
+    "randomised": true,
+    "sampleSize": 4584,
+    "sampleSizeSourceQuote": "Individual patient data were collected and pooled from the five largest trials (4,584 patients) of cisplatin-based chemotherapy in completely resected patients",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [],
+    "notes": "Individual-patient-data pooled analysis of five randomised trials of cisplatin-based adjuvant chemotherapy; analyses stratified by trial."
+  },
+  "yearOfPrimaryPublication": 2008,
+  "clinicalQuestion": "Which patients and which cisplatin-based regimens derive the greatest survival benefit from adjuvant chemotherapy after complete resection of NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Completely resected NSCLC enrolled in the five largest cisplatin-based adjuvant trials",
+    "intervention": "Postoperative cisplatin-based chemotherapy",
+    "comparator": "No chemotherapy",
+    "outcomes": "OS overall and by stage, partner drug and patient characteristics"
+  },
+  "arms": [
+    {
+      "label": "Cisplatin-based chemotherapy",
+      "role": "EXPERIMENTAL",
+      "regimen": "Cisplatin-based adjuvant chemotherapy (various partner drugs)"
+    },
+    {
+      "label": "No chemotherapy",
+      "role": "CONTROL",
+      "regimen": "Observation"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "18506026",
+      "doi": "10.1200/JCO.2007.13.9030",
+      "title": "Lung adjuvant cisplatin evaluation: a pooled analysis by the LACE Collaborative Group.",
+      "journal": "J Clin Oncol",
+      "year": 2008,
+      "publicationDate": "2008-05-27",
+      "firstAuthor": "Pignon JP",
+      "type": "META_ANALYSIS",
+      "label": "Individual-patient-data pooled analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "endpointLabel": "OS (5-year absolute benefit 5.4%)",
+      "analysisLabel": "Pooled analysis",
+      "population": "All pooled patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Cisplatin-based chemotherapy",
+      "controlArm": "No chemotherapy",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.89,
+      "ciLower": 0.82,
+      "ciUpper": 0.96,
+      "pValue": ".005",
+      "followUp": "Median 5.2 years",
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "With a median follow-up time of 5.2 years, the overall HR of death was 0.89 (95% CI, 0.82 to 0.96; P = .005), corresponding to a 5-year absolute benefit of 5.4% from chemotherapy.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Pooled analysis (stage subgroup)",
+      "population": "Stage IA",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.4,
+      "ciLower": 0.95,
+      "ciUpper": 2.06,
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "HR for stage IA = 1.40; 95% CI, 0.95 to 2.06",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Pooled analysis (stage subgroup)",
+      "population": "Stage IB",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.93,
+      "ciLower": 0.78,
+      "ciUpper": 1.1,
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "HR for stage IB = 0.93; 95% CI, 0.78 to 1.10",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Pooled analysis (stage subgroup)",
+      "population": "Stage II",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.83,
+      "ciLower": 0.73,
+      "ciUpper": 0.95,
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "HR for stage II = 0.83; 95% CI, 0.73 to 0.95",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Pooled analysis (stage subgroup)",
+      "population": "Stage III",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.83,
+      "ciLower": 0.72,
+      "ciUpper": 0.94,
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "HR for stage III = 0.83; 95% CI, 0.72 to 0.94",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Pooled analysis (partner-drug subgroup)",
+      "population": "Cisplatin plus vinorelbine",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.8,
+      "ciLower": 0.7,
+      "ciUpper": 0.91,
+      "source": {
+        "pmid": "18506026",
+        "location": "abstract"
+      },
+      "sourceQuote": "vinorelbine (HR = 0.80; 95% CI, 0.70 to 0.91)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [],
+  "appraisal": {
+    "strengths": [
+      "Individual patient data from the five largest modern trials",
+      "No heterogeneity of chemotherapy effect between trials"
+    ],
+    "limitations": [
+      "Subgroup analyses (stage, partner drug) are exploratory",
+      "Trials used different regimens and radiotherapy policies"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Confirmed a modest OS benefit for adjuvant cisplatin-based chemotherapy after complete resection, with benefit evident in stage II and III disease, uncertain in stage IB and potentially detrimental in stage IA.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "LACE is why adjuvant cisplatin doublets are offered for resected stage II–III disease and not for stage IA.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 18506026. Pooled IPD analysis of randomised trials; phase recorded as META."
+  }
+}

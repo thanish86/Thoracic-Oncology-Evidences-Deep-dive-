@@ -1,0 +1,183 @@
+{
+  "slug": "paloma-3",
+  "acronym": "PALOMA-3",
+  "officialTitle": "Palbociclib in Hormone-Receptor-Positive Advanced Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HR+/HER2-", "Endocrine-pretreated"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "Advanced disease that relapsed or progressed during prior endocrine therapy",
+  "lineOfTherapy": "2L+",
+  "treatmentClasses": ["cdk46", "endocrine"],
+  "biomarkers": ["er", "pr", "her2"],
+  "drugs": ["palbociclib", "fulvestrant", "goserelin"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Placebo-controlled",
+    "sampleSize": 521,
+    "sampleSizeSourceQuote": "This phase 3 study involved 521 patients with advanced hormone-receptor-positive, human epidermal growth factor receptor 2-negative breast cancer that had relapsed or progressed during prior endocrine therapy.",
+    "primaryEndpoints": ["Investigator-assessed PFS"],
+    "secondaryEndpoints": ["OS", "Objective response", "Clinical benefit rate", "Patient-reported outcomes", "Safety"],
+    "notes": "2:1 randomisation. Premenopausal or perimenopausal women also received goserelin."
+  },
+  "sponsor": "Pfizer",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT01942135" }],
+  "yearOfPrimaryPublication": 2015,
+  "clinicalQuestion": "Does adding palbociclib to fulvestrant improve outcomes in HR-positive, HER2-negative advanced breast cancer that progressed on prior endocrine therapy?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HR-positive, HER2-negative advanced breast cancer relapsed or progressed during prior endocrine therapy (any menopausal status)",
+    "intervention": "Palbociclib plus fulvestrant (plus goserelin if pre/perimenopausal)",
+    "comparator": "Placebo plus fulvestrant",
+    "outcomes": "Primary: investigator-assessed PFS. Secondary: OS, objective response, clinical benefit, PROs, safety"
+  },
+  "arms": [
+    { "label": "Palbociclib + fulvestrant", "role": "EXPERIMENTAL", "regimen": "Palbociclib plus fulvestrant (goserelin for pre/perimenopausal women)" },
+    { "label": "Placebo + fulvestrant", "role": "CONTROL", "regimen": "Placebo plus fulvestrant (goserelin for pre/perimenopausal women)" }
+  ],
+  "publications": [
+    {
+      "pmid": "26030518",
+      "doi": "10.1056/NEJMoa1505270",
+      "title": "Palbociclib in Hormone-Receptor-Positive Advanced Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2015,
+      "publicationDate": "2015-06-01",
+      "firstAuthor": "Turner NC",
+      "type": "PRIMARY",
+      "label": "Preplanned interim PFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "30345905",
+      "doi": "10.1056/NEJMoa1810527",
+      "title": "Overall Survival with Palbociclib and Fulvestrant in Advanced Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2018,
+      "publicationDate": "2018-10-20",
+      "firstAuthor": "Turner NC",
+      "type": "FINAL_OS",
+      "label": "Prespecified OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Preplanned interim analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Palbociclib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 9.2 months",
+      "controlValue": "median 3.8 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.42,
+      "ciLower": 0.32,
+      "ciUpper": 0.56,
+      "pValue": "<0.001",
+      "source": { "pmid": "26030518", "location": "abstract" },
+      "sourceQuote": "The median progression-free survival was 9.2 months (95% confidence interval [CI], 7.5 to not estimable) with palbociclib-fulvestrant and 3.8 months (95% CI, 3.5 to 5.5) with placebo-fulvestrant (hazard ratio for disease progression or death, 0.42; 95% CI, 0.32 to 0.56; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Prespecified OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Palbociclib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 34.9 months",
+      "controlValue": "median 28.0 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.81,
+      "ciLower": 0.64,
+      "ciUpper": 1.03,
+      "pValue": "0.09",
+      "source": { "pmid": "30345905", "location": "abstract" },
+      "sourceQuote": "Among 521 patients who underwent randomization, the median overall survival was 34.9 months (95% confidence interval [CI], 28.8 to 40.0) in the palbociclib-fulvestrant group and 28.0 months (95% CI, 23.6 to 34.6) in the placebo-fulvestrant group (hazard ratio for death, 0.81; 95% CI, 0.64 to 1.03; P=0.09; absolute difference, 6.9 months).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Prespecified OS analysis",
+      "population": "Sensitivity to previous endocrine therapy (prespecified stratification subgroup)",
+      "experimentalArm": "Palbociclib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 39.7 months",
+      "controlValue": "median 29.7 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.72,
+      "ciLower": 0.55,
+      "ciUpper": 0.94,
+      "source": { "pmid": "30345905", "location": "abstract" },
+      "sourceQuote": "Among 410 patients with sensitivity to previous endocrine therapy, the median overall survival was 39.7 months (95% CI, 34.8 to 45.7) in the palbociclib-fulvestrant group and 29.7 months (95% CI, 23.8 to 37.9) in the placebo-fulvestrant group (hazard ratio, 0.72; 95% CI, 0.55 to 0.94; absolute difference, 10.0 months).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OTHER",
+      "endpointLabel": "Time to receipt of chemotherapy",
+      "analysisLabel": "Prespecified OS analysis",
+      "population": "ITT",
+      "experimentalArm": "Palbociclib + fulvestrant",
+      "controlArm": "Placebo + fulvestrant",
+      "experimentalValue": "median 17.6 months",
+      "controlValue": "median 8.8 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLower": 0.47,
+      "ciUpper": 0.73,
+      "pValue": "<0.001",
+      "source": { "pmid": "30345905", "location": "abstract" },
+      "sourceQuote": "the median time to the receipt of chemotherapy was 17.6 months in the palbociclib-fulvestrant group, as compared with 8.8 months in the placebo-fulvestrant group (hazard ratio, 0.58; 95% CI, 0.47 to 0.73; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 neutropenia",
+      "experimentalValue": "62.0%",
+      "controlValue": "0.6%",
+      "source": { "pmid": "26030518", "location": "abstract" },
+      "sourceQuote": "The most common grade 3 or 4 adverse events in the palbociclib-fulvestrant group were neutropenia (62.0%, vs. 0.6% in the placebo-fulvestrant group)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Discontinuation due to adverse events",
+      "experimentalValue": "2.6%",
+      "controlValue": "1.7%",
+      "source": { "pmid": "26030518", "location": "abstract" },
+      "sourceQuote": "The rate of discontinuation due to adverse events was 2.6% with palbociclib and 1.7% with placebo.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Placebo-controlled randomised phase III trial in endocrine-pretreated disease",
+      "Included pre/perimenopausal women with ovarian suppression"
+    ],
+    "limitations": [
+      "OS improvement in the overall population did not reach statistical significance",
+      "Primary PFS reported at an interim analysis; investigator-assessed"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports palbociclib plus fulvestrant after progression on endocrine therapy in HR-positive, HER2-negative advanced breast cancer; the OS difference was not statistically significant overall, with a larger effect in endocrine-sensitive patients.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "PALOMA-3 delayed chemotherapy substantially, but its overall OS difference was not significant — do not quote it as an OS-positive trial.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMID 26030518 (primary PFS) and PMID 30345905 (OS). Result classified POSITIVE on the primary PFS endpoint."
+  }
+}

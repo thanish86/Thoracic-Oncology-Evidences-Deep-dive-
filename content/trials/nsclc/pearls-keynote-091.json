@@ -1,0 +1,193 @@
+{
+  "slug": "pearls-keynote-091",
+  "acronym": "PEARLS/KEYNOTE-091",
+  "officialTitle": "Pembrolizumab versus placebo as adjuvant therapy for completely resected stage IB-IIIA non-small-cell lung cancer (PEARLS/KEYNOTE-091): an interim analysis of a randomised, triple-blind, phase 3 trial",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "immunotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "pembrolizumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Triple-blind, placebo-controlled",
+    "sampleSize": 1177,
+    "sampleSizeSourceQuote": "1177 (60%) of 1955 screened participants were randomly assigned to pembrolizumab (n=590, including n=168 with PD-L1 TPS of ≥50%) or placebo (n=587; including n=165 with PD-L1 TPS of ≥50%)",
+    "primaryEndpoints": [
+      "DFS (overall population)",
+      "DFS (PD-L1 TPS ≥50%)"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Adjuvant chemotherapy considered for stage IB and strongly recommended for stage II–IIIA per local guidelines; second interim analysis reported."
+  },
+  "sponsor": "Merck Sharp & Dohme",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02504372"
+    }
+  ],
+  "yearOfPrimaryPublication": 2022,
+  "clinicalQuestion": "Does adjuvant pembrolizumab improve DFS versus placebo after complete resection of stage IB–IIIA NSCLC, irrespective of PD-L1 expression?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Completely resected stage IB to IIIA NSCLC, any histology or PD-L1 level, good performance status, with adjuvant chemotherapy as recommended",
+    "intervention": "Pembrolizumab 200 mg IV every 3 weeks for up to 18 cycles",
+    "comparator": "Placebo",
+    "outcomes": "Dual primary: DFS in overall population and in PD-L1 TPS ≥50%. Secondary: safety"
+  },
+  "arms": [
+    {
+      "label": "Pembrolizumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Pembrolizumab",
+      "dosing": "200 mg IV every 3 weeks for up to 18 cycles",
+      "doseSourceQuote": "pembrolizumab 200 mg or placebo, both administered intravenously every 3 weeks for up to 18 cycles",
+      "n": 590
+    },
+    {
+      "label": "Placebo",
+      "role": "CONTROL",
+      "regimen": "Placebo",
+      "n": 587
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "36108662",
+      "doi": "10.1016/S1470-2045(22)00518-6",
+      "title": "Pembrolizumab versus placebo as adjuvant therapy for completely resected stage IB-IIIA non-small-cell lung cancer (PEARLS/KEYNOTE-091): an interim analysis of a randomised, triple-blind, phase 3 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2022,
+      "publicationDate": "2022-09-12",
+      "firstAuthor": "O'Brien M",
+      "type": "PRIMARY",
+      "label": "Second interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Second interim analysis",
+      "population": "Overall population (ITT)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median 53.6 months",
+      "controlValue": "median 42.0 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.76,
+      "ciLower": 0.63,
+      "ciUpper": 0.91,
+      "pValue": "0.0014",
+      "followUp": "Median 35.6 months",
+      "dataCutoff": "2021-09-20",
+      "source": {
+        "pmid": "36108662",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the overall population, median disease-free survival was 53·6 months (95% CI 39·2 to not reached) in the pembrolizumab group versus 42·0 months (31·3 to not reached) in the placebo group (HR 0·76 [95% CI 0·63-0·91], p=0·0014).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Second interim analysis",
+      "population": "PD-L1 TPS ≥50%",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab",
+      "controlArm": "Placebo",
+      "experimentalValue": "median not reached",
+      "controlValue": "median not reached",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.82,
+      "ciLower": 0.57,
+      "ciUpper": 1.18,
+      "pValue": "0.14",
+      "source": {
+        "pmid": "36108662",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the PD-L1 TPS of 50% or greater population, median disease-free survival was not reached in either the pembrolizumab group (95% CI 44·3 to not reached) or the placebo group (95% CI 35·8 to not reached; HR 0·82 [95% CI 0·57-1·18]; p=0·14).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or worse adverse events",
+      "experimentalValue": "198 of 580 (34%)",
+      "controlValue": "150 of 581 (26%)",
+      "source": {
+        "pmid": "36108662",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 3 or worse adverse events occurred in 198 (34%) of 580 participants who received pembrolizumab and 150 (26%) of 581 participants who received placebo.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events",
+      "experimentalValue": "142 (24%)",
+      "controlValue": "90 (15%)",
+      "source": {
+        "pmid": "36108662",
+        "location": "abstract"
+      },
+      "sourceQuote": "Serious adverse events occurred in 142 (24%) participants in the pembrolizumab group and 90 (15%) in the placebo group",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related deaths",
+      "experimentalValue": "four (1%)",
+      "source": {
+        "pmid": "36108662",
+        "location": "abstract"
+      },
+      "sourceQuote": "Treatment-related adverse events led to death in four (1%) participants treated with pembrolizumab",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Triple-blind placebo-controlled design",
+      "PD-L1-unselected population with prespecified PD-L1 high cohort"
+    ],
+    "limitations": [
+      "DFS benefit in the PD-L1 TPS ≥50% co-primary population not significant at this interim",
+      "Interim analysis; OS immature",
+      "Adjuvant chemotherapy not mandated for stage IB"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adjuvant pembrolizumab after resection (and adjuvant chemotherapy when recommended) for stage IB–IIIA NSCLC irrespective of PD-L1, although the counter-intuitive lack of significance in the PD-L1-high cohort warrants caution in interpretation.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Unlike IMpower010, PEARLS was positive in the PD-L1-unselected population but not (at this interim) in PD-L1 TPS ≥50% — cross-trial PD-L1 interpretation is unreliable.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 36108662. Dual primary endpoints: overall-population DFS met; PD-L1 TPS ≥50% DFS not significant at the second interim analysis."
+  }
+}

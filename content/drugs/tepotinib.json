@@ -1,0 +1,37 @@
+{
+  "slug": "tepotinib",
+  "name": "Tepotinib",
+  "brandNames": [
+    "Tepmetko"
+  ],
+  "drugClass": "Selective MET tyrosine kinase inhibitor (type Ib)",
+  "targets": [
+    "MET"
+  ],
+  "mechanism": "Highly selective, reversible type Ib MET kinase inhibitor used for MET exon 14 skipping NSCLC.",
+  "route": "oral",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Peripheral oedema",
+    "Hypoalbuminaemia",
+    "Serum creatinine increase",
+    "Nausea and diarrhoea",
+    "Hepatotoxicity",
+    "Interstitial lung disease/pneumonitis"
+  ],
+  "monitoring": [
+    "Liver function tests",
+    "Renal function and albumin",
+    "Respiratory symptoms"
+  ],
+  "interactions": "Inhibits P-glycoprotein; caution with narrow-therapeutic-index P-gp substrates (e.g. dabigatran, digoxin). Take with food.",
+  "resistance": "MET kinase-domain mutations, MET amplification and bypass activation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

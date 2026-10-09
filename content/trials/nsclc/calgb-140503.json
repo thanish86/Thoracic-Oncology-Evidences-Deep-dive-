@@ -1,0 +1,178 @@
+{
+  "slug": "calgb-140503",
+  "acronym": "CALGB 140503",
+  "officialTitle": "Lobar or Sublobar Resection for Peripheral Stage IA Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "Small peripheral tumour",
+    "Node-negative (intraoperatively confirmed)"
+  ],
+  "stages": [
+    "early",
+    "resectable"
+  ],
+  "setting": "Surgical resection (early-stage)",
+  "treatmentClasses": [
+    "surgery"
+  ],
+  "biomarkers": [],
+  "drugs": [],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "sampleSize": 697,
+    "sampleSizeSourceQuote": "a total of 697 patients were assigned to undergo sublobar resection (340 patients) or lobar resection (357 patients)",
+    "primaryEndpoints": [
+      "DFS"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Locoregional and systemic recurrence",
+      "Pulmonary function"
+    ],
+    "notes": "Non-inferiority design; randomisation after intraoperative confirmation of node-negative disease."
+  },
+  "sponsor": "National Cancer Institute and others",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00499330"
+    }
+  ],
+  "yearOfPrimaryPublication": 2023,
+  "clinicalQuestion": "Is sublobar resection non-inferior to lobectomy for disease-free survival in small peripheral node-negative NSCLC?",
+  "result": "NON_INFERIOR",
+  "landmark": true,
+  "pico": {
+    "population": "Small peripheral clinically node-negative NSCLC with intraoperatively confirmed node-negative hilar and mediastinal disease",
+    "intervention": "Sublobar resection (segmentectomy or wedge)",
+    "comparator": "Lobar resection",
+    "outcomes": "Primary: DFS (non-inferiority). Secondary: OS, recurrence, pulmonary function"
+  },
+  "arms": [
+    {
+      "label": "Sublobar resection",
+      "role": "EXPERIMENTAL",
+      "regimen": "Sublobar resection",
+      "n": 340
+    },
+    {
+      "label": "Lobar resection",
+      "role": "CONTROL",
+      "regimen": "Lobectomy",
+      "n": 357
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "36780674",
+      "doi": "10.1056/NEJMoa2212083",
+      "title": "Lobar or Sublobar Resection for Peripheral Stage IA Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2023,
+      "publicationDate": "2023-02-09",
+      "firstAuthor": "Altorki N",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Sublobar resection",
+      "controlArm": "Lobar resection",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.01,
+      "ciLevel": 90,
+      "ciLower": 0.83,
+      "ciUpper": 1.24,
+      "followUp": "Median 7 years",
+      "source": {
+        "pmid": "36780674",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 7 years, sublobar resection was noninferior to lobar resection for disease-free survival (hazard ratio for disease recurrence or death, 1.01; 90% confidence interval [CI], 0.83 to 1.24).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "endpointLabel": "5-year DFS rate",
+      "analysisLabel": "Primary analysis (5-year landmark)",
+      "population": "ITT",
+      "experimentalArm": "Sublobar resection",
+      "controlArm": "Lobar resection",
+      "experimentalValue": "63.6%",
+      "controlValue": "64.1%",
+      "source": {
+        "pmid": "36780674",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 5-year disease-free survival was 63.6% (95% CI, 57.9 to 68.8) after sublobar resection and 64.1% (95% CI, 58.5 to 69.0) after lobar resection.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Sublobar resection",
+      "controlArm": "Lobar resection",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.95,
+      "ciLower": 0.72,
+      "ciUpper": 1.26,
+      "source": {
+        "pmid": "36780674",
+        "location": "abstract"
+      },
+      "sourceQuote": "In addition, overall survival after sublobar resection was similar to that after lobar resection (hazard ratio for death, 0.95; 95% CI, 0.72 to 1.26).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "5-year OS rate",
+      "analysisLabel": "Primary analysis (5-year landmark)",
+      "population": "ITT",
+      "experimentalArm": "Sublobar resection",
+      "controlArm": "Lobar resection",
+      "experimentalValue": "80.3%",
+      "controlValue": "78.9%",
+      "source": {
+        "pmid": "36780674",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 5-year overall survival was 80.3% (95% CI, 75.5 to 84.3) after sublobar resection and 78.9% (95% CI, 74.1 to 82.9) after lobar resection.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [],
+  "appraisal": {
+    "strengths": [
+      "Multicentre randomised non-inferiority trial with long follow-up",
+      "Randomisation after intraoperative nodal confirmation reduces stage misclassification"
+    ],
+    "limitations": [
+      "Sublobar arm included both wedge resection and segmentectomy",
+      "Non-inferiority margin assessed with a 90% CI",
+      "Applies only to small peripheral node-negative tumours"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Together with JCOG0802, supports sublobar resection as an acceptable alternative to lobectomy for small peripheral node-negative NSCLC when nodal status is confirmed intraoperatively.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "The key eligibility step is intraoperative confirmation of node-negative hilar and mediastinal nodes before committing to sublobar resection.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 36780674. Primary DFS HR reported with a 90% CI (ciLevel 90)."
+  }
+}

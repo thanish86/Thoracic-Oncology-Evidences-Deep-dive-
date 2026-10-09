@@ -1,0 +1,63 @@
+import { ALGORITHM_AS_OF, JURISDICTION_LABEL, type TreatmentAlgorithm } from "./types";
+
+export const breastHer2Early: TreatmentAlgorithm = {
+  slug: "breast-her2-positive-early",
+  title: "Early HER2-positive breast cancer — response-adapted pathway",
+  summary:
+    "Neoadjuvant chemotherapy with trastuzumab and pertuzumab for higher-risk disease; adjuvant therapy adapted to pathological response, with T-DM1 for residual invasive disease.",
+  disease: "breast",
+  stage: "Early (stage II–III; small node-negative variant)",
+  intent: "curative",
+  jurisdiction: JURISDICTION_LABEL,
+  asOf: ALGORITHM_AS_OF,
+  status: "AWAITING_VERIFICATION",
+  nodes: [
+    { id: "start", kind: "note", label: "Early HER2-positive breast cancer", detail: "HER2 status per ASCO/CAP testing (IHC ± ISH)." },
+    { id: "risk", kind: "decision", label: "Tumour size / nodal status", detail: "Clinical stage, nodal assessment (imaging ± biopsy) and patient factors." },
+    {
+      id: "small",
+      kind: "treatment",
+      label: "Small node-negative → surgery, then adjuvant paclitaxel + trastuzumab",
+      detail: "De-escalated adjuvant regimen studied in small node-negative tumours.",
+      trialSlugs: ["apt"],
+    },
+    {
+      id: "neoadj",
+      kind: "treatment",
+      label: "Higher risk → neoadjuvant chemotherapy + trastuzumab + pertuzumab",
+      detail: "Dual HER2 blockade with chemotherapy before surgery; pathological response informs adjuvant therapy.",
+      trialSlugs: ["neosphere"],
+    },
+    { id: "surgery", kind: "note", label: "Surgery (breast + axilla) and radiotherapy as indicated" },
+    { id: "pcr", kind: "decision", label: "Pathological complete response?" },
+    {
+      id: "pcr-yes",
+      kind: "treatment",
+      label: "pCR → complete HER2-directed therapy (trastuzumab ± pertuzumab)",
+      detail: "Adjuvant trastuzumab foundations and the addition of pertuzumab in higher-risk populations.",
+      trialSlugs: ["hera", "nsabp-b31-n9831", "aphinity"],
+    },
+    { id: "residual", kind: "treatment", label: "Residual invasive disease → adjuvant T-DM1", trialSlugs: ["katherine"] },
+    {
+      id: "extended",
+      kind: "note",
+      label: "Consider extended adjuvant neratinib (selected, notably HR-positive)",
+      detail: "Studied after completion of trastuzumab-based therapy.",
+      trialSlugs: ["extenet"],
+    },
+    { id: "endocrine", kind: "note", label: "HR-positive → adjuvant endocrine therapy in addition" },
+  ],
+  edges: [
+    { source: "start", target: "risk" },
+    { source: "risk", target: "small", label: "Small, node-negative" },
+    { source: "risk", target: "neoadj", label: "Larger or node-positive" },
+    { source: "neoadj", target: "surgery" },
+    { source: "surgery", target: "pcr" },
+    { source: "pcr", target: "pcr-yes", label: "Yes" },
+    { source: "pcr", target: "residual", label: "No" },
+    { source: "pcr-yes", target: "extended" },
+    { source: "residual", target: "extended" },
+    { source: "small", target: "endocrine" },
+    { source: "extended", target: "endocrine" },
+  ],
+};

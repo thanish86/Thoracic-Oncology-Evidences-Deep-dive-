@@ -1,0 +1,143 @@
+{
+  "slug": "her2climb",
+  "acronym": "HER2CLIMB",
+  "officialTitle": "Tucatinib, Trastuzumab, and Capecitabine for HER2-Positive Metastatic Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["HER2+", "Brain metastases"],
+  "stages": ["metastatic"],
+  "setting": "Previously treated metastatic (after trastuzumab, pertuzumab and T-DM1)",
+  "lineOfTherapy": "3L+",
+  "treatmentClasses": ["tki", "her2-directed", "chemotherapy"],
+  "biomarkers": ["her2"],
+  "drugs": ["tucatinib", "trastuzumab", "capecitabine"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Placebo-controlled",
+    "sampleSize": 612,
+    "sampleSizeSourceQuote": "Secondary end points, assessed in the total population (612 patients), included overall survival, progression-free survival among patients with brain metastases, confirmed objective response rate, and safety.",
+    "primaryEndpoints": ["PFS (first 480 randomised patients)"],
+    "secondaryEndpoints": ["OS", "PFS in patients with brain metastases", "Confirmed ORR", "Safety"],
+    "notes": "Patients with or without brain metastases were eligible."
+  },
+  "sponsor": "Seattle Genetics",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT02614794" }],
+  "yearOfPrimaryPublication": 2019,
+  "clinicalQuestion": "Does adding the HER2-selective TKI tucatinib to trastuzumab and capecitabine improve outcomes in heavily pretreated HER2-positive metastatic breast cancer, including patients with brain metastases?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "HER2-positive metastatic breast cancer previously treated with trastuzumab, pertuzumab and trastuzumab emtansine, with or without brain metastases",
+    "intervention": "Tucatinib plus trastuzumab and capecitabine",
+    "comparator": "Placebo plus trastuzumab and capecitabine",
+    "outcomes": "Primary: PFS (first 480 patients). Secondary: OS, PFS in brain metastases, confirmed ORR, safety"
+  },
+  "arms": [
+    { "label": "Tucatinib + trastuzumab + capecitabine", "role": "EXPERIMENTAL", "regimen": "Tucatinib plus trastuzumab and capecitabine" },
+    { "label": "Placebo + trastuzumab + capecitabine", "role": "CONTROL", "regimen": "Placebo plus trastuzumab and capecitabine" }
+  ],
+  "publications": [
+    {
+      "pmid": "31825569",
+      "doi": "10.1056/NEJMoa1914609",
+      "title": "Tucatinib, Trastuzumab, and Capecitabine for HER2-Positive Metastatic Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2019,
+      "publicationDate": "2019-12-11",
+      "firstAuthor": "Murthy RK",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "First 480 randomised patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Tucatinib combination",
+      "controlArm": "Placebo combination",
+      "experimentalValue": "1-year PFS 33.1%; median 7.8 months",
+      "controlValue": "1-year PFS 12.3%; median 5.6 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.54,
+      "ciLower": 0.42,
+      "ciUpper": 0.71,
+      "pValue": "<0.001",
+      "source": { "pmid": "31825569", "location": "abstract" },
+      "sourceQuote": "Progression-free survival at 1 year was 33.1% in the tucatinib-combination group and 12.3% in the placebo-combination group (hazard ratio for disease progression or death, 0.54; 95% confidence interval [CI], 0.42 to 0.71; P<0.001), and the median duration of progression-free survival was 7.8 months and 5.6 months, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "Total population",
+      "experimentalArm": "Tucatinib combination",
+      "controlArm": "Placebo combination",
+      "experimentalValue": "2-year OS 44.9%; median 21.9 months",
+      "controlValue": "2-year OS 26.6%; median 17.4 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.66,
+      "ciLower": 0.5,
+      "ciUpper": 0.88,
+      "pValue": "0.005",
+      "source": { "pmid": "31825569", "location": "abstract" },
+      "sourceQuote": "Overall survival at 2 years was 44.9% in the tucatinib-combination group and 26.6% in the placebo-combination group (hazard ratio for death, 0.66; 95% CI, 0.50 to 0.88; P = 0.005), and the median overall survival was 21.9 months and 17.4 months, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS in patients with brain metastases",
+      "analysisLabel": "Primary analysis",
+      "population": "Patients with brain metastases",
+      "experimentalArm": "Tucatinib combination",
+      "controlArm": "Placebo combination",
+      "experimentalValue": "1-year PFS 24.9%; median 7.6 months",
+      "controlValue": "1-year PFS 0%; median 5.4 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.48,
+      "ciLower": 0.34,
+      "ciUpper": 0.69,
+      "pValue": "<0.001",
+      "source": { "pmid": "31825569", "location": "abstract" },
+      "sourceQuote": "Among the patients with brain metastases, progression-free survival at 1 year was 24.9% in the tucatinib-combination group and 0% in the placebo-combination group (hazard ratio, 0.48; 95% CI, 0.34 to 0.69; P<0.001), and the median progression-free survival was 7.6 months and 5.4 months, respectively.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Grade 3 or higher diarrhoea and elevated aminotransferases more common with tucatinib",
+      "source": { "pmid": "31825569", "location": "abstract" },
+      "sourceQuote": "Common adverse events in the tucatinib group included diarrhea, palmar-plantar erythrodysesthesia syndrome, nausea, fatigue, and vomiting. Diarrhea and elevated aminotransferase levels of grade 3 or higher were more common in the tucatinib-combination group than in the placebo-combination group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Placebo-controlled randomised design",
+      "Deliberately included patients with brain metastases, a population often excluded from trials",
+      "OS benefit observed as a secondary endpoint"
+    ],
+    "limitations": [
+      "Population pretreated with trastuzumab, pertuzumab and T-DM1; sequencing relative to trastuzumab deruxtecan not addressed",
+      "Primary endpoint assessed in a subset (first 480 patients)"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports tucatinib plus trastuzumab and capecitabine for pretreated HER2-positive metastatic breast cancer, with particular relevance for patients with brain metastases.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Brain metastases did not exclude patients in HER2CLIMB — consider this regimen when intracranial control is a priority.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 31825569."
+  }
+}

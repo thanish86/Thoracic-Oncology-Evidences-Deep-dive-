@@ -1,0 +1,217 @@
+{
+  "slug": "nsabp-b31-n9831",
+  "acronym": "NSABP B-31 / NCCTG N9831",
+  "officialTitle": "Trastuzumab plus adjuvant chemotherapy for operable HER2-positive breast cancer (joint analysis of NSABP B-31 and NCCTG N9831)",
+  "disease": "breast",
+  "subtypes": [
+    "HER2+"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "her2-directed",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "trastuzumab",
+    "doxorubicin",
+    "cyclophosphamide",
+    "paclitaxel"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 4046,
+    "sampleSizeSourceQuote": "In all, 4,046 patients with HER2-positive operable breast cancer were enrolled to receive doxorubicin and cyclophosphamide followed by paclitaxel with or without trastuzumab in both trials.",
+    "primaryEndpoints": [
+      "DFS"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Cardiac safety"
+    ],
+    "notes": "Joint analysis compared AC→paclitaxel (B-31 group 1 and N9831 group A) with the same regimen plus 52 weeks of trastuzumab started with paclitaxel (B-31 group 2, N9831 group C). N9831 sequential arm (group B) excluded."
+  },
+  "sponsor": "NSABP / NCCTG (National Cancer Institute)",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00004067"
+    },
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00005970"
+    }
+  ],
+  "yearOfPrimaryPublication": 2005,
+  "clinicalQuestion": "Does adding 1 year of trastuzumab, started concurrently with paclitaxel after AC, improve outcomes in operable HER2-positive breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Women with surgically removed HER2-positive breast cancer",
+    "intervention": "Doxorubicin-cyclophosphamide followed by paclitaxel plus 52 weeks of trastuzumab beginning with paclitaxel",
+    "comparator": "Doxorubicin-cyclophosphamide followed by paclitaxel",
+    "outcomes": "Primary: DFS. Secondary: OS, cardiac events"
+  },
+  "arms": [
+    {
+      "label": "AC → paclitaxel + trastuzumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Doxorubicin and cyclophosphamide, then paclitaxel with concurrent trastuzumab for 52 weeks"
+    },
+    {
+      "label": "AC → paclitaxel",
+      "role": "CONTROL",
+      "regimen": "Doxorubicin and cyclophosphamide, then paclitaxel"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "16236738",
+      "doi": "10.1056/NEJMoa052122",
+      "title": "Trastuzumab plus adjuvant chemotherapy for operable HER2-positive breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2005,
+      "publicationDate": "2005-10-20",
+      "firstAuthor": "Romond EH",
+      "type": "PRIMARY",
+      "label": "First joint interim analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "25332249",
+      "doi": "10.1200/JCO.2014.55.5730",
+      "title": "Trastuzumab plus adjuvant chemotherapy for human epidermal growth factor receptor 2-positive breast cancer: planned joint analysis of overall survival from NSABP B-31 and NCCTG N9831.",
+      "journal": "J Clin Oncol",
+      "year": 2014,
+      "publicationDate": "2014-10-20",
+      "firstAuthor": "Perez EA",
+      "type": "FINAL_OS",
+      "label": "Planned definitive joint OS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "First joint interim analysis",
+      "population": "Joint analysis (B-31 + N9831)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Trastuzumab",
+      "controlArm": "Control",
+      "experimentalValue": "133 events; absolute DFS difference 12 percent at three years",
+      "controlValue": "261 events",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.48,
+      "pValue": "<0.0001",
+      "source": {
+        "pmid": "16236738",
+        "location": "abstract"
+      },
+      "sourceQuote": "Of these, 133 were in the trastuzumab group and 261 in the control group (hazard ratio, 0.48; P<0.0001). This result crossed the early stopping boundary. The absolute difference in disease-free survival between the trastuzumab group and the control group was 12 percent at three years.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "First joint interim analysis",
+      "population": "Joint analysis (B-31 + N9831)",
+      "experimentalArm": "Trastuzumab",
+      "controlArm": "Control",
+      "experimentalValue": "33 percent reduction in the risk of death",
+      "pValue": "0.015",
+      "source": {
+        "pmid": "16236738",
+        "location": "abstract"
+      },
+      "sourceQuote": "Trastuzumab therapy was associated with a 33 percent reduction in the risk of death (P=0.015).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Definitive OS analysis (median time on study 8.4 years)",
+      "population": "Joint analysis (B-31 + N9831)",
+      "experimentalArm": "Trastuzumab",
+      "controlArm": "Control",
+      "experimentalValue": "10-year OS 84%",
+      "controlValue": "10-year OS 75.2%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.63,
+      "ciLower": 0.54,
+      "ciUpper": 0.73,
+      "pValue": "< .001",
+      "followUp": "Median 8.4 years",
+      "source": {
+        "pmid": "25332249",
+        "location": "abstract"
+      },
+      "sourceQuote": "Adding trastuzumab to chemotherapy led to a 37% relative improvement in OS (hazard ratio [HR], 0.63; 95% CI, 0.54 to 0.73; P < .001) and an increase in 10-year OS rate from 75.2% to 84%.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Definitive OS analysis (median time on study 8.4 years)",
+      "population": "Joint analysis (B-31 + N9831)",
+      "experimentalArm": "Trastuzumab",
+      "controlArm": "Control",
+      "experimentalValue": "10-year DFS 73.7%",
+      "controlValue": "10-year DFS 62.2%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.6,
+      "ciLower": 0.53,
+      "ciUpper": 0.68,
+      "pValue": "< .001",
+      "source": {
+        "pmid": "25332249",
+        "location": "abstract"
+      },
+      "sourceQuote": "These results were accompanied by an improvement in DFS of 40% (HR, 0.60; 95% CI, 0.53 to 0.68; P < .001) and increase in 10-year DFS rate from 62.2% to 73.7%.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "3-year cumulative incidence of class III/IV congestive heart failure or cardiac death (trastuzumab group; B-31, with N9831 2.9 percent)",
+      "experimentalValue": "4.1 percent",
+      "source": {
+        "pmid": "16236738",
+        "location": "abstract"
+      },
+      "sourceQuote": "The three-year cumulative incidence of class III or IV congestive heart failure or death from cardiac causes in the trastuzumab group was 4.1 percent in trial B-31 and 2.9 percent in trial N9831.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Two large randomised trials combined in a prespecified joint analysis",
+      "Long-term definitive OS analysis"
+    ],
+    "limitations": [
+      "Joint analysis was introduced by protocol amendment",
+      "Open-label",
+      "Cardiotoxicity with concurrent anthracycline-taxane-trastuzumab sequencing"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established adjuvant trastuzumab with chemotherapy as standard care for operable HER2-positive breast cancer, with durable disease-free and overall survival benefits.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Concurrent start of trastuzumab with the taxane (after AC) was the tested schedule; baseline and on-treatment cardiac monitoring matters given the reported heart-failure incidence.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 16236738 and 25332249. The 2014 abstract prints P values as '< .001', retained verbatim in pValue."
+  }
+}

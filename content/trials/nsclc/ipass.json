@@ -1,0 +1,195 @@
+{
+  "slug": "ipass",
+  "acronym": "IPASS",
+  "officialTitle": "Gefitinib or carboplatin-paclitaxel in pulmonary adenocarcinoma",
+  "disease": "nsclc",
+  "subtypes": [
+    "Adenocarcinoma",
+    "East Asian never/light smokers",
+    "EGFR-mutant (biomarker subgroup)"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "First-line advanced",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "tki",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "egfr"
+  ],
+  "drugs": [
+    "gefitinib",
+    "carboplatin",
+    "paclitaxel"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "primaryEndpoints": [
+      "PFS"
+    ],
+    "secondaryEndpoints": [],
+    "notes": "Clinically selected (not EGFR-selected) East Asian population of non-smokers or former light smokers with adenocarcinoma; EGFR mutation status analysed in a biomarker subgroup."
+  },
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00322452"
+    }
+  ],
+  "yearOfPrimaryPublication": 2009,
+  "clinicalQuestion": "In clinically selected East Asian never/light smokers with advanced pulmonary adenocarcinoma, is first-line gefitinib non-inferior to carboplatin-paclitaxel, and does EGFR mutation status predict benefit?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Previously untreated East Asian patients with advanced pulmonary adenocarcinoma who were non-smokers or former light smokers",
+    "intervention": "Gefitinib",
+    "comparator": "Carboplatin plus paclitaxel",
+    "outcomes": "Primary: PFS (non-inferiority, then superiority). Biomarker subgroup analysis by EGFR mutation status"
+  },
+  "arms": [
+    {
+      "label": "Gefitinib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Gefitinib",
+      "dosing": "250 mg per day",
+      "doseSourceQuote": "to receive gefitinib (250 mg per day) (609 patients)",
+      "n": 609
+    },
+    {
+      "label": "Carboplatin-paclitaxel",
+      "role": "CONTROL",
+      "regimen": "Carboplatin plus paclitaxel",
+      "dosing": "Carboplatin AUC 5 or 6 plus paclitaxel 200 mg/m²",
+      "doseSourceQuote": "carboplatin (at a dose calculated to produce an area under the curve of 5 or 6 mg per milliliter per minute) plus paclitaxel (200 mg per square meter of body-surface area) (608 patients)",
+      "n": 608
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "19692680",
+      "doi": "10.1056/NEJMoa0810699",
+      "title": "Gefitinib or carboplatin-paclitaxel in pulmonary adenocarcinoma.",
+      "journal": "N Engl J Med",
+      "year": 2009,
+      "publicationDate": "2009-08-19",
+      "firstAuthor": "Mok TS",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Gefitinib",
+      "controlArm": "Carboplatin-paclitaxel",
+      "experimentalValue": "12-month PFS 24.9%",
+      "controlValue": "12-month PFS 6.7%",
+      "effectEstimate": 0.74,
+      "ciLower": 0.65,
+      "ciUpper": 0.85,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "19692680",
+        "location": "abstract"
+      },
+      "sourceQuote": "The 12-month rates of progression-free survival were 24.9% with gefitinib and 6.7% with carboplatin-paclitaxel. The study met its primary objective of showing the noninferiority of gefitinib and also showed its superiority, as compared with carboplatin-paclitaxel, with respect to progression-free survival in the intention-to-treat population (hazard ratio for progression or death, 0.74; 95% confidence interval [CI], 0.65 to 0.85; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis — biomarker subgroup",
+      "population": "EGFR mutation-positive subgroup (n=261)",
+      "experimentalArm": "Gefitinib",
+      "controlArm": "Carboplatin-paclitaxel",
+      "effectEstimate": 0.48,
+      "ciLower": 0.36,
+      "ciUpper": 0.64,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "19692680",
+        "location": "abstract"
+      },
+      "sourceQuote": "In the subgroup of 261 patients who were positive for the epidermal growth factor receptor gene (EGFR) mutation, progression-free survival was significantly longer among those who received gefitinib than among those who received carboplatin-paclitaxel (hazard ratio for progression or death, 0.48; 95% CI, 0.36 to 0.64; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis — biomarker subgroup",
+      "population": "EGFR mutation-negative subgroup (n=176)",
+      "experimentalArm": "Gefitinib",
+      "controlArm": "Carboplatin-paclitaxel",
+      "effectEstimate": 2.85,
+      "ciLower": 2.05,
+      "ciUpper": 3.98,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "19692680",
+        "location": "abstract"
+      },
+      "sourceQuote": "whereas in the subgroup of 176 patients who were negative for the mutation, progression-free survival was significantly longer among those who received carboplatin-paclitaxel (hazard ratio for progression or death with gefitinib, 2.85; 95% CI, 2.05 to 3.98; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Most common adverse events with gefitinib: rash or acne; diarrhoea",
+      "experimentalValue": "Rash/acne 66.2%; diarrhoea 46.6%",
+      "source": {
+        "pmid": "19692680",
+        "location": "abstract"
+      },
+      "sourceQuote": "The most common adverse events were rash or acne (in 66.2% of patients) and diarrhea (46.6%) in the gefitinib group",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Most common adverse events with carboplatin-paclitaxel: neurotoxicity, neutropenia, alopecia",
+      "controlValue": "Neurotoxicity 69.9%; neutropenia 67.1%; alopecia 58.4%",
+      "source": {
+        "pmid": "19692680",
+        "location": "abstract"
+      },
+      "sourceQuote": "neurotoxic effects (69.9%), neutropenia (67.1%), and alopecia (58.4%) in the carboplatin-paclitaxel group",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large randomised phase III trial with prespecified biomarker analysis",
+      "Demonstrated a qualitative interaction: benefit in EGFR-mutant and harm in EGFR wild-type tumours"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Population selected clinically rather than by EGFR genotype; mutation status available only in a subset",
+      "East Asian population only"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established EGFR mutation status, rather than clinical characteristics, as the key predictor of benefit from first-line EGFR TKI therapy, underpinning routine EGFR genotyping before first-line treatment of advanced adenocarcinoma.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Clinical enrichment is not a substitute for genotyping: in EGFR wild-type tumours, gefitinib was worse than chemotherapy for PFS.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 19692680. OS and EGFR subgroup updates not ingested."
+  }
+}

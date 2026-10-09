@@ -1,0 +1,186 @@
+{
+  "slug": "checkmate-017",
+  "acronym": "CheckMate 017",
+  "officialTitle": "Nivolumab versus Docetaxel in Advanced Squamous-Cell Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "Squamous"
+  ],
+  "stages": [
+    "metastatic"
+  ],
+  "setting": "Second-line advanced (after first-line chemotherapy)",
+  "lineOfTherapy": "2L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "pd-l1"
+  ],
+  "drugs": [
+    "nivolumab",
+    "docetaxel"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 272,
+    "sampleSizeSourceQuote": "We randomly assigned 272 patients to receive nivolumab",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "ORR",
+      "PFS",
+      "PD-L1 analyses",
+      "Safety"
+    ]
+  },
+  "sponsor": "Bristol-Myers Squibb",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT01642004"
+    }
+  ],
+  "yearOfPrimaryPublication": 2015,
+  "clinicalQuestion": "Does nivolumab improve overall survival over docetaxel in previously treated advanced squamous NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Advanced squamous NSCLC with progression during or after first-line chemotherapy",
+    "intervention": "Nivolumab",
+    "comparator": "Docetaxel",
+    "outcomes": "Primary: OS. Secondary: ORR, PFS, PD-L1 association, safety"
+  },
+  "arms": [
+    {
+      "label": "Nivolumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Nivolumab",
+      "dosing": "3 mg/kg every 2 weeks",
+      "doseSourceQuote": "to receive nivolumab, at a dose of 3 mg per kilogram of body weight every 2 weeks"
+    },
+    {
+      "label": "Docetaxel",
+      "role": "CONTROL",
+      "regimen": "Docetaxel",
+      "dosing": "75 mg/m² every 3 weeks",
+      "doseSourceQuote": "or docetaxel, at a dose of 75 mg per square meter of body-surface area every 3 weeks"
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "26028407",
+      "doi": "10.1056/NEJMoa1504627",
+      "title": "Nivolumab versus Docetaxel in Advanced Squamous-Cell Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2015,
+      "publicationDate": "2015-05-31",
+      "firstAuthor": "Brahmer J",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Nivolumab",
+      "controlArm": "Docetaxel",
+      "experimentalValue": "median 9.2 months; 1-year OS 42%",
+      "controlValue": "median 6.0 months; 1-year OS 24%",
+      "effectEstimate": 0.59,
+      "ciLower": 0.44,
+      "ciUpper": 0.79,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "26028407",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median overall survival was 9.2 months (95% confidence interval [CI], 7.3 to 13.3) with nivolumab versus 6.0 months (95% CI, 5.1 to 7.3) with docetaxel. The risk of death was 41% lower with nivolumab than with docetaxel (hazard ratio, 0.59; 95% CI, 0.44 to 0.79; P<0.001). At 1 year, the overall survival rate was 42% (95% CI, 34 to 50) with nivolumab versus 24% (95% CI, 17 to 31) with docetaxel.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "ORR",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Nivolumab",
+      "controlArm": "Docetaxel",
+      "experimentalValue": "20%",
+      "controlValue": "9%",
+      "pValue": "0.008",
+      "source": {
+        "pmid": "26028407",
+        "location": "abstract"
+      },
+      "sourceQuote": "The response rate was 20% with nivolumab versus 9% with docetaxel (P=0.008).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Nivolumab",
+      "controlArm": "Docetaxel",
+      "experimentalValue": "median 3.5 months",
+      "controlValue": "median 2.8 months",
+      "effectEstimate": 0.62,
+      "ciLower": 0.47,
+      "ciUpper": 0.81,
+      "pValue": "<0.001",
+      "effectMeasure": "HR",
+      "source": {
+        "pmid": "26028407",
+        "location": "abstract"
+      },
+      "sourceQuote": "The median progression-free survival was 3.5 months with nivolumab versus 2.8 months with docetaxel (hazard ratio for death or disease progression, 0.62; 95% CI, 0.47 to 0.81; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Treatment-related adverse events of grade 3 or 4",
+      "experimentalValue": "7%",
+      "controlValue": "55%",
+      "source": {
+        "pmid": "26028407",
+        "location": "abstract"
+      },
+      "sourceQuote": "Treatment-related adverse events of grade 3 or 4 were reported in 7% of the patients in the nivolumab group as compared with 55% of those in the docetaxel group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III with OS as primary endpoint",
+      "Benefit observed irrespective of PD-L1 expression"
+    ],
+    "limitations": [
+      "Open-label",
+      "Population pre-dates first-line immunotherapy, limiting applicability to current second-line practice"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established PD-1 blockade over docetaxel for previously treated advanced squamous NSCLC, regardless of PD-L1 expression.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "In squamous NSCLC in this trial, PD-L1 was neither prognostic nor predictive of nivolumab benefit.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 26028407. Long-term pooled CheckMate 017/057 updates not ingested."
+  }
+}

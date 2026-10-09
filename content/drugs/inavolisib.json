@@ -1,0 +1,35 @@
+{
+  "slug": "inavolisib",
+  "name": "Inavolisib",
+  "brandNames": [
+    "Itovebi"
+  ],
+  "drugClass": "PI3K-alpha-selective inhibitor and mutant p110alpha degrader",
+  "targets": [
+    "PI3K p110alpha (mutant)"
+  ],
+  "mechanism": "Highly selective p110alpha inhibitor that also promotes degradation of mutant p110alpha, with relative sparing of wild-type signalling; used with palbociclib and fulvestrant in PIK3CA-mutant endocrine-resistant disease.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Hyperglycaemia",
+    "Stomatitis",
+    "Diarrhoea",
+    "Rash",
+    "Neutropenia (in combination with palbociclib)"
+  ],
+  "monitoring": [
+    "Fasting glucose and HbA1c before and during treatment",
+    "Blood counts",
+    "Oral care"
+  ],
+  "resistance": "Expected to include PTEN loss and alternative PI3K pathway alterations; under study.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

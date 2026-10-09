@@ -1,0 +1,48 @@
+{
+  "slug": "entrectinib",
+  "name": "Entrectinib",
+  "brandNames": [
+    "Rozlytrek"
+  ],
+  "drugClass": "ROS1/TRK/ALK tyrosine kinase inhibitor",
+  "targets": [
+    "TRKA",
+    "TRKB",
+    "TRKC",
+    "ROS1",
+    "ALK"
+  ],
+  "mechanism": "ATP-competitive inhibitor of TRK, ROS1 and ALK kinases designed to cross the blood-brain barrier.",
+  "route": "oral",
+  "diseases": [
+    "nsclc",
+    "breast"
+  ],
+  "keyToxicities": [
+    "Dysgeusia",
+    "Dizziness and cognitive impairment",
+    "Weight gain",
+    "Fatigue",
+    "Constipation and diarrhoea",
+    "Peripheral sensory neuropathy",
+    "Congestive heart failure",
+    "QTc prolongation",
+    "Skeletal fractures",
+    "Hyperuricaemia",
+    "Vision disorders"
+  ],
+  "monitoring": [
+    "LVEF assessment in patients with cardiac risk",
+    "ECG and electrolytes",
+    "Uric acid",
+    "Neurological and cognitive symptoms"
+  ],
+  "interactions": "Avoid strong and moderate CYP3A inhibitors and inducers.",
+  "resistance": "ROS1 G2032R and TRK solvent-front, gatekeeper and xDFG mutations; bypass MAPK activation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

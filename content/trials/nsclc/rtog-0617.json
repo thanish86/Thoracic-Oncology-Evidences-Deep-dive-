@@ -1,0 +1,208 @@
+{
+  "slug": "rtog-0617",
+  "acronym": "RTOG 0617",
+  "officialTitle": "Standard-dose versus high-dose conformal radiotherapy with concurrent and consolidation carboplatin plus paclitaxel with or without cetuximab for patients with stage IIIA or IIIB non-small-cell lung cancer (RTOG 0617): a randomised, two-by-two factorial phase 3 study",
+  "disease": "nsclc",
+  "subtypes": [],
+  "stages": [
+    "locally-advanced",
+    "unresectable"
+  ],
+  "setting": "Definitive concurrent chemoradiotherapy",
+  "treatmentClasses": [
+    "radiotherapy",
+    "chemotherapy",
+    "other"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "carboplatin",
+    "paclitaxel",
+    "cetuximab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Toxicity"
+    ],
+    "notes": "Two-by-two factorial: 60 Gy vs 74 Gy and cetuximab vs none; both comparisons crossed futility boundaries."
+  },
+  "sponsor": "National Cancer Institute and Bristol-Myers Squibb",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00533949"
+    }
+  ],
+  "yearOfPrimaryPublication": 2015,
+  "clinicalQuestion": "Does radiation dose escalation (high-dose versus standard-dose), or the addition of cetuximab, improve survival with concurrent chemoradiotherapy for unresectable stage III NSCLC?",
+  "result": "NEGATIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Unresectable stage III NSCLC with good performance status and adequate pulmonary function",
+    "intervention": "High-dose (74 Gy) radiotherapy and/or cetuximab with concurrent and consolidation carboplatin–paclitaxel",
+    "comparator": "Standard-dose (60 Gy) radiotherapy without cetuximab",
+    "outcomes": "Primary: OS. Secondary: toxicity"
+  },
+  "arms": [
+    {
+      "label": "Standard-dose (60 Gy)",
+      "role": "CONTROL",
+      "regimen": "60 Gy conformal radiotherapy with weekly carboplatin–paclitaxel, then consolidation carboplatin–paclitaxel",
+      "dosing": "60 Gy in 2 Gy daily fractions; concurrent paclitaxel 45 mg/m2 and carboplatin AUC 2 weekly; consolidation paclitaxel 200 mg/m2 and carboplatin AUC 6",
+      "doseSourceQuote": "All patients also received concurrent chemotherapy with 45 mg/m(2) paclitaxel and carboplatin once a week (AUC 2); 2 weeks after chemoradiation, two cycles of consolidation chemotherapy separated by 3 weeks were given consisting of paclitaxel (200 mg/m(2)) and carboplatin (AUC 6).",
+      "n": 166
+    },
+    {
+      "label": "High-dose (74 Gy)",
+      "role": "EXPERIMENTAL",
+      "regimen": "74 Gy conformal radiotherapy with the same chemotherapy",
+      "dosing": "74 Gy (high dose) versus 60 Gy (standard dose), 2 Gy daily fractions",
+      "doseSourceQuote": "We randomly assigned (1:1:1:1) patients to receive either 60 Gy (standard dose), 74 Gy (high dose), 60 Gy plus cetuximab, or 74 Gy plus cetuximab.",
+      "n": 121
+    },
+    {
+      "label": "Standard-dose plus cetuximab",
+      "role": "EXPERIMENTAL",
+      "regimen": "60 Gy chemoradiotherapy plus cetuximab",
+      "dosing": "Cetuximab 400 mg/m2 day 1 then 250 mg/m2 weekly through consolidation",
+      "doseSourceQuote": "400 mg/m(2) cetuximab was given on day 1 followed by weekly doses of 250 mg/m(2), and was continued through consolidation therapy",
+      "n": 147
+    },
+    {
+      "label": "High-dose plus cetuximab",
+      "role": "EXPERIMENTAL",
+      "regimen": "74 Gy chemoradiotherapy plus cetuximab",
+      "n": 110
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "25601342",
+      "doi": "10.1016/S1470-2045(14)71207-0",
+      "title": "Standard-dose versus high-dose conformal radiotherapy with concurrent and consolidation carboplatin plus paclitaxel with or without cetuximab for patients with stage IIIA or IIIB non-small-cell lung cancer (RTOG 0617): a randomised, two-by-two factorial phase 3 study.",
+      "journal": "Lancet Oncol",
+      "year": 2015,
+      "publicationDate": "2015-01-16",
+      "firstAuthor": "Bradley JD",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis (radiation-dose comparison)",
+      "population": "Radiation-dose comparison (modified ITT)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "High-dose (74 Gy)",
+      "controlArm": "Standard-dose (60 Gy)",
+      "experimentalValue": "median 20.3 months",
+      "controlValue": "median 28.7 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.38,
+      "ciLower": 1.09,
+      "ciUpper": 1.76,
+      "pValue": "0.004",
+      "followUp": "Median 22.9 months",
+      "source": {
+        "pmid": "25601342",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median overall survival was 28.7 months (95% CI 24.1-36.9) for patients who received standard-dose radiotherapy and 20.3 months (17.7-25.0) for those who received high-dose radiotherapy (hazard ratio [HR] 1.38, 95% CI 1.09-1.76; p=0.004).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis (cetuximab comparison)",
+      "population": "Cetuximab comparison (modified ITT)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Cetuximab",
+      "controlArm": "No cetuximab",
+      "experimentalValue": "median 25.0 months",
+      "controlValue": "median 24.0 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.07,
+      "ciLower": 0.84,
+      "ciUpper": 1.35,
+      "pValue": "0.29",
+      "followUp": "Median 21.3 months",
+      "source": {
+        "pmid": "25601342",
+        "location": "abstract"
+      },
+      "sourceQuote": "Median overall survival in patients who received cetuximab was 25.0 months (95% CI 20.2-30.5) compared with 24.0 months (19.8-28.6) in those who did not (HR 1.07, 95% CI 0.84-1.35; p=0.29).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or worse toxic effects, cetuximab vs no cetuximab",
+      "experimentalValue": "205 of 237 (86%)",
+      "controlValue": "160 of 228 (70%)",
+      "source": {
+        "pmid": "25601342",
+        "location": "abstract"
+      },
+      "sourceQuote": "the use of cetuximab was associated with a higher rate of grade 3 or worse toxic effects (205 [86%] of 237 vs 160 [70%] of 228 patients; p<0.0001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Severe oesophagitis, high-dose vs standard-dose radiotherapy",
+      "experimentalValue": "43 of 207 (21%)",
+      "controlValue": "16 of 217 (7%)",
+      "source": {
+        "pmid": "25601342",
+        "location": "abstract"
+      },
+      "sourceQuote": "Severe oesophagitis was more common in patients who received high-dose chemoradiotherapy than in those who received standard-dose treatment (43 [21%] of 207 patients vs 16 [7%] of 217 patients; p<0.0001).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related deaths",
+      "experimentalValue": "High dose: eight; cetuximab: ten",
+      "controlValue": "Standard dose: three; no cetuximab: five",
+      "source": {
+        "pmid": "25601342",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were more treatment-related deaths in the high-dose chemoradiotherapy and cetuximab groups (radiotherapy comparison: eight vs three patients; cetuximab comparison: ten vs five patients).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised factorial design addressing two questions",
+      "Large multi-institutional cooperative-group trial"
+    ],
+    "limitations": [
+      "Open-label",
+      "Radiotherapy technique (IMRT vs 3D-CRT) not randomised",
+      "Both comparisons stopped for futility, limiting power for secondary questions"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established that radiation dose escalation beyond the standard dose with concurrent chemotherapy does not improve, and may worsen, survival in stage III NSCLC, and that cetuximab adds toxicity without survival benefit; standard-dose concurrent chemoradiotherapy remains the backbone.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "More radiation was not better: the standard-dose arm lived longer, and heart and oesophageal dose constraints matter.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 25601342. Total randomised number not stated as a single figure in the abstract; per-arm numbers recorded. Safety values for treatment-related deaths stored as words as printed."
+  }
+}

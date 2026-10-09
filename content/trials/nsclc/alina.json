@@ -1,0 +1,179 @@
+{
+  "slug": "alina",
+  "acronym": "ALINA",
+  "officialTitle": "Alectinib in Resected ALK-Positive Non-Small-Cell Lung Cancer",
+  "disease": "nsclc",
+  "subtypes": [
+    "ALK-positive"
+  ],
+  "stages": [
+    "early",
+    "locally-advanced",
+    "resectable"
+  ],
+  "setting": "Adjuvant",
+  "treatmentClasses": [
+    "tki",
+    "chemotherapy"
+  ],
+  "biomarkers": [
+    "alk"
+  ],
+  "drugs": [
+    "alectinib"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 257,
+    "sampleSizeSourceQuote": "In total, 257 patients were randomly assigned to receive alectinib (130 patients) or chemotherapy (127 patients).",
+    "primaryEndpoints": [
+      "DFS (hierarchical: stage II–IIIA, then ITT)"
+    ],
+    "secondaryEndpoints": [
+      "CNS DFS",
+      "OS",
+      "Safety"
+    ]
+  },
+  "sponsor": "F. Hoffmann-La Roche",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03456076"
+    }
+  ],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Is adjuvant alectinib superior to platinum-based chemotherapy after complete resection of ALK-positive stage IB–IIIA NSCLC?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Completely resected ALK-positive NSCLC, stage IB to IIIA",
+    "intervention": "Oral alectinib 600 mg twice daily for 24 months",
+    "comparator": "Intravenous platinum-based chemotherapy, four 21-day cycles",
+    "outcomes": "Primary: DFS. Secondary: CNS DFS, OS, safety"
+  },
+  "arms": [
+    {
+      "label": "Alectinib",
+      "role": "EXPERIMENTAL",
+      "regimen": "Alectinib",
+      "dosing": "600 mg orally twice daily for 24 months",
+      "doseSourceQuote": "oral alectinib (600 mg twice daily) for 24 months",
+      "n": 130
+    },
+    {
+      "label": "Platinum-based chemotherapy",
+      "role": "CONTROL",
+      "regimen": "Intravenous platinum-based chemotherapy",
+      "dosing": "Four 21-day cycles",
+      "doseSourceQuote": "intravenous platinum-based chemotherapy in four 21-day cycles",
+      "n": 127
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "38598794",
+      "doi": "10.1056/NEJMoa2310532",
+      "title": "Alectinib in Resected-Positive Non-Small-Cell Lung Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2024,
+      "publicationDate": "2024-04-11",
+      "firstAuthor": "Wu YL",
+      "type": "PRIMARY",
+      "label": "Primary DFS analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Primary analysis",
+      "population": "Stage II–IIIA",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Alectinib",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "2-year DFS 93.8%",
+      "controlValue": "2-year DFS 63.0%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.24,
+      "ciLower": 0.13,
+      "ciUpper": 0.45,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "38598794",
+        "location": "abstract"
+      },
+      "sourceQuote": "The percentage of patients alive and disease-free at 2 years was 93.8% in the alectinib group and 63.0% in the chemotherapy group among patients with stage II or IIIA disease (hazard ratio for disease recurrence or death, 0.24; 95% confidence interval [CI], 0.13 to 0.45; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "endpointLabel": "Percentage alive and disease-free at two years",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT (stage IB–IIIA)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Alectinib",
+      "controlArm": "Chemotherapy",
+      "experimentalValue": "93.6%",
+      "controlValue": "63.7%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.24,
+      "ciLower": 0.13,
+      "ciUpper": 0.43,
+      "pValue": "<0.001",
+      "source": {
+        "pmid": "38598794",
+        "location": "abstract"
+      },
+      "sourceQuote": "93.6% and 63.7%, respectively, in the intention-to-treat population (hazard ratio, 0.24; 95% CI, 0.13 to 0.43; P<0.001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "CNS_PFS",
+      "endpointLabel": "CNS disease-free survival",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "experimentalArm": "Alectinib",
+      "controlArm": "Chemotherapy",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.22,
+      "ciLower": 0.08,
+      "ciUpper": 0.58,
+      "source": {
+        "pmid": "38598794",
+        "location": "abstract"
+      },
+      "sourceQuote": "Alectinib was associated with a clinically meaningful benefit with respect to CNS disease-free survival as compared with chemotherapy (hazard ratio for CNS disease recurrence or death, 0.22; 95% CI, 0.08 to 0.58).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [],
+  "appraisal": {
+    "strengths": [
+      "Randomised against active standard (platinum chemotherapy)",
+      "Large relative DFS effect including CNS protection"
+    ],
+    "limitations": [
+      "Open-label",
+      "OS immature at primary analysis",
+      "Small trial reflecting rarity of resected ALK-positive disease"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports adjuvant alectinib in place of platinum chemotherapy after complete resection of ALK-positive stage IB–IIIA NSCLC, making ALK testing of resected tumours necessary.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "ALINA replaced chemotherapy rather than adding to it — the comparator was platinum doublet, not placebo.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 38598794. OS immature; no OS update ingested."
+  }
+}

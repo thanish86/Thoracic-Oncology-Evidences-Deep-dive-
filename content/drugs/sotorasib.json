@@ -1,0 +1,37 @@
+{
+  "slug": "sotorasib",
+  "name": "Sotorasib",
+  "brandNames": [
+    "Lumakras",
+    "Lumykras"
+  ],
+  "drugClass": "KRAS G12C covalent inhibitor",
+  "targets": [
+    "KRAS G12C"
+  ],
+  "mechanism": "Covalently binds cysteine 12 of KRAS G12C within the switch-II pocket, locking KRAS in its inactive GDP-bound state and suppressing MAPK signalling.",
+  "route": "oral",
+  "diseases": [
+    "nsclc"
+  ],
+  "keyToxicities": [
+    "Diarrhoea",
+    "Nausea",
+    "Hepatotoxicity (transaminase elevation), with higher risk when started soon after immune checkpoint inhibitors",
+    "Fatigue",
+    "Musculoskeletal pain",
+    "Interstitial lung disease/pneumonitis"
+  ],
+  "monitoring": [
+    "Liver function tests before and regularly during early treatment",
+    "Respiratory symptoms"
+  ],
+  "interactions": "Avoid acid-reducing agents (or separate timing per label). Avoid strong CYP3A4 inducers. Sotorasib is a CYP3A4 inducer and may reduce exposure of sensitive substrates; it may increase exposure of P-gp substrates.",
+  "resistance": "Secondary KRAS mutations (e.g. Y96D, R68S, H95X), KRAS G12C amplification, bypass activation (MET amplification, NRAS/BRAF mutations, RTK fusions), adaptive RTK/SHP2 feedback and histological transformation.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

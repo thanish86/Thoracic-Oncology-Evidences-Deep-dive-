@@ -1,0 +1,171 @@
+{
+  "slug": "mars-2",
+  "acronym": "MARS 2",
+  "officialTitle": "Extended pleurectomy decortication and chemotherapy versus chemotherapy alone for pleural mesothelioma (MARS 2): a phase 3 randomised controlled trial",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural",
+    "epithelioid"
+  ],
+  "stages": [
+    "resectable"
+  ],
+  "setting": "Resectable pleural mesothelioma",
+  "lineOfTherapy": "Multimodality",
+  "treatmentClasses": [
+    "surgery",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label (surgery could not be masked)",
+    "sampleSize": 335,
+    "sampleSizeSourceQuote": "Between June 19, 2015, and Jan 21, 2021, of 1030 assessed for eligibility, 335 participants were randomly assigned (169 to surgery and chemotherapy, and 166 to chemotherapy alone).",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Serious adverse events"
+    ],
+    "notes": "Pragmatic superiority trial at 26 UK hospitals. Randomisation after two cycles of chemotherapy; both arms received two to four further cycles. Most participants had epithelioid histology."
+  },
+  "sponsor": "NIHR Health Technology Assessment programme",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02040272"
+    }
+  ],
+  "yearOfPrimaryPublication": 2024,
+  "clinicalQuestion": "Does adding (extended) pleurectomy decortication to chemotherapy improve survival in resectable pleural mesothelioma?",
+  "result": "NEGATIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Resectable pleural mesothelioma with adequate organ and lung function, after two cycles of chemotherapy",
+    "intervention": "Pleurectomy decortication or extended pleurectomy decortication followed by further chemotherapy",
+    "comparator": "Further chemotherapy alone",
+    "outcomes": "Primary: OS (ITT). Serious adverse events"
+  },
+  "arms": [
+    {
+      "label": "Surgery + chemotherapy",
+      "role": "EXPERIMENTAL",
+      "regimen": "(Extended) pleurectomy decortication plus chemotherapy",
+      "n": 169
+    },
+    {
+      "label": "Chemotherapy alone",
+      "role": "CONTROL",
+      "regimen": "Chemotherapy alone",
+      "n": 166
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "38740044",
+      "doi": "10.1016/S2213-2600(24)00119-X",
+      "title": "Extended pleurectomy decortication and chemotherapy versus chemotherapy alone for pleural mesothelioma (MARS 2): a phase 3 randomised controlled trial.",
+      "journal": "Lancet Respir Med",
+      "year": 2024,
+      "publicationDate": "2024-05-10",
+      "firstAuthor": "Lim E",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Surgery + chemotherapy",
+      "controlArm": "Chemotherapy alone",
+      "experimentalValue": "median 19.3 months",
+      "controlValue": "median 24.8 months",
+      "pValue": "0.019 (RMST difference at 2 years)",
+      "followUp": "Median 22.4 months",
+      "source": {
+        "pmid": "38740044",
+        "location": "abstract"
+      },
+      "sourceQuote": "At a median follow-up of 22·4 months (IQR 11·3-30·8), median survival was shorter in the surgery and chemotherapy group (19·3 months [IQR 10·0-33·7]) than in the chemotherapy alone group (24·8 months [IQR 12·6-37·4]), and the difference in restricted mean survival time at 2 years was -1·9 months (95% CI -3·4 to -0·3, p=0·019).",
+      "status": "AWAITING_VERIFICATION",
+      "effectMeasure": "NONE"
+    },
+    {
+      "endpoint": "OS",
+      "endpointLabel": "Difference in restricted mean survival time at 2 years (surgery minus chemotherapy alone)",
+      "analysisLabel": "Primary analysis (restricted mean survival time)",
+      "population": "ITT",
+      "experimentalArm": "Surgery + chemotherapy",
+      "controlArm": "Chemotherapy alone",
+      "experimentalValue": "RMST difference -1.9 months at 2 years",
+      "pValue": "0.019",
+      "source": {
+        "pmid": "38740044",
+        "location": "abstract"
+      },
+      "sourceQuote": "the difference in restricted mean survival time at 2 years was -1·9 months (95% CI -3·4 to -0·3, p=0·019).",
+      "status": "AWAITING_VERIFICATION",
+      "effectMeasure": "NONE"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SERIOUS",
+      "description": "Serious adverse events (grade 3 or higher), number of events; incidence rate ratio 3.6",
+      "experimentalValue": "318 events",
+      "controlValue": "169 events",
+      "source": {
+        "pmid": "38740044",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were 318 serious adverse events (grade ≥3) in the surgery group and 169 in the chemotherapy group (incidence rate ratio 3·6 [95% CI 2·3 to 5·5], p<0·0001)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Respiratory disorder serious adverse events (events)",
+      "experimentalValue": "84",
+      "controlValue": "34",
+      "source": {
+        "pmid": "38740044",
+        "location": "abstract"
+      },
+      "sourceQuote": "with increased incidence of cardiac (30 vs 12; 3·01 [1·13 to 8·02]) and respiratory (84 vs 34; 2·62 [1·58 to 4·33]) disorders, infection (124 vs 53; 2·13 [1·36 to 3·33])",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "First randomised trial of extended pleurectomy decortication",
+      "Pragmatic multicentre design with ITT analysis",
+      "Recruitment target achieved"
+    ],
+    "limitations": [
+      "Open-label",
+      "Predominantly epithelioid histology",
+      "Systemic therapy was chemotherapy; immunotherapy-era relevance uncertain"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Extended pleurectomy decortication added to chemotherapy was associated with worse survival to two years and more serious adverse events than chemotherapy alone, arguing against routine radical surgery for resectable pleural mesothelioma.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Together with MARS, randomised data do not support radical surgery for pleural mesothelioma outside trials; systemic therapy remains the foundation.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 38740044. The negative RMST difference is stored as text because the integrity checker does not parse signs. Chemotherapy agents not named in the abstract."
+  }
+}

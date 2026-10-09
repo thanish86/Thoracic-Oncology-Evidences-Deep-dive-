@@ -1,0 +1,128 @@
+{
+  "slug": "paloma-2",
+  "acronym": "PALOMA-2",
+  "officialTitle": "Palbociclib and Letrozole in Advanced Breast Cancer",
+  "disease": "breast",
+  "subtypes": ["ER+/HER2-", "Postmenopausal"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "First-line advanced (no prior treatment for advanced disease)",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": ["cdk46", "endocrine"],
+  "biomarkers": ["er", "her2"],
+  "drugs": ["palbociclib", "letrozole"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled",
+    "sampleSize": 666,
+    "sampleSizeSourceQuote": "In this double-blind study, we randomly assigned, in a 2:1 ratio, 666 postmenopausal women with ER-positive, HER2-negative breast cancer, who had not had prior treatment for advanced disease, to receive palbociclib plus letrozole or placebo plus letrozole.",
+    "primaryEndpoints": ["Investigator-assessed PFS"],
+    "secondaryEndpoints": ["OS", "Objective response", "Clinical benefit response", "Patient-reported outcomes", "Pharmacokinetics", "Safety"],
+    "notes": "2:1 randomisation."
+  },
+  "sponsor": "Pfizer",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT01740427" }],
+  "yearOfPrimaryPublication": 2016,
+  "clinicalQuestion": "Does adding palbociclib to letrozole prolong PFS as initial therapy for postmenopausal women with ER-positive, HER2-negative advanced breast cancer?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Postmenopausal women with ER-positive, HER2-negative advanced breast cancer, no prior treatment for advanced disease",
+    "intervention": "Palbociclib plus letrozole",
+    "comparator": "Placebo plus letrozole",
+    "outcomes": "Primary: investigator-assessed PFS. Secondary: OS, objective response, clinical benefit, PROs, PK, safety"
+  },
+  "arms": [
+    { "label": "Palbociclib + letrozole", "role": "EXPERIMENTAL", "regimen": "Palbociclib plus letrozole" },
+    { "label": "Placebo + letrozole", "role": "CONTROL", "regimen": "Placebo plus letrozole" }
+  ],
+  "publications": [
+    {
+      "pmid": "27959613",
+      "doi": "10.1056/NEJMoa1607303",
+      "title": "Palbociclib and Letrozole in Advanced Breast Cancer.",
+      "journal": "N Engl J Med",
+      "year": 2016,
+      "publicationDate": "2016-11-17",
+      "firstAuthor": "Finn RS",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "Investigator-assessed PFS",
+      "analysisLabel": "Primary analysis",
+      "population": "ITT",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Palbociclib + letrozole",
+      "controlArm": "Placebo + letrozole",
+      "experimentalValue": "median 24.8 months",
+      "controlValue": "median 14.5 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.58,
+      "ciLower": 0.46,
+      "ciUpper": 0.72,
+      "pValue": "<0.001",
+      "source": { "pmid": "27959613", "location": "abstract" },
+      "sourceQuote": "The median progression-free survival was 24.8 months (95% confidence interval [CI], 22.1 to not estimable) in the palbociclib-letrozole group, as compared with 14.5 months (95% CI, 12.9 to 17.1) in the placebo-letrozole group (hazard ratio for disease progression or death, 0.58; 95% CI, 0.46 to 0.72; P<0.001).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3 or 4 neutropenia",
+      "experimentalValue": "66.4%",
+      "controlValue": "1.4%",
+      "source": { "pmid": "27959613", "location": "abstract" },
+      "sourceQuote": "The most common grade 3 or 4 adverse events were neutropenia (occurring in 66.4% of the patients in the palbociclib-letrozole group vs. 1.4% in the placebo-letrozole group)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Febrile neutropenia",
+      "experimentalValue": "1.8%",
+      "controlValue": "none",
+      "source": { "pmid": "27959613", "location": "abstract" },
+      "sourceQuote": "Febrile neutropenia was reported in 1.8% of patients in the palbociclib-letrozole group and in none of the patients in the placebo-letrozole group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Permanent discontinuation of any study treatment due to adverse events",
+      "experimentalValue": "43 patients (9.7%)",
+      "controlValue": "13 patients (5.9%)",
+      "source": { "pmid": "27959613", "location": "abstract" },
+      "sourceQuote": "Permanent discontinuation of any study treatment as a result of adverse events occurred in 43 patients (9.7%) in the palbociclib-letrozole group and in 13 patients (5.9%) in the placebo-letrozole group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Double-blind, placebo-controlled phase III confirmation of phase 2 findings",
+      "Large first-line population"
+    ],
+    "limitations": [
+      "Primary endpoint investigator-assessed",
+      "OS not reported in the primary publication"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Confirmed a substantial PFS benefit for adding palbociclib to letrozole as first-line therapy in postmenopausal ER-positive, HER2-negative advanced breast cancer, at the cost of more neutropenia.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Palbociclib neutropenia is frequent but febrile neutropenia is uncommon — manage with blood-count monitoring and dose adjustment rather than reflexive discontinuation.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 27959613. OS analysis not ingested."
+  }
+}

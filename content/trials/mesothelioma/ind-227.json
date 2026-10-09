@@ -1,0 +1,163 @@
+{
+  "slug": "ind-227",
+  "acronym": "IND.227",
+  "officialTitle": "Pembrolizumab plus chemotherapy versus chemotherapy in untreated advanced pleural mesothelioma in Canada, Italy, and France: a phase 3, open-label, randomised controlled trial",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural"
+  ],
+  "stages": [
+    "unresectable"
+  ],
+  "setting": "First-line advanced pleural mesothelioma",
+  "lineOfTherapy": "1L",
+  "treatmentClasses": [
+    "immunotherapy",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "pembrolizumab",
+    "pemetrexed",
+    "cisplatin",
+    "carboplatin"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 440,
+    "sampleSizeSourceQuote": "Between Jan 31, 2017, and Sept 4, 2020, 440 patients were enrolled and randomly assigned to chemotherapy alone (n=218) or chemotherapy with pembrolizumab (n=222).",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "51 hospitals in Canada, Italy and France; ECOG PS 0-1. Final analysis reported."
+  },
+  "sponsor": "Canadian Cancer Society and Merck & Co",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT02784171"
+    }
+  ],
+  "yearOfPrimaryPublication": 2023,
+  "clinicalQuestion": "Does adding pembrolizumab to platinum-pemetrexed improve overall survival in untreated advanced pleural mesothelioma?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Previously untreated advanced pleural mesothelioma, ECOG PS 0-1",
+    "intervention": "Platinum-pemetrexed plus pembrolizumab 200 mg every 3 weeks (up to 2 years)",
+    "comparator": "Platinum-pemetrexed alone",
+    "outcomes": "Primary: OS. Safety"
+  },
+  "arms": [
+    {
+      "label": "Pembrolizumab + chemotherapy",
+      "role": "EXPERIMENTAL",
+      "regimen": "Pembrolizumab + cisplatin or carboplatin + pemetrexed",
+      "dosing": "Cisplatin 75 mg/m2 or carboplatin AUC 5-6 with pemetrexed 500 mg/m2 every 3 weeks for up to 6 cycles, plus pembrolizumab 200 mg every 3 weeks up to 2 years",
+      "doseSourceQuote": "Patients were randomly assigned (1:1) to intravenous chemotherapy (cisplatin [75 mg/m] or carboplatin [area under the concentration-time curve 5-6 mg/mL per min] with pemetrexed 500 mg/m, every 3 weeks for up to 6 cycles), with or without intravenous pembrolizumab 200 mg every 3 weeks (up to 2 years).",
+      "n": 222
+    },
+    {
+      "label": "Chemotherapy alone",
+      "role": "CONTROL",
+      "regimen": "Cisplatin or carboplatin + pemetrexed",
+      "n": 218
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "37931632",
+      "doi": "10.1016/S0140-6736(23)01613-6",
+      "title": "Pembrolizumab plus chemotherapy versus chemotherapy in untreated advanced pleural mesothelioma in Canada, Italy, and France: a phase 3, open-label, randomised controlled trial.",
+      "journal": "Lancet",
+      "year": 2023,
+      "publicationDate": "2023-11-03",
+      "firstAuthor": "Chu Q",
+      "type": "PRIMARY",
+      "label": "Final analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final analysis",
+      "population": "All randomised",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Pembrolizumab + chemotherapy",
+      "controlArm": "Chemotherapy alone",
+      "experimentalValue": "median 17.3 months; 3-year OS 25%",
+      "controlValue": "median 16.1 months; 3-year OS 17%",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.79,
+      "ciLower": 0.64,
+      "ciUpper": 0.98,
+      "pValue": "0.0324",
+      "followUp": "Median 16.2 months",
+      "dataCutoff": "2022-12-15",
+      "source": {
+        "pmid": "37931632",
+        "location": "abstract"
+      },
+      "sourceQuote": "At final analysis (database lock Dec 15, 2022), with a median follow-up of 16·2 months (IQR 8·3-27·8), overall survival was significantly longer with pembrolizumab (median overall survival 17·3 months [95% CI 14·4-21·3] with pembrolizumab vs 16·1 months [13·1-18·2] with chemotherapy alone, hazard ratio for death 0·79; 95% CI 0·64-0·98, two-sided p=0·0324). 3-year overall survival rate was 25% (95% CI 20-33%) with pembrolizumab and 17% (13-24%) with chemotherapy alone.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Treatment-related grade 3-4 adverse events",
+      "experimentalValue": "60 of 222 (27%)",
+      "controlValue": "32 of 211 (15%)",
+      "source": {
+        "pmid": "37931632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Adverse events related to study treatment of grade 3 or 4 occurred in 60 (27%) of 222 patients in the pembrolizumab group and 32 (15%) of 211 patients in the chemotherapy alone group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "Treatment-related grade 5 adverse events",
+      "experimentalValue": "two patients",
+      "controlValue": "one patient",
+      "source": {
+        "pmid": "37931632",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 5 adverse events related to one or more drugs occurred in two patients on the pembrolizumab group and one patient in the chemotherapy alone group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III trial with OS primary endpoint",
+      "International academic cooperative-group trial allowing cisplatin or carboplatin"
+    ],
+    "limitations": [
+      "Open-label",
+      "Modest absolute difference in median OS",
+      "More grade 3-4 treatment-related toxicity with pembrolizumab"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Adding pembrolizumab to platinum-pemetrexed significantly prolonged overall survival in untreated advanced pleural mesothelioma, providing a chemo-immunotherapy alternative to dual checkpoint blockade.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Chemo-immunotherapy and nivolumab-ipilimumab are both first-line options; histology and the need for a rapid response may inform the choice, though they have not been compared directly.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 37931632. The acronym IND.227 is not printed in the abstract; it follows common usage and should be confirmed on review."
+  }
+}

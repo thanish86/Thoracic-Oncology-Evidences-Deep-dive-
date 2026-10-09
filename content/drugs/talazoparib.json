@@ -1,0 +1,37 @@
+{
+  "slug": "talazoparib",
+  "name": "Talazoparib",
+  "brandNames": [
+    "Talzenna"
+  ],
+  "drugClass": "PARP inhibitor",
+  "targets": [
+    "PARP1",
+    "PARP2"
+  ],
+  "mechanism": "Potent PARP inhibitor with strong PARP-trapping activity, inducing synthetic lethality in BRCA-mutant cells.",
+  "route": "oral",
+  "diseases": [
+    "breast"
+  ],
+  "keyToxicities": [
+    "Anaemia (frequently requiring dose modification or transfusion)",
+    "Thrombocytopenia and neutropenia",
+    "Fatigue",
+    "Nausea",
+    "Alopecia",
+    "Myelodysplastic syndrome/acute myeloid leukaemia (rare)"
+  ],
+  "monitoring": [
+    "Blood counts monthly",
+    "Renal function (dose adjustment in impairment)"
+  ],
+  "interactions": "P-glycoprotein and BCRP inhibitors increase exposure.",
+  "resistance": "As for other PARP inhibitors: reversion mutations, 53BP1/shieldin loss and efflux.",
+  "labelledDosing": [],
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  }
+}

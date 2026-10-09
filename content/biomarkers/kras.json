@@ -1,0 +1,45 @@
+{
+  "slug": "kras",
+  "name": "KRAS mutation",
+  "gene": "KRAS",
+  "diseases": [
+    "nsclc"
+  ],
+  "category": "driver",
+  "summary": "KRAS is the most frequently mutated oncogene in lung adenocarcinoma, strongly associated with smoking; the G12C variant is targetable with covalent inhibitors, and co-mutation context influences prognosis and immunotherapy benefit.",
+  "biology": "KRAS is a small GTPase cycling between active GTP-bound and inactive GDP-bound states. Oncogenic codon 12, 13 and 61 mutations impair GTP hydrolysis, sustaining RAF-MEK-ERK and PI3K signalling. G12C introduces a cysteine that can be covalently targeted by inhibitors binding the switch-II pocket of GDP-bound (inactive) KRAS, exploiting residual nucleotide cycling. Co-mutations in STK11 and KEAP1 are associated with an immunologically cold microenvironment and poorer outcomes, whereas TP53 co-mutation is associated with a more inflamed phenotype.",
+  "alterations": [
+    "G12C (smoking-associated; covalent inhibitor target)",
+    "G12V, G12D, G12A, G13X, Q61X",
+    "KRAS amplification",
+    "Co-mutations: STK11, KEAP1, TP53, CDKN2A"
+  ],
+  "testing": {
+    "methods": [
+      "DNA-based NGS (tissue)",
+      "Plasma ctDNA NGS",
+      "PCR-based hotspot assays"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue (biopsy, resection or cytology cell block); plasma ctDNA as a complementary or initial approach",
+    "notes": "Broad NGS is recommended to report co-mutations (STK11, KEAP1) and to exclude concurrent drivers."
+  },
+  "predictiveRelevance": "KRAS G12C predicts benefit from sotorasib and adagrasib after prior systemic therapy, and combinations in earlier lines are under active study. KRAS mutation per se does not preclude benefit from immune checkpoint inhibitors, which remain a first-line standard; STK11/KEAP1 co-mutations are associated with reduced benefit from PD-(L)1 blockade. Pan-RAS and non-G12C-selective inhibitors are in clinical development.",
+  "resistance": [
+    "Secondary KRAS mutations affecting the switch-II pocket (e.g. Y96D, R68S, H95X) or new activating KRAS alleles",
+    "KRAS G12C amplification",
+    "Bypass: MET amplification, NRAS/BRAF mutations, receptor tyrosine kinase fusions, loss of NF1/PTEN",
+    "Adaptive feedback reactivation of upstream RTK/SHP2 signalling",
+    "Histological transformation (adenosquamous or squamous)"
+  ],
+  "drugs": [
+    "sotorasib",
+    "adagrasib"
+  ],
+  "pathway": "mapk",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "Brain metastases are common in KRAS-mutant NSCLC. Adagrasib has demonstrated CNS penetration and intracranial activity; intracranial data for sotorasib are more limited."
+}

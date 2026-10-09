@@ -1,0 +1,151 @@
+{
+  "slug": "emerald",
+  "acronym": "EMERALD",
+  "officialTitle": "Elacestrant (oral selective estrogen receptor degrader) Versus Standard Endocrine Therapy for Estrogen Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Advanced Breast Cancer: Results From the Randomized Phase III EMERALD Trial",
+  "disease": "breast",
+  "subtypes": ["ER+/HER2-", "ESR1-mutated"],
+  "stages": ["metastatic", "locally-advanced"],
+  "setting": "Advanced disease after one or two lines of endocrine therapy including a CDK4/6 inhibitor",
+  "lineOfTherapy": "2L-3L",
+  "treatmentClasses": ["endocrine"],
+  "biomarkers": ["esr1", "er", "her2"],
+  "drugs": ["elacestrant"],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label; PFS by blinded independent central review",
+    "primaryEndpoints": ["PFS (BICR) in all patients", "PFS (BICR) in patients with detectable ESR1 mutation"],
+    "secondaryEndpoints": ["Safety"],
+    "notes": "Required prior CDK4/6 inhibitor; one-two lines of endocrine therapy and ≤1 chemotherapy. Comparator: standard-of-care endocrine monotherapy. 239 patients assigned to elacestrant and 238 to standard of care."
+  },
+  "yearOfPrimaryPublication": 2022,
+  "clinicalQuestion": "Is the oral SERD elacestrant superior to standard endocrine monotherapy after CDK4/6 inhibitor-based therapy in ER-positive/HER2-negative advanced breast cancer, overall and in ESR1-mutated disease?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "ER-positive/HER2-negative advanced breast cancer after one-two lines of endocrine therapy, prior CDK4/6 inhibitor required, ≤1 chemotherapy",
+    "intervention": "Elacestrant 400 mg orally once daily",
+    "comparator": "Standard-of-care endocrine monotherapy",
+    "outcomes": "Primary: PFS by BICR in all patients and in ESR1-mutated patients. Safety"
+  },
+  "arms": [
+    {
+      "label": "Elacestrant",
+      "role": "EXPERIMENTAL",
+      "regimen": "Elacestrant",
+      "dosing": "400 mg orally once daily",
+      "doseSourceQuote": "Patients were randomly assigned to elacestrant 400 mg orally once daily or standard-of-care (SOC) endocrine monotherapy.",
+      "n": 239
+    },
+    {
+      "label": "Standard-of-care endocrine monotherapy",
+      "role": "CONTROL",
+      "regimen": "Standard-of-care endocrine monotherapy",
+      "n": 238
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "35584336",
+      "doi": "10.1200/JCO.22.00338",
+      "title": "Elacestrant (oral selective estrogen receptor degrader) Versus Standard Endocrine Therapy for Estrogen Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Advanced Breast Cancer: Results From the Randomized Phase III EMERALD Trial.",
+      "journal": "J Clin Oncol",
+      "year": 2022,
+      "publicationDate": "2022-05-18",
+      "firstAuthor": "Bidard FC",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR",
+      "analysisLabel": "Primary analysis",
+      "population": "All patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Elacestrant",
+      "controlArm": "Standard-of-care endocrine monotherapy",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.7,
+      "ciLower": 0.55,
+      "ciUpper": 0.88,
+      "source": { "pmid": "35584336", "location": "abstract" },
+      "sourceQuote": "PFS was prolonged in all patients (hazard ratio = 0.70; 95% CI, 0.55 to 0.88;= .002)",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "PFS",
+      "endpointLabel": "PFS by BICR",
+      "analysisLabel": "Primary analysis",
+      "population": "Detectable ESR1 mutation",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Elacestrant",
+      "controlArm": "Standard-of-care endocrine monotherapy",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.55,
+      "ciLower": 0.39,
+      "ciUpper": 0.77,
+      "source": { "pmid": "35584336", "location": "abstract" },
+      "sourceQuote": "and patients withmutation (hazard ratio = 0.55; 95% CI, 0.39 to 0.77;= .0005)",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Treatment-related grade 3/4 adverse events",
+      "experimentalValue": "7.2%",
+      "controlValue": "3.1%",
+      "source": { "pmid": "35584336", "location": "abstract" },
+      "sourceQuote": "Treatment-related grade 3/4 adverse events occurred in 7.2% receiving elacestrant and 3.1% receiving SOC.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DISCONTINUATION",
+      "description": "Treatment-related adverse events leading to discontinuation",
+      "experimentalValue": "3.4%",
+      "controlValue": "0.9%",
+      "source": { "pmid": "35584336", "location": "abstract" },
+      "sourceQuote": "Treatment-related adverse events leading to treatment discontinuations were 3.4% in the elacestrant arm versus 0.9% in SOC.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Nausea, any grade (grade 3/4: 2.5% vs 0.9%)",
+      "experimentalValue": "35.0%",
+      "controlValue": "18.8%",
+      "source": { "pmid": "35584336", "location": "abstract" },
+      "sourceQuote": "Nausea of any grade occurred in 35.0% receiving elacestrant and 18.8% receiving SOC (grade 3/4, 2.5% and 0.9%, respectively).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised phase III trial with PFS by blinded independent central review",
+      "All patients had prior CDK4/6 inhibitor, matching the contemporary second-line population",
+      "Prespecified ESR1-mutated co-primary population"
+    ],
+    "limitations": [
+      "Open-label design",
+      "Comparator was endocrine monotherapy, not a combination regimen",
+      "Median PFS values not reported in the abstract"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Supports elacestrant after CDK4/6 inhibitor-based therapy in ER-positive/HER2-negative advanced breast cancer, with greater relative benefit in ESR1-mutated disease, making ESR1 mutation testing at progression relevant.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "The larger relative benefit was in ESR1-mutated disease — consider ESR1 testing at progression on a CDK4/6 inhibitor before choosing endocrine therapy.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from the PubMed abstract of PMID 35584336. PubMed text strips the italic gene symbol ESR1 ('withmutation') and the 'P' before P values ('= .002', '= .0005'); P values therefore not transcribed into pValue. Sponsor and registry ID not printed in the abstract and omitted."
+  }
+}

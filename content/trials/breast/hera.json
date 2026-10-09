@@ -1,0 +1,249 @@
+{
+  "slug": "hera",
+  "acronym": "HERA (BIG 1-01)",
+  "officialTitle": "HERceptin Adjuvant (HERA) trial: trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer",
+  "disease": "breast",
+  "subtypes": [
+    "HER2+",
+    "Node-negative or node-positive"
+  ],
+  "stages": [
+    "early"
+  ],
+  "setting": "Adjuvant (after completion of chemotherapy)",
+  "treatmentClasses": [
+    "her2-directed"
+  ],
+  "biomarkers": [
+    "her2"
+  ],
+  "drugs": [
+    "trastuzumab"
+  ],
+  "phase": "III",
+  "design": {
+    "randomised": true,
+    "blinding": "Open-label",
+    "sampleSize": 5102,
+    "sampleSizeSourceQuote": "HERA (BIG 1-01) is an international, multicentre, open-label, phase 3 randomised trial of 5102 women with HER2-positive early breast cancer, who were enrolled from hospitals in 39 countries between Dec 7, 2001, and June 20, 2005.",
+    "primaryEndpoints": [
+      "DFS"
+    ],
+    "secondaryEndpoints": [
+      "OS",
+      "Cardiac safety"
+    ],
+    "notes": "Three arms: observation, 1 year, or 2 years of trastuzumab after primary therapy. Comparison of 2 vs 1 year based on 366-day landmark analyses. Selective crossover from observation to trastuzumab occurred after the first results."
+  },
+  "sponsor": "F. Hoffmann-La Roche / Breast International Group",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT00045032"
+    }
+  ],
+  "yearOfPrimaryPublication": 2005,
+  "clinicalQuestion": "Does trastuzumab given after completion of adjuvant chemotherapy improve outcomes in HER2-positive early breast cancer, and is 2 years better than 1 year?",
+  "result": "POSITIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Women with HER2-positive early breast cancer who had completed locoregional therapy and at least four cycles of (neo)adjuvant chemotherapy",
+    "intervention": "Trastuzumab every 3 weeks for 1 year (or 2 years)",
+    "comparator": "Observation",
+    "outcomes": "Primary: DFS. Secondary: OS, cardiac safety"
+  },
+  "arms": [
+    {
+      "label": "Trastuzumab 1 year",
+      "role": "EXPERIMENTAL",
+      "regimen": "Trastuzumab every 3 weeks for 1 year",
+      "dosing": "8 mg/kg loading dose IV, then 6 mg/kg every 3 weeks",
+      "doseSourceQuote": "patients were randomly assigned (1:1:1) to receive trastuzumab for 1 year (once at 8 mg/kg of bodyweight intravenously, then 6 mg/kg once every 3 weeks) or for 2 years (with the same dose schedule), or to the observation group.",
+      "n": 1702
+    },
+    {
+      "label": "Trastuzumab 2 years",
+      "role": "EXPERIMENTAL",
+      "regimen": "Trastuzumab every 3 weeks for 2 years",
+      "dosing": "8 mg/kg loading dose IV, then 6 mg/kg every 3 weeks",
+      "doseSourceQuote": "patients were randomly assigned (1:1:1) to receive trastuzumab for 1 year (once at 8 mg/kg of bodyweight intravenously, then 6 mg/kg once every 3 weeks) or for 2 years (with the same dose schedule), or to the observation group.",
+      "n": 1700
+    },
+    {
+      "label": "Observation",
+      "role": "CONTROL",
+      "regimen": "Observation",
+      "n": 1697
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "16236737",
+      "doi": "10.1056/NEJMoa052306",
+      "title": "Trastuzumab after adjuvant chemotherapy in HER2-positive breast cancer.",
+      "journal": "N Engl J Med",
+      "year": 2005,
+      "publicationDate": "2005-10-20",
+      "firstAuthor": "Piccart-Gebhart MJ",
+      "type": "PRIMARY",
+      "label": "First planned interim analysis (1 year vs observation)",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    },
+    {
+      "pmid": "28215665",
+      "doi": "10.1016/S0140-6736(16)32616-2",
+      "title": "11 years' follow-up of trastuzumab after adjuvant chemotherapy in HER2-positive early breast cancer: final analysis of the HERceptin Adjuvant (HERA) trial.",
+      "journal": "Lancet",
+      "year": 2017,
+      "publicationDate": "2017-02-17",
+      "firstAuthor": "Cameron D",
+      "type": "UPDATE",
+      "label": "Final analysis at 11 years' median follow-up",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "First interim analysis (median follow-up 1 year)",
+      "population": "1 year trastuzumab vs observation",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Trastuzumab 1 year",
+      "controlArm": "Observation",
+      "experimentalValue": "Absolute DFS benefit at two years 8.4 percentage points",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.54,
+      "ciLower": 0.43,
+      "ciUpper": 0.67,
+      "pValue": "<0.0001",
+      "followUp": "Median 1 year",
+      "source": {
+        "pmid": "16236737",
+        "location": "abstract"
+      },
+      "sourceQuote": "The unadjusted hazard ratio for an event in the trastuzumab group, as compared with the observation group, was 0.54 (95 percent confidence interval, 0.43 to 0.67; P<0.0001 by the log-rank test, crossing the interim analysis boundary), representing an absolute benefit in terms of disease-free survival at two years of 8.4 percentage points.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Final analysis (median follow-up 11 years)",
+      "population": "1 year trastuzumab vs observation (ITT)",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Trastuzumab 1 year",
+      "controlArm": "Observation",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.76,
+      "ciLower": 0.68,
+      "ciUpper": 0.86,
+      "followUp": "Median 11 years",
+      "source": {
+        "pmid": "28215665",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Final analysis (median follow-up 11 years)",
+      "population": "1 year trastuzumab vs observation (ITT)",
+      "experimentalArm": "Trastuzumab 1 year",
+      "controlArm": "Observation",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.74,
+      "ciLower": 0.64,
+      "ciUpper": 0.86,
+      "source": {
+        "pmid": "28215665",
+        "location": "abstract"
+      },
+      "sourceQuote": "After a median follow-up of 11 years (IQR 10·09-11·53), random assignment to 1 year of trastuzumab significantly reduced the risk of a disease-free survival event (HR 0·76, 95% CI 0·68-0·86) and death (0·74, 0·64-0·86) compared with observation.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "analysisLabel": "Final analysis (median follow-up 11 years)",
+      "population": "2 years vs 1 year trastuzumab (landmark)",
+      "experimentalArm": "Trastuzumab 2 years",
+      "controlArm": "Trastuzumab 1 year",
+      "effectMeasure": "HR",
+      "effectEstimate": 1.02,
+      "ciLower": 0.89,
+      "ciUpper": 1.17,
+      "source": {
+        "pmid": "28215665",
+        "location": "abstract"
+      },
+      "sourceQuote": "2 years of adjuvant trastuzumab did not improve disease free-survival outcomes compared with 1 year of this drug (HR 1·02, 95% CI 0·89-1·17).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "endpoint": "DFS",
+      "endpointLabel": "10-year DFS estimates",
+      "analysisLabel": "Final analysis (median follow-up 11 years)",
+      "population": "ITT",
+      "experimentalArm": "Trastuzumab 1 year",
+      "controlArm": "Observation",
+      "experimentalValue": "69% (2 years: 69%)",
+      "controlValue": "63%",
+      "source": {
+        "pmid": "28215665",
+        "location": "abstract"
+      },
+      "sourceQuote": "Estimates of 10-year disease-free survival were 63% for observation, 69% for 1 year of trastuzumab, and 69% for 2 years of trastuzumab.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "SPECIFIC",
+      "description": "Severe cardiotoxicity (trastuzumab, first interim analysis)",
+      "experimentalValue": "0.5 percent",
+      "source": {
+        "pmid": "16236737",
+        "location": "abstract"
+      },
+      "sourceQuote": "Severe cardiotoxicity developed in 0.5 percent of the women who were treated with trastuzumab.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SPECIFIC",
+      "description": "Secondary cardiac endpoints (experimental = 1 year trastuzumab; 2 years: 7.3%)",
+      "experimentalValue": "74 (4.4%)",
+      "controlValue": "15 (0.9%)",
+      "source": {
+        "pmid": "28215665",
+        "location": "abstract"
+      },
+      "sourceQuote": "The incidence of secondary cardiac endpoints was 122 (7·3%) in the 2-years trastuzumab group, 74 (4·4%) in the 1-year trastuzumab group, and 15 (0·9%) in the observation group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Large international randomised trial with 11-year follow-up",
+      "Addresses both efficacy and duration of adjuvant trastuzumab"
+    ],
+    "limitations": [
+      "Open-label",
+      "Substantial selective crossover from observation to trastuzumab dilutes long-term comparisons",
+      "Sequential (post-chemotherapy) rather than concurrent trastuzumab"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Established 1 year of adjuvant trastuzumab as standard for HER2-positive early breast cancer; 2 years added no disease-free survival benefit and more cardiac events.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "One year is the reference duration — HERA showed no gain from doubling it, only more cardiac toxicity.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "Numbers transcribed from PubMed abstracts of PMIDs 16236737 and 28215665. Arm sizes are from the 11-year ITT population (PMID 28215665)."
+  }
+}

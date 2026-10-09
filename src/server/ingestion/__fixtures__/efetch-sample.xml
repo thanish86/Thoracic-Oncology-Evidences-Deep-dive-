@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2024//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_240101.dtd">
+<!-- Synthetic test fixture shaped like an E-utilities efetch response. Not real trial data. -->
+<PubmedArticleSet>
+<PubmedArticle>
+  <MedlineCitation Status="MEDLINE" Owner="NLM">
+    <PMID Version="1">10000001</PMID>
+    <Article PubModel="Print-Electronic">
+      <Journal>
+        <JournalIssue CitedMedium="Internet">
+          <PubDate><Year>2020</Year><Month>Mar</Month><Day>5</Day></PubDate>
+        </JournalIssue>
+        <Title>Journal of Synthetic Oncology</Title>
+        <ISOAbbreviation>J Synth Oncol</ISOAbbreviation>
+      </Journal>
+      <ArticleTitle>Drug X versus Placebo in <i>EXAMPLE</i>-Mutant Test Cancer.</ArticleTitle>
+      <Abstract>
+        <AbstractText Label="BACKGROUND">Background text &amp; context.</AbstractText>
+        <AbstractText Label="RESULTS">The hazard ratio was 0.50 (95% CI, 0.40 to 0.60). ClinicalTrials.gov number, NCT00000001.</AbstractText>
+      </Abstract>
+      <AuthorList>
+        <Author ValidYN="Y"><LastName>Example</LastName><ForeName>Alex</ForeName><Initials>A</Initials></Author>
+        <Author ValidYN="Y"><LastName>Second</LastName><Initials>B</Initials></Author>
+      </AuthorList>
+      <ELocationID EIdType="doi" ValidYN="Y">10.9999/synthetic.2020.001</ELocationID>
+      <PublicationTypeList>
+        <PublicationType UI="D016449">Randomized Controlled Trial</PublicationType>
+      </PublicationTypeList>
+    </Article>
+  </MedlineCitation>
+  <PubmedData>
+    <ArticleIdList>
+      <ArticleId IdType="pubmed">10000001</ArticleId>
+      <ArticleId IdType="doi">10.9999/synthetic.2020.001</ArticleId>
+    </ArticleIdList>
+  </PubmedData>
+</PubmedArticle>
+</PubmedArticleSet>

@@ -1,0 +1,119 @@
+{
+  "slug": "lurbinectedin-basket",
+  "acronym": "Lurbinectedin basket (SCLC cohort)",
+  "officialTitle": "Lurbinectedin as second-line treatment for patients with small-cell lung cancer: a single-arm, open-label, phase 2 basket trial",
+  "disease": "sclc",
+  "subtypes": [],
+  "stages": ["recurrent"],
+  "setting": "Second-line SCLC after platinum-based chemotherapy",
+  "lineOfTherapy": "2L",
+  "treatmentClasses": ["chemotherapy"],
+  "biomarkers": [],
+  "drugs": ["lurbinectedin"],
+  "phase": "II",
+  "design": {
+    "randomised": false,
+    "blinding": "Open-label; response by investigator assessment",
+    "sampleSize": 105,
+    "sampleSizeSourceQuote": "Between Oct 16, 2015, and Jan 15, 2019, 105 patients were enrolled and treated with lurbinectedin.",
+    "primaryEndpoints": ["ORR (investigator-assessed)"],
+    "secondaryEndpoints": ["Safety"],
+    "notes": "Single-arm phase 2 basket trial; SCLC cohort with one prior chemotherapy-containing line, ECOG PS 2 or lower, no brain metastases. Evidence is non-comparative."
+  },
+  "sponsor": "Pharma Mar",
+  "registryIds": [{ "registry": "ClinicalTrials.gov", "id": "NCT02454972" }],
+  "yearOfPrimaryPublication": 2020,
+  "clinicalQuestion": "What is the activity and safety of lurbinectedin monotherapy as second-line treatment for SCLC after platinum-based chemotherapy?",
+  "result": "DESCRIPTIVE",
+  "landmark": true,
+  "pico": {
+    "population": "Adults with SCLC after one prior chemotherapy-containing line, no brain metastases",
+    "intervention": "Lurbinectedin 3.2 mg/m2 every 3 weeks",
+    "comparator": "None (single arm)",
+    "outcomes": "Primary: investigator-assessed overall response. Safety"
+  },
+  "arms": [
+    {
+      "label": "Lurbinectedin",
+      "role": "SINGLE_ARM",
+      "regimen": "Lurbinectedin monotherapy",
+      "dosing": "3.2 mg/m2 as a 1-h intravenous infusion every 3 weeks",
+      "doseSourceQuote": "Treatment consisted of 3·2 mg/mlurbinectedin administered as a 1-h intravenous infusion every 3 weeks until disease progression or unacceptable toxicity.",
+      "n": 105
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "32224306",
+      "doi": "10.1016/S1470-2045(20)30068-1",
+      "title": "Lurbinectedin as second-line treatment for patients with small-cell lung cancer: a single-arm, open-label, phase 2 basket trial.",
+      "journal": "Lancet Oncol",
+      "year": 2020,
+      "publicationDate": "2020-03-27",
+      "firstAuthor": "Trigo J",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "ORR",
+      "endpointLabel": "Overall response by investigator assessment",
+      "analysisLabel": "Primary analysis",
+      "population": "All treated patients",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Lurbinectedin",
+      "experimentalValue": "37 of 105 (35.2%)",
+      "effectMeasure": "NONE",
+      "followUp": "Median 17.1 months",
+      "source": { "pmid": "32224306", "location": "abstract" },
+      "sourceQuote": "Between Oct 16, 2015, and Jan 15, 2019, 105 patients were enrolled and treated with lurbinectedin. Median follow-up was 17·1 months (IQR 6·5-25·3). Overall response by investigator assessment was seen in 37 patients (35·2%; 95% CI 26·2-45·2).",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 neutropenia (irrespective of causality)",
+      "experimentalValue": "48 (46%)",
+      "source": { "pmid": "32224306", "location": "abstract" },
+      "sourceQuote": "The most common grade 3-4 adverse events (irrespective of causality) were haematological abnormalities-namely, anaemia (in nine [9%] patients), leucopenia (30 [29%]), neutropenia (48 [46%]), and thrombocytopenia (seven [7%]).",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "SERIOUS",
+      "description": "Serious treatment-related adverse events",
+      "experimentalValue": "11 (10%)",
+      "source": { "pmid": "32224306", "location": "abstract" },
+      "sourceQuote": "Serious treatment-related adverse events occurred in 11 (10%) patients, of which neutropenia and febrile neutropenia were the most common (five [5%] patients for each). No treatment-related deaths were reported.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Prospective multicentre trial in a population with few options",
+      "Simple outpatient schedule"
+    ],
+    "limitations": [
+      "Single-arm phase 2 evidence; no randomised comparator",
+      "Response assessed by investigators rather than central review in the primary endpoint",
+      "Excluded patients with brain metastases"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Single-arm phase 2 data showed activity of lurbinectedin monotherapy in relapsed SCLC with mainly haematological toxicity; the evidence is non-comparative.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Single-arm evidence only: patients with brain metastases were excluded, so extrapolation to them is uncertain.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 32224306."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "her2",
+  "name": "HER2 (ERBB2)",
+  "gene": "ERBB2",
+  "diseases": [
+    "nsclc",
+    "breast"
+  ],
+  "category": "driver",
+  "summary": "ERBB2/HER2 is a central driver in breast cancer, where amplification/overexpression defines the HER2-positive subtype, and in NSCLC, where activating mutations (principally exon 20 insertions) and less often amplification are actionable.",
+  "biology": "HER2 is an ErbB receptor tyrosine kinase without a known ligand; it is the preferred heterodimerisation partner for other ErbB receptors, and the HER2-HER3 heterodimer is a potent activator of PI3K-AKT signalling. In breast cancer, gene amplification leads to receptor overexpression and ligand-independent signalling. In NSCLC, kinase-domain mutations (notably the exon 20 YVMA insertion) and extracellular domain mutations activate the receptor; HER2-mutant, HER2-amplified and HER2-overexpressing NSCLC are biologically distinct entities.",
+  "alterations": [
+    "Breast: ERBB2 amplification with protein overexpression (HER2-positive)",
+    "Breast: activating ERBB2 mutations (e.g. in lobular and HER2-non-amplified disease)",
+    "NSCLC: exon 20 insertions (e.g. A775_G776insYVMA)",
+    "NSCLC: point mutations (e.g. S310F extracellular, L755S, V777L)",
+    "NSCLC: ERBB2 amplification (de novo or as acquired resistance to EGFR TKIs)",
+    "HER2 protein overexpression by IHC without amplification"
+  ],
+  "testing": {
+    "methods": [
+      "Immunohistochemistry scored according to ASCO/CAP guidelines (breast)",
+      "In situ hybridisation (FISH or bright-field ISH) for equivocal IHC (breast)",
+      "DNA-based NGS for ERBB2 mutations and copy-number (NSCLC, and HER2-mutant breast)",
+      "Plasma ctDNA NGS"
+    ],
+    "specimen": "Formalin-fixed paraffin-embedded tumour tissue; plasma ctDNA for mutation detection",
+    "notes": "In breast cancer, HER2 should be assessed on every primary and, where feasible, on recurrent or metastatic disease because of heterogeneity and possible discordance. In NSCLC, HER2 mutation and HER2 overexpression are separate biomarkers with separate therapeutic implications."
+  },
+  "predictiveRelevance": "Breast: HER2 positivity predicts benefit from trastuzumab, pertuzumab, trastuzumab emtansine, trastuzumab deruxtecan and tucatinib across early and metastatic settings. NSCLC: activating ERBB2 mutations predict benefit from trastuzumab deruxtecan and from HER2-selective TKIs in development or recently introduced; HER2 overexpression is also being explored as a target for HER2-directed antibody-drug conjugates.",
+  "resistance": [
+    "Breast: truncated p95HER2, PIK3CA mutations or PTEN loss, alternative ErbB ligand signalling, reduced HER2 expression on ADC therapy, SLX4 or payload-related mechanisms for ADCs",
+    "NSCLC: secondary ERBB2 alterations and bypass signalling (incompletely characterised)"
+  ],
+  "drugs": [
+    "trastuzumab",
+    "pertuzumab",
+    "trastuzumab-emtansine",
+    "trastuzumab-deruxtecan",
+    "tucatinib"
+  ],
+  "pathway": "her2-pathway",
+  "status": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:reference-curation",
+    "curatedAt": "2026-10-09"
+  },
+  "cnsConsiderations": "HER2-positive breast cancer and HER2-mutant NSCLC both carry a high risk of brain metastases. Tucatinib-based therapy and trastuzumab deruxtecan have demonstrated intracranial activity in HER2-positive breast cancer, including active brain metastases."
+}

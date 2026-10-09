@@ -1,0 +1,164 @@
+{
+  "slug": "rames",
+  "acronym": "RAMES",
+  "officialTitle": "Gemcitabine with or without ramucirumab as second-line treatment for malignant pleural mesothelioma (RAMES): a randomised, double-blind, placebo-controlled, phase 2 trial",
+  "disease": "mesothelioma",
+  "subtypes": [
+    "pleural"
+  ],
+  "stages": [
+    "recurrent"
+  ],
+  "setting": "Second-line pleural mesothelioma after pemetrexed-platinum",
+  "lineOfTherapy": "2L",
+  "treatmentClasses": [
+    "antiangiogenic",
+    "chemotherapy"
+  ],
+  "biomarkers": [],
+  "drugs": [
+    "ramucirumab",
+    "gemcitabine"
+  ],
+  "phase": "II",
+  "design": {
+    "randomised": true,
+    "blinding": "Double-blind, placebo-controlled",
+    "sampleSize": 161,
+    "sampleSizeSourceQuote": "Between Dec 22, 2016, and July 30, 2018, of 165 patients enrolled 161 were correctly assigned and received either gemcitabine plus placebo (n=81) or gemcitabine plus ramucirumab (n=80).",
+    "primaryEndpoints": [
+      "OS"
+    ],
+    "secondaryEndpoints": [
+      "Safety"
+    ],
+    "notes": "Randomised phase 2 at 26 hospitals in Italy; efficacy reported with 70% confidence intervals per the phase 2 design."
+  },
+  "sponsor": "Eli Lilly Italy",
+  "registryIds": [
+    {
+      "registry": "ClinicalTrials.gov",
+      "id": "NCT03560973"
+    },
+    {
+      "registry": "EudraCT",
+      "id": "2016-001132-36"
+    }
+  ],
+  "yearOfPrimaryPublication": 2021,
+  "clinicalQuestion": "Does adding ramucirumab to gemcitabine improve overall survival as second-line therapy for pleural mesothelioma?",
+  "result": "POSITIVE",
+  "landmark": false,
+  "pico": {
+    "population": "Pleural mesothelioma progressing during or after first-line pemetrexed plus platinum, ECOG PS 0-2",
+    "intervention": "Gemcitabine plus ramucirumab",
+    "comparator": "Gemcitabine plus placebo",
+    "outcomes": "Primary: OS. Safety"
+  },
+  "arms": [
+    {
+      "label": "Gemcitabine + ramucirumab",
+      "role": "EXPERIMENTAL",
+      "regimen": "Gemcitabine + ramucirumab",
+      "dosing": "Gemcitabine 1000 mg/m2 days 1 and 8 every 3 weeks plus ramucirumab 10 mg/kg day 1 every 3 weeks",
+      "doseSourceQuote": "Patients were randomly assigned (1:1) to receive intravenous gemcitabine 1000 mg/mon days 1 and 8 every 3 weeks plus either intravenous placebo (gemcitabine plus placebo group) or ramucirumab 10 mg/kg (gemcitabine plus ramucirumab group) on day 1 every 3 weeks, until tumour progression or unacceptable toxicity.",
+      "n": 80
+    },
+    {
+      "label": "Gemcitabine + placebo",
+      "role": "CONTROL",
+      "regimen": "Gemcitabine + placebo",
+      "n": 81
+    }
+  ],
+  "publications": [
+    {
+      "pmid": "34499874",
+      "doi": "10.1016/S1470-2045(21)00404-6",
+      "title": "Gemcitabine with or without ramucirumab as second-line treatment for malignant pleural mesothelioma (RAMES): a randomised, double-blind, placebo-controlled, phase 2 trial.",
+      "journal": "Lancet Oncol",
+      "year": 2021,
+      "publicationDate": "2021-09-06",
+      "firstAuthor": "Pinto C",
+      "type": "PRIMARY",
+      "label": "Primary analysis",
+      "verifiedVia": "PubMed",
+      "retrievedAt": "2026-10-09"
+    }
+  ],
+  "outcomes": [
+    {
+      "endpoint": "OS",
+      "analysisLabel": "Primary analysis",
+      "population": "Correctly randomised patients who received allocated treatment",
+      "isPrimaryEndpoint": true,
+      "experimentalArm": "Gemcitabine + ramucirumab",
+      "controlArm": "Gemcitabine + placebo",
+      "experimentalValue": "median 13.8 months",
+      "controlValue": "median 7.5 months",
+      "effectMeasure": "HR",
+      "effectEstimate": 0.71,
+      "ciLevel": 70,
+      "ciLower": 0.59,
+      "ciUpper": 0.85,
+      "pValue": "0.028",
+      "followUp": "Median 21.9 months",
+      "dataCutoff": "2020-03-08",
+      "source": {
+        "pmid": "34499874",
+        "location": "abstract"
+      },
+      "sourceQuote": "At database lock (March 8, 2020), with a median follow-up of 21·9 months (IQR 17·7-28·5), overall survival was longer in the ramucirumab group (HR 0·71, 70% CI 0·59-0·85; p=0·028). Median overall survival was 13·8 months (70% CI 12·7-14·4) in the gemcitabine plus ramucirumab group and 7·5 months (6·9-8·9) in the gemcitabine plus placebo group.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "safety": [
+    {
+      "category": "GRADE3PLUS",
+      "description": "Grade 3-4 treatment-related adverse events",
+      "experimentalValue": "35 of 80 (44%)",
+      "controlValue": "24 of 81 (30%)",
+      "source": {
+        "pmid": "34499874",
+        "location": "abstract"
+      },
+      "sourceQuote": "Grade 3-4 treatment-related adverse events were reported in 35 (44%) of 80 patients in the gemcitabine plus ramucirumab group and 24 (30%) of 81 in the gemcitabine plus placebo group.",
+      "status": "AWAITING_VERIFICATION"
+    },
+    {
+      "category": "DEATHS",
+      "description": "No treatment-related deaths",
+      "source": {
+        "pmid": "34499874",
+        "location": "abstract"
+      },
+      "sourceQuote": "There were no treatment-related deaths.",
+      "status": "AWAITING_VERIFICATION"
+    }
+  ],
+  "appraisal": {
+    "strengths": [
+      "Randomised, double-blind, placebo-controlled design",
+      "OS as primary endpoint"
+    ],
+    "limitations": [
+      "Phase II with 70% confidence intervals; requires phase III confirmation",
+      "Italy-only trial",
+      "Patients were largely immunotherapy-naive, limiting relevance after first-line immunotherapy"
+    ]
+  },
+  "clinicalImplications": {
+    "text": "Randomised phase II data suggest ramucirumab added to gemcitabine prolongs survival in second-line pleural mesothelioma; the 70% confidence intervals and phase II design mean the evidence is supportive rather than definitive.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "tumourBoardPearl": {
+    "text": "Note the 70% confidence interval: this is a phase II signal, not phase III proof.",
+    "status": "AWAITING_VERIFICATION"
+  },
+  "evidenceStatus": "AWAITING_VERIFICATION",
+  "curation": {
+    "curatedBy": "agent:pubmed-curation",
+    "curatedAt": "2026-10-09",
+    "notes": "All numbers transcribed from the PubMed abstract of PMID 34499874. RAMES included as the requested alternative randomised trial alongside IND.227."
+  }
+}
